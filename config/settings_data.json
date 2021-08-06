@@ -1,1 +1,85 @@
-{}
+{
+  "current": {
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "9a115fd8-6040-4f1f-8450-7e6c78ce7376": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "8607523c-b7df-4e77-b95b-dc58cf259f16": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "d1a4ae30-3809-432e-a581-f6d621a5fb4e": {
+            "type": "image",
+            "settings": {
+              "image_width": 100,
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "9a115fd8-6040-4f1f-8450-7e6c78ce7376",
+          "8607523c-b7df-4e77-b95b-dc58cf259f16",
+          "d1a4ae30-3809-432e-a581-f6d621a5fb4e"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Sign up to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
