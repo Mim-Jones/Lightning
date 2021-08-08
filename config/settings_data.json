@@ -42,8 +42,8 @@
           "9a115fd8-6040-4f1f-8450-7e6c78ce7376": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Shop",
+              "menu": "shop"
             }
           },
           "8607523c-b7df-4e77-b95b-dc58cf259f16": {
@@ -70,7 +70,7 @@
         "settings": {
           "color_scheme": "inverse",
           "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails",
+          "newsletter_heading": "Sign up to our emails For 5% Off",
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
