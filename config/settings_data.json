@@ -35,8 +35,8 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Other links",
-              "menu": "footer"
+              "heading": "Company",
+              "menu": "about-us"
             }
           },
           "9a115fd8-6040-4f1f-8450-7e6c78ce7376": {
