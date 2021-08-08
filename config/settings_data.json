@@ -56,8 +56,16 @@
           "d1a4ae30-3809-432e-a581-f6d621a5fb4e": {
             "type": "image",
             "settings": {
-              "image_width": 100,
+              "image": "shopify:\/\/shop_images\/ABK_Brewery_Address.jpg",
+              "image_width": 155,
               "alignment": "center"
+            }
+          },
+          "f92c8714-9510-4cf5-9e27-985b23aea7b2": {
+            "type": "text",
+            "settings": {
+              "heading": "Address",
+              "subtext": "<p>Stratford<\/p><p>Hilton<\/p><p>Bridgnorth<\/p><p>Shropshire<\/p>"
             }
           }
         },
@@ -65,7 +73,8 @@
           "footer-0",
           "9a115fd8-6040-4f1f-8450-7e6c78ce7376",
           "8607523c-b7df-4e77-b95b-dc58cf259f16",
-          "d1a4ae30-3809-432e-a581-f6d621a5fb4e"
+          "d1a4ae30-3809-432e-a581-f6d621a5fb4e",
+          "f92c8714-9510-4cf5-9e27-985b23aea7b2"
         ],
         "settings": {
           "color_scheme": "inverse",
