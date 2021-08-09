@@ -1,6 +1,7 @@
 {
   "current": {
     "colors_accent_2": "#000000",
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
