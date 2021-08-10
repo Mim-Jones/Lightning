@@ -189,14 +189,20 @@
   text-align: center;
 }
 
+
+
 @media screen and (max-width: 749px) {
   .footer-block__newsletter .newsletter-form__field-wrapper {
-    width: 30rem;
+    max-width: 42rem;
   }
 }
 
 .footer-block__newsletter .newsletter-form__button.button {
   width: fit-content;
+  border-radius: 25px;
+  position: relative;
+  bottom: 4.5rem;
+  left: 13.5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -205,8 +211,11 @@
   }
 
   .footer-block__newsletter .newsletter-form__button.button {
-    margin-top: 0;
-    margin-left: 1.4rem;
+    position: absolute;
+    top: 0rem;
+    left: 50rem;
+
+
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
