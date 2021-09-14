@@ -10,7 +10,7 @@ https://flickity.metafizzy.co
 
 @media screen and (min-width: 750px) {
 .banner-wrap.slider-implement.main-carousel,.video-section__media .banner__content {
-    height: 99vh!important;
+    height: 720px!important;
 }
   .flickity-viewport{
     height: 100%!important;
