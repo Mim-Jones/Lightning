@@ -7,7 +7,7 @@ var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
   contain: true,
-  freeScroll: true,
+  freeScroll: false,
   wrapAround: true,
   // disable previous & next buttons and dots
   prevNextButtons: true,
