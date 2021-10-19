@@ -681,7 +681,8 @@
           "options__5": {
             "label": "Inverse"
           },
-          "label": "Color scheme"
+          "label": "Color scheme",
+          "info": "Visible when text box displayed"
         },
         "stack_images_on_mobile": {
           "label": "Stack images on mobile"
