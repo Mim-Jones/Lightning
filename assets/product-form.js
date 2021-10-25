@@ -33,6 +33,11 @@ class ProductForm extends HTMLElement {
          var SectionHtml = data['cart-items'] ;
          console.log(SectionHtml);
         document.getElementById("mini-cart").innerHTML += SectionHtml;
+        $('#mini-cart').addClass("show-minibag");
+        $('#mini-cart').show();
+        $('#mini-cart').removeClass("hide-minibag");
+        $('body').toggleClass("overflow-hidden");
+        $('.minibag-mask').show();
         
       });
       console.log("notification off");
