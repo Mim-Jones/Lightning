@@ -27,7 +27,7 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
-      console.log(parsedState);
+      console.log(parsedState.sections);
         this.cartNotification.renderContents(parsedState);
       })
       .catch((e) => {
