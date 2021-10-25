@@ -32,13 +32,20 @@ class ProductForm extends HTMLElement {
       .then((data) => {
          var SectionHtml = data['cart-items'] ;
          console.log(SectionHtml);
-        document.getElementById("mini-cart").innerHTML += SectionHtml;
-        $('#mini-cart').addClass("show-minibag");
-        $('#mini-cart').show();
-        $('#mini-cart').removeClass("hide-minibag");
+        var IDminiCart = document.getElementById("mini-cart");
+        var IDminiCartMask = document.getElementById("minibag_mask");
+        IDminiCart.innerHTML += SectionHtml;
+        IDminiCart.classList.add("show-minibag");
+        //         $('#mini-cart').addClass("show-minibag");
+        IDminiCart.style.display = 'block';
+        //         $('#mini-cart').show();
+        IDminiCart.classList.remove("hide-minibag");
+        //         $('#mini-cart').removeClass("hide-minibag");
+
         $('body').toggleClass("overflow-hidden");
-        $('.minibag-mask').show();
-        
+        //         $('.minibag-mask').show();
+        IDminiCartMask.style.display = 'block';
+
       });
       console.log("notification off");
 //         this.cartNotification.renderContents(parsedState);
