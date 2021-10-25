@@ -38,10 +38,10 @@ class ProductForm extends HTMLElement {
 //         $('.minibag-mask').show();
 //       });
       
-      request = new XMLHttpRequest();
-      request.open('GET', '/?sections=header,footer', true);
-      request.send();
-      JSON.parse(request.responseText);
+      fetch('/?sections=cart-items')
+      .then(response => response.text())
+      .then(data => console.log(data));
+      
 
       
       console.log("notification off");
