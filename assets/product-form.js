@@ -30,8 +30,8 @@ class ProductForm extends HTMLElement {
       fetch('/?sections=cart-items')
       .then((response) => response.json())
       .then((data) => {
-         var SectionHtml = data['cart-items'] ;
-         console.log(SectionHtml);
+        var SectionHtml = data['cart-items'] ;
+        console.log(SectionHtml);
         var IDminiCart = document.getElementById("mini-cart");
         var IDminiCartMask = document.getElementById("minibag_mask");
         IDminiCart.innerHTML += SectionHtml;
@@ -41,10 +41,10 @@ class ProductForm extends HTMLElement {
         //         $('#mini-cart').show();
         IDminiCart.classList.remove("hide-minibag");
         //         $('#mini-cart').removeClass("hide-minibag");
-// document.querySelectorAll('body').classList.toggle("paragraphClass");;
-//         $('body').toggleClass("overflow-hidden");
-        //         $('.minibag-mask').show();
+        document.querySelectorAll('body').style.overflow = 'hidden';;
+        //         $('body').toggleClass("overflow-hidden");
         IDminiCartMask.style.display = 'block';
+        //         $('.minibag-mask').show();
 
       });
       console.log("notification off");
