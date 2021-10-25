@@ -26,9 +26,17 @@ class ProductForm extends HTMLElement {
       .then((response) => response.json())
       .then((parsedState) => {
       
-      fetch('/?section_id=mini__Cart')
-      .then(response => response.text())
-      .then(data => console.log(data));
+      $.getJSON('/?sections=cart-items', function(itemData) {      
+        var sectionHtmlData = itemData; 
+        console.log(itemData);
+        var SectionHtml = sectionHtmlData['cart-items'] ;
+        $("#mini-cart").html(SectionHtml);
+        $('#mini-cart').addClass("show-minibag");
+        $('#mini-cart').show();
+        $('#mini-cart').removeClass("hide-minibag");
+        $('body').toggleClass("overflow-hidden");
+        $('.minibag-mask').show();
+      });
       
       console.log("notification off");
 //         this.cartNotification.renderContents(parsedState);
