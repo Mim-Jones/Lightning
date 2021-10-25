@@ -26,17 +26,23 @@ class ProductForm extends HTMLElement {
       .then((response) => response.json())
       .then((parsedState) => {
       
-      $.getJSON('/?sections=cart-items', function(itemData) {      
-        var sectionHtmlData = itemData; 
-        console.log(itemData);
-        var SectionHtml = sectionHtmlData['cart-items'] ;
-        $("#mini-cart").html(SectionHtml);
-        $('#mini-cart').addClass("show-minibag");
-        $('#mini-cart').show();
-        $('#mini-cart').removeClass("hide-minibag");
-        $('body').toggleClass("overflow-hidden");
-        $('.minibag-mask').show();
-      });
+//       $.getJSON('/?sections=cart-items', function(itemData) {      
+//         var sectionHtmlData = itemData; 
+//         console.log(itemData);
+//         var SectionHtml = sectionHtmlData['cart-items'] ;
+//         $("#mini-cart").html(SectionHtml);
+//         $('#mini-cart').addClass("show-minibag");
+//         $('#mini-cart').show();
+//         $('#mini-cart').removeClass("hide-minibag");
+//         $('body').toggleClass("overflow-hidden");
+//         $('.minibag-mask').show();
+//       });
+      
+      request = new XMLHttpRequest();
+      request.open('GET', '/?sections=header,footer', true);
+      request.send();
+      JSON.parse(request.responseText);
+
       
       console.log("notification off");
 //         this.cartNotification.renderContents(parsedState);
