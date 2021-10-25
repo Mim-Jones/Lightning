@@ -1,5 +1,5 @@
-const button = document.querySelector('.btn-remove');
+var el = document.querySelector('.btn-remove');
 console.log('work');
-document.querySelector('.btn-remove').onclick = function changeContent() {
-console.log('click ok');
-}
+el.addEventListener("click", function() {
+ console.log('click ok');
+});
