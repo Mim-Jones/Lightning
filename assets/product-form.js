@@ -25,6 +25,11 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
+      
+      fetch('/?section_id=mini__Cart')
+      .then(response => response.text())
+      .then(data => console.log(data));
+      
       console.log("notification off");
 //         this.cartNotification.renderContents(parsedState);
       })
