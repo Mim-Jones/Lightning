@@ -32,7 +32,7 @@ class ProductForm extends HTMLElement {
       .then((data) => {
          var SectionHtml = data['cart-items'] ;
          console.log(SectionHtml);
-        document.getElementById("add_to_me").innerHTML += SectionHtml;
+        document.getElementById("mini-cart").innerHTML += SectionHtml;
         
       });
       console.log("notification off");
