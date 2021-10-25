@@ -41,7 +41,7 @@ class ProductForm extends HTMLElement {
         //         $('#mini-cart').show();
         IDminiCart.classList.remove("hide-minibag");
         //         $('#mini-cart').removeClass("hide-minibag");
-document.querySelectorAll('body').classList.toggle("paragraphClass");;
+// document.querySelectorAll('body').classList.toggle("paragraphClass");;
 //         $('body').toggleClass("overflow-hidden");
         //         $('.minibag-mask').show();
         IDminiCartMask.style.display = 'block';
