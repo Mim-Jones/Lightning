@@ -21,11 +21,12 @@ class ProductForm extends HTMLElement {
       sections: this.cartNotification.getSectionsToRender().map((section) => section.id),
       sections_url: window.location.pathname
     });
-    console.log(section.id);
+    
 
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
+      console.log(parsedState);
         this.cartNotification.renderContents(parsedState);
       })
       .catch((e) => {
