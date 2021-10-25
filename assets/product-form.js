@@ -30,9 +30,10 @@ class ProductForm extends HTMLElement {
       fetch('/?sections=cart-items')
       .then((response) => response.json())
       .then((data) => {
-       
          var SectionHtml = data['cart-items'] ;
          console.log(SectionHtml);
+        document.getElementById("add_to_me").innerHTML += SectionHtml;
+        
       });
       console.log("notification off");
 //         this.cartNotification.renderContents(parsedState);
