@@ -78,18 +78,20 @@ function updateItemById(id,quantity,sections) {
     method: "POST",
     body: body
   })
-  .then((response) => response.json())
+  .then((response) => {
+    return response.text();
+  })
   .then((data) => {
 //     const parsedState = JSON.parse(state);
-    var sectionHtmlData =  data; 
-    var SectionHtml = sectionHtmlData.sections['cart-items'] ;
+//     var sectionHtmlData =  data; 
+//     var SectionHtml = sectionHtmlData.sections['cart-items'] ;
 
     
-    var IDminiCart = document.getElementById("mini-cart");
-    var IDminiCartMask = document.getElementById("minibag_mask");
-    IDminiCart.innerHTML = SectionHtml;
-    ShowFuntion(IDminiCart,IDminiCartMask);
-    console.log(SectionHtml);
+//     var IDminiCart = document.getElementById("mini-cart");
+//     var IDminiCartMask = document.getElementById("minibag_mask");
+//     IDminiCart.innerHTML = SectionHtml;
+//     ShowFuntion(IDminiCart,IDminiCartMask);
+    console.log(data);
   })
   .catch((error) => {
     console.error('Error:', error);
