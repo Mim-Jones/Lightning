@@ -20,9 +20,12 @@ console.log('work');
 //   IDminiCartMask.style.display = 'none';
 // });
 
-
-document.getElementById('#closeBag').forEach(button => button.addEventListener('click', (event) => {
-console.log('click work');
-}));
-
-
+var a = document.querySelectorAll(".close-bag");
+for (var i = 0, length = a.length; i < length; i++) {
+  a[i].onclick = function() {
+//     var b = document.querySelector(".menu li.active");
+//     if (b) b.classList.remove("active");
+//     this.parentNode.classList.add('active');
+    console.log('click work');
+  };
+}
