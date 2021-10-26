@@ -5,3 +5,8 @@ thirdBorder.addEventListener('click', (event) => {
   event.target.style.border = '1rem dotted blue'
   event.stopPropagation();    
 });
+
+let closeBag = document.querySelector('.close-bag');
+closeBag.addEventListener('click', (event) => {
+  
+});
