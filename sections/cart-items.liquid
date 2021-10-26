@@ -187,6 +187,12 @@ body.page-your-shopping-cart {
         <img src="{{item.image | img_url: '100x100' }}" />
         <h2>{{item.product.title }}</h2>
          <span class="item-price price">{{ item.price  | money }}</span>
+        
+        <div class="buttons">
+          <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
+
+        </div>
+        
       </div>
       {% comment %}
       <div class="info">
