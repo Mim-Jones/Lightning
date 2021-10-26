@@ -71,7 +71,7 @@ function updateItemById(lineItemId) {
   const body = JSON.stringify({
     lineItemId,
     0,
-    'cart-items'
+    cart-items
   });
   console.log(body);
 //   fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
