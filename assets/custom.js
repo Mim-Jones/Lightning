@@ -66,22 +66,22 @@ container.onmouseenter = showView;
 
 
 // Item remove
-function updateItemById(lineItemId,quantity,sections) {
+function updateItemById(lineItemId,qty,sections) {
   console.log(lineItemId);
-  const body = JSON.stringify({
-    lineItemId,
-    quantity,
-    sections
-  });
-  fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
-  .then((response) => {
-    return response.text();
-  })
-  .then((state) => {
-    const parsedState = JSON.parse(state);
-    console.log(parsedState);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
+//   const body = JSON.stringify({
+//     lineItemId,
+//     0,
+//     sections
+//   });
+//   fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
+//   .then((response) => {
+//     return response.text();
+//   })
+//   .then((state) => {
+//     const parsedState = JSON.parse(state);
+//     console.log(parsedState);
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error);
+//   });
 }
