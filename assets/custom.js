@@ -59,5 +59,5 @@ const moveView = (event) => {
   console.log('move');
   HideFunction();
 }
-container.onmousemove = moveView;
+container.onmouseleave = moveView;
 container.onmouseenter = showView;
