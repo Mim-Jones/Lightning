@@ -67,12 +67,13 @@ container.onmouseenter = showView;
 
 // Item remove
 function updateItemById(lineItemId) {
-  console.log(lineItemId);
-//   const body = JSON.stringify({
-//     lineItemId,
-//     0,
-//     sections
-//   });
+  
+  const body = JSON.stringify({
+    lineItemId,
+    0,
+    'cart-items'
+  });
+  console.log(body);
 //   fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
 //   .then((response) => {
 //     return response.text();
