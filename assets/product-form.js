@@ -23,15 +23,15 @@ class ProductForm extends HTMLElement {
     });
 
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
-      .then((response) => response.json())
-      .then((parsedState) => {
-      
-//       mini cart section render
+    .then((response) => response.json())
+    .then((parsedState) => {
+      //       mini cart section render
       fetch('/?sections=cart-items')
       .then((response) => response.json())
       .then((data) => {
+        document.getElementById("CartCount").innerHTML= data.item_count;
         var SectionHtml = data['cart-items'] ;
-//         console.log(SectionHtml);
+        //         console.log(SectionHtml);
         var IDminiCart = document.getElementById("mini-cart");
         var IDminiCartMask = document.getElementById("minibag_mask");
         IDminiCart.innerHTML = SectionHtml;
@@ -40,18 +40,19 @@ class ProductForm extends HTMLElement {
 
         IDminiCart.classList.remove("hide-minibag");
         //         $('#mini-cart').removeClass("hide-minibag");
-      document.body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
         //         $('body').toggleClass("overflow-hidden");
         IDminiCartMask.style.display = 'block';
         //         $('.minibag-mask').show();
 
       });
       console.log("notification off");
-//         this.cartNotification.renderContents(parsedState);
-      })
-      .catch((e) => {
-        console.error(e);
-      })
+      //         this.cartNotification.renderContents(parsedState);
+    })
+    
+    .catch((e) => {
+      console.error(e);
+    })
       .finally(() => {
         submitButton.classList.remove('loading');
         submitButton.removeAttribute('disabled');
