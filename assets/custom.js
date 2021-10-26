@@ -82,11 +82,7 @@ async function updateItem(data) {
     return response.json();
   })
   .then((data) => {
-    var SectionHtml = data['cart-items'] ;
-    var IDminiCart = document.getElementById("mini-cart");
-    var IDminiCartMask = document.getElementById("minibag_mask");
-    IDminiCart.innerHTML = SectionHtml;
-    ShowFuntion(IDminiCart,IDminiCartMask);
+    console.log(data);
   })
   .catch((error) => {
     console.error('Error:', error);
