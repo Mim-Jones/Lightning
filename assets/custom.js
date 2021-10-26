@@ -66,29 +66,37 @@ container.onmouseenter = showView;
 
 
 // Item remove
-function updateItemById(id) {
-  console.log(id);
+function updateItemById(id,quantity,sections) {
+
+  const body = JSON.stringify({
+    id,
+    quantity,
+    sections
+  });
+  
+  
+  console.log(body);
   fetch('/cart/change.js', {
     method: "POST",
     body: {quantity: 0, id: id,sections: "cart-items"}
   })
   .then((response) => {
-    return response.json();
+    return response.text();
   })
   .then((data) => {
     //       mini cart section render
-//     fetch('/?sections=cart-items')
-//     .then((response) => response.json())
-//     .then((data) => {
-//       var SectionHtml = data['cart-items'] ;
-//       var IDminiCart = document.getElementById("mini-cart");
-//       var IDminiCartMask = document.getElementById("minibag_mask");
-//       IDminiCart.innerHTML += SectionHtml;
-//       IDminiCart.classList.add("show-minibag");
-//       IDminiCart.classList.remove("hide-minibag");
-//       document.body.style.overflow = "hidden";
-//       IDminiCartMask.style.display = 'block';
-//     });
+    fetch('/?sections=cart-items')
+    .then((response) => response.json())
+    .then((data) => {
+      var SectionHtml = data['cart-items'] ;
+      var IDminiCart = document.getElementById("mini-cart");
+      var IDminiCartMask = document.getElementById("minibag_mask");
+      IDminiCart.innerHTML += SectionHtml;
+      IDminiCart.classList.add("show-minibag");
+      IDminiCart.classList.remove("hide-minibag");
+      document.body.style.overflow = "hidden";
+      IDminiCartMask.style.display = 'block';
+    });
     console.log(data);
   })
   .catch((error) => {
