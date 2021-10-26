@@ -6,7 +6,16 @@ thirdBorder.addEventListener('click', (event) => {
   event.stopPropagation();    
 });
 
-let closeBag = document.querySelector('.close-bag');
+
+let closeBag = document.getElementById('closeBag');
 closeBag.addEventListener('click', (event) => {
-  
+  event.preventDefault();
+  var IDminiCart = document.getElementById("mini-cart");
+  var IDminiCartMask = document.getElementById("minibag_mask");
+  IDminiCart.innerHTML += SectionHtml;
+  IDminiCart.classList.remove("show-minibag");
+  IDminiCart.style.display = 'none';
+  IDminiCart.classList.add("hide-minibag");
+  document.body.style.overflow = "auto";
+  IDminiCartMask.style.display = 'none';
 });
