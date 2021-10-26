@@ -29,6 +29,14 @@
 //   }
 // };
 
-function myFunction() {
-   alert('I was clicked!');
+function myFunction(e) {
+  event.preventDefault();
+  var IDminiCart = document.getElementById("mini-cart");
+  var IDminiCartMask = document.getElementById("minibag_mask");
+  IDminiCart.innerHTML += SectionHtml;
+  IDminiCart.classList.remove("show-minibag");
+  IDminiCart.style.display = 'none';
+  IDminiCart.classList.add("hide-minibag");
+  document.body.style.overflow = "auto";
+  IDminiCartMask.style.display = 'none';
 }
