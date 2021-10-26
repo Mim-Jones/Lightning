@@ -38,7 +38,7 @@ class ProductForm extends HTMLElement {
         IDminiCart.innerHTML = SectionHtml;
         IDminiCart.classList.add("show-minibag");
         IDminiCart.classList.remove("hide-minibag");
-        document.body.style.overflow = "hidden";
+//         document.body.style.overflow = "hidden";
         IDminiCartMask.style.display = 'block';
         
 
