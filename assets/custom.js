@@ -67,7 +67,7 @@ container.onmouseenter = showView;
 
 // Item remove
 function updateItemById(id) {
-  console.log(body);
+  console.log(id);
   fetch('/cart/change.js', {
     method: "POST",
     body: {quantity: 0, id: id,sections: "cart-items"}
