@@ -22,6 +22,9 @@ console.log('work');
 
 
 document.querySelectorAll('#closeBag').forEach(button => button.addEventListener('click', this.onCloseButtonClickk.bind(this)));
-onCloseButtonClickk(event) {
-console.log('click eork')
-}
+
+
+onCloseButtonClick(event) {
+    const detailsElement = event.currentTarget.closest('details');
+    this.closeSubmenu(detailsElement);
+  }
