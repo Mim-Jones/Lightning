@@ -87,7 +87,7 @@ async function updateItem(data) {
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
-  });
+  })
   .catch((error) => {
     console.error('Error:', error);
   });
