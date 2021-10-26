@@ -66,7 +66,7 @@ container.onmouseenter = showView;
 
 
 // Item remove
-function updateItemById(lineItemId) {
+function updateItemById(lineItemId,quantity) {
   
   const body = JSON.stringify({
     lineItemId,
