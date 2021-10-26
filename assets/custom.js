@@ -51,22 +51,13 @@ function ShowFuntion() {
 
 const container = document.querySelector('.header__icon--cart');
 const showView = (event) => {
-  event.preventDefault(); var IDminiCart = document.getElementById("mini-cart");
-  var IDminiCartMask = document.getElementById("minibag_mask");
-  IDminiCart.classList.add("show-minibag");
-  IDminiCart.style.display = 'block';
-  IDminiCart.classList.remove("hide-minibag");
-  document.body.style.overflow = "hidden";
-  IDminiCartMask.style.display = 'block';
+  event.preventDefault();
+    console.log('show');
+  ShowFuntion();
 }
 const moveView = (event) => {
-  var IDminiCart = document.getElementById("mini-cart");
-  var IDminiCartMask = document.getElementById("minibag_mask");
-  IDminiCart.classList.remove("show-minibag");
-  IDminiCart.style.display = 'none';
-  IDminiCart.classList.add("hide-minibag");
-  document.body.style.overflow = "auto";
-  IDminiCartMask.style.display = 'none';
+  console.log('move');
+  HideFunction();
 }
 container.onmousemove = moveView;
 container.onmouseenter = showView;
