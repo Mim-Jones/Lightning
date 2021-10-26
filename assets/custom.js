@@ -33,7 +33,6 @@ function HideFunction() {
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
   IDminiCart.classList.remove("show-minibag");
-//   IDminiCart.style.display = 'none';
   IDminiCart.classList.add("hide-minibag");
   document.body.style.overflow = "auto";
   IDminiCartMask.style.display = 'none';
@@ -41,7 +40,6 @@ function HideFunction() {
 
 function ShowFuntion(IDminiCart,IDminiCartMask) {
   IDminiCart.classList.add("show-minibag");
-//   IDminiCart.style.display = 'block';
   IDminiCart.classList.remove("hide-minibag");
   document.body.style.overflow = "hidden";
   IDminiCartMask.style.display = 'block';
@@ -62,9 +60,4 @@ const showView = (event) => {
     ShowFuntion(IDminiCart,IDminiCartMask);
   });
 }
-const moveView = (event) => {
-  console.log('move');
-  HideFunction();
-}
-// container.onmouseleave = moveView;
 container.onmouseenter = showView;
