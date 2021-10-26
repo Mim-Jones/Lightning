@@ -90,7 +90,7 @@ function updateItemById(id,quantity,sections) {
     body: JSON.stringify(formData)
   })
   .then((response) => {
-    return response.text();
+    return response.json();
   })
   .then((data) => {
     //       mini cart section render
