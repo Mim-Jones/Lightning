@@ -64,7 +64,7 @@ const showView = (event) => {
 container.onmouseenter = showView;
 
 // Item remove
-async function updateItem(data) {
+async function updateItem(itemdata) {
 //   const result = await fetch("/cart/change.json", {
 //     method: "POST",
 //     headers: {
@@ -73,10 +73,10 @@ async function updateItem(data) {
 //     },
 //     body: JSON.stringify(data)
 //   });
-
+console.log(itemdata);
   fetch('/cart/change.js', {
     method: 'POST',
-    body: data
+    body: itemdata
   })
   .then(response => {
     return response.json();
