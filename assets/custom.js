@@ -30,7 +30,7 @@
 // };
 
 function myFunction(e) {
-  event.preventDefault();
+  e.preventDefault();
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
   IDminiCart.innerHTML += SectionHtml;
