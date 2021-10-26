@@ -65,7 +65,7 @@ container.onmouseenter = showView;
 
 // Item remove
 async function updateItem(data) {
-  const result = await fetch("/cart/change.js", {
+  const result = await fetch("/cart/change.json", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
