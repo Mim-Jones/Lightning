@@ -64,21 +64,22 @@ const showView = (event) => {
 container.onmouseenter = showView;
 
 // Item remove
-async function updateItem(data) {
-  const result = await fetch("/cart/change.json", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    },
-    body: JSON.stringify(data)
-  });
+// async function updateItem(data) {
+//   const result = await fetch("/cart/change.json", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//       "Accept": "application/json"
+//     },
+//     body: JSON.stringify(data)
+//   });
 
-  return cart.json();
-}
+//   return cart.json();
+// }
 
 
 function updateItemById(lineItemId,sections) {
+  console.log(lineItemId);
   return updateItem({
     id: lineItemId,
     quantity: 0,
