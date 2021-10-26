@@ -79,7 +79,7 @@ function updateItemById(id,quantity,sections) {
     body: body
   })
   .then((response) => {
-    return response.text();
+    return response.json();
   })
   .then((data) => {
 //     const parsedState = JSON.parse(state);
