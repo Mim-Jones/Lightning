@@ -39,7 +39,7 @@ function HideFunction() {
   IDminiCartMask.style.display = 'none';
 }
 
-function ShowFuntion(i,IDminiCart,IDminiCartMask) {
+function ShowFuntion(IDminiCart,IDminiCartMask) {
   IDminiCart.classList.add("show-minibag");
   IDminiCart.style.display = 'block';
   IDminiCart.classList.remove("hide-minibag");
@@ -59,7 +59,7 @@ const showView = (event) => {
     var IDminiCart = document.getElementById("mini-cart");
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML += SectionHtml;
-    ShowFuntion(i,IDminiCart,IDminiCartMask);
+    ShowFuntion(IDminiCart,IDminiCartMask);
   });
 }
 const moveView = (event) => {
