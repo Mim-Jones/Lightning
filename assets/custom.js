@@ -85,28 +85,16 @@ function updateItemById(id,quantity,sections) {
   fetch('/cart/change.js', {
     method: "POST",
     headers: {
-    'Content-Type': 'application/json'
-  	},
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
     body: JSON.stringify(formData)
   })
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    //       mini cart section render
-    fetch('/?sections=cart-items')
-    .then((response) => response.json())
-    .then((data) => {
-      var SectionHtml = data['cart-items'] ;
-      var IDminiCart = document.getElementById("mini-cart");
-      var IDminiCartMask = document.getElementById("minibag_mask");
-      IDminiCart.innerHTML += SectionHtml;
-      IDminiCart.classList.add("show-minibag");
-      IDminiCart.classList.remove("hide-minibag");
-      document.body.style.overflow = "hidden";
-      IDminiCartMask.style.display = 'block';
-    });
-    console.log(data);
+        console.log(data);
   })
   .catch((error) => {
     console.error('Error:', error);
