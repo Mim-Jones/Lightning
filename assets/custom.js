@@ -83,7 +83,8 @@ function updateItemById(id,quantity,sections) {
   })
   .then((state) => {
 //     const parsedState = JSON.parse(state);
-    var SectionHtml = state['cart-items'] ;
+    var sectionHtmlData =  state; 
+          var SectionHtml = sectionHtmlData.sections['cart-items'];
     var IDminiCart = document.getElementById("mini-cart");
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
