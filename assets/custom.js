@@ -94,7 +94,11 @@ function updateItemById(id,quantity,sections) {
     return response.json();
   })
   .then((data) => {
-        console.log(data);
+    console.log(data);
+    var sectionHtmlData =  data; 
+    var SectionHtml = sectionHtmlData.sections['cart-items'] ;
+    var IDminiCart = document.getElementById("mini-cart");
+    IDminiCart.innerHTML = SectionHtml;     
   })
   .catch((error) => {
     console.error('Error:', error);
