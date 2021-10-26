@@ -25,10 +25,12 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
     .then((response) => response.json())
     .then((parsedState) => {
+        console.log(parsedState);
       //       mini cart section render
       fetch('/?sections=cart-items')
       .then((response) => response.json())
       .then((data) => {
+      
         document.getElementById("CartCount").innerHTML= data.item_count;
         var SectionHtml = data['cart-items'] ;
         var IDminiCart = document.getElementById("mini-cart");
