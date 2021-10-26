@@ -20,11 +20,15 @@
 //   IDminiCartMask.style.display = 'none';
 // });
 
-window.onload = function(){
-  var closeIcon = document.getElementsByClassName("close-bag");
-  for (var i = 0; i < closeIcon.length; i++) {
-    closeIcon[i].addEventListener('click', function(){
-      alert('I was clicked!');
-    });
-  }
-};
+// window.onload = function(){
+//   var closeIcon = document.getElementsByClassName("close-bag");
+//   for (var i = 0; i < closeIcon.length; i++) {
+//     closeIcon[i].addEventListener('click', function(){
+//       alert('I was clicked!');
+//     });
+//   }
+// };
+
+function myFunction() {
+   alert('I was clicked!');
+}
