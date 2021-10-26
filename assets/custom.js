@@ -32,7 +32,6 @@
 function myFunction() {
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
-  IDminiCart.innerHTML += SectionHtml;
   IDminiCart.classList.remove("show-minibag");
   IDminiCart.style.display = 'none';
   IDminiCart.classList.add("hide-minibag");
