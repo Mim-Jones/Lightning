@@ -78,9 +78,7 @@ function updateItemById(id,quantity,sections) {
     method: "POST",
     body: body
   })
-  .then((response) => {
-    return response.text();
-  })
+  .then((response) => response.json())
   .then((data) => {
 //     const parsedState = JSON.parse(state);
     var sectionHtmlData =  data; 
