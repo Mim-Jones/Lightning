@@ -81,8 +81,11 @@ function updateItemById(id,quantity,sections) {
   .then((response) => {
     return response.text();
   })
-  .then((state) => {
+  .then((data) => {
 //     const parsedState = JSON.parse(state);
+    var sectionHtmlData =  data; 
+    var SectionHtml = sectionHtmlData.sections['cart-items'] ;
+
     
     var IDminiCart = document.getElementById("mini-cart");
     var IDminiCartMask = document.getElementById("minibag_mask");
