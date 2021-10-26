@@ -76,14 +76,14 @@ function updateItemById(id,quantity,sections) {
   console.log(body);
   fetch(`${routes.cart_change_url}`, {
     method: "POST",
-    body: JSON.stringify(body)
+    body: body
   })
   .then((response) => {
     return response.text();
   })
   .then((state) => {
-    const parsedState = JSON.parse(state);
-    console.log(parsedState);
+//     const parsedState = JSON.parse(state);
+    console.log(state);
   })
   .catch((error) => {
     console.error('Error:', error);
