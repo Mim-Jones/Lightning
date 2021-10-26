@@ -52,8 +52,15 @@ function ShowFuntion() {
 const container = document.querySelector('.header__icon--cart');
 const showView = (event) => {
   event.preventDefault();
-    console.log('show');
-  ShowFuntion();
+  console.log('show');
+  //mini cart section render
+  fetch('/?sections=cart-items')
+  .then((response) => response.json())
+  .then((data) => {
+    var SectionHtml = data['cart-items'] ;
+    IDminiCart.innerHTML += SectionHtml;
+    ShowFuntion();
+  });
 }
 const moveView = (event) => {
   console.log('move');
