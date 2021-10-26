@@ -74,7 +74,7 @@ function updateItemById(id,quantity,sections) {
     sections
   });
   console.log(body);
-  fetch(`${routes.cart_change_url}`, {
+  fetch('/cart/change.js', {
     method: "POST",
     body: body
   })
