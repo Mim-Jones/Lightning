@@ -78,7 +78,6 @@ function updateItemById(id,quantity,sections) {
     method: "POST",
     body: body,
     headers: {
-         'Content-Type': 'application/json',
         Accept: 'application/json'
     }
   })
