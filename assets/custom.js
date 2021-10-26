@@ -58,7 +58,7 @@ const showView = (event) => {
     var SectionHtml = data['cart-items'] ;
     var IDminiCart = document.getElementById("mini-cart");
     var IDminiCartMask = document.getElementById("minibag_mask");
-    IDminiCart.innerHTML += SectionHtml;
+    IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
   });
 }
