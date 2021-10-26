@@ -1,4 +1,4 @@
-console.log('work');
+// console.log('work');
 // const thirdBorder = document.querySelector('.btn-remove');
 // thirdBorder.addEventListener('click', (event) => {
 //   event.preventDefault();
@@ -20,12 +20,13 @@ console.log('work');
 //   IDminiCartMask.style.display = 'none';
 // });
 
-var a = document.querySelectorAll("a.close-bag");
-for (var i = 0, length = a.length; i < length; i++) {
-  a[i].onclick = function() {
-    var b = document.querySelector(".menu li.active");
-    if (b) b.classList.remove("active");
-    this.parentNode.classList.add('active');
-    console.log('click work');
-  };
+var closeIcon = document.getElementsByClassName("close-bag");
+
+function closeBigImgAndContainer(e)
+{
+   console.log(e);
+};
+
+for (var i = 0; i < closeIcon.length; i++) {
+   closeIcon[i].addEventListener('click', closeBigImgAndContainer); 
 }
