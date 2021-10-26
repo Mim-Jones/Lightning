@@ -73,15 +73,15 @@ function updateItemById(id,quantity) {
     quantity   
   });
   console.log(body);
-//   fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
-//   .then((response) => {
-//     return response.text();
-//   })
-//   .then((state) => {
-//     const parsedState = JSON.parse(state);
-//     console.log(parsedState);
-//   })
-//   .catch((error) => {
-//     console.error('Error:', error);
-//   });
+  fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
+  .then((response) => {
+    return response.text();
+  })
+  .then((state) => {
+    const parsedState = JSON.parse(state);
+    console.log(parsedState);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
 }
