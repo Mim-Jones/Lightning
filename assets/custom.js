@@ -21,10 +21,8 @@ console.log('work');
 // });
 
 
-document.querySelectorAll('#closeBag').forEach(button => button.addEventListener('click', this.onCloseButtonClickk.bind(this)));
+document.querySelectorAll('#closeBag').forEach(button => button.addEventListener('click', (event) => {
+console.log('click work');
+}));
 
 
-onCloseButtonClick(event) {
-    const detailsElement = event.currentTarget.closest('details');
-    this.closeSubmenu(detailsElement);
-  }
