@@ -10,7 +10,7 @@ function HideFunction() {
 function ShowFuntion(IDminiCart,IDminiCartMask) {
   IDminiCart.classList.add("show-minibag");
   IDminiCart.classList.remove("hide-minibag");
-//   document.body.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
   IDminiCartMask.style.display = 'block';
 }
 
