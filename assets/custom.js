@@ -29,8 +29,7 @@
 //   }
 // };
 
-function myFunction(e) {
-  e.preventDefault();
+function myFunction() {
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
   IDminiCart.innerHTML += SectionHtml;
