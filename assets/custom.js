@@ -66,11 +66,12 @@ container.onmouseenter = showView;
 
 
 // Item remove
-function updateItemById(id,quantity) {
+function updateItemById(id,quantity,sections) {
   
   const body = JSON.stringify({
     id,
-    quantity   
+    quantity,
+    sections
   });
   console.log(body);
   fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
