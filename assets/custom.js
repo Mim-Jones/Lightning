@@ -63,44 +63,25 @@ const showView = (event) => {
 }
 container.onmouseenter = showView;
 
+
+
 // Item remove
-async function updateItem(itemdata) {
-//   const result = await fetch("/cart/change.json", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       "Accept": "application/json"
-//     },
-//     body: JSON.stringify(data)
-//   });
-console.log(itemdata);
-  fetch('/cart/change.js', {
-    method: 'POST',
-    body: JSON.stringify(itemdata)
-  })
-  .then(response => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
-  
-}
-
-
 function updateItemById(lineItemId,quantity,sections) {
   console.log(lineItemId);
-  //   return updateItem({
-  //     id: lineItemId,
-  //     quantity: 0,
-  //     sections: sections
-  //   });
   const body = JSON.stringify({
     lineItemId,
     quantity,
     sections
+  });
+  fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
+  .then((response) => {
+    return response.text();
+  })
+  .then((state) => {
+    const parsedState = JSON.parse(state);
+    console.log(parsedState);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
   });
 }
