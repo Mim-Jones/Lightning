@@ -215,7 +215,10 @@ body.page-your-shopping-cart {
     <div class="min-cart-item" index="{{forloop.index}}">
       <div class="td-image">
         <img src="{{item.image | img_url: '100x100' }}" />
+        <h2>{{item.product.title }}</h2>
+         <span class="item-price price">{{ item.price  | money }}</span>
       </div>
+      {% comment %}
       <div class="info">
         <div class="p-title"> 
           <h2>{{item.product.title }}</h2>
@@ -232,6 +235,7 @@ body.page-your-shopping-cart {
       <div class="td-price">
         <span class="item-price price">{{ item.price  | money }}</span>
       </div>
+      {% endcomment %}
 
     </div>	
     {% endfor %}
