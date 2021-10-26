@@ -65,26 +65,33 @@ container.onmouseenter = showView;
 
 // Item remove
 async function updateItem(data) {
-  //   const result = await fetch("/cart/change.json", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "Accept": "application/json"
-  //     },
-  //     body: JSON.stringify(data)
-  //   });
+//   const result = await fetch("/cart/change.json", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//       "Accept": "application/json"
+//     },
+//     body: JSON.stringify(data)
+//   });
 
   fetch('/cart/change.js', {
     method: 'POST',
     body: data
   })
   .then(response => {
-    console.log(response);
+    return response.json();
   })
+  .then((data) => {
+    var SectionHtml = data['cart-items'] ;
+    var IDminiCart = document.getElementById("mini-cart");
+    var IDminiCartMask = document.getElementById("minibag_mask");
+    IDminiCart.innerHTML = SectionHtml;
+    ShowFuntion(IDminiCart,IDminiCartMask);
+  });
   .catch((error) => {
     console.error('Error:', error);
   });
-
+  
 }
 
 
