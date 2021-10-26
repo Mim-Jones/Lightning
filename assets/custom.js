@@ -29,7 +29,7 @@
 //   }
 // };
 
-function HidemyFunction() {
+function HideFunction() {
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
   IDminiCart.classList.remove("show-minibag");
@@ -48,7 +48,7 @@ const showView = (event) => {
 }
 const moveView = (event) => {
 //  alert('move');
-  HidemyFunction()
+  HideFunction();
 }
 container.onmousemove = moveView;
 container.onmouseenter = showView;
