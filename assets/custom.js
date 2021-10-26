@@ -82,13 +82,13 @@ function updateItemById(id,quantity,sections) {
     return response.text();
   })
   .then((state) => {
-    const parsedState = JSON.parse(state);
-    var SectionHtml = parsedState['cart-items'] ;
+//     const parsedState = JSON.parse(state);
+    var SectionHtml = state['cart-items'] ;
     var IDminiCart = document.getElementById("mini-cart");
     var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML = SectionHtml;
     ShowFuntion(IDminiCart,IDminiCartMask);
-    console.log(parsedState);
+    console.log(SectionHtml);
   })
   .catch((error) => {
     console.error('Error:', error);
