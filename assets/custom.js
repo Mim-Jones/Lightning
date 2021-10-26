@@ -69,7 +69,7 @@ container.onmouseenter = showView;
 function updateItemById(lineItemId,quantity) {
   
   const body = JSON.stringify({
-    lineItemId,
+    id,
     quantity   
   });
   console.log(body);
