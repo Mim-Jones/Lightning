@@ -39,9 +39,7 @@ function HideFunction() {
   IDminiCartMask.style.display = 'none';
 }
 
-function ShowFuntion() {
-  var IDminiCart = document.getElementById("mini-cart");
-  var IDminiCartMask = document.getElementById("minibag_mask");
+function ShowFuntion(i,IDminiCart,IDminiCartMask) {
   IDminiCart.classList.add("show-minibag");
   IDminiCart.style.display = 'block';
   IDminiCart.classList.remove("hide-minibag");
@@ -58,8 +56,10 @@ const showView = (event) => {
   .then((response) => response.json())
   .then((data) => {
     var SectionHtml = data['cart-items'] ;
+    var IDminiCart = document.getElementById("mini-cart");
+    var IDminiCartMask = document.getElementById("minibag_mask");
     IDminiCart.innerHTML += SectionHtml;
-    ShowFuntion();
+    ShowFuntion(i,IDminiCart,IDminiCartMask);
   });
 }
 const moveView = (event) => {
