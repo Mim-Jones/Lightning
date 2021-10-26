@@ -9,17 +9,19 @@
       </div>
       <div style="display:none;"id="cart-notification-product" class="cart-notification-product"></div>
         
-        <div>
+        <div class="mob-cart-info" style="text-align:center;">
           <h2> {{ 'general.cart.item_added' | t }}</h2>
           <p>Items in bag are not held and may sell out </p>
         </div>
         
       <div class="cart-notification__links">
-        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--secondary button--full-width"></a>
+        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--primary button--full-width"></a>
+        {% comment %}
         <form action="{{ routes.cart_url }}" method="post" id="cart">
-          <button class="button button--primary button--full-width" name="checkout" form="cart">{{ 'sections.cart.checkout' | t }}</button>
+          <button class="button button--secondary  button--full-width" name="checkout" form="cart">{{ 'sections.cart.checkout' | t }}</button>
         </form>
         <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+        {% endcomment %}
       </div>
     </div>
   </div>
