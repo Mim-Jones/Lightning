@@ -212,48 +212,13 @@ body.page-your-shopping-cart {
           <div class="quantity-val">Qty: {{ item.quantity }}</div>
           <a href="/cart/change?line={{forloop.index}}&amp;quantity=0" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
         </div>
-        {% assign showbtn = false %}
-        {% capture crosssellitems %}   
-        {% assign productHandls = groupFlag | split: '+'%} 
-        {% if productHandls.size > 0 %}
-        <div class="crosssell-group">
 
-          {% for productHandle in productHandls %}
-          {% assign product = all_products[productHandle] %}
-          {% if product.id != blank %}
-
-          {% unless allreadyInCart contains product.id  %}
-
-          {% assign showbtn = true %}
-          <div class="cross-sell-item min-cart-item"  foundID="{{foundID}}" id="{{product.id}}">
-            <div class="td-image"><img src="{{product.featured_image | img_url: '100x100' }}" /></div>
-            <div class="info">
-              <div class="p-title"><h2>{{product.title }}</h2></div>
-              {% render 'minicart-cart-btn', product: product %}
-              <a href="#" ItemId="{{ item.id }}" line="{{forloop.index}}" class="crosssell-group-close" data-cartitem-remove>Remove</a>
-            </div>
-          </div>
-          {% endunless %}
-
-
-
-          {% endif %}
-          {% endfor %}
-        </div>
-        {% endif %}
-        {% endcapture %}
-        {% if showbtn %}
-        <a href="" class="pairs-with-treasure btn button" findCount="{{hideButton}}">Pairs Best With</a>
-        {% endif %}
 
       </div>
       <div class="td-price">
         <span class="item-price price">{{ item.price  | money }}</span>
       </div>
-      {{crosssellitems}}
-     
-
-
+   
     </div>	
     {% endfor %}
   </div>
