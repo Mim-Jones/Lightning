@@ -25,7 +25,7 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
     .then((response) => response.json())
     .then((parsedState) => {
-        console.log(parsedState);
+//         console.log(parsedState);
       //       mini cart section render
       fetch('/?sections=cart-items')
       .then((response) => response.json())
@@ -40,6 +40,7 @@ class ProductForm extends HTMLElement {
         IDminiCart.classList.remove("hide-minibag");
         document.body.style.overflow = "hidden";
         IDminiCartMask.style.display = 'block';
+        
 
       });
       console.log("notification off");
