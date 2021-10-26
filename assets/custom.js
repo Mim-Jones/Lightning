@@ -91,11 +91,16 @@ console.log(itemdata);
 }
 
 
-function updateItemById(lineItemId,sections) {
+function updateItemById(lineItemId,quantity,sections) {
   console.log(lineItemId);
-  return updateItem({
-    id: lineItemId,
-    quantity: 0,
-    sections: sections
+  //   return updateItem({
+  //     id: lineItemId,
+  //     quantity: 0,
+  //     sections: sections
+  //   });
+  const body = JSON.stringify({
+    lineItemId,
+    quantity,
+    sections
   });
 }
