@@ -45,6 +45,7 @@ function ShowFuntion(IDminiCart,IDminiCartMask) {
   IDminiCartMask.style.display = 'block';
 }
 
+// Hearder icon hover
 const container = document.querySelector('.header__icon--cart');
 const showView = (event) => {
   event.preventDefault();
@@ -61,3 +62,26 @@ const showView = (event) => {
   });
 }
 container.onmouseenter = showView;
+
+// Item remove
+async function updateItem(data) {
+  const result = await fetch("/cart/change.json", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  return cart.json();
+}
+
+
+function updateItemById(lineItemId,sections) {
+  return updateItem({
+    id: lineItemId,
+    quantity: 0,
+    sections: sections
+  });
+}
