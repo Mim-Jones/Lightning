@@ -7,7 +7,7 @@ thirdBorder.addEventListener('click', (event) => {
 });
 
 
-let closeBag = document.getElementById('closeBag');
+let closeBag = document.querySelector('#closeBag');
 closeBag.addEventListener('click', (event) => {
   event.preventDefault();
   var IDminiCart = document.getElementById("mini-cart");
