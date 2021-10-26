@@ -21,7 +21,7 @@ console.log('work');
 // });
 
 
-document.querySelectorAll('#closeBag').forEach(button => button.addEventListener('click', (event) => {
+document.getElementById('#closeBag').forEach(button => button.addEventListener('click', (event) => {
 console.log('click work');
 }));
 
