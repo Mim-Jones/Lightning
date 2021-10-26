@@ -76,7 +76,7 @@ async function updateItem(itemdata) {
 console.log(itemdata);
   fetch('/cart/change.js', {
     method: 'POST',
-    body: itemdata
+    body: JSON.stringify(itemdata)
   })
   .then(response => {
     return response.json();
