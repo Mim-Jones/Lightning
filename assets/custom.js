@@ -20,7 +20,7 @@ console.log('work');
 //   IDminiCartMask.style.display = 'none';
 // });
 
-var a = document.querySelectorAll(".close-bag");
+var a = document.querySelectorAll("a.close-bag");
 for (var i = 0, length = a.length; i < length; i++) {
   a[i].onclick = function() {
 //     var b = document.querySelector(".menu li.active");
