@@ -67,21 +67,12 @@ container.onmouseenter = showView;
 
 // Item remove
 function updateItemById(id,quantity,sections) {
-
-  const body = JSON.stringify({
-    id,
-    quantity,
-    sections
-  });
-  
   let formData = {
     'id': id,
     'quantity': quantity,
     'sections':sections
   };
-  
-  
-  console.log(JSON.stringify(formData));
+//  console.log(JSON.stringify(formData));
   fetch('/cart/change.js', {
     method: "POST",
     headers: {
