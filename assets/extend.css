@@ -19,3 +19,8 @@ color: #fff!important;
     padding-bottom: 0rem;
 }
 }
+@media screen and (max-width: 768px){
+  div#mini-cart{
+  display:none;
+  }
+}
