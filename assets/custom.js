@@ -7,8 +7,22 @@ console.log('work');
 // });
 
 
-let closeBag = document.querySelector('#closeBag');
-closeBag.addEventListener('click', (event) => {
+// let closeBag = document.querySelector('#closeBag');
+// closeBag.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   var IDminiCart = document.getElementById("mini-cart");
+//   var IDminiCartMask = document.getElementById("minibag_mask");
+//   IDminiCart.innerHTML += SectionHtml;
+//   IDminiCart.classList.remove("show-minibag");
+//   IDminiCart.style.display = 'none';
+//   IDminiCart.classList.add("hide-minibag");
+//   document.body.style.overflow = "auto";
+//   IDminiCartMask.style.display = 'none';
+// });
+
+
+document.querySelectorAll('#closeBag').forEach(button => button.addEventListener('click', this.onCloseButtonClickk.bind(this)));
+onCloseButtonClickk(event) {
   event.preventDefault();
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
@@ -18,4 +32,4 @@ closeBag.addEventListener('click', (event) => {
   IDminiCart.classList.add("hide-minibag");
   document.body.style.overflow = "auto";
   IDminiCartMask.style.display = 'none';
-});
+}
