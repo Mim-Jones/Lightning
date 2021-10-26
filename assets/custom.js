@@ -41,7 +41,7 @@ function HideFunction() {
 
 function ShowFuntion(IDminiCart,IDminiCartMask) {
   IDminiCart.classList.add("show-minibag");
-  IDminiCart.style.display = 'block';
+//   IDminiCart.style.display = 'block';
   IDminiCart.classList.remove("hide-minibag");
   document.body.style.overflow = "hidden";
   IDminiCartMask.style.display = 'block';
