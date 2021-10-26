@@ -29,7 +29,7 @@
 //   }
 // };
 
-function myFunction() {
+function HidemyFunction() {
   var IDminiCart = document.getElementById("mini-cart");
   var IDminiCartMask = document.getElementById("minibag_mask");
   IDminiCart.classList.remove("show-minibag");
@@ -47,7 +47,8 @@ const showView = (event) => {
   alert('Show');
 }
 const moveView = (event) => {
- alert('move');
+//  alert('move');
+  HidemyFunction()
 }
 container.onmousemove = moveView;
 container.onmouseenter = showView;
