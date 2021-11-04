@@ -61,7 +61,8 @@
 }
 
 .shopify-payment-button__button--unbranded {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+    color: #111;
+  background-color: #fff;
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
   font-size: 1.4rem;
   line-height: 1.2;
@@ -70,7 +71,7 @@
 
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: rgb(var(--color-background));
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
 }
 
@@ -194,8 +195,8 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
-  color: rgb(var(--color-button-text));
+  background-color: #111;
+  color: #fff;
 }
 
 .product-form__buttons {
@@ -212,6 +213,7 @@ fieldset.product-form__input .form__label {
     top: unset !important;
     background-color: rgba(var(--color-button), var(--alpha-button-background));
     color: rgb(var(--color-button-text));
+    width: 100% !important;
 }
 
 .product-form__submit[disabled] + .shopify-payment-button {
