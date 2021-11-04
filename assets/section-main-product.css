@@ -194,6 +194,24 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  color: rgb(var(--color-button-text));
+}
+
+.product-form__buttons {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.sticky-wrapper {
+    margin-bottom: 10px;
+}
+
+.is-sticky .atc-container {
+    bottom: 0;
+    left: 0;
+    top: unset !important;
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    color: rgb(var(--color-button-text));
 }
 
 .product-form__submit[disabled] + .shopify-payment-button {
@@ -208,6 +226,7 @@ fieldset.product-form__input .form__label {
 .shopify-payment-button__button {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  border-radius: 29px;
 }
 
 /* Product info */
