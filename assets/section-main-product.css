@@ -164,8 +164,9 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
+  background-color:rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  border-radius: 4px;
 }
 
 .product-form__input input[type='radio']:disabled + label {
@@ -195,8 +196,9 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
-  background-color: #111;
-  color: #fff;
+  background-color: rgba(var(--color-foreground));
+  color: rgb(var(--color-background));
+  padding: 18px 24px;
 }
 
 .product-form__buttons {
