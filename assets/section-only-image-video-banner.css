@@ -17,7 +17,7 @@ https://flickity.metafizzy.co
 }
   .flickity-page-dots{
     bottom:25px;
-  } 
+  }
 }
 
 .banner {
@@ -379,7 +379,7 @@ https://flickity.metafizzy.co
       overflow: hidden!important;
       padding: 0!important;
       height: 100%;
-    } 
+    }
 
 
     @media screen and (max-width: 749px) {
@@ -393,7 +393,7 @@ https://flickity.metafizzy.co
 
       .hide_in_desktop{
         display:none!important;
-      }  
+      }
 
 
       .banner-content-lr--flex-start {
@@ -455,7 +455,7 @@ https://flickity.metafizzy.co
       top: 50%!important;
       left: 50%!important;
     }
-    
+
     .banner-wrap.slider-implement.main-carousel .banner__media {
-    border-radius: 29px;
+    /* border-radius: 29px; */
 }
