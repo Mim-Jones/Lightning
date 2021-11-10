@@ -196,8 +196,6 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
-  background-color: rgba(var(--color-foreground));
-  color: rgb(var(--color-background));
   padding: 18px 24px;
 }
 
@@ -224,7 +222,7 @@ fieldset.product-form__input .form__label {
 
 /* Overrides */
 .shopify-payment-button__more-options {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .shopify-payment-button__button {
