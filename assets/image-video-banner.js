@@ -15,5 +15,15 @@ var flkty = new Flickity( elem, {
   prevNextButtons: true,
   pageDots: true,
   lazyLoad: 2,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                autoPlay: false,
+                prevNextButtons: false,
+                pageDots: false
+            }
+        }
+    ]
 });
