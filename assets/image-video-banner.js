@@ -3,7 +3,7 @@
 // Banner slider
 
 var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
+var options = {
   // options
   autoPlay: 6000,
   pauseAutoPlayOnHover: true,
@@ -15,15 +15,14 @@ var flkty = new Flickity( elem, {
   prevNextButtons: true,
   pageDots: true,
   lazyLoad: 2,
-  adaptiveHeight: true,
-  responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                autoPlay: false,
-                prevNextButtons: false,
-                pageDots: false
-            }
-        }
-    ]
+  adaptiveHeight: true
+};
+var flkty = new Flickity( elem, {
+  options
 });
+
+
+if ( matchMedia('screen and (min-width: 768px)').matches ) {
+  options.prevNextButtons = false;
+  options.autoPlay = false;
+}
