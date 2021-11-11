@@ -23,6 +23,6 @@ jQuery(function($){
   $('.main-carousel').flickity( options );
 
   if ( matchMedia('screen and (max-width: 768px)').matches ) {
-    //   options.autoPlay = false;
+      options.autoPlay = false;
   }
 });
