@@ -9,7 +9,7 @@ var options = {
   pauseAutoPlayOnHover: true,
   cellAlign: 'left',
   contain: true,
-  freeScroll: false,
+  freeScroll: true,
   wrapAround: true,
   // disable previous & next buttons and dots
   prevNextButtons: true,
