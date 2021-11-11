@@ -60,12 +60,19 @@
   }
   
   header.header{
-  background-color:green;
+    background-color:{{section.settings.background_color}};
   }
   header.header a, header.header svg, header.header svg path {
-    color: #fff;
-    fill: #fff!important;
+    color: {{section.settings.content_color}};
+    fill: {{section.settings.content_color}}!important;
   }
+  
+  header.header a:hover, header.header svg:hover, header.header svg:hover path {
+    color: {{section.settings.content_hover_color}};
+    fill: {{section.settings.content_hover_color}}!important;
+  }
+  
+  
   
 </style>
 
