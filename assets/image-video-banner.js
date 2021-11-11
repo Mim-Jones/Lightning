@@ -5,6 +5,7 @@
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
+  autoPlay: 6000,
   cellAlign: 'left',
   contain: true,
   freeScroll: false,
