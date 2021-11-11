@@ -1,8 +1,8 @@
 {
   "current": {
     "colors_solid_button_labels": "#fff",
-    "colors_accent_1": "#000a09",
-    "colors_accent_2": "#000000",
+    "colors_accent_1": "#86764f",
+    "colors_accent_2": "#121111",
     "colors_background_2": "#faf1e9",
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n3",
@@ -31,14 +31,14 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/Gold_09625b04-7d25-472b-8ead-fc646a811c4e.png",
-          "logo_width": 100,
+          "logo_width": 70,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true,
-          "background_color": "#faf1e9",
-          "content_color": "#445958",
-          "content_hover_color": "#9D572C"
+          "background_color": "#000000",
+          "content_color": "#ffffff",
+          "content_hover_color": "#86764f"
         }
       },
       "footer": {
