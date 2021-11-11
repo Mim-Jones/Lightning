@@ -20,9 +20,10 @@ jQuery(function($){
   // var flkty = new Flickity( elem, {
   //   options
   // });
-  $('.main-carousel').flickity( options );
-
   if ( matchMedia('screen and (max-width: 768px)').matches ) {
       options.autoPlay = false;
   }
+  $('.main-carousel').flickity( options );
+
+  
 });
