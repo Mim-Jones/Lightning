@@ -23,5 +23,5 @@ var flkty = new Flickity( elem, {
 
 
 if ( matchMedia('screen and (max-width: 768px)').matches ) {
-  options.autoPlay = false;
+//   options.autoPlay = false;
 }
