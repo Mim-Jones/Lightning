@@ -37,8 +37,8 @@
           "show_line_separator": false,
           "enable_sticky_header": true,
           "background_color": "#faf1e9",
-          "content_color": "#9D572C",
-          "content_hover_color": "#ffffff"
+          "content_color": "#445958",
+          "content_hover_color": "#9D572C"
         }
       },
       "footer": {
