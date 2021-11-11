@@ -23,6 +23,5 @@ var flkty = new Flickity( elem, {
 
 
 if ( matchMedia('screen and (max-width: 768px)').matches ) {
-  options.prevNextButtons = false;
   options.autoPlay = false;
 }
