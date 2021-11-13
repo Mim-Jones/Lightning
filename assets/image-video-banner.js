@@ -9,7 +9,7 @@ jQuery(function($){
     pauseAutoPlayOnHover: true,
     cellAlign: 'left',
     contain: true,
-    freeScroll: true,
+    freeScroll: false,
     wrapAround: true,
     // disable previous & next buttons and dots
     prevNextButtons: true,
