@@ -1,7 +1,6 @@
 {{ 'section-only-image-video-banner.css' | asset_url | stylesheet_tag }}
-{% if section.blocks.size > 1 %}
-<script src="{{ 'image-video-banner.js' | asset_url }}" defer="defer"></script>
-{% endif %}
+{% if section.blocks.size > 1 %}{% endif %}
+
 <div class="banner-wrap slider-implement main-carousel" >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
@@ -116,7 +115,7 @@
   
   {%- when 'video' -%}
   {% capture vBottomContent %}
-  <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
+  <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} ">
       <div class="banner__box color-{{ block.settings.color_scheme }}">
         <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
           <span>{{ block.settings.heading | escape }}</span>
