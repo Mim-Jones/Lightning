@@ -468,7 +468,7 @@ https://flickity.metafizzy.co
       transform: translateY(-50%);
     }
     
-    .banner__box.color-background-1.  .banner__box.color-background-1 h2 {
+    .banner__box.color-background-1,  .banner__box.color-background-1 h2 {
     color: #fff!important;
     background-color: transparent!important;
 }
