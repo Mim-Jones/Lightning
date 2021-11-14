@@ -469,6 +469,6 @@ https://flickity.metafizzy.co
     }
     
     .banner__box.color-background-1.  .banner__box.color-background-1 h2 {
-    color: #fff;
-    background-color: transparent;
+    color: #fff!important;
+    background-color: transparent!important;
 }
