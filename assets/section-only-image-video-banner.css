@@ -460,15 +460,16 @@ https://flickity.metafizzy.co
     /* border-radius: 29px; */
 }
 
-    
-    
-    .banner__content.banner__content--center{
-      position: absolute!important;
-      top: 50%;
-      transform: translateY(-50%);
+    @media(max-width:768px){
+
+      .banner__content.banner__content--center{
+        position: absolute!important;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .banner__box.color-background-1,  .banner__box.color-background-1 h2 {
+        color: #fff!important;
+        background-color: transparent!important;
+      }
     }
-    
-    .banner__box.color-background-1,  .banner__box.color-background-1 h2 {
-    color: #fff!important;
-    background-color: transparent!important;
-}
