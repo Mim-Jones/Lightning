@@ -459,3 +459,11 @@ https://flickity.metafizzy.co
     .banner-wrap.slider-implement.main-carousel .banner__media {
     /* border-radius: 29px; */
 }
+
+    
+    
+    .banner__content.banner__content--center{
+      position: absolute!important;
+      top: 50%;
+      transform: translateY(-50%);
+    }
