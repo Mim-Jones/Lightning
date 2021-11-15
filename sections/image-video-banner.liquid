@@ -5,7 +5,7 @@
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
-    <div class="img_section">
+    <div class="img_section" {{ block.shopify_attributes }}>
     
   {%- style -%}
   #Banner-{{ block.id }}::after {
@@ -115,7 +115,7 @@
   
   {%- when 'video' -%}
   {% capture vBottomContent %}
-  <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} ">
+  <div class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} " {{ block.shopify_attributes }}>
       <div class="banner__box color-{{ block.settings.color_scheme }}">
         <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
           <span>{{ block.settings.heading | escape }}</span>
