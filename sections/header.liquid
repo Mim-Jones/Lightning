@@ -366,6 +366,9 @@
     {%- endif -%}
 
     <div class="header__icons">
+      
+      <a href="/pages/wishlist" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
+      
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
