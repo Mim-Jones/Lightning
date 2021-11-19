@@ -1,30 +1,37 @@
 {% comment %}
-  Shopify Wishlist
-  Usage:
-    - Markup: {%- render 'button-wishlist', product: product -%}
-    - Place this snippet inside your existing product card snippet
+Shopify Wishlist
+Usage:
+- Markup: {%- render 'button-wishlist', product: product -%}
+- Place this snippet inside your existing product card snippet
 
-  Parameters:
-    - product: <Shopify product> (required)
+Parameters:
+- product: <Shopify product> (required)
 {% endcomment %}
 {%- if product.handle != blank -%}
-  <button type="button" aria-label="Add to wishlist" class="" button-wishlist data-product-handle="{{ product.handle }}">
-    <style scoped>
-      .icon {
-        fill: transparent;
-        stroke: #000000;
-        transition: fill 0.3s ease;
-            display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-      }
+<button type="button" aria-label="Add to wishlist" class="" button-wishlist data-product-handle="{{ product.handle }}">
+  <style scoped>
+    .icon {
+      fill: transparent;
+      stroke: #000000;
+      transition: fill 0.3s ease;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
 
-      .active .icon {
-        fill: red;
-        stroke: #000000;
-      }
-    </style>
-    {%- render 'icon-heart' -%}
-  </button>
+    .active .icon {
+      fill: red;
+      stroke: #000000;
+    }
+
+    svg.icon.icon-heart path {
+      fill: transparent;
+    }
+    .active svg.icon.icon-heart path {
+      fill: red;
+    }
+  </style>
+  {%- render 'icon-heart' -%}
+</button>
 {%- endif -%}
