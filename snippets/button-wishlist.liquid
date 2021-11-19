@@ -8,7 +8,7 @@ Parameters:
 - product: <Shopify product> (required)
 {% endcomment %}
 {%- if product.handle != blank -%}
-<button type="button" aria-label="Add to wishlist" class="button button--full-width button--secondary" button-wishlist data-product-handle="{{ product.handle }}">
+<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist data-product-handle="{{ product.handle }}">
   <style scoped>
     .icon {
       fill: transparent;
