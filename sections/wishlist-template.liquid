@@ -14,20 +14,14 @@
   - Place a loading element inside the `[grid-wishlist]` element and it will automatically be removed once the product cards have loaded
   - Add any liquid code before/after the grid element
 {% endcomment %}
-<div class="">
-  <div class="collection page-width">
-    <div class="loading-overlay">
-      <div class="loading-overlay__spinner">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-        </svg>
-      </div>
-    </div>
-    <ul  grid-wishlist id=" wishlist__grid flex container main-collection-product-grid" data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max">
+<div class="collection page-width">
+  <div class="wishlist__grid flex container" grid-wishlist>
 
-      {% comment %} Sample loading element {% endcomment %}
-      <p class="wishlist__loader full-width text-center">Loading...</p>
-    </ul>
+
+
+    {% comment %} Sample loading element {% endcomment %}
+    <p class="wishlist__loader full-width text-center">Loading...</p>
+
   </div>
 </div>
 
