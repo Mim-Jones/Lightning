@@ -276,7 +276,11 @@
                         {%- endif -%}
                     </button>
                     </div>
+                    
                     {%- render 'button-wishlist', product: product -%}
+                    
+                    
+                    
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}

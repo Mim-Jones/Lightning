@@ -7,8 +7,7 @@ Usage:
 Parameters:
 - product: <Shopify product> (required)
 {% endcomment %}
-{%- if product.handle != blank -%}
-<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist data-product-handle="{{ product.handle }}">
+
   <style scoped>
     .icon {
       fill: transparent;
@@ -45,9 +44,21 @@ Parameters:
       border-width: 2px;
     }
     span.wishlist-text {
-    padding-right: 10px;
-}
+      padding-right: 10px;
+    }
   </style>
+
+
+{%- if product.handle != blank -%}
+{%- if customer -%}
+<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist data-product-handle="{{ product.handle }}">
+
   <span class="wishlist-text">Favourite</span> {%- render 'icon-heart' -%}
 </button>
+{%- else -%}
+<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" >
+
+  <span class="wishlist-text">Favourite</span> {%- render 'icon-heart' -%}
+</button>
+{%- endif -%}
 {%- endif -%}
