@@ -7,21 +7,17 @@
 {%- render 'product-card', product: product -%}{% endcomment %}
 
 <div class="collection page-width">
-        <div class="loading-overlay">
-          <div class="loading-overlay__spinner">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-            </svg>
-          </div>
-        </div>
-<ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col negative-margin product-grid
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %}">
-  <li class="grid__item product-card">
-{% render 'product-card', product_card_product: product, media_size: 'adapt', show_secondary_image: false, add_image_padding: false, show_vendor: false, show_image_outline: true %}
-  </li>
+  <div class="loading-overlay">
+    <div class="loading-overlay__spinner">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+  </div>
+  <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max">
+    <li class="grid__item product-card">
+      {% render 'product-card', product_card_product: product, media_size: 'adapt', show_secondary_image: false, add_image_padding: false, show_vendor: false, show_image_outline: true %}
+    </li>
   </ul>
 </div>
 
