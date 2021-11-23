@@ -14,6 +14,10 @@
   - Place a loading element inside the `[grid-wishlist]` element and it will automatically be removed once the product cards have loaded
   - Add any liquid code before/after the grid element
 {% endcomment %} 
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
+
 <div class="collection page-width">
 <div class="wishlist__grid flex container grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max" grid-wishlist>
 
