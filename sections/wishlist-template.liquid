@@ -18,6 +18,25 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 
+<div class="page-width page-width--narrow">
+  <h2 class="page-title">
+    {%- if section.settings.page.title != blank -%}
+      {{ section.settings.page.title | escape }}
+    {%- else -%}
+      Page title
+    {%- endif -%}
+  </h2>
+  <div class="rte">
+    {%- if section.settings.page.content != blank -%}
+      {{ section.settings.page.content }}
+    {%- else -%}
+      <div class='page-placeholder-wrapper placeholder'>
+        {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
 <div class="collection page-width">
 <div class="wishlist__grid flex container grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max" grid-wishlist>
   {% comment %} Sample loading element {% endcomment %}
