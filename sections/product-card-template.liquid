@@ -5,9 +5,9 @@
     - Pass the product object as a snippet variable named 'product'
 
 {%- render 'product-card', product: product -%}{% endcomment %}
- <ul id="main-collection-product-grid product-card" data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max">
+ <ul id="main-collection-product-grid " data-id="{{ section.id }}" class="grid grid--2-col negative-margin product-grid grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max">
  
-  <li class="grid__item ">
+  <li class="grid__item product-card">
       {% render 'product-card', product_card_product: product, media_size: 'adapt', show_secondary_image: false, add_image_padding: false, show_vendor: false, show_image_outline: true %}
     </li>
 </ul>
