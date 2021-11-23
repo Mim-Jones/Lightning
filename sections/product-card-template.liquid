@@ -3,8 +3,10 @@
   Usage:
     - Replace the snippet name ('product-card') with your existing product card snippet
     - Pass the product object as a snippet variable named 'product'
-{% endcomment %}
-{%- render 'product-card', product: product -%}
+
+{%- render 'product-card', product: product -%}{% endcomment %}
+{% render 'product-card', product_card_product: product, media_size: 'adapt', show_secondary_image: false, add_image_padding: false, show_vendor: false, show_image_outline: true %}
+
 
 {% schema %}
   {
