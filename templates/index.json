@@ -58,9 +58,9 @@
             "button_label_1": "Shop ABK Beers",
             "button_link_1": "shopify:\/\/collections\/view-all-our-beers",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": true,
+            "button_label_2": "Our History",
+            "button_link_2": "shopify:\/\/pages\/faqs",
+            "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
             "color_scheme": "background-2"
@@ -158,12 +158,56 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "16378792591eff2249": {
+      "type": "multicolumn",
+      "blocks": {
+        "1637879259abb30c27-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beerhawk-favourite-abk-beer.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637879259abb30c27-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beer-52_2.png",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637879259abb30c27-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637879259abb30c27-0",
+        "1637879259abb30c27-1",
+        "1637879259abb30c27-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "16316073674dfa205d",
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "16378792591eff2249"
   ]
 }
