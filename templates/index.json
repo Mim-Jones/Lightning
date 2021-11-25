@@ -76,6 +76,50 @@
         "adapt_height_first_image": true
       }
     },
+    "16378792591eff2249": {
+      "type": "multicolumn",
+      "blocks": {
+        "1637879259abb30c27-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beer_Hwk.png",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637879259abb30c27-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beer-52.png",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637879259abb30c27-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Beer_Hunter.png",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637879259abb30c27-0",
+        "1637879259abb30c27-1",
+        "1637879259abb30c27-2"
+      ],
+      "settings": {
+        "title": "Best Seller On",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -158,57 +202,13 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
-    },
-    "16378792591eff2249": {
-      "type": "multicolumn",
-      "blocks": {
-        "1637879259abb30c27-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Beer_Hwk.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1637879259abb30c27-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Beer-52_2.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1637879259abb30c27-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Beer_Hunter.png",
-            "title": "",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1637879259abb30c27-0",
-        "1637879259abb30c27-1",
-        "1637879259abb30c27-2"
-      ],
-      "settings": {
-        "title": "Best Seller On",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
-      }
     }
   },
   "order": [
     "16316073674dfa205d",
+    "16378792591eff2249",
     "image_banner",
     "featured_products",
-    "image_text",
-    "16378792591eff2249"
+    "image_text"
   ]
 }
