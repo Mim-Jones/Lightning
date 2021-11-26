@@ -130,7 +130,7 @@
       "settings": {
         "title": "Awards Since 2018",
         "image_width": "half",
-        "image_ratio": "adapt",
+        "image_ratio": "circle",
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
