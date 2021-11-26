@@ -76,6 +76,68 @@
         "adapt_height_first_image": true
       }
     },
+    "163793031265aa8c20": {
+      "type": "multicolumn",
+      "blocks": {
+        "1637930312142094a0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-dunkel-world-beer-award.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637930312142094a0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-Hell-beer52-award.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1637930312142094a0-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-beer-wins-beerbods.png",
+            "title": "",
+            "text": ""
+          }
+        },
+        "1fb2ab02-6e42-4748-8a2a-e9488b2051d2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-beer-silver.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "8a99587e-a295-4fe4-8eb1-091569584096": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/International-beer-champion-ABK.jpg",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637930312142094a0-0",
+        "1637930312142094a0-1",
+        "1637930312142094a0-2",
+        "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
+        "8a99587e-a295-4fe4-8eb1-091569584096"
+      ],
+      "settings": {
+        "title": "Awards Since 2018",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
     "16378792591eff2249": {
       "type": "multicolumn",
       "blocks": {
@@ -202,76 +264,14 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
-    },
-    "163793031265aa8c20": {
-      "type": "multicolumn",
-      "blocks": {
-        "1637930312142094a0-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-dunkel-world-beer-award.jpg",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1637930312142094a0-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-Hell-beer52-award.jpg",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1637930312142094a0-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-beer-wins-beerbods.png",
-            "title": "",
-            "text": ""
-          }
-        },
-        "1fb2ab02-6e42-4748-8a2a-e9488b2051d2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-beer-silver.jpg",
-            "title": "",
-            "text": ""
-          }
-        },
-        "8a99587e-a295-4fe4-8eb1-091569584096": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/International-beer-champion-ABK.jpg",
-            "title": "",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1637930312142094a0-0",
-        "1637930312142094a0-1",
-        "1637930312142094a0-2",
-        "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
-        "8a99587e-a295-4fe4-8eb1-091569584096"
-      ],
-      "settings": {
-        "title": "Awards Since 2018",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
-      }
     }
   },
   "order": [
     "16316073674dfa205d",
+    "163793031265aa8c20",
     "16378792591eff2249",
     "image_banner",
     "featured_products",
-    "image_text",
-    "163793031265aa8c20"
+    "image_text"
   ]
 }
