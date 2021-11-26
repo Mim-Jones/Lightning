@@ -79,10 +79,10 @@
     "163793031265aa8c20": {
       "type": "multicolumn",
       "blocks": {
-        "1637930312142094a0-0": {
+        "8a99587e-a295-4fe4-8eb1-091569584096": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-dunkel-world-beer-award.jpg",
+            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_88950e1d-f0ca-4d66-9ff7-a9884e7607d3.png",
             "title": "",
             "text": ""
           }
@@ -111,21 +111,21 @@
             "text": ""
           }
         },
-        "8a99587e-a295-4fe4-8eb1-091569584096": {
+        "1637930312142094a0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_88950e1d-f0ca-4d66-9ff7-a9884e7607d3.png",
+            "image": "shopify:\/\/shop_images\/World-beer-awards-germany-abk-beer.jpg",
             "title": "",
             "text": ""
           }
         }
       },
       "block_order": [
-        "1637930312142094a0-0",
+        "8a99587e-a295-4fe4-8eb1-091569584096",
         "1637930312142094a0-1",
         "1637930312142094a0-2",
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
-        "8a99587e-a295-4fe4-8eb1-091569584096"
+        "1637930312142094a0-0"
       ],
       "settings": {
         "title": "Awards Since 2018",
