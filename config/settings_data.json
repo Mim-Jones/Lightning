@@ -120,7 +120,7 @@
           "99e33a1d-e04c-462e-8c17-ddf0f11d1de2"
         ],
         "settings": {
-          "show_announcement_bar": false,
+          "show_announcement_bar": true,
           "autoplay": false,
           "delay": "5000",
           "colorBackground": "#ffffff",
