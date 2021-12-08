@@ -1,4 +1,4 @@
-{%- if  section.blocks.size > 0 and section.settings.show_announcement_bar -%}
+{%- if  section.blocks.size > 0 -%}
 <div class="hura-announcement-bar swiper-container">
   <div class="hura-messages swiper-wrapper">
     {%- for block in section.blocks -%}
@@ -48,11 +48,6 @@
   {
     "name": "Announcement Bar",
     "settings": [
-      {
-        "type": "checkbox",
-        "id": "show_announcement_bar",
-        "label": "Show"
-      },
       {
         "type": "checkbox",
         "id": "autoplay",
