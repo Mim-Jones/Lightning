@@ -121,7 +121,7 @@
         ],
         "settings": {
           "show_announcement_bar": true,
-          "autoplay": false,
+          "autoplay": true,
           "delay": "5000",
           "colorBackground": "#ffffff",
           "colorText": "#000"
