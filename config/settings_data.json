@@ -105,19 +105,22 @@
           "fd7acc7c-8643-4c22-a7fb-eeee07222c17": {
             "type": "header",
             "settings": {
-              "message": "Message 1"
+              "message": "Message 1",
+              "link": "shopify:\/\/products\/12-pack-mixed-case"
             }
           },
           "99e33a1d-e04c-462e-8c17-ddf0f11d1de2": {
             "type": "header",
             "settings": {
-              "message": "Message 2"
+              "message": "Message 2",
+              "link": ""
             }
           },
           "be1dd261-a31a-405b-aec3-1b30d05c83d9": {
             "type": "header",
             "settings": {
-              "message": "Message 3"
+              "message": "Message 3",
+              "link": ""
             }
           }
         },
