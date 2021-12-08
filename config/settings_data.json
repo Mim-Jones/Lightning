@@ -105,22 +105,28 @@
           "fd7acc7c-8643-4c22-a7fb-eeee07222c17": {
             "type": "header",
             "settings": {
-              "message": "Message stuff"
+              "message": "Message 1"
             }
           },
           "99e33a1d-e04c-462e-8c17-ddf0f11d1de2": {
             "type": "header",
             "settings": {
-              "message": "Message stuff Message stuff"
+              "message": "Message 2"
+            }
+          },
+          "be1dd261-a31a-405b-aec3-1b30d05c83d9": {
+            "type": "header",
+            "settings": {
+              "message": "Message 2"
             }
           }
         },
         "block_order": [
           "fd7acc7c-8643-4c22-a7fb-eeee07222c17",
-          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2"
+          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2",
+          "be1dd261-a31a-405b-aec3-1b30d05c83d9"
         ],
         "settings": {
-          "show_announcement_bar": true,
           "autoplay": true,
           "delay": "6000",
           "colorBackground": "#86764f",
