@@ -16,7 +16,7 @@
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
-              "colorBackground": "#ffffff",
+              "colorBackground": "#ef1010",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -121,7 +121,7 @@
           "99e33a1d-e04c-462e-8c17-ddf0f11d1de2"
         ],
         "settings": {
-          "show_announcement_bar": true,
+          "show_announcement_bar": false,
           "autoplay": true,
           "delay": "6000",
           "colorBackground": "#86764f",
