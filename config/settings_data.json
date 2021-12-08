@@ -123,9 +123,9 @@
         "settings": {
           "show_announcement_bar": true,
           "autoplay": true,
-          "delay": "5000",
+          "delay": "6000",
           "colorBackground": "#86764f",
-          "colorText": "#000000"
+          "colorText": "#ffffff"
         }
       }
     },
