@@ -1658,7 +1658,7 @@ input[type='checkbox'] {
   padding: 1rem 2rem;
   margin: 0;
   letter-spacing: 0.1rem;
-    background-color: {{ anouncement-bar.section.settings.background-color }} ;
+    background-color: {{ sections.announcement-bar.name.settings.background-color }} ;
 }
 
 /* section-header */
