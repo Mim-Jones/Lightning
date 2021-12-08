@@ -20,13 +20,19 @@
   {%- endcase -%}
 {%- endfor -%}
 
+<style>
+  
+  .announcement-bar__message {
+  background-color: red;
+  }
+</style
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
 "settings": [
       {
         "type": "color",
-        "id": "colorBackground",
+        "id": "background-color",
         "label": "Background color",
         "default": "#ffffff"
       }
