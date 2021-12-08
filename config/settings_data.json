@@ -14,6 +14,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "color_scheme": "accent-1",
@@ -96,6 +97,34 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true
+        }
+      },
+      "hura-announcement-bar": {
+        "type": "hura-announcement-bar",
+        "blocks": {
+          "fd7acc7c-8643-4c22-a7fb-eeee07222c17": {
+            "type": "header",
+            "settings": {
+              "message": "Message stuff"
+            }
+          },
+          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2": {
+            "type": "header",
+            "settings": {
+              "message": "Message stuff Message stuff"
+            }
+          }
+        },
+        "block_order": [
+          "fd7acc7c-8643-4c22-a7fb-eeee07222c17",
+          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2"
+        ],
+        "settings": {
+          "show_announcement_bar": false,
+          "autoplay": false,
+          "delay": "5000",
+          "colorBackground": "#ffffff",
+          "colorText": "#000"
         }
       }
     },
