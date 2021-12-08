@@ -1,8 +1,8 @@
 {%- if  section.blocks.size > 0 -%}
-<div class="hura-announcement-bar swiper-container">
-  <div class="hura-messages swiper-wrapper">
+<div class="announcement-bar swiper-container">
+  <div class="messages swiper-wrapper">
     {%- for block in section.blocks -%}
-    <div class="hura-message swiper-slide">{{block.settings.message}}</div>
+    <div class="announcement-message swiper-slide">{{block.settings.message}}</div>
     {%- endfor -%}
   </div>
 <!--   <div class="hura-swiper-button swiper-button-prev"></div>
@@ -23,23 +23,23 @@
   });
 </script>
 <style>
-  .hura-announcement-bar{
+  .announcement-bar{
     background:{{section.settings.colorBackground}};
     position: relative;
     overflow: hidden;
   }
-  .hura-announcement-bar .hura-message{
+  .announcement-bar .announcement-message{
     text-align:center;
     color:{{section.settings.colorText}};
     padding:5px 0;
   }
-  .hura-announcement-bar .swiper-button-next:after, .hura-announcement-bar .swiper-container-rtl .swiper-button-prev:after,
-  .hura-announcement-bar .swiper-button-prev:after, .hura-announcement-bar .swiper-container-rtl .swiper-button-next:after{
+  .announcement-bar .swiper-button-next:after, .announcement-bar .swiper-container-rtl .swiper-button-prev:after,
+  .announcement-bar .swiper-button-prev:after, .announcement-bar .swiper-container-rtl .swiper-button-next:after{
     font-size: 15px;
     color:{{section.settings.colorText}};
   }
   {%- if  section.blocks.size < 2 %}
-  .hura-announcement-bar .hura-swiper-button{display:none!important;}
+  .announcement-bar .hura-swiper-button{display:none!important;}
   {%- endif -%}
 </style>
 {%- endif -%}
