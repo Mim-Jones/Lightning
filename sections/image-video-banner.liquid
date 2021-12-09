@@ -1,7 +1,7 @@
 {{ 'section-only-image-video-banner.css' | asset_url | stylesheet_tag }}
-{% if section.blocks.size > 1 %}{% endif %}
 
-<div class="banner-wrap slider-implement main-carousel" >
+
+<div class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
