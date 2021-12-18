@@ -121,7 +121,7 @@ const updateWishlist = (handle,vendor,price) => {
   const indexInWishlist = wishlist.indexOf(handle,vendor,price);
   if (indexInWishlist === -1) wishlist.push(handle,vendor,price);
   else wishlist.splice(indexInWishlist, 3);
-  console.log(wishlist);
+  console.log(indexInWishlist);
   return setWishlist(wishlist);
 };
 
