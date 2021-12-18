@@ -122,7 +122,7 @@ const updateWishlist = (handle,vendor,price) => {
   if (indexInWishlist === -1) wishlist.push(handle,vendor,price);
   else wishlist.splice(indexInWishlist, 3);
   
-  if (indexInWishlist === -1)console.log(wishlist);
+  if (indexInWishlist === -1)console.log('work');
   
   return setWishlist(wishlist);
 };
