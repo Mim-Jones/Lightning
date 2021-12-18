@@ -79,7 +79,7 @@ const setupButtons = (buttons) => {
       updateWishlist(productHandle,productTitle,productVendor,productPrice);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     
-    document.querySelector(selectors.wishlistPop).classList.add(BUTTON_ACTIVE_CLASS);
+   
     });
   });
 };
@@ -125,6 +125,7 @@ const updateWishlist = (handle,title,vendor,price) => {
   else wishlist.splice(indexInWishlist, 1);
   
   if (indexInWishlist === -1){
+     document.querySelector(selectors.wishlistPop).classList.add('active');
     console.log('work');
     document.querySelector(selectors.productTitle).innerHTML = title;
    document.querySelector(selectors.productVendor).innerHTML = vendor;
