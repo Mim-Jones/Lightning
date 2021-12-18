@@ -76,7 +76,7 @@ const setupButtons = (buttons) => {
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
     button.addEventListener('click', () => {
-      updateWishlist(productHandle,productVendor,productPrice);
+      updateWishlist(productHandle,productTitle,productVendor,productPrice);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     
     document.querySelector(selectors.wishlistPop).classList.add(BUTTON_ACTIVE_CLASS);
@@ -118,7 +118,7 @@ const setWishlist = (array) => {
   return wishlist;
 };
 
-const updateWishlist = (handle,vendor,price) => {
+const updateWishlist = (handle,title,vendor,price) => {
   const wishlist = getWishlist();
   const indexInWishlist = wishlist.indexOf(handle);
   if (indexInWishlist === -1) wishlist.push(handle);
@@ -126,7 +126,7 @@ const updateWishlist = (handle,vendor,price) => {
   
   if (indexInWishlist === -1)
     console.log('work');
-    document.querySelector(selectors.productTitle).innerHTML = handle;
+    document.querySelector(selectors.productTitle).innerHTML = title;
    document.querySelector(selectors.productVendor).innerHTML = vendor;
    document.querySelector(selectors.productPrice).innerHTML = price;
   
