@@ -21,7 +21,7 @@ document.addEventListener('shopify-wishlist:updated', (event) => {
   initGrid();
   console.log(event.detail.wishlist.length);
   if(event.detail.wishlist.length < 0){
-  document.querySelector(selectors.wishlistPop).classList.remove(BUTTON_ACTIVE_CLASS)
+  document.querySelector(selectors.wishlistPop).classList.remove('active');
   }
 });
 
