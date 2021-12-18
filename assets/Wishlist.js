@@ -123,7 +123,7 @@ const updateWishlist = (handle,vendor,price) => {
   
   if (indexInWishlist === -1)
     console.log('work');
-    document.querySelector(selectors.productTitle).innerHTML = productHandle;
+    document.querySelector(selectors.productTitle).innerHTML = handle;
   
   return setWishlist(wishlist);
 };
