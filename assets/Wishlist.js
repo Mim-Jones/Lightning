@@ -61,10 +61,12 @@ const setupButtons = (buttons) => {
   buttons.forEach((button) => {
     console.log(button.dataset);
     const productHandle = button.dataset.productHandle || false;
+    const productVendor = button.dataset.productVendor || false;
+    const productPrice = button.dataset.productPrice || false;
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
     button.addEventListener('click', () => {
-      updateWishlist(productHandle);
+      updateWishlist(productHandle,productVendor,productPrice);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     });
   });
