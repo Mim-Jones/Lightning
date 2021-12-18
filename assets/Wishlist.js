@@ -11,6 +11,7 @@ const selectors = {
   productVendor:'#prod_vendor',
   productPrice:'#prod_price',
   wishlistPop:".wishlist-pop",
+  wishinfo_img:"#wishinfo_img",
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -77,7 +78,7 @@ const setupButtons = (buttons) => {
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
     button.addEventListener('click', () => {
-      updateWishlist(productHandle,productTitle,productVendor,productPrice);
+      updateWishlist(productHandle,productTitle,productVendor,productPrice,productImage);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     
    
@@ -119,7 +120,7 @@ const setWishlist = (array) => {
   return wishlist;
 };
 
-const updateWishlist = (handle,title,vendor,price) => {
+const updateWishlist = (handle,title,vendor,price,image) => {
   const wishlist = getWishlist();
   const indexInWishlist = wishlist.indexOf(handle);
   if (indexInWishlist === -1) wishlist.push(handle);
@@ -131,6 +132,7 @@ const updateWishlist = (handle,title,vendor,price) => {
     document.querySelector(selectors.productTitle).innerHTML = title;
    document.querySelector(selectors.productVendor).innerHTML = vendor;
    document.querySelector(selectors.productPrice).innerHTML = price;
+   document.querySelector(selectors.wishinfo_img).innerHTML = "<img src='"+image+"'>"; 
   }else{  console.log('work else'); 
         document.querySelector(selectors.wishlistPop).classList.remove('active');
        }
