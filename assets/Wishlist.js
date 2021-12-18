@@ -119,6 +119,7 @@ const updateWishlist = (handle) => {
   const indexInWishlist = wishlist.indexOf(handle);
   if (indexInWishlist === -1) wishlist.push(handle);
   else wishlist.splice(indexInWishlist, 1);
+  console.log(wishlist);
   return setWishlist(wishlist);
 };
 
