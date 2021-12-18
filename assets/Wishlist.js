@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('shopify-wishlist:updated', (event) => {
   console.log('[Shopify Wishlist] Wishlist Updated ✅', event.detail.wishlist);
   initGrid();
+  console.log(event.detail.wishlist.length);
 });
 
 document.addEventListener('shopify-wishlist:init-product-grid', (event) => {
