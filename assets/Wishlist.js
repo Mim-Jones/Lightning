@@ -70,7 +70,7 @@ const setupButtons = (buttons) => {
     console.log(button.dataset);
     const productHandle = button.dataset.productHandle || false;
     const productVendor = button.dataset.productVendor || false;
-    const productVendor = button.dataset.productTitle || false;
+    const productTitle = button.dataset.productTitle || false;
     const productPrice = button.dataset.productPrice || false;
     
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
