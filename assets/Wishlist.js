@@ -72,6 +72,7 @@ const setupButtons = (buttons) => {
     const productVendor = button.dataset.productVendor || false;
     const productTitle = button.dataset.productTitle || false;
     const productPrice = button.dataset.productPrice || false;
+    const productImage = button.dataset.productImage || false;
     
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
