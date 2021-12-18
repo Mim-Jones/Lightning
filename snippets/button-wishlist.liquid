@@ -51,7 +51,7 @@ Parameters:
 
 {%- if product.handle != blank -%}
 {%- if customer -%}
-<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist data-product-handle="{{ product.handle }}">
+<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist data-product-vendor="{{ product.vendor }}" data-product-price="{{ product.price |money }}" data-product-handle="{{ product.handle }}">
 
   <span class="wishlist-text">Favourite</span> {%- render 'icon-heart' -%}
 </button>
