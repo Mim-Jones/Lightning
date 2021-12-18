@@ -59,6 +59,7 @@ const setupGrid = async (grid) => {
 
 const setupButtons = (buttons) => {
   buttons.forEach((button) => {
+    console.log(button.dataset);
     const productHandle = button.dataset.productHandle || false;
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
