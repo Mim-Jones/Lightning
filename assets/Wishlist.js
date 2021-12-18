@@ -7,6 +7,8 @@ const selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
   productCard: '.product-card',
+  productTitle:'#prod_title'
+  wishlistPop:".wishlist-pop"
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -63,11 +65,15 @@ const setupButtons = (buttons) => {
     const productHandle = button.dataset.productHandle || false;
     const productVendor = button.dataset.productVendor || false;
     const productPrice = button.dataset.productPrice || false;
+    
     if (!productHandle) return console.error('[Shopify Wishlist] Missing `data-product-handle` attribute. Failed to update the wishlist.');
     if (wishlistContains(productHandle)) button.classList.add(BUTTON_ACTIVE_CLASS);
     button.addEventListener('click', () => {
       updateWishlist(productHandle,productVendor,productPrice);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
+    
+    document.querySelector(selectors.wishlistPop).classList.toggle(BUTTON_ACTIVE_CLASS)
+    
     });
   });
 };
