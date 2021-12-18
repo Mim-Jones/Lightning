@@ -129,7 +129,7 @@ const updateWishlist = (handle,title,vendor,price) => {
     document.querySelector(selectors.productTitle).innerHTML = title;
    document.querySelector(selectors.productVendor).innerHTML = vendor;
    document.querySelector(selectors.productPrice).innerHTML = price;
-  }else{ document.querySelector(selectors.wishlistPop).classList.remove(BUTTON_ACTIVE_CLASS);}
+  }else{  console.log('work else'); document.querySelector(selectors.wishlistPop).classList.remove(BUTTON_ACTIVE_CLASS);}
   
   return setWishlist(wishlist);
 };
