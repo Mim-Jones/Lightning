@@ -8,6 +8,8 @@ const selectors = {
   grid: '[grid-wishlist]',
   productCard: '.product-card',
   productTitle:'#prod_title',
+  productVendor:'#prod_vendor',
+  productPrice:'#prod_price',
   wishlistPop:".wishlist-pop",
 };
 
@@ -117,13 +119,15 @@ const setWishlist = (array) => {
 
 const updateWishlist = (handle,vendor,price) => {
   const wishlist = getWishlist();
-  const indexInWishlist = wishlist.indexOf(handle,vendor,price);
-  if (indexInWishlist === -1) wishlist.push(handle,vendor,price);
-  else wishlist.splice(indexInWishlist, 3);
+  const indexInWishlist = wishlist.indexOf(handle);
+  if (indexInWishlist === -1) wishlist.push(handle);
+  else wishlist.splice(indexInWishlist, 1);
   
   if (indexInWishlist === -1)
     console.log('work');
     document.querySelector(selectors.productTitle).innerHTML = handle;
+   document.querySelector(selectors.productVendor).innerHTML = vendor;
+   document.querySelector(selectors.productPrice).innerHTML = price;
   
   return setWishlist(wishlist);
 };
