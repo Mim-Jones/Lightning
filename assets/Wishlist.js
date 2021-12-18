@@ -69,7 +69,7 @@ const setupButtons = (buttons) => {
   buttons.forEach((button) => {
     console.log(button.dataset);
     const productHandle = button.dataset.productHandle || false;
-    onst productVendor = button.dataset.productVendor || false;
+    const productVendor = button.dataset.productVendor || false;
     const productVendor = button.dataset.productTitle || false;
     const productPrice = button.dataset.productPrice || false;
     
