@@ -7,8 +7,8 @@ const selectors = {
   button: '[button-wishlist]',
   grid: '[grid-wishlist]',
   productCard: '.product-card',
-  productTitle:'#prod_title'
-  wishlistPop:".wishlist-pop"
+  productTitle:'#prod_title',
+  wishlistPop:".wishlist-pop",
 };
 
 document.addEventListener('DOMContentLoaded', () => {
