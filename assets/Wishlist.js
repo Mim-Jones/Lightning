@@ -124,12 +124,12 @@ const updateWishlist = (handle,title,vendor,price) => {
   if (indexInWishlist === -1) wishlist.push(handle);
   else wishlist.splice(indexInWishlist, 1);
   
-  if (indexInWishlist === -1)
+  if (indexInWishlist === -1){
     console.log('work');
     document.querySelector(selectors.productTitle).innerHTML = title;
    document.querySelector(selectors.productVendor).innerHTML = vendor;
    document.querySelector(selectors.productPrice).innerHTML = price;
-  else document.querySelector(selectors.wishlistPop).classList.remove(BUTTON_ACTIVE_CLASS);
+  }else{ document.querySelector(selectors.wishlistPop).classList.remove(BUTTON_ACTIVE_CLASS);}
   
   return setWishlist(wishlist);
 };
