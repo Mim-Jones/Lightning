@@ -75,7 +75,7 @@ const setupButtons = (buttons) => {
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     
     document.querySelector(selectors.wishlistPop).classList.add(BUTTON_ACTIVE_CLASS);
-//     document.querySelector(selectors.productTitle).innerHTML = productHandle;
+    document.querySelector(selectors.productTitle).innerHTML = productHandle;
     });
   });
 };
