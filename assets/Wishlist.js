@@ -74,8 +74,8 @@ const setupButtons = (buttons) => {
       updateWishlist(productHandle,productVendor,productPrice);
       button.classList.toggle(BUTTON_ACTIVE_CLASS);
     
-    document.querySelector(selectors.wishlistPop).classList.add(BUTTON_ACTIVE_CLASS)
-    
+    document.querySelector(selectors.wishlistPop).classList.add(BUTTON_ACTIVE_CLASS);
+    document.querySelector(selectors.productTitle).innerHTML = productHandle;
     });
   });
 };
