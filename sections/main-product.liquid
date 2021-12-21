@@ -277,8 +277,9 @@
                     </button>
                     </div>
                     
+                    {%- if block.settings.show_favourite_btn -%}
                     {%- render 'button-wishlist', product: product -%}
-                    
+                     {%- endif -%}
                     
                     
                     {%- if block.settings.show_dynamic_checkout -%}
@@ -556,6 +557,13 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+        },
+		 {
+          "type": "checkbox",
+          "id": "show_favourite_btn",
+          "default": false,
+          "label": "Show Favourite button",
+          "info": "This function only store product data on '/pages/wishlist' page , This function will work if you logged in"
         }
       ]
     },
