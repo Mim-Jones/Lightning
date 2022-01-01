@@ -372,9 +372,13 @@ https://flickity.metafizzy.co
     .video-wrapper video {
       position:absolute;
       top:0;
-      left:5%;
-      width:90%;
+      left:2.5%;
+      width:95%;
 /*       height:100%; */
+    }
+    @media screen and (min-width:750px) {
+    	left:5%;
+        width: 90%;
     }
 
 /*     .img_section, .video-section,.img_section-modal {
