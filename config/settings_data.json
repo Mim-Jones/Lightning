@@ -1,7 +1,7 @@
 {
   "current": {
-    "colors_solid_button_labels": "#fff",
-    "colors_accent_1": "#86764f",
+    "colors_solid_button_labels": "#f2f2f2",
+    "colors_accent_1": "#b87333",
     "colors_accent_2": "#121111",
     "colors_background_2": "#faf1e9",
     "type_header_font": "helvetica_n4",
@@ -14,6 +14,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "color_scheme": "accent-2",
@@ -31,15 +32,15 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Gold_09625b04-7d25-472b-8ead-fc646a811c4e.png",
+          "logo": "shopify:\/\/shop_images\/ABK-Beer_icon_3c4a7f71-4f89-4601-a65e-b1be7e0c88b2.png",
           "logo_width": 70,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true,
-          "background_color": "#000000",
-          "content_color": "#ffffff",
-          "content_hover_color": "#86764f"
+          "background_color": "#121111",
+          "content_color": "#f2f2f2",
+          "content_hover_color": "#b87333"
         }
       },
       "footer": {
@@ -132,8 +133,8 @@
         "settings": {
           "autoplay": true,
           "delay": "6000",
-          "colorBackground": "#86764f",
-          "colorText": "#ffffff"
+          "colorBackground": "#f2f2f2",
+          "colorText": "#121111"
         }
       }
     },
