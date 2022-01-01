@@ -241,6 +241,7 @@ https://flickity.metafizzy.co
       max-width: 45rem;
       flex-wrap: wrap;
       align-items: baseline;
+          margin: 10px auto;
       justify-content: center;
     }
 
