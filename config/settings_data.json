@@ -110,25 +110,25 @@
               "link": "shopify:\/\/products\/12-pack-mixed-case"
             }
           },
+          "be1dd261-a31a-405b-aec3-1b30d05c83d9": {
+            "type": "header",
+            "settings": {
+              "message": "Sign Up For 5% Off",
+              "link": ""
+            }
+          },
           "99e33a1d-e04c-462e-8c17-ddf0f11d1de2": {
             "type": "header",
             "settings": {
               "message": "England & Wales Delivery Only",
               "link": ""
             }
-          },
-          "be1dd261-a31a-405b-aec3-1b30d05c83d9": {
-            "type": "header",
-            "settings": {
-              "message": "Message 3",
-              "link": ""
-            }
           }
         },
         "block_order": [
           "fd7acc7c-8643-4c22-a7fb-eeee07222c17",
-          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2",
-          "be1dd261-a31a-405b-aec3-1b30d05c83d9"
+          "be1dd261-a31a-405b-aec3-1b30d05c83d9",
+          "99e33a1d-e04c-462e-8c17-ddf0f11d1de2"
         ],
         "settings": {
           "autoplay": true,
