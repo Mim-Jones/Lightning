@@ -4,11 +4,11 @@
 <div class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
   <style>
-    #Banner_{{ block.id | remove:"-"}} .banner__heading{
+    #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}} .banner__text{
       color:{{block.settings.colors_text}};
     }
     @media(max-width:768px){
-     #Banner_{{ block.id | remove:"-"}} .banner__heading{
+     #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}}  .banner__text{
        color:{{block.settings.colors_text_mob}};
     }
     }
