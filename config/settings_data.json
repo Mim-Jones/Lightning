@@ -3,7 +3,7 @@
     "colors_solid_button_labels": "#f2f2f2",
     "colors_accent_1": "#b87333",
     "colors_accent_2": "#131312",
-    "colors_text": "#FFFFFF",
+    "colors_text": "#131312",
     "colors_outline_button_labels": "#131312",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#1878b9",
@@ -137,7 +137,7 @@
           "autoplay": true,
           "delay": "6000",
           "colorBackground": "#f5f5f5",
-          "colorText": "#1A1B18"
+          "colorText": "#1a1b18"
         }
       }
     },
