@@ -274,6 +274,7 @@
     },
     "1641216204159f651a": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Discover Something New",
         "collection": "summer-drinks",
