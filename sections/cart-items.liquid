@@ -19,27 +19,6 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
       <strong class="amount price">{{ cart.total_price  | money }}</strong>
     </div>
 
-    <div class="buttons">
-      <a href="/cart" class="button-custom button">View Cart</a>
-
-    </div>
-  </div>
- 
-  <div class="min-cart-items">
-
-    {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
-
-    {% for item in cart.items %}
-
-    {% assign groupFlag = "" %}
-
-    {% for tag in item.product.tags %}
-    {% if tag contains "cart-group" %}
-    {% assign groupFlag = tag | split:"-group:" | last %}
-    {% endif %}
-    {% endfor %}
-
-
     {% assign cartTotal = cart.total_price %}
     {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
@@ -70,6 +49,29 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
       <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} more to receive{% endif %}</span> FREE SHIPPING!</div>
     </div>
+    
+    
+    <div class="buttons">
+      <a href="/cart" class="button-custom button">View Cart</a>
+
+    </div>
+  </div>
+ 
+  <div class="min-cart-items">
+
+    {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
+
+    {% for item in cart.items %}
+
+    {% assign groupFlag = "" %}
+
+    {% for tag in item.product.tags %}
+    {% if tag contains "cart-group" %}
+    {% assign groupFlag = tag | split:"-group:" | last %}
+    {% endif %}
+    {% endfor %}
+
+
     
     <div class="min-cart-item" index="{{forloop.index}}">
       <div class="td-image">
