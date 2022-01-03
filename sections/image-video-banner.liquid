@@ -51,15 +51,17 @@
   display:none!important;
   }
   }
-      @media screen and (max-width: 767px;) {
-      #Banner-{{ block.id }} .banner__heading {
-      color:red!important;
-      }
-      }
+      
       
   {%- endstyle -%}
   {%- endif -%}
-
+      <style>
+        @media screen and (max-width: 767px;) {
+          #Banner-{{ block.id }} .banner__heading {
+            color:red!important;
+          }
+        }
+      </style>
 {% capture bottomcontent %}
        <div id="Banner-{{ block.id }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
             <div class="banner__box color-{{ block.settings.color_scheme }}">
