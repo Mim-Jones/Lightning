@@ -10,7 +10,7 @@
     "freeshipping": "75",
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n3",
-    "favicon": "shopify:\/\/shop_images\/ABK_Beer_Favicon_85f44603-cabe-4620-88aa-a4153a4ae792.png",
+    "favicon": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
     "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
@@ -36,7 +36,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/ABK-Beer_icon_3c4a7f71-4f89-4601-a65e-b1be7e0c88b2.png",
+          "logo": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
           "logo_width": 70,
           "logo_position": "middle-left",
           "menu": "main-menu",
