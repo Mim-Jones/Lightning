@@ -60,11 +60,11 @@
        <div id="Banner-{{ block.id | remove:"-" }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
             <div class="banner__box color-{{ block.settings.color_scheme }}">
 
-              <h2 style="color:{{block.settings.colors_text}};" class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+              <h2  class="color:{{block.settings.colors_text}} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
                 <span>{{ block.settings.heading }}</span>
               </h2>
 
-              <div style="color:{{block.settings.colors_text}};" class="banner__text" {{ block.shopify_attributes }}>
+              <div class=" color:{{block.settings.colors_text}} banner__text" {{ block.shopify_attributes }}>
                 <span>{{ block.settings.text | escape }}</span>
               </div>
 
@@ -82,13 +82,7 @@
 
           </div>
 {% endcapture %}
- <style>
-        @media screen and (max-width: 767px) {
-          #Banner_{{ block.id | remove:"-"}} .banner__heading {
-            color:red!important;
-          }
-        }
-      </style>
+
       <div id="Banner-{{ block.id }}" class="banner{% if block.settings.stack_images_on_mobile and block.settings.image != blank %} banner--stacked {% endif %}{% if section.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt {% endif %}{% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
         {%- if block.settings.image != blank -%}
         <div class="banner__media media{% if section.settings.image == blank  %} placeholder{% endif %}">
@@ -141,13 +135,7 @@
         </div>
       </div>
     </div>
-   <style>
-        @media screen and (max-width: 767px;) {
-          #Banner_{{ block.id | remove:"-" }} .banner__heading {
-            color:red!important;
-          }
-        }
-      </style>
+
   {% endcapture %}
   
   <div class="img_section">
