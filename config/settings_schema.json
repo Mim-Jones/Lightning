@@ -67,6 +67,16 @@
     ]
   },
   {
+    "name": "Additional features",
+    "settings": [
+      {
+        "type": "text",
+        "id": "freeshipping",
+        "label": "Free shipping threshold"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
