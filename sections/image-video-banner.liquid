@@ -7,6 +7,11 @@
     #Banner_{{ block.id | remove:"-"}} .banner__heading{
     color:green;
     }
+    @media(max-width:768px){
+     #Banner_{{ block.id | remove:"-"}} .banner__heading{
+    color:red;
+    }
+    }
   </style>
   {%- case block.type -%}
   {%- when 'image' -%}
