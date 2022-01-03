@@ -5,11 +5,11 @@
   {%- for block in section.blocks -%}
   <style>
     #Banner_{{ block.id | remove:"-"}} .banner__heading{
-    color:green;
+      color:{{block.settings.colors_text}};
     }
     @media(max-width:768px){
      #Banner_{{ block.id | remove:"-"}} .banner__heading{
-    color:red;
+       color:{{block.settings.colors_text_mob}};
     }
     }
   </style>
