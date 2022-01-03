@@ -1,10 +1,10 @@
 {
   "current": {
-    "colors_solid_button_labels": "#f2f2f2",
+    "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#85764f",
     "colors_accent_2": "#131312",
     "colors_text": "#131312",
-    "colors_outline_button_labels": "#131312",
+    "colors_outline_button_labels": "#85764f",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#ffffff",
     "freeshipping": "100",
