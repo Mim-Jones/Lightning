@@ -4,7 +4,7 @@
 <div class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
   <style>
-    #Banner_{{ block.id | remove:"-"}} {
+    #Banner_{{ block.id | remove:"-"}} .banner__heading{
     border:1px solid red;
     }
   </style>
