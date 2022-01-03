@@ -3,6 +3,11 @@
 
 <div class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
+  <style>
+    #Banner_{{ block.id | remove:"-"}} {
+    border:1px solid red;
+    }
+  </style>
   {%- case block.type -%}
   {%- when 'image' -%}
     <div class="img_section" {{ block.shopify_attributes }}>
