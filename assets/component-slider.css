@@ -131,6 +131,7 @@ slider-component .slider-buttons {
 .slider-button {
   color: rgba(var(--color-foreground), 0.75);
   border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-radius: 25%;
   background-color: rgb(var(--color-background));
   cursor: pointer;
   width: 44px;

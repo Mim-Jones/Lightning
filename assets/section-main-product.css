@@ -212,7 +212,7 @@ fieldset.product-form__input .form__label {
     bottom: 0;
     left: 0;
     top: unset !important;
-    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    background-color: rgba(var(--color-foreground));
     color: rgb(var(--color-button-text));
     width: 100% !important;
 }
