@@ -30,7 +30,7 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
         background-color: #f1f1f1!important;
         margin: 10px 0;
       }
-      .w3-green, 
+      .w3-green,
       .w3-hover-green:hover {
         color: #fff!important;
         background-color: #F5694D!important;
@@ -44,20 +44,20 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     </style>
     <div class="progress-warp">
 
-      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}Spend {{  needAmmount | money |remove:'-' }} from {% endif %}</span> FREE SHIPPING!</div>
+      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %}You're {{  needAmmount | money |remove:'-' }} from {% endif %}</span> FREE SHIPPING!</div>
       <div class="w3-light-grey">
         <div class="w3-green" style="width:{{mainPercent}}%"></div>
       </div>
 
     </div>
-    
-    
+
+
     <div class="buttons">
       <a href="/cart" class="button-custom button">View Cart</a>
 
     </div>
   </div>
- 
+
   <div class="min-cart-items">
 
     {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
@@ -73,22 +73,22 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     {% endfor %}
 
 
-    
+
     <div class="min-cart-item" index="{{forloop.index}}">
       <div class="td-image">
         <img src="{{item.image | img_url: '100x100' }}" />
         <h2>{{item.product.title }}</h2>
          <span class="item-price price">{{ item.price  | money }}</span>
-        
+
         <div class="buttons-div">
           <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
 
         </div>
-        
+
       </div>
       {% comment %}
       <div class="info">
-        <div class="p-title"> 
+        <div class="p-title">
           <h2>{{item.product.title }}</h2>
           {% assign removeTitle =  item.product.title | append: " /"%}
           <p>{{ item.variant.title | remove: removeTitle }}</p>
@@ -105,7 +105,7 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
       </div>
       {% endcomment %}
 
-    </div>	
+    </div>
     {% endfor %}
   </div>
 
