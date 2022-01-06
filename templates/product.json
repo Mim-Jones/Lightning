@@ -45,12 +45,6 @@
             "show_favourite_btn": true
           }
         },
-        "66cba879-adbf-491f-a01c-cad2ecc07ce3": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/hell-abk-beer.awards.jpg?v=1641484034\" alt=\"A Pint of gold coloured hell beer in a german beer stein\" loading=\"lazy\" width=\"800\" height=\"98\" data-media-id=\"8810116153475\" class=\"active\">"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -70,7 +64,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "66cba879-adbf-491f-a01c-cad2ecc07ce3",
         "description",
         "share"
       ],
