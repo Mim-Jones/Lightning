@@ -22,6 +22,12 @@
             "text_style": "subtitle"
           }
         },
+        "66cba879-adbf-491f-a01c-cad2ecc07ce3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/products\/GermanBeersteinSquare_18e20828-7762-46e5-83dd-99a5f1e8c7ee_550x.jpg?v=1641389638 550w,\" sizes=\"(min-width: 750px) calc(100vw - 12rem), 100vw\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/products\/GermanBeersteinSquare_18e20828-7762-46e5-83dd-99a5f1e8c7ee_750x.jpg?v=1641389638\" alt=\"A Pint of gold coloured hell beer in a german beer stein\" loading=\"lazy\" width=\"1100\" height=\"1100\" data-media-id=\"8810116153475\" class=\"active\">"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -60,6 +66,7 @@
         "vendor",
         "title",
         "subtitle",
+        "66cba879-adbf-491f-a01c-cad2ecc07ce3",
         "price",
         "variant_picker",
         "quantity_selector",
