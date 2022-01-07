@@ -110,3 +110,7 @@
   display: inline-block;
   margin: 0;
 }
+
+span.progress-bar-text {
+    color: rgba(var(--color-button),var(--alpha-button-background));
+}

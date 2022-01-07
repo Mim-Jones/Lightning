@@ -13,9 +13,7 @@
     color: #fff!important;
 }
 
-span.progress-bar-text {
-    color: rgba(var(--color-button),var(--alpha-button-background));
-}
+
 
 @media screen and (min-width: 990px){
 .header {
