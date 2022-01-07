@@ -1627,6 +1627,8 @@ input[type='checkbox'] {
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
   color: rgb(var(--color-foreground));
+  font-family: var(--font-heading-family);
+  font-weight: 400;
 }
 
 .announcement-bar__link {
