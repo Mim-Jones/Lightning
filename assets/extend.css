@@ -13,7 +13,7 @@
 color: #fff!important;
 }
 
-.progress-bar-text {
+span.progress-bar-text {
     color: rgba(var(--color-button),var(--alpha-button-background));
 }
 
