@@ -10,11 +10,11 @@
     padding: 2rem;
 }
 .banner__box.color-background-2 h2{
-color: #fff!important;
+    color: #fff!important;
 }
 
 span.progress-bar-text {
-    color: rgba(var(--color-button));
+    color: rgba(var(--color-button),var(--alpha-button-background));
 }
 
 @media screen and (min-width: 990px){
