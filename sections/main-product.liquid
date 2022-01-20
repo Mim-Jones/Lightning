@@ -85,7 +85,7 @@
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
-          
+          {%- when 'delivery' -%}
             <div class="estimated-delivery-container">
                 <p>{{ sections.settings.delivery_text }}Order Today and Get It Between <strong>{{'now' | date: "%s" | plus : 172800 | date: "%b %d"}} and {{'now' | date: "%s" | plus : 345600 | date: "%b %d"}}</p></strong>
             </div>
