@@ -117,6 +117,7 @@
                 </div>
               </details>
             </div>
+
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -276,12 +277,12 @@
                         {%- endif -%}
                     </button>
                     </div>
-                    
+
                     {%- if block.settings.show_favourite_btn -%}
                     {%- render 'button-wishlist', product: product -%}
                      {%- endif -%}
-                    
-                    
+
+
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
