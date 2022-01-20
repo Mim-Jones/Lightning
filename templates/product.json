@@ -36,7 +36,8 @@
         "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c": {
           "type": "delivery",
           "settings": {
-            "delivery_text": "Order Today and Get It Between"
+            "delivery_text": "Order Today and Get It Between",
+            "delivery_timer": 72800
           }
         },
         "quantity_selector": {
