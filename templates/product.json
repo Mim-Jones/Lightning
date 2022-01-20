@@ -33,6 +33,12 @@
             "picker_type": "button"
           }
         },
+        "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c": {
+          "type": "delivery",
+          "settings": {
+            "delivery_text": "ssssss"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -62,6 +68,7 @@
         "subtitle",
         "price",
         "variant_picker",
+        "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c",
         "quantity_selector",
         "buy_buttons",
         "description",
