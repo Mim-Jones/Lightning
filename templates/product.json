@@ -37,8 +37,8 @@
           "type": "delivery",
           "settings": {
             "delivery_text": "Order Today and Get It Between",
-            "delivery_timer": 3,
-            "delivery_timer_2": 0
+            "delivery_timer": 86400,
+            "delivery_timer_2": 86400
           }
         },
         "quantity_selector": {
