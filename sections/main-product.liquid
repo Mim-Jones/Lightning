@@ -86,7 +86,7 @@
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
           {%- when 'delivery' -%}
-            <div class="estimated-delivery-container">
+            <div class="estimated-delivery-container">              
               {% assign date = block.settings.delivery_timer | plus: 0 %}
                {% assign nextdate = block.settings.delivery_timer_2 %}
                 <p> {{ block.settings.delivery_text }} <strong>{{'now' | date: "%s" | plus : date | date: "%b %d"}} and {{'now' | date: "%s" | plus : nextdate | date: "%b %d"}}</p></strong>
