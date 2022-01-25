@@ -93,7 +93,7 @@
             </div>
       	      {%-when 'inventory' -%}
       		<div class="inventory-container">
-              <p> Only <strong>{{ product.variants.first_available_variant }}</strong> left In Stock</p>
+              <p> Only <strong>{{ product.selected_or_first_available_variant }}</strong> left In Stock</p>
   
       		</div>
             <div {{ block.shopify_attributes }}>
