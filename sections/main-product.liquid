@@ -91,7 +91,7 @@
                {% assign nextdate = block.settings.delivery_timer_2 | times: 86400 %}
                 <p> {{ block.settings.delivery_text }} <strong>{{'now' | date: "%s" | plus : date | date: "%b %d"}} and {{'now' | date: "%s" | plus : nextdate | date: "%b %d"}}</p></strong>
             </div>
-      	      {%-when 'inventory' -%}
+      	  
       		<div class="inventory-container">
               <p> Only <strong>{{ product.selected_or_first_available_variant }}</strong> left In Stock</p>
   
