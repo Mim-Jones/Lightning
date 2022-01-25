@@ -93,7 +93,7 @@
             </div>
       	    
       		<div class="inventory-container">
-              <p> Only <strong>{{ product.variant.inventory_quantity }}</strong> left In Stock</p>
+              <p> Only <strong>{{ product.variants.first.inventory_quantity }}</strong> left In Stock</p>
   
       		</div>
             <div {{ block.shopify_attributes }}>
