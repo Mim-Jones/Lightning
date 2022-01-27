@@ -56,7 +56,7 @@
   --color-button: var(--color-base-accent-1);
   --color-button-text: var(--color-base-solid-button-labels);
   --alpha-button-background: 1;
-  --alpha-button-border: 1;
+  --alpha-button-border: 2;
 }
 
 .color-background-2,
@@ -1142,7 +1142,7 @@ deferred-media {
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), ©);
   background: rgba(0,0,0,.75);
 }
 

@@ -86,17 +86,17 @@
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
           {%- when 'delivery' -%}
-            <div class="estimated-delivery-container">              
+            <div class="estimated-delivery-container">
               {% assign date = block.settings.delivery_timer | times: 86400 %}
                {% assign nextdate = block.settings.delivery_timer_2 | times: 86400 %}
                 <p> {{ block.settings.delivery_text }} <strong>{{'now' | date: "%s" | plus : date | date: "%b %d"}} and {{'now' | date: "%s" | plus : nextdate | date: "%b %d"}}</p></strong>
             </div>
       	  {%- when 'inventory' -%}
-             
+
               <div class="inventory-container">
                 <p> {{block.settings.inventory_text_1}} <strong>{{ product.variants.first.inventory_quantity }}</strong> {{block.settings.inventory_text_2}} </p>
               </div>
-             
+
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -493,21 +493,21 @@
 	{
 	  "type": "delivery",
 	  "name": "Estimated delivery",
-	  "settings": [ 
+	  "settings": [
        {
          "type": "text",
          "id": "delivery_text",
          "label": "Change the delivery text",
 		 "default": "Order Now and Get it Between"
-       }, 
+       },
 	   {
-		 "type": "number", 
+		 "type": "number",
 		 "id": "delivery_timer",
 		 "label":"Earliest delivery time (days)",
 		 "default": 2
 		 },
 	   {
-		 "type": "number", 
+		 "type": "number",
 		 "id": "delivery_timer_2",
 		 "label":"Latest delivery time (days)",
 		 "default": 4
@@ -517,19 +517,19 @@
 	{
 	  "type": "inventory",
 	  "name": "Inventory tracker",
-	  "settings": [ 
+	  "settings": [
        {
          "type": "text",
          "id": "inventory_text_1",
          "label": "Change the inventory text",
 		 "default": "Only"
-       }, 
+       },
 	       {
          "type": "text",
          "id": "inventory_text_2",
          "label": "Change the inventory text",
 		 "default": "Left in Stock"
-       } 
+       }
 	  ]
 	},
     {

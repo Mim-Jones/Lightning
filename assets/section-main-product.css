@@ -110,7 +110,9 @@
 
 /* Form Elements */
 .product-form__input {
-  flex: 0 0 100%;
+  ©display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
   padding: 0;
   margin: 0 0 1.2rem 0;
   max-width: 37rem;
@@ -195,8 +197,8 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
-  background-color: rgba(var(--color-foreground));
-  color: rgb(var(--color-background));
+  background-color: rgba(var(--color-button),var(--alpha-button-background));
+  color: rgb(var(--color-button-text));
   padding: 18px 24px;
 }
 
