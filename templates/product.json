@@ -41,6 +41,13 @@
             "delivery_timer_2": 5
           }
         },
+        "1f666404-3dc4-4277-96c0-5adc31a816bc": {
+          "type": "inventory",
+          "settings": {
+            "inventory_text_1": "Only",
+            "inventory_text_2": "Left in Stock"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -71,6 +78,7 @@
         "price",
         "variant_picker",
         "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c",
+        "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
         "buy_buttons",
         "description",
