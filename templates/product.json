@@ -53,6 +53,13 @@
           "settings": {
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_favourite_btn": true
+          }
+        },
         "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9": {
           "type": "collapsible_tab",
           "settings": {
@@ -60,13 +67,6 @@
             "content": "{{product.description}}",
             "page": "",
             "icon": "none"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_favourite_btn": true
           }
         },
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
@@ -117,8 +117,8 @@
         "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c",
         "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
-        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9",
         "buy_buttons",
+        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9",
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d",
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "480ac395-9eac-477d-8809-7cc8ba19b133",
