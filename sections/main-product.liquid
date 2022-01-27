@@ -92,7 +92,7 @@
                 <p> {{ block.settings.delivery_text }} <strong>{{'now' | date: "%s" | plus : date | date: "%b %d"}} and {{'now' | date: "%s" | plus : nextdate | date: "%b %d"}}</p></strong>
             </div>
       	  {%- when 'inventory' -%}
-{% if variant.selected.inventory_quantity <= 10 %}
+{% if product.selected.inventory_quantity <= 10 %}
               <div class="inventory-container">
                 <p> {{block.settings.inventory_text_1}} <strong>{{ product.selected.inventory_quantity }}</strong> {{block.settings.inventory_text_2}} </p>
               </div>
