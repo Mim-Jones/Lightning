@@ -606,6 +606,7 @@ class VariantSelects extends HTMLElement {
 
   getVariantData() {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+console.log(this.variantData);
     return this.variantData;
   }
 }
