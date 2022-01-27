@@ -72,19 +72,28 @@
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
+            "heading": "Delivery",
             "content": "",
             "page": "",
-            "icon": "check_mark"
+            "icon": "truck"
           }
         },
         "3d01d3ff-0f03-4f22-9937-defb61363a01": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
+            "heading": "Returns",
             "content": "",
             "page": "",
-            "icon": "check_mark"
+            "icon": "return"
+          }
+        },
+        "480ac395-9eac-477d-8809-7cc8ba19b133": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "content": "",
+            "page": "",
+            "icon": "star"
           }
         },
         "description": {
@@ -112,6 +121,7 @@
         "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9",
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d",
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
+        "480ac395-9eac-477d-8809-7cc8ba19b133",
         "description",
         "share"
       ],
