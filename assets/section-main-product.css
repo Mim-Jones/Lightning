@@ -110,7 +110,7 @@
 
 /* Form Elements */
 .product-form__input {
-  ©display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7px;
   padding: 0;
