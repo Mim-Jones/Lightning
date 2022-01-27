@@ -91,10 +91,12 @@
                {% assign nextdate = block.settings.delivery_timer_2 | times: 86400 %}
                 <p> {{ block.settings.delivery_text }} <strong>{{'now' | date: "%s" | plus : date | date: "%b %d"}} and {{'now' | date: "%s" | plus : nextdate | date: "%b %d"}}</p></strong>
             </div>
-      	    {%- when 'inventory' -%}
-      		<div class="inventory-container">
-              <p> {{block.settings.inventory_text_1}} <strong>{{ product.variants.first.inventory_quantity }}</strong> {{block.settings.inventory_text_2}} </p>
-      		</div>
+      	  {%- when 'inventory' -%}
+             
+              <div class="inventory-container">
+                <p> {{block.settings.inventory_text_1}} <strong>{{ product.variants.first.inventory_quantity }}</strong> {{block.settings.inventory_text_2}} </p>
+              </div>
+             
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
