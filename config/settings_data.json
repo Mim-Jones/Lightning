@@ -10,6 +10,7 @@
     "freeshipping": "100",
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n3",
+    "sale_badge_color_scheme": "accent-1",
     "favicon": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
     "currency_code_enabled": false,
     "sections": {
