@@ -578,6 +578,7 @@ class VariantSelects extends HTMLElement {
 
         document.getElementById(`price-${this.dataset.section}`)?.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+covsole.log(responseText);
       });
   }
 
@@ -606,7 +607,6 @@ class VariantSelects extends HTMLElement {
 
   getVariantData() {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
-console.log(this.variantData);
     return this.variantData;
   }
 }
