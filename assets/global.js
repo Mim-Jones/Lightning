@@ -514,6 +514,8 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
     }
+    
+    console.log(this.currentVariant);
   }
 
   updateOptions() {
@@ -578,7 +580,6 @@ class VariantSelects extends HTMLElement {
 
         document.getElementById(`price-${this.dataset.section}`)?.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
-console.log(responseText);
       });
   }
 
