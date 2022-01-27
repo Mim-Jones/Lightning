@@ -31,7 +31,8 @@ Parameters:
       fill: #988b6a;
     }
     button.wishlist_btn {
-      border: 1px solid #988b6a;
+      border: 1px solid rgba(var(--color-button));
+      color: rgb(var(--color-button-text));
       margin-bottom: 10px;
       height: 53.9999px;
       color: #000;
@@ -51,10 +52,10 @@ Parameters:
 
 {%- if product.handle != blank -%}
 {%- if customer -%}
-<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist 
-        data-product-image="{{ product.featured_image | img_url: '100x' }}" 
+<button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist
+        data-product-image="{{ product.featured_image | img_url: '100x' }}"
         data-product-vendor="{{ product.vendor }}"
-        data-product-price="{{ product.price |money }}" 
+        data-product-price="{{ product.price |money }}"
         data-product-handle="{{ product.handle }}"
         data-product-title="{{ product.title }}"
         >
