@@ -60,8 +60,36 @@
             "show_favourite_btn": true
           }
         },
+        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "3d01d3ff-0f03-4f22-9937-defb61363a01": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -81,6 +109,9 @@
         "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
         "buy_buttons",
+        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9",
+        "ad1d8d66-b368-461f-9215-a5f926b8dd4d",
+        "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "description",
         "share"
       ],
