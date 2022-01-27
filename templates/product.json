@@ -64,7 +64,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
-            "content": "{{product}}",
+            "content": "{{product.description}}",
             "page": "",
             "icon": "check_mark"
           }
