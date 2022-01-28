@@ -514,8 +514,9 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
     }
-    
-    console.log(this.currentVariant);
+    var variant = this.currentVariant;
+    console.log(inv_qty[ variant.id ]);
+    console.log(variant);
   }
 
   updateOptions() {
