@@ -521,7 +521,7 @@ class VariantSelects extends HTMLElement {
     if(qty > 0 && variant.available){
       document.querySelector('.inventory-container').innerHTML = '<p> Only <strong>'+qty+'</strong> Left in Stock </p>';
     }else{
-     document.querySelector('.inventory-container').innerHTML = '<p>Out of stock</p>';
+     document.querySelector('.inventory-container').innerHTML = '<p>Out of Stock</p>';
     }
   }
 

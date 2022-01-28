@@ -99,8 +99,12 @@
       	  {%- when 'inventory' -%}
 	{% if product.selected_or_first_available_variant.inventory_quantity <= 10 %}
               <div class="inventory-container">
+                {% if product.selected_or_first_available_variant.inventory_quantity  > 0 %}
                 <p> {{block.settings.inventory_text_1}} <strong id="qty_inventory_track">{{ product.selected_or_first_available_variant.inventory_quantity }}</strong> {{block.settings.inventory_text_2}} </p>
-              </div>
+              {% else %}
+                <p>Out of Stock</p>
+                {% endif %}
+      </div>
       {% endif %}
 
             <div {{ block.shopify_attributes }}>
