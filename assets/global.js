@@ -517,6 +517,7 @@ class VariantSelects extends HTMLElement {
     var variant = this.currentVariant;
     console.log(inv_qty[ variant.id ]);
     console.log(variant);
+     document.querySelector('#qty_inventory_track').innerHTML = inv_qty[ variant.id ];
   }
 
   updateOptions() {
