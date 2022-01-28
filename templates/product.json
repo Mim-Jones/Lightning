@@ -73,7 +73,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Delivery",
-            "content": "<b>England & Wales Shipping Only.<\/b> \n\nDue to high shipping costs for alchohol we are sorry we can only deliver to these locations.\n<br>\n<b>Shipping usually takes 2-3 working days.<\/b> \n<br>\nPlace orders before 2pm. For orders after this time estimated shipping may take longer. \n<br>\n<b>For Orders placed on weekends or Holidays<\/b> \n\nOrders place after 2pm on Fridays or public holidays will be proccessed at the next availiable working day. This will affect shipping estimates.",
+            "content": "<b>England & Wales Shipping Only.<\/b> \nUnfortunately due to high shipping costs for alchohol we can only deliver to these locations.\n<br>\n<b>Shipping takes 2-4 working days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>For Orders placed on weekends or Holidays<\/b> \n<br>\nOrders place after 2pm on Fridays or public holidays will be proccessed on the next working day.",
             "page": "",
             "icon": "truck"
           }
