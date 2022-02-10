@@ -303,12 +303,15 @@ a.product__text {
 
 .inventory-container.out-of-stock {
   background-color: #f28080;
-  
+  font-weight: bold;
 }
 
+
 .product-form__submit {
-    background-color: #121111!important;
-    color: #85764F!important;
+    /* background-color: #121111!important;
+    color: #85764F!important; */
+    background-color: rgba(var(--color-button))!important;
+    color: rgb(var(--color-button-text));
 }
 
 @media screen and (min-width: 990px) {
