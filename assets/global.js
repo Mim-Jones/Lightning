@@ -519,6 +519,7 @@ class VariantSelects extends HTMLElement {
     console.log(variant);
     var qty = inv_qty[ variant.id ];
     if(qty > 0 && variant.available){
+      document.querySelector('.inventory-container').classList.remove("out-of-stock");
       document.querySelector('.inventory-container').innerHTML = '<p> Only <strong>'+qty+'</strong> Left in Stock </p>';
     }else{
       document.querySelector('.inventory-container').classList.add("out-of-stock");
