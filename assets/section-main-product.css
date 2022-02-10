@@ -307,10 +307,8 @@ a.product__text {
 }
 
 .product-form__submit {
-    margin-bottom: 1rem;
-    background-color: #121111;
-    color: #ffffff;
-    padding: 18px 24px;
+    background-color: #121111!important;
+    color: #ffffff!important;
 }
 
 @media screen and (min-width: 990px) {
