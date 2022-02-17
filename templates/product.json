@@ -62,8 +62,8 @@
             "button_text": "#FFFFFF",
             "buy_button_bg": "#ffffff",
             "buy_button_text": "#85764f",
-            "fav_button_bg": "#85764f",
-            "fav_button_text": "#FFFFFF"
+            "fav_button_bg": "#ffffff",
+            "fav_button_text": "#85764f"
           }
         },
         "description": {
