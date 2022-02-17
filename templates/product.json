@@ -57,13 +57,13 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_favourite_btn": true,
+            "show_favourite_btn": false,
             "button_bg": "#85764f",
             "button_text": "#FFFFFF",
             "buy_button_bg": "#ffffff",
             "buy_button_text": "#85764f",
-            "fav_button_bg": "#ffffff",
-            "fav_button_text": "#85764f"
+            "fav_button_bg": "#85764f",
+            "fav_button_text": "#020202"
           }
         },
         "description": {
