@@ -367,9 +367,11 @@
     </div>
   </div>
 
+{% if  product.description contains "<!-- split -->" %}
 <div class="product__description rte split__description">
   {{ product.description |split:"<!-- split -->" | last }}
 </div>
+{% endif %}
 
   {%- render 'cart-notification' -%}
 
