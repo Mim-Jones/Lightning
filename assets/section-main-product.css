@@ -214,8 +214,6 @@ fieldset.product-form__input .form__label {
     bottom: 0;
     left: 0;
     top: unset !important;
-    background-color: rgba(var(--color-foreground));
-    color: rgb(var(--color-button-text));
     width: 100% !important;
 }
 
@@ -310,7 +308,7 @@ a.product__text {
 .product-form__submit {
     /* background-color: #121111!important;
     color: #85764F!important; */
-    background-color: rgba(var(--color-button))!important;
+    background-color: rgba(var(--color-button),var(--alpha-button-background))!important;
     color: rgb(var(--color-button-text));
 }
 
