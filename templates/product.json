@@ -58,7 +58,7 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_favourite_btn": false,
-            "button_bg": "#85764f",
+            "button_bg": "#101010",
             "button_text": "#ffffff",
             "buy_button_bg": "#ffffff",
             "buy_button_text": "#85764f",
