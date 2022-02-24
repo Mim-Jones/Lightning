@@ -56,9 +56,9 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_favourite_btn": false,
-            "button_bg": "#e22120",
+            "show_dynamic_checkout": false,
+            "show_favourite_btn": true,
+            "button_bg": "#85764f",
             "button_text": "#ffffff",
             "buy_button_bg": "#ffffff",
             "buy_button_text": "#85764f",
