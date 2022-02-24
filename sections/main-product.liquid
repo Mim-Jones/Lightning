@@ -116,7 +116,7 @@
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
-                {{ product.description }}
+                {{ product.description |split:"<!-- split -->" | first }}
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
@@ -366,6 +366,11 @@
       </div>
     </div>
   </div>
+
+<div class="product__description rte">
+  {{ product.description |split:"<!-- split -->" | last }}
+</div>
+
   {%- render 'cart-notification' -%}
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal">
