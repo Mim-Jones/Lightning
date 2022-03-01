@@ -7,7 +7,36 @@
     },
     "faq": {
       "type": "faq",
+      "blocks": {
+        "1980d804-9889-409f-8ff1-eb6c219170b2": {
+          "type": "block-1",
+          "settings": {
+            "qstn": "Where Can I Buy ABK Beer?",
+            "ans": "You Can Buy ABK Beer directly from our website. Just a few years ago you would rarely see an ABK beer outside of our home in bavaria, kaufbeuren, things have changed drastically! Find us in restaurants, pubs, cafes, supermarkets or even order directly to your home!"
+          }
+        },
+        "2d776f39-5ae9-4987-a821-67817ec10ed2": {
+          "type": "block-1",
+          "settings": {
+            "qstn": "",
+            "ans": ""
+          }
+        },
+        "0773c4ce-c5ed-475a-9d8f-ff68f8389fa9": {
+          "type": "block-1",
+          "settings": {
+            "qstn": "",
+            "ans": ""
+          }
+        }
+      },
+      "block_order": [
+        "1980d804-9889-409f-8ff1-eb6c219170b2",
+        "2d776f39-5ae9-4987-a821-67817ec10ed2",
+        "0773c4ce-c5ed-475a-9d8f-ff68f8389fa9"
+      ],
       "settings": {
+        "csm_ttl": ""
       }
     }
   },
