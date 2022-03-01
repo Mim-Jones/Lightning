@@ -43,8 +43,8 @@
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true,
-          "background_color": "#121111",
-          "content_color": "#f2f2f2",
+          "background_color": "#020202",
+          "content_color": "#ffffff",
           "content_hover_color": "#85764f"
         }
       },
