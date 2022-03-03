@@ -132,7 +132,7 @@ slider-component .slider-buttons {
   color: rgba(var(--color-foreground), 0.75);
   border: 0.1rem solid rgba(var(--color-foreground), 0.08);
   border-radius: 50%;
-  background-color: rgb(var(--color-background));
+  background-color: {{ settings.colors_slider_button }};
   cursor: pointer;
   width: 44px;
   height: 44px;
