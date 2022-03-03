@@ -103,7 +103,7 @@ slider-component .slider-buttons {
 }
 
 .slider-counter {
-  margin-right: 3rem;
+  display: none;
 }
 
 .slider-buttons--overlay .slider-counter {
@@ -131,7 +131,7 @@ slider-component .slider-buttons {
 .slider-button {
   color: rgba(var(--color-foreground), 0.75);
   border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  border-radius: 25%;
+  border-radius: 50%;
   background-color: rgb(var(--color-background));
   cursor: pointer;
   width: 44px;
@@ -145,7 +145,7 @@ slider-component .slider-buttons {
 }
 
 .slider-button:first-of-type {
-  margin-right: -1px;
+  margin-right: 1.5rem;
 }
 
 .slider-buttons--overlay .slider-button {
