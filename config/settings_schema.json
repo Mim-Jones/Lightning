@@ -36,7 +36,7 @@
       },
       {
         "type": "header",
-        "content": "other"
+        "content": "t:settings_schema.colors.settings.header__2.content"
       },
       {
         "type": "color",
