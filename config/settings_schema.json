@@ -32,7 +32,8 @@
         "type": "color",
         "id": "colors_accent_2",
         "default": "#9D572C",
-        "label": "t:settings_schema.colors.settings.colors_accent_2.label"
+        "label": "label and stuff",
+        "info": "more info"
       },
       {
         "type": "header",
