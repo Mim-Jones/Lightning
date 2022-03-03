@@ -65,7 +65,10 @@
         "label": "t:settings_schema.colors.settings.colors_background_2.label"
       },
       {
-         "name":"Slider Buttons"
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__3.content"
+      },
+      {
         "type": "color",
         "id": "colors_slider_button",
         "default": "##e5e5e5",

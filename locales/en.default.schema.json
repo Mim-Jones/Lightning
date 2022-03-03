@@ -20,6 +20,9 @@
         "header__2": {
           "content": "Secondary colors"
         },
+        "header__3": {
+          "content": "Slider Colors"
+        },
         "colors_text": {
           "label": "Text",
           "info": "Used as foreground color on background colors."
