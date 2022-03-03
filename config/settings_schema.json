@@ -73,7 +73,6 @@
         "id": "colors_slider_button_background",
         "default": "#e5e5e5",
         "label": "t:settings_schema.colors.settings.colors_slider_button_background.label",
-        "info": "t:settings_schema.colors.settings.colors_slider_button_background.info"
       },
       {
         "type": "color",
