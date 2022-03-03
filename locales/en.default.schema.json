@@ -40,7 +40,7 @@
         "colors_slider_button_background": {
           "label": "Slider button background",
           "info": "Used as background for all slider buttons."
-       },
+        },
         "colors_slider_button": {
           "label": "Slider button",
           "info": "Used as fill for all slider buttons."

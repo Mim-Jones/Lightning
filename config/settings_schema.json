@@ -74,14 +74,14 @@
         "default": "#e5e5e5",
         "label": "t:settings_schema.colors.settings.colors_slider_button_background.label",
         "info": "t:settings_schema.colors.settings.colors_slider_button_background.info"
-     },
-     {
-       "type": "color",
-       "id": "colors_slider_button",
-       "default": "#000000",
-       "label": "t:settings_schema.colors.settings.colors_slider_button.label",
-       "info": "t:settings_schema.colors.settings.colors_slider_button.info"
-     }
+      },
+      {
+        "type": "color",
+        "id": "colors_slider_button",
+        "default": "#000000",
+        "label": "t:settings_schema.colors.settings.colors_slider_button.label",
+        "info": "t:settings_schema.colors.settings.colors_slider_button.info"
+      }
     ]
   },
   {
