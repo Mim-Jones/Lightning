@@ -33,6 +33,11 @@
         },
         "colors_background_2": {
           "label": "Background 2"
+        },
+        "colors_slider_button": {
+          "label": "Slider Button",
+          "info": "Used as Background for all slider buttons"
+
         }
       }
     },
