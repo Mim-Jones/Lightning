@@ -21,7 +21,7 @@
           "content": "Secondary colors"
         },
         "header__3": {
-          "content": "Slider Colors"
+          "content": "Slider colors"
         },
         "colors_text": {
           "label": "Text",
@@ -39,7 +39,7 @@
         },
         "colors_slider_button": {
           "label": "Slider Button",
-          "info": "Used as Background for all slider buttons."
+          "info": "Used as background for all slider buttons."
 
         }
       }
