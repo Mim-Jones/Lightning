@@ -66,14 +66,14 @@
     color: {{section.settings.content_color}};
     fill: {{section.settings.content_color}}!important;
   }
-  
+
   header.header a:hover, header.header svg:hover, header.header svg:hover path, .header__active-menu-item {
     color: {{section.settings.content_hover_color}};
     fill: {{section.settings.content_hover_color}}!important;
   }
-  
-  
-  
+
+
+
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -366,9 +366,9 @@
     {%- endif -%}
 
     <div class="header__icons">
-      
+
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
-      
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">

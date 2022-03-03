@@ -8,6 +8,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
+
 {%- liquid
   assign products_to_display = section.settings.collection.all_products_count
 
@@ -168,3 +169,11 @@
   ]
 }
 {% endschema %}
+
+<style>
+
+.slider-button {
+  background-color: {{ settings.colors_slider_button }};
+  }
+
+</style>
