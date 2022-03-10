@@ -12,7 +12,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "stuff 2"
+        "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
         "type": "color",
@@ -34,7 +34,7 @@
       },
       {
         "type": "header",
-        "content": "stuff"
+        "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
         "type": "color",
