@@ -12,6 +12,10 @@
     "settings": [
         {
           "type": "header",
+          "content": "t:settings_schema.colors.settings.test.content"
+        },
+        {
+          "type": "header",
           "content": "t:settings_schema.colors.settings.header__1.content"
         },
       {
