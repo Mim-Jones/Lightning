@@ -11,8 +11,8 @@
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
-          "type": "header",
-          "content": "t:settings_schema.colors.settings.header__5.content"
+        "type": "header",
+        "content": "stuff 2"
       },
       {
         "type": "color",
@@ -34,7 +34,7 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.colors.settings.header__1.content"
+        "content": "stuff"
       },
       {
         "type": "color",
