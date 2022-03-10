@@ -12,7 +12,7 @@
     "settings": [
         {
           "type": "header",
-          "content": "t:settings_schema.colors.settings.test.content"
+          "content": "t:settings_schema.colors.settings.header_4.content"
         },
         {
           "type": "header",

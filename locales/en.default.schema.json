@@ -14,6 +14,9 @@
         "colors_accent_2": {
           "label": "Accent 2"
         },
+        "header__4": {
+          "content": "Header colors"
+        },
         "header__1": {
           "content": "Primary colors"
         },
@@ -39,6 +42,7 @@
         },
         "colors_slider_button_background": {
           "label": "Slider button background",
+          "info": "Used as background for all slider buttons."
         },
         "colors_slider_button": {
           "label": "Slider button",
