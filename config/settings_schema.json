@@ -10,28 +10,10 @@
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
-      {
-        "type": "header",
-        "content": "t:settings_schema.colors.settings.header__1.content"
-      },
-      {
-        "type": "color",
-        "id": "header_background_color",
-        "default": "#FFFFFF",
-        "label": "Header background color"
-      },
-      {
-        "type": "color",
-        "id": "header_content_color",
-        "default": "#445958",
-        "label": "Header content color"
-      },
-      {
-        "type": "color",
-        "id": "header_content_hover_color",
-        "default": "#9D572C",
-        "label": "Header content hover color"
-      },
+        {
+          "type": "header",
+          "content": "t:settings_schema.colors.settings.header__1.content"
+        },
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"

@@ -60,16 +60,16 @@
   }
 
   header.header{
-    background-color:{{ settings.colors_header_background_color}};
+    background-color:{{section.settings.background_color}};
   }
   header.header a, header.header svg, header.header svg path {
-    color: {{settings.colors_header_content_color}};
-    fill: {{settings.colors_header_content_color}}!important;
+    color: {{section.settings.content_color}};
+    fill: {{section.settings.content_color}}!important;
   }
 
   header.header a:hover, header.header svg:hover, header.header svg:hover path, .header__active-menu-item {
-    color: {{settings.colors_header_content_hover_color}};
-    fill: {{settings.colors_header_content_hover_color}}!important;
+    color: {{section.settings.content_hover_color}};
+    fill: {{section.settings.content_hover_color}}!important;
   }
 
 
@@ -617,29 +617,29 @@
       "default": true,
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
-    }
+    },
+     {
+        "type": "header",
+        "content": "Header color section"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "default": "#FFFFFF",
+        "label": "Header background color"
+      },
+      {
+        "type": "color",
+        "id": "content_color",
+        "default": "#445958",
+        "label": "Header content color"
+      },
+      {
+        "type": "color",
+        "id": "content_hover_color",
+        "default": "#9D572C",
+        "label": "Header content hover color"
+      }
   ]
 }
 {% endschema %}
-/* {
-   "type": "header",
-   "content": "Header color section"
- }, */
- /* {
-   "type": "color",
-   "id": "background_color",
-   "default": "#FFFFFF",
-   "label": "Header background color"
- },
- {
-   "type": "color",
-   "id": "content_color",
-   "default": "#445958",
-   "label": "Header content color"
- },
- {
-   "type": "color",
-   "id": "content_hover_color",
-   "default": "#9D572C",
-   "label": "Header content hover color"
- } */
