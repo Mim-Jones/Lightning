@@ -7,6 +7,9 @@
     "colors_outline_button_labels": "#85764f",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#ffffff",
+    "header_background_color": "#020202",
+    "header_content_color": "#ffffff",
+    "header_content_hover_color": "#85764f",
     "colors_slider_button_background": "#f2f2f2",
     "colors_slider_button": "#020202",
     "freeshipping": "100",
@@ -45,9 +48,6 @@
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true,
-          "background_color": "#020202",
-          "content_color": "#ffffff",
-          "content_hover_color": "#85764f"
         }
       },
       "footer": {
