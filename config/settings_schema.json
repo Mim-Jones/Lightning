@@ -12,15 +12,11 @@
     "settings": [
         {
           "type": "header",
-          "content": "Header Colors"
-        },
-        {
-          "type": "header",
-          "content": "t:settings_schema.colors.settings.header__4.content"
+          "content": "Header "
         },
       {
         "type": "header",
-        "content": "t:settings_schema.colors.settings.header__1.content"
+        "content": "t:settings_schema.colors.settings.header__4.content"
       },
       {
         "type": "color",
