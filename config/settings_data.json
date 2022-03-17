@@ -1,7 +1,7 @@
 {
   "current": {
     "header_background_color": "#020202",
-    "header_content_color": "#ffffff",
+    "header_content_color": "#d6d6d6",
     "header_content_hover_color": "#85764f",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#020202",
@@ -45,7 +45,7 @@
           "logo": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
           "logo_width": 70,
           "logo_position": "middle-left",
-          "menu": "main-menu",
+          "menu": "main-menu-new",
           "show_line_separator": false,
           "enable_sticky_header": true
         }
