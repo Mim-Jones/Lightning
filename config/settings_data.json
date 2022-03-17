@@ -1,8 +1,8 @@
 {
   "current": {
     "header_background_color": "#020202",
-    "header_content_color": "#d6d6d6",
-    "header_content_hover_color": "#85764f",
+    "header_content_color": "#85764f",
+    "header_content_hover_color": "#ffffff",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#020202",
     "colors_accent_2": "#85764f",
