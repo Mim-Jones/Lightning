@@ -333,6 +333,27 @@
   </div>
 </footer>
 
+<style>
+
+footer.footer{
+  background-color:{{settings.header_background_color}};
+}
+footer.footer a, footer.footer svg, footer.footer svg path {
+  color: {{settings.header_content_color}};
+  fill: {{settings.header_content_color}}!important;
+}
+
+footer.footer a:hover, footer.footer svg:hover, footer.footer svg:hover path, .footer__active-menu-item {
+  color: {{settings.header_content_hover_color}};
+  fill: {{settings.header_content_hover_color}}!important;
+}
+
+
+svg.modal__toggle-open.icon.icon-search:hover, .footer__icon--account:hover {
+  stroke: {{settings.header_content_hover_color}}!important;
+}
+</style>
+
 {% javascript %}
   class LocalizationForm extends HTMLElement {
     constructor() {
