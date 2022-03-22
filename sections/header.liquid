@@ -379,8 +379,6 @@
 
     <div class="header__icons">
 
-      <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
-
     
       <details-modal class="header__search">
         <details>
@@ -417,6 +415,10 @@
           </div>
         </details>
       </details-modal>
+
+              
+              
+      <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset">
