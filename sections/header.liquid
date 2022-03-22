@@ -60,34 +60,36 @@
   }
 
   header.header{
-    background-color:{{settings.header_background_color}};
+    background-color:{{settings.header_footer_background_color}};
   }
-  
 
-  
+
+
   header.header a, header.header svg, header.header svg path{
-    color: {{settings.header_content_color}};
-    fill: {{settings.header_content_color}}!important;
+    color: {{settings.header_footer_content_color}};
+    fill: {{settings.header_footer_content_color}}!important;
+    stroke: {{settings.header_footer_content_color}};
   }
-  
+
   .header__search .field__input:focus,.header__search .field__input {
-     box-shadow: 0 0 0 0.1rem {{settings.header_content_color}}!important;
-    color: {{settings.header_content_color}};
+     box-shadow: 0 0 0 0.1rem {{settings.header_footer_content_color}}!important;
+    color: {{settings.header_footer_content_color}};
   }
   .header__search .field__label{
-     color: {{settings.header_content_color}};
+     color: {{settings.header_footer_content_color}};
   }
 .search-modal__content{
-  background-color:{{settings.header_background_color}}!important;
+  background-color:{{settings.header_footer_background_color}}!important;
   }
   header.header a:hover, header.header svg:hover, header.header svg:hover path, .header__active-menu-item {
-    color: {{settings.header_content_hover_color}};
-    fill: {{settings.header_content_hover_color}}!important;
+    color: {{settings.header_footer_content_hover_color}};
+    fill: {{settings.header_footer_content_hover_color}}!important;
+    stroke: {{settings.header_footer_content_hover_color}};
   }
 
 
   svg.modal__toggle-open.icon.icon-search:hover, .header__icon--account:hover {
-    stroke: {{settings.header_content_hover_color}}!important;
+    stroke: {{settings.header_footer_content_hover_color}}!important;
   }
 
 
@@ -384,7 +386,7 @@
 
     <div class="header__icons">
 
-    
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -421,8 +423,8 @@
         </details>
       </details-modal>
 
-              
-              
+
+
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
 
       {%- if shop.customer_accounts_enabled -%}
