@@ -15,7 +15,10 @@
           "label": "Accent 2"
         },
         "header__4": {
-          "content": "Header & Footer colors"
+          "content": "Header colors"
+        },
+        "header__5": {
+          "content": "Footer colors"
         },
         "header__1": {
           "content": "Primary colors"
