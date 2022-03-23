@@ -81,7 +81,7 @@
   .search-modal__content{
   background-color:{{settings.header_footer_background_color}}!important;
   }
-  header.header a:hover, header.header svg:hover, header.header svg:hover path, .header__active-menu-item, .menu-drawer__close-button:hover {
+  header.header a:hover, header.header svg:hover, header.header svg:hover path, .header__active-menu-item, .menu-drawer__close-button:hover, .menu-drawer__menu-item--active:hover {
     color: {{settings.header_footer_content_hover_color}};
     fill: {{settings.header_footer_content_hover_color}}!important;
     stroke: {{settings.header_footer_content_hover_color}};
@@ -93,8 +93,8 @@
   nav.menu-drawer__navigation, .menu-drawer__inner-submenu, {
     background-color:{{settings.header_footer_background_color}};
   }
-  .menu-drawer__menu-item--active, .menu-drawer__menu-item--active:hover {
-    color:{{settings.header_footer_content_hover_color}};
+  .menu-drawer__menu-item--active, {
+    background-color:{{settings.header_footer_background_color}};
   }
 
 </style>
