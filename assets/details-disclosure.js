@@ -8,6 +8,7 @@ class DetailsDisclosure extends HTMLElement {
   }
 
   onKeyUp(event) {
+    console.log(event);
     if(event.code.toUpperCase() !== 'ESCAPE') return;
 
     const openDetailsElement = event.target.closest('details[open]');
