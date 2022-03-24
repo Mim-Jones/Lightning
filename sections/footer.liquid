@@ -335,30 +335,26 @@
 
 <style>
 
-  footer.footer{
-    background-color:{{settings.header_footer_background_color}};
-  }
-  footer.footer a, .footer-block__heading, .footer-block__details-content.rte, .newsletter__heading {
-    color: {{settings.header_footer_content_color}}!important;
-    fill: {{settings.header_footer_content_color}}!important;
-  }
+footer.footer{
+  background-color:{{settings.footer_background_color}};
+}
+footer.footer a, .footer-block__heading, .footer-block__details-content.rte, .newsletter__heading {
+  color: {{settings.footer_content_color}}!important;
+  fill: {{settings.footer_content_color}}!important;
+  text-decoration:none!important;
+}
 
-  footer.footer a:hover {
-    color: {{settings.header_footer_content_hover_color}}!important;
-    fill: {{settings.header_footer_content_hover_color}}!important;
-  }
-  .footer .field__input:focus,
+footer.footer a:hover {
+  color: {{settings.footer_content_hover_color}}!important;
+  fill: {{settings.footer_content_hover_color}}!important;
+}
+ .footer .field__input:focus,
   .footer .field__input {
-    box-shadow: 0 0 0 0.1rem {{settings.header_footer_content_color}}!important;
-    color: {{settings.header_footer_content_color}};
+     box-shadow: 0 0 0 0.1rem {{settings.footer_content_color}}!important;
+    color: {{settings.footer_content_color}};
   }
   .footer .field__label, .footer .newsletter-form__button,.copyright__content{
-    color: {{settings.header_footer_content_color}};
-  }
-
-  .accordion {
-    border-top: 0.1rem solid {{settings.header_footer_content_color}}!important, 0.2);
-    border-bottom: 0.1rem solid {{settings.header_footer_content_color}}!important, 0.2);
+     color: {{settings.footer_content_color}};
   }
 
 
