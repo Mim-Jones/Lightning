@@ -2,6 +2,7 @@
   "current": {
     "header_footer_background_color": "#1a1b18",
     "header_footer_content_color": "#ffffff",
+    "header_footer_content_hover_color": "#fd7a29",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#020202",
     "colors_accent_2": "#85764f",
