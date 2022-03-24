@@ -65,3 +65,13 @@ function updateItemById(id,quantity,sections) {
     console.error('Error:', error);
   });
 }
+
+
+
+ $( ".mega_parent" ).mouseenter(function() {
+   
+ });
+
+ $( ".dropdown_container" ).mouseleave(function() {
+   
+ });
