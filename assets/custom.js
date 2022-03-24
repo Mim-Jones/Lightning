@@ -74,7 +74,7 @@ jQuery(function($){
     $(this).parents('details').attr('open','open');
   });
 
-  $( ".list-menu li>a" ).mouseenter(function() {
+  $( ".list-menu li a.no-sub" ).mouseenter(function() {
     console.log('hover');
     $('details').removeAttr('open','open');
   });
