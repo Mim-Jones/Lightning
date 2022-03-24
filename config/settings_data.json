@@ -1,11 +1,8 @@
 {
   "current": {
     "header_background_color": "#000000",
-    "header_content_color": "#ffffff",
+    "header_content_color": "#ff0000",
     "header_content_hover_color": "#ffba00",
-    "footer_background_color": "#000000",
-    "footer_content_color": "#ffffff",
-    "footer_content_hover_color": "#ffba00",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#020202",
     "colors_accent_2": "#85764f",
@@ -21,6 +18,9 @@
     "sale_badge_color_scheme": "accent-1",
     "favicon": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
     "currency_code_enabled": false,
+    "footer_background_color": "#000000",
+    "footer_content_color": "#ffffff",
+    "footer_content_hover_color": "#ffba00",
     "header_footer_background_color": "#1a1b18",
     "header_footer_content_color": "#ffffff",
     "header_footer_content_hover_color": "#fd7a29",
