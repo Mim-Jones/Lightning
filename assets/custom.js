@@ -71,7 +71,7 @@ jQuery(function($){
   console.log('work');
   $( "summary.header__menu-item span" ).mouseenter(function() {
      console.log('hover');
-$(this).parents('details').attr('open');
+$(this).parents('details').attr('','open');
   });
 
   $( ".dropdown_container" ).mouseleave(function() {
