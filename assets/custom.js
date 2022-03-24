@@ -67,10 +67,10 @@ function updateItemById(id,quantity,sections) {
 }
 
 
-jQuery(function(){
+jQuery(function($){
   console.log('work');
-  $( ".mega_parent" ).mouseenter(function() {
-
+  $( "summary.header__menu-item" ).mouseenter(function() {
+$(this).parents('details').attr('open');
   });
 
   $( ".dropdown_container" ).mouseleave(function() {
