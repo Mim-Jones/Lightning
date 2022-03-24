@@ -74,8 +74,8 @@ jQuery(function($){
 $(this).parents('details').attr('open','open');
   });
 
-  $( ".dropdown_container" ).mouseleave(function() {
-
+  $( "details ul" ).mouseleave(function() {
+$(this).parents('details').removeAttr('open','open');
   });
 
 });
