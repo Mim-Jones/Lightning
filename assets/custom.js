@@ -70,12 +70,12 @@ function updateItemById(id,quantity,sections) {
 jQuery(function($){
   console.log('work');
   $( "summary.header__menu-item span" ).mouseenter(function() {
-     console.log('hover');
-$(this).parents('details').attr('open','open');
+    console.log('hover');
+    $(this).parents('details').attr('open','open');
   });
 
-  $( "details ul" ).mouseleave(function() {
-$(this).parents('details').removeAttr('open','open');
+  $( "details ul, .list-menu li>a" ).mouseleave(function() {
+    $(this).parents('details').removeAttr('open','open');
   });
 
 });
