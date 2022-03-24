@@ -67,11 +67,14 @@ function updateItemById(id,quantity,sections) {
 }
 
 
+jQuery(function(){
+  console.log('work');
+  $( ".mega_parent" ).mouseenter(function() {
 
- $( ".mega_parent" ).mouseenter(function() {
-   
- });
+  });
 
- $( ".dropdown_container" ).mouseleave(function() {
-   
- });
+  $( ".dropdown_container" ).mouseleave(function() {
+
+  });
+
+});
