@@ -74,7 +74,12 @@ jQuery(function($){
     $(this).parents('details').attr('open','open');
   });
 
-  $( "details ul, .list-menu li>a" ).mouseleave(function() {
+  $( ".list-menu li>a" ).mouseenter(function() {
+    console.log('hover');
+    $('details').removeAttr('open','open');
+  });
+  
+  $( "details ul" ).mouseleave(function() {
     $(this).parents('details').removeAttr('open','open');
   });
 
