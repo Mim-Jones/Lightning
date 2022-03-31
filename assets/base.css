@@ -1548,11 +1548,11 @@ input[type='checkbox'] {
 }
 
 .modal__toggle-close {
-  display: none;
+  display: none!important;
 }
 
 .no-js details[open] svg.modal__toggle-close {
-  display: flex;
+  display: flex!important;
   z-index: 1;
   height: 1.7rem;
   width: 1.7rem;
