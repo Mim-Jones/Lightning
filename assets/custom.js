@@ -69,7 +69,7 @@ function updateItemById(id,quantity,sections) {
 
 jQuery(function($){
   console.log('work');
-  $( "summary.header__menu-item span.hover-enable" ).mouseenter(function() {
+  $( "summary.header__menu-item#hover-enable span" ).mouseenter(function() {
     console.log('hover');
     $(this).parents('details').attr('open','open');
   });
