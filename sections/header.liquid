@@ -62,20 +62,20 @@
   header.header{
     background-color:{{settings.header_background_color}};
   }
-  
 
-  
-  header.header a, 
-  header.header svg, 
-  header.header svg path, 
+
+
+  header.header a,
+  header.header svg,
+  header.header svg path,
   .icon.icon-close,
   .summary.list-menu__item,
   .header__active-menu-item{
     color: {{settings.header_content_color}};
-    fill: {{settings.header_content_color}}!important;
+    fill: none!important;
     stroke:{{settings.header_content_color}}!important;
   }
-  
+
   .header__search .field__input:focus,.header__search .field__input {
      box-shadow: 0 0 0 0.1rem {{settings.header_content_color}}!important;
     color: {{settings.header_content_color}};
@@ -88,7 +88,7 @@
   }
   header.header a:hover, header.header svg:hover, header.header svg:hover path, #closeBag {
     color: {{settings.header_content_hover_color}};
-    fill: {{settings.header_content_hover_color}}!important;
+    fill: none!important;
   }
 
 
@@ -96,6 +96,7 @@
   .header__icon--account:hover svg path,
   .header__icon--cart:hover svg path {
     stroke: {{settings.header_content_hover_color}}!important;
+    color: {{settings.header_content_hover_color}};
   }
 
 
@@ -392,7 +393,7 @@
 
     <div class="header__icons">
 
-    
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -429,8 +430,8 @@
         </details>
       </details-modal>
 
-              
-              
+
+
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
 
       {%- if shop.customer_accounts_enabled -%}
