@@ -24,6 +24,9 @@
     display: flex;
   }
 
+  .header__active-menu-item {
+      text-decoration: none;
+  }
   .list-menu {
     list-style: none;
     padding: 0;
@@ -70,7 +73,9 @@
   header.header svg path,
   .icon.icon-close,
   .summary.list-menu__item,
-  .header__active-menu-item, .icon-account{
+  .header__active-menu-item, .icon-account, a.btn.close-bag svg,
+  .menu-drawer__close-button
+  {
     color: {{settings.header_content_color}};
     fill: none!important;
     stroke:{{settings.header_content_color}}!important;
@@ -86,7 +91,7 @@
   .search-modal__content{
   background-color:{{settings.header_background_color}}!important;
   }
-  header.header a:hover, header.header svg:hover, header.header svg:hover path, .icon-account:hover, #closeBag {
+  header.header a:hover, header.header svg:hover, header.header svg:hover path, .icon-account:hover,  a.btn.close-bag svg:hover, .header__active-menu-item:hover {
     color: {{settings.header_content_hover_color}};
     fill: none!important;
     stroke: {{settings.header_content_hover_color}}!important;

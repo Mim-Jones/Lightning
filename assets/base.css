@@ -1979,6 +1979,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   opacity: 1;
   transform: translateY(0);
   animation: animateMenuOpen var(--duration-default) ease;
+  top: 8rem;
 }
 
 /* Header menu */
@@ -2031,7 +2032,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__menu-item:hover span {
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 1.5rem;
 }
 
 .header__active-menu-item {
