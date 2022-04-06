@@ -70,7 +70,7 @@
   header.header svg path,
   .icon.icon-close,
   .summary.list-menu__item,
-  .header__active-menu-item{
+  .header__active-menu-item, .icon-account{
     color: {{settings.header_content_color}};
     fill: none!important;
     stroke:{{settings.header_content_color}}!important;
@@ -78,17 +78,18 @@
 
   .header__search .field__input:focus,.header__search .field__input {
      box-shadow: 0 0 0 0.1rem {{settings.header_content_color}}!important;
-    color: {{settings.header_content_color}};
+     color: {{settings.header_content_color}};
   }
   .header__search .field__label{
      color: {{settings.header_content_color}};
   }
-.search-modal__content{
+  .search-modal__content{
   background-color:{{settings.header_background_color}}!important;
   }
-  header.header a:hover, header.header svg:hover, header.header svg:hover path, #closeBag {
+  header.header a:hover, header.header svg:hover, header.header svg:hover path, .icon-account:hover, #closeBag {
     color: {{settings.header_content_hover_color}};
     fill: none!important;
+    stroke: {{settings.header_content_hover_color}}!important;
   }
 
 
