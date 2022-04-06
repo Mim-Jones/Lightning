@@ -95,7 +95,7 @@ slider-component .slider-buttons {
 
 .slider-buttons.slider-buttons--overlay {
   border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
 }
 
 .slider-mobile-gutter .slider-buttons {
