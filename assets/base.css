@@ -1793,6 +1793,8 @@ input[type='checkbox'] {
   .header--top-center .header__heading-link,
   .header--top-center .header__heading {
     justify-self: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
