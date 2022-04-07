@@ -1242,7 +1242,6 @@ deferred-media {
   color: rgb(var(--color-foreground));
   font-size: 1.6rem;
   width: 100%;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55);
   height: 4.5rem;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
@@ -1605,17 +1604,13 @@ input[type='checkbox'] {
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-base-accent-1));
-  color: rgb(var(--color-base-solid-button-labels));
   height: 1.7rem;
   width: 1.7rem;
-  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  bottom: 0;
   line-height: 1.1;
 }
 
@@ -1843,11 +1838,21 @@ input[type='checkbox'] {
     width: 2.2rem!important;
 }
 
-
+/* a#cart-icon-bubble {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    top: 1rem;
+} */
 
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  position: relative;
+  top: 1.1rem;
+  margin-left: 1.2rem;
 }
 
 @media screen and (max-width: 989px) {
