@@ -68,14 +68,14 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
         "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Description",
+            "heading": "Taste Profile",
             "content": "{{product.description}}",
             "page": "",
             "icon": "none"
