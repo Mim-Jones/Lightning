@@ -16,7 +16,7 @@
 .list-menu__item--active {
   text-decoration: underline;
   text-underline-offset: 1rem;
-  font-size: medium;
+  font-weight: 500;
 }
 
 .list-menu--disclosure.localization-selector {
