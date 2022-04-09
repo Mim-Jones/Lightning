@@ -55,7 +55,11 @@ function updateItemById(id,quantity,sections) {
   })
   .then((data) => {
     console.log(data);
+    if(data.item_count > 0){
     document.querySelector(".cart-count-bubble").innerHTML = `<span aria-hidden="true">${ data.item_count}</span><span class="visually-hidden">${data.item_count} item</span>`;
+    }else{ 
+    document.querySelector(".cart-count-bubble").innerHTML = ``;
+    }
       
     var sectionHtmlData =  data; 
     var SectionHtml = sectionHtmlData.sections['cart-items'] ;
