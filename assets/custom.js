@@ -60,7 +60,7 @@ function updateItemById(id,quantity,sections) {
     var SectionHtml = sectionHtmlData.sections['cart-items'] ;
     var IDminiCart = document.getElementById("mini-cart");
     console.log(SectionHtml);
-//     IDminiCart.innerHTML = SectionHtml;     
+    IDminiCart.innerHTML = SectionHtml;     
   })
   .catch((error) => {
     console.error('Error:', error);
