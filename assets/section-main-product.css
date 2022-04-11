@@ -783,5 +783,15 @@ a.product__text {
 }
 
 a.spr-summary-actions-newreview {
-    font-size: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.spr-summary-actions-togglereviews {
+    font-weight: 500;
+}
+
+.rte a {
+    text-decoration: none;
+
 }

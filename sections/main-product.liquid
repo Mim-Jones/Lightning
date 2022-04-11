@@ -136,8 +136,6 @@
                 <div class="accordion__content rte">
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
-                  {%- when '@app' -%}
-                    {% render block %}
                 </div>
               </details>
             </div>
@@ -786,9 +784,6 @@
           "type": "liquid",
           "id": "content",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
-        },
-        {"type": "@app"
-
         },
         {
           "type": "page",
