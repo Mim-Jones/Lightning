@@ -757,3 +757,31 @@ a.product__text {
   margin: 0;
   width: 2.2rem;
 }
+/* Product Reviews */
+.spr-container {
+
+}
+
+.spr-starratings {
+    font-size: 8px;
+}
+
+.spr-icon {
+    margin-right: 4px;
+}
+
+.spr-summary-starrating {
+    font-size: 10px;
+}
+
+.spr-review-header-byline {
+    font-style: normal;
+}
+
+.spr-header-title {
+    font-size: 20px;
+}
+
+a.spr-summary-actions-newreview {
+    font-size: 20px;
+}
