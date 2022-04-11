@@ -112,6 +112,11 @@
           "type": "share",
           "settings": {
           }
+        },
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -129,7 +134,8 @@
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d",
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "480ac395-9eac-477d-8809-7cc8ba19b133",
-        "share"
+        "share",
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b"
       ],
       "settings": {
         "enable_sticky_info": true,
