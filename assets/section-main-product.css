@@ -795,3 +795,8 @@ a.spr-summary-actions-newreview {
     text-decoration: none;
 
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
