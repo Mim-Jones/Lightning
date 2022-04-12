@@ -77,6 +77,7 @@
           "settings": {
             "heading": "Taste Profile",
             "content": "{{product.description}}",
+            "enable_review": false,
             "page": "",
             "icon": "none"
           }
@@ -86,6 +87,7 @@
           "settings": {
             "heading": "Delivery",
             "content": "<b>England & Wales Shipping Only.<\/b> \n<br>\nUnfortunately due to high shipping costs for alchohol we can only deliver to these locations.\n<br>\n<b>Shipping takes 2-4 working days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>For Orders placed on weekends or Holidays<\/b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
+            "enable_review": false,
             "page": "",
             "icon": "truck"
           }
@@ -95,6 +97,7 @@
           "settings": {
             "heading": "Returns",
             "content": "",
+            "enable_review": false,
             "page": "",
             "icon": "return"
           }
@@ -104,6 +107,7 @@
           "settings": {
             "heading": "Reviews",
             "content": "",
+            "enable_review": true,
             "page": "",
             "icon": "star"
           }
