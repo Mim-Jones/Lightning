@@ -1,8 +1,8 @@
 {
   "current": {
     "header_background_color": "#ffffff",
-    "header_content_color": "#1878b9",
-    "header_content_hover_color": "#ff0000",
+    "header_content_color": "#000000",
+    "header_content_hover_color": "#cb6d51",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#ff0000",
     "colors_accent_2": "#85764f",
@@ -54,8 +54,8 @@
           "menu": "main-menu-new",
           "show_line_separator": false,
           "menu_hover": true,
-          "enable_sticky_header": true,
-          "hide_account_icon" true
+          "hide_account_icon": true,
+          "enable_sticky_header": true
         }
       },
       "footer": {
