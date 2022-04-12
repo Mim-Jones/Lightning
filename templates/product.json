@@ -103,7 +103,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Reviews",
-            "content": "<div id=\"shopify-product-reviews\" data-id=\"{{product.id}}\">{{ product.metafields.spr.reviews }}<\/div>",
+            "content": "",
             "page": "",
             "icon": "star"
           }
