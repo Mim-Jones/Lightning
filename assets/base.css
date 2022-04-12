@@ -1850,6 +1850,19 @@ a.navigation__link.header__icon.link.link--text.focus-inset {
   }
 }
 
+@media screen and (max-width: 989px) {
+  .hide-account {
+    display: none!important;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .hide-account-fix {
+    margin-bottom: 2.4rem;
+  }
+}
+
 /* a#cart-icon-bubble {
     width: 2.4rem;
     height: 2.4rem;

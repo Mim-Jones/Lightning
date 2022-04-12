@@ -130,7 +130,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} {% if section.settings.hide_account_icon %}no-account-mobile{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
@@ -409,7 +409,7 @@
       </nav>
     {%- endif -%}
 
-    <div class="header__icons">
+    <div class="header__icons  {% if section.settings.hide_account_icon %}hide-account-fix{% endif %}">
 
 
       <details-modal class="header__search">
@@ -453,7 +453,7 @@
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
       </span>
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset {% if section.settings.hide_account_icon %}hide-account{% endif %}">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -663,6 +663,12 @@
       "id": "menu_hover",
       "default": true,
       "label": "Enable on hover menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_account_icon",
+      "default": true,
+      "label": "Hide account on mobile"
     },
     {
       "type": "checkbox",
