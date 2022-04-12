@@ -1798,6 +1798,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
+  margin-right: 1rem;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -1807,6 +1808,11 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
+@media screen and (max-width: 990px) {
+a.navigation__link.header__icon.link.link--text.focus-inset {
+    justify-content: left;
+}
+}
 .header__icon span {
   height: 100%;
 }
@@ -2022,6 +2028,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
   .header--middle-left .header__inline-menu {
     margin-left: 0;
+    padding-right: 1rem;
   }
 }
 

@@ -220,6 +220,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-left: -1.2rem;
   font-size: 1.4rem;
 }
+.menu-drawer-wishlist {
+    display: inline-flex;
+    text-decoration: none;
+}
 
 .menu-drawer__account .icon-account {
   height: 2rem;
