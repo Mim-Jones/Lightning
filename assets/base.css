@@ -1838,6 +1838,12 @@ input[type='checkbox'] {
     width: 2.2rem!important;
 }
 
+@media screen and (max-width: 989px) {
+  .desktop-wishlist {
+    display: none;
+  }
+}
+
 /* a#cart-icon-bubble {
     width: 2.4rem;
     height: 2.4rem;

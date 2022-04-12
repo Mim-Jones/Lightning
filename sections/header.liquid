@@ -217,6 +217,9 @@
                         endif
                       -%}
                     </a>
+                    <div class="mobile-wishlist">
+                    <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
+                    </div>
                   {%- endif -%}
                   <ul class="list list-social list-unstyled" role="list">
                     {%- if settings.social_twitter_link != blank -%}
@@ -444,9 +447,9 @@
       </details-modal>
 
 
-
+      <span class="desktop-wishlist">
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
-
+      </span>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset">
           {% render 'icon-account' %}
@@ -475,7 +478,7 @@
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}  {%- endif -%}
               <span id="CartCount" aria-hidden="true">{{ cart.item_count }}</span>
-          
+
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
