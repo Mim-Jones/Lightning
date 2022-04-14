@@ -68,8 +68,13 @@
         "type": "color",
         "id": "colors_text",
         "default": "#1A1B18",
-        "label": "t:settings_schema.colors.settings.colors_text.label",
-        "info": "t:settings_schema.colors.settings.colors_text.info"
+        "label": "t:settings_schema.colors.settings.colors_text.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_outline_button_labels",
+        "default": "#445958",
+        "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label"
       },
       {
       "type": "header",
@@ -97,13 +102,6 @@
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
-      },
-      {
-        "type": "color",
-        "id": "colors_outline_button_labels",
-        "default": "#445958",
-        "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label",
-        "info": "t:settings_schema.colors.settings.colors_outline_button_labels.info"
       },
       {
         "type": "color",
