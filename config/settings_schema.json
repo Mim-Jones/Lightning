@@ -57,12 +57,12 @@
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__7.content"
-      }, 
+      },
       {
         "type": "color",
-        "id": "colors_background_1",
+        "id": "mobile_background_color",
         "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.colors_background_1.label"
+        "label": "t:settings_schema.colors.settings.mobile_background_color.label"
       },
       {
         "type": "header",
