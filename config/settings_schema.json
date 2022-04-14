@@ -57,7 +57,13 @@
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__7.content"
-      }, dd
+      }, 
+      {
+        "type": "color",
+        "id": "colors_background_1",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_background_1.label"
+      },
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
