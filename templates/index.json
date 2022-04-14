@@ -22,7 +22,7 @@
             "colors_text": "#e22120",
             "colors_text_mob": "#1878b9",
             "desktop_text_box_position": "center",
-            "show_text_box": true,
+            "show_text_box": false,
             "color_scheme": "accent-1"
           }
         },
