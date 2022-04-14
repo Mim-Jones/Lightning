@@ -60,6 +60,12 @@
       },
       {
         "type": "color",
+        "id": "colors_background_1",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_background_1.label"
+      }, dd
+      {
+        "type": "color",
         "id": "colors_solid_button_labels",
         "default": "#FFFFFF",
         "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
@@ -95,12 +101,6 @@
         "default": "#445958",
         "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label",
         "info": "t:settings_schema.colors.settings.colors_outline_button_labels.info"
-      },
-      {
-        "type": "color",
-        "id": "colors_background_1",
-        "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.colors_background_1.label"
       },
       {
         "type": "color",

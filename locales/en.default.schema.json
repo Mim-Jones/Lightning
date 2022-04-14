@@ -31,14 +31,14 @@
         },
         "colors_text": {
           "label": "Text",
-          "info": "Used as foreground color on background colors."
+          "info": "Used as main text color."
         },
         "colors_outline_button_labels": {
           "label": "Outline button",
           "info": "Also used for text links."
         },
         "colors_background_1": {
-          "label": "Background 1"
+          "label": "Main Background Color"
         },
         "colors_background_2": {
           "label": "Background 2"
