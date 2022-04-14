@@ -1158,6 +1158,10 @@ deferred-media {
   opacity: 0.5;
 }
 
+.share-button {
+  color: rgb(var(--color-button-text))
+}
+
 .button--full-width {
   display: flex;
   width: 100%;
