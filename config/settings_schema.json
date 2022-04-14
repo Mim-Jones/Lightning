@@ -54,7 +54,6 @@
         "default": "#9D572C",
         "label": "Footer content hover color"
       },
-
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
