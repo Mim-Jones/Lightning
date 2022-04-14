@@ -19,8 +19,8 @@
             "button_label_2": "Our History",
             "button_link_2": "shopify:\/\/pages\/faqs",
             "button_style_secondary_2": false,
-            "colors_text": "#85764f",
-            "colors_text_mob": "#85764f",
+            "colors_text": "#e22120",
+            "colors_text_mob": "#1878b9",
             "desktop_text_box_position": "center",
             "show_text_box": false,
             "color_scheme": "background-2"
