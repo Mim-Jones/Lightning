@@ -34,6 +34,29 @@
       },
       {
         "type": "header",
+        "content": "t:settings_schema.colors.settings.header__5.content"
+      },
+      {
+        "type": "color",
+        "id": "footer_background_color",
+        "default": "#FFFFFF",
+        "label": "Footer background color"
+      },
+      {
+        "type": "color",
+        "id": "footer_content_color",
+        "default": "#445958",
+        "label": "Footer content color"
+      },
+      {
+        "type": "color",
+        "id": "footer_content_hover_color",
+        "default": "#9D572C",
+        "label": "Footer content hover color"
+      },
+
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
