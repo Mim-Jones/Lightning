@@ -63,7 +63,7 @@
         "id": "colors_background_1",
         "default": "#FFFFFF",
         "label": "t:settings_schema.colors.settings.colors_background_1.label"
-      }, dd
+      }, 
       {
         "type": "color",
         "id": "colors_solid_button_labels",
