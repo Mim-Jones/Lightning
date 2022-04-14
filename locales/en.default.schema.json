@@ -4,8 +4,7 @@
       "name": "Colors",
       "settings": {
         "colors_solid_button_labels": {
-          "label": "Button color text",
-          "info": "Used on most buttons except for product page and banner."
+          "label": "Button color text"
         },
         "colors_accent_1": {
           "label": "Button color background",
@@ -20,8 +19,11 @@
         "header__5": {
           "content": "Footer colors"
         },
+        "header__6": {
+          "content": "Button colors"
+        },
         "header__1": {
-          "content": "Primary colors"
+          "content": "General colors"
         },
         "header__2": {
           "content": "Secondary colors"
