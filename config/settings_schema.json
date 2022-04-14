@@ -56,6 +56,10 @@
       },
       {
         "type": "header",
+        "content": "t:settings_schema.colors.settings.header__7.content"
+      }, dd
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {

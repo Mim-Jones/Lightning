@@ -13,6 +13,15 @@
         "colors_accent_2": {
           "label": "Nothing yet"
         },
+        "header__1": {
+          "content": "General colors"
+        },
+        "header__2": {
+          "content": "Secondary colors"
+        },
+        "header__3": {
+          "content": "Slider colors"
+        },
         "header__4": {
           "content": "Header colors"
         },
@@ -22,14 +31,8 @@
         "header__6": {
           "content": "Button colors"
         },
-        "header__1": {
-          "content": "General colors"
-        },
-        "header__2": {
-          "content": "Secondary colors"
-        },
-        "header__3": {
-          "content": "Slider colors"
+        "header__7": {
+          "content": "Banner colors"
         },
         "colors_text": {
           "label": "Main text color"
