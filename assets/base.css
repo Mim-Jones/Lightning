@@ -1159,7 +1159,7 @@ deferred-media {
 }
 
 .share-button {
-  color: rgb(var(--color-button-text))
+  color: rgb(var(--color-button-text));
 }
 
 .button--full-width {
