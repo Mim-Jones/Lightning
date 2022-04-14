@@ -4,12 +4,12 @@
       "name": "Colors",
       "settings": {
         "colors_solid_button_labels": {
-          "label": "Solid button label",
-          "info": "Used as foreground color on accent colors."
+          "label": "Button color text",
+          "info": "Used on most buttons except for product page and banner."
         },
         "colors_accent_1": {
-          "label": "Accent 1",
-          "info": "Used for solid button background."
+          "label": "Button color background",
+          "info": "Used on most buttons except for product page and banner."
         },
         "colors_accent_2": {
           "label": "Accent 2"
@@ -38,7 +38,7 @@
           "info": "Also used for text links."
         },
         "colors_background_1": {
-          "label": "Main Background Color"
+          "label": "Main background color"
         },
         "colors_background_2": {
           "label": "Background 2"
