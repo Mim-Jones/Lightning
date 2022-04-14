@@ -46,7 +46,7 @@
         "colors_background_2": {
           "label": "Button text color banner"
         },
-        "mobile_background_colors": {
+        "mobile_background_color": {
             "label": "Background color on mobile"
         },
         "colors_slider_button_background": {

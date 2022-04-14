@@ -61,8 +61,8 @@
       {
         "type": "color",
         "id": "mobile_background_color",
-        "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.mobile_background_colors.label"
+        "default": "#FF0000",
+        "label": "t:settings_schema.colors.settings.mobile_background_color.label"
       },
       {
         "type": "header",
