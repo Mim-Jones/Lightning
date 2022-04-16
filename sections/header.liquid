@@ -23,6 +23,12 @@
 {%endif%}
 
 <style>
+ .list-menu li:hover ul {
+    opacity: 1;
+    transform: translateY(0);
+    animation: animateMenuOpen var(--duration-default) ease;
+    top: 8rem;
+}
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
