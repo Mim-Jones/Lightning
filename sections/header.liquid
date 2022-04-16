@@ -11,7 +11,9 @@
 {% if section.settings.hide_account_icon %}
     {% if template.name != "index" %} 
     <style>
+      @media(max-width:992px){
       .header__heading-link{position:absolute;left:0}
+      }
     </style>
 {% endif %}
     {% endif %}
