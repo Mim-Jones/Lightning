@@ -375,30 +375,41 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-            <li>
-              {%- if link.links != blank -%}
-                <a href='' class="header__menu-item list-menu__item link focus-inset">
+                 </etails-disclosure>                  
+<details>
+                    <a class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} id="" {% endif %}>
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
-                            </a>
-                  <ul class="dropdown header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                  	{%- for childlink in link.links -%}
-                    	{%- if childlink.links == blank -%}
+                    </a>
+                    <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                      {%- for childlink in link.links -%}
+                        <li>
+                          {%- if childlink.links == blank -%}
                             <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                               {{ childlink.title | escape }}
                             </a>
                           {%- else -%}
-                    <p>Grand-Child</p>
-                    {%endif%}
-                    {%- endfor -%}
-                  </ul>
-
-              {%- else -%}
-                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif%} >{{ link.title | escape }} </span>
-                </a>
-              {%- endif -%}
-            </li>
+                            <details>
+                              <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                                {{ childlink.title | escape }}
+                                {% render 'icon-caret' %}
+                              </summary>
+                              <ul class="header__submenu list-menu motion-reduce">
+                                {%- for grandchildlink in childlink.links -%}
+                                  <li>
+                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                      {{ grandchildlink.title | escape }}
+                                    </a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
+                            </details>
+                          {%- endif -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </details>
+                </details-disclosure>
           {%- endfor -%}
         </ul>
       </nav>
