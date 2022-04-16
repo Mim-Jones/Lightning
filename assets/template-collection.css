@@ -646,7 +646,6 @@ details[open] .mobile-facets__open {
 }
 
 details.menu-opening .mobile-facets__close {
-  display: flex;
   opacity: 1;
 }
 
