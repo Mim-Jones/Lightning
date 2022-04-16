@@ -609,10 +609,10 @@
         	$(document).ready(function() {
     $(".hover-to-view").hover(
         function() {
-            $('header__submenu').stop(true, true).slideDown('medium');
+            $('header__submenu').css("opacity","1");
         },
         function() {
-            $('header__submenu').stop(true, true).slideUp('medium');
+            $('header__submenu')..css("opacity","0");
         }
     });
 });
