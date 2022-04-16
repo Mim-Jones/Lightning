@@ -648,7 +648,7 @@ details[open] .mobile-facets__open {
 details.menu-opening .mobile-facets__close {
   opacity: 1;
 }
-
+.mobile-facets__disclosure[open] .mobile-facets__close{display:flex;}
 details.menu-opening .mobile-facets__close svg {
   margin: 0;
 }
