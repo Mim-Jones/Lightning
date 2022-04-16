@@ -375,12 +375,14 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-                 </etails-disclosure>                  
-<details>
-                    <a class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} id="" {% endif %}>
+            <li>
+              {%- if link.links != blank -%}
+                <div>
+                  <details>
+                    <summary class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
-                    </a>
+                    </summary>
                     <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {%- for childlink in link.links -%}
                         <li>
@@ -409,7 +411,13 @@
                       {%- endfor -%}
                     </ul>
                   </details>
-                </details-disclosure>
+                </div>
+              {%- else -%}
+                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                </a>
+              {%- endif -%}
+            </li>
           {%- endfor -%}
         </ul>
       </nav>
