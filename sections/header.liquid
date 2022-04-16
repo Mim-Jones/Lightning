@@ -377,7 +377,7 @@
           {%- for link in section.settings.menu.links -%}
             <li>
               {%- if link.links != blank -%}
-                <details-disclosure>
+                <div>
                   <details>
                     <summary class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
@@ -411,7 +411,7 @@
                       {%- endfor -%}
                     </ul>
                   </details>
-                </details-disclosure>
+                </div>
               {%- else -%}
                 <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
