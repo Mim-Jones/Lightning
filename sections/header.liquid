@@ -9,13 +9,13 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% if section.settings.hide_account_icon %}
-    
+    {% if template.name != "index" %} 
     <style>
       @media(max-width:992px){
       .header__heading-link{position:absolute;left:0;top:-10px}
       }
     </style>
-
+{% endif %}
     {% endif %}
 
 {% if section.settings.hide_account_icon %}
