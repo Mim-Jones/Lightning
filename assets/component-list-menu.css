@@ -26,3 +26,50 @@
   width: 10rem;
   padding: 0.5rem;
 }
+
+
+
+
+.header__inline-menu li {
+	color: #fff;
+  background: darkorange;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+.header__inline-menu li a {
+  color: #fff;
+}
+
+.header__inline-menu li:hover {
+	background: red;
+	cursor: pointer;
+}
+
+.header__inline-menu ul li ul {
+	background: orange;
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+.header__inline-menu ul li:hover > .header__inline-menu ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.header__inline-menu ul li ul li {
+	clear: both;
+  width: 100%;
+}
