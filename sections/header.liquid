@@ -605,6 +605,18 @@
     "url": {{ shop.url | append: page.url | json }}
   }
 </script>
+        <script>
+        	$(document).ready(function() {
+    $(".hover-to-view").hover(
+        function() {
+            $('header__submenu').stop(true, true).slideDown('medium');
+        },
+        function() {
+            $('header__submenu').stop(true, true).slideUp('medium');
+        }
+    });
+});
+        </script>
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
