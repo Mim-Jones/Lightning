@@ -389,7 +389,15 @@
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
                     </summary>
-                    <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                    
+                  </details>
+                </div>
+              {%- else -%}
+                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                </a>
+              {%- endif -%}
+                  <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {%- for childlink in link.links -%}
                         <li>
                           {%- if childlink.links == blank -%}
@@ -416,13 +424,6 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-                  </details>
-                </div>
-              {%- else -%}
-                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                </a>
-              {%- endif -%}
             </li>
           {%- endfor -%}
         </ul>
