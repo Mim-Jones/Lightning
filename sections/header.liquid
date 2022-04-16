@@ -33,7 +33,9 @@
 {%endif%}
 
 <style>
-  .header__heading{z-index:999}
+  @media(min-width:1025px){
+  .header__heading, .header__heading-link{z-index:999}
+  }
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -526,7 +528,7 @@
           }
           .header__submenu{opacity:0;top:-200%;z-index:-1}
           .header__menu-item:hover span{text-underline-offset:1rem !important}
-          .header__heading-link {z-index:999;width:auto!important}
+          .header__heading-link {width:auto!important}
         </style>
 {% javascript %}
   class StickyHeader extends HTMLElement {
