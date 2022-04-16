@@ -185,5 +185,12 @@
       .d-none{display:none !important}
       .is-sticky .product-form__submit:hover{border:none !important}
     </style>
+    {% if section.settings.hide_account_icon %}
+    {% if template.name != "index" %} 
+    <style>
+      .header__heading-link{position:absolute;left:0}
+    </style>
+{% endif %}
+    {% endif %}
   </body>
 </html>
