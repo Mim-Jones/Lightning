@@ -23,7 +23,7 @@
 {%endif%}
 
 <style>
- .list-menu li:hover ul {
+ .hover-to-view:hover ul {
     opacity: 1;
     transform: translateY(0);
     animation: animateMenuOpen .5s ease;
@@ -381,7 +381,7 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-            <li>
+            <li class='hover-to-view'>
               {%- if link.links != blank -%}
                 <div>
                   <details>
