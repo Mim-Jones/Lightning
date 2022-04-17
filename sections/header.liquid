@@ -244,7 +244,7 @@
                     </a>
                     <div class="mobile-wishlist">
                     <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer-wishlist navigation__link header__icon link link--text focus-inset h5">{%- render 'icon-heart' -%}
-                      {{ link.title | escape }} <span>Favourite</span>
+                      {{ link.title | escape }} Favourite
                     </a>
                     </div>
                   {%- endif -%}
