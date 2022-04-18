@@ -9,31 +9,21 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% if section.settings.hide_account_icon %}
-    {% if template.name != "index" %} 
-    <style>
-      @media(max-width:992px){
-      .header__heading-link{position:absolute;left:0;top:-10px}
-      }
-    </style>
-{% endif %}
-    {% endif %}
-
-{% if section.settings.hide_account_icon %}
 <style>
   @media(max-width:992px){
   header-drawer{position:absolute;right:0}
   .header__icons{margin-right:5rem;}
     .header__icon--search {left:0 !important;position:relative !important;}
-    .header__heading {position:absolute;left:0;top:-10px}
+    .header__heading, .header__heading-link{position:absolute;left:0}
     .hide-account-fix{margin-bottom:0!important}
-    .menu-drawer{transform:translate(200%)}
-    .js details[open].menu-opening>.menu-drawer{transform:translate(-87%)}
+    .menu-drawer{transform:translate(-200%)}
+    .js details[open].menu-opening>.menu-drawer{transform:translate(-100%)}
   }
 </style>
 {%endif%}
 
 <style>
-  .header__heading{z-index:999}
+ 
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -135,7 +125,7 @@
     stroke: {{settings.header_content_hover_color}}!important;
   }
 
-  .mrg-cls svg{margin-right:1.2rem}
+
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -243,10 +233,9 @@
                       -%}
                     </a>
                     <div class="mobile-wishlist">
-                    <a style='width:auto !important' href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="mrg-cls menu-drawer-wishlist navigation__link header__icon link link--text focus-inset h5">{%- render 'icon-heart' -%}
-                       {{ link.title | escape }} Favourite
+                    <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer-wishlist navigation__link header__icon link link--text focus-inset h5">{%- render 'icon-heart' -%}
+                    {{ link.title | escape }}
                     </a>
-                      
                     </div>
                   {%- endif -%}
                   <ul class="list list-social list-unstyled" role="list">
@@ -387,15 +376,23 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-            <li class='hover-nav'>
+            <li class='hover-to-view'>
               {%- if link.links != blank -%}
                 <div>
-                  <div>
+                  <details>
                     <summary class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} {% endif %}>
                       <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
                     </summary>
-                    <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                    
+                  </details>
+                </div>
+              {%- else -%}
+                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                </a>
+              {%- endif -%}
+                  <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {%- for childlink in link.links -%}
                         <li>
                           {%- if childlink.links == blank -%}
@@ -422,13 +419,6 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-                  </div>
-                </div>
-              {%- else -%}
-                <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                </a>
-              {%- endif -%}
             </li>
           {%- endfor -%}
         </ul>
@@ -518,21 +508,7 @@
 {%- if request.page_type != 'cart' -%}
   {%- render 'cart-notification' -%}
 {%- endif -%}
-        <style>
-          .hover-nav{cursor:pointer}
-          .hover-nav:hover .header__submenu{
-          	opacity:1;
-            top:6rem;
-            transform:translateY(0);
-            z-index:1;
-            transition:.5s
-           
-          }
-          .header__submenu{opacity:0;top:-25px;z-index:-1; }
-          .header__menu-item:hover span{text-underline-offset:1rem !important}
-          .header__heading-link {z-index:999;width:auto!important}
-          .header__icon--search, .hover-nav summary{z-index:999}
-        </style>
+
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
@@ -629,6 +605,18 @@
     "url": {{ shop.url | append: page.url | json }}
   }
 </script>
+        <script>
+        	$(document).ready(function() {
+    $(".hover-to-view").hover(
+        function() {
+            $('header__submenu').stop(true, true).slideDown('medium');
+        },
+        function() {
+            $('header__submenu').stop(true, true).slideUp('medium');
+        }
+    });
+});
+        </script>
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
