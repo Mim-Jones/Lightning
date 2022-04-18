@@ -54,7 +54,7 @@
           "menu": "main-menu-new",
           "show_line_separator": false,
           "menu_hover": true,
-          "hide_account_icon": true,
+          "hide_account_icon": false,
           "enable_sticky_header": true
         }
       },
