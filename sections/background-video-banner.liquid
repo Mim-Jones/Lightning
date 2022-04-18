@@ -41,7 +41,7 @@
 
   <div class="img_section">
   {% assign section = block %}
-  <div class="video-section image-desktop {% unless section.settings.full_width %} page-width{% endunless %} {% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+  <div class="video-section image-desktop full_width_{{section.settings.full_width}} {% unless section.settings.full_width %} page-width{% endunless %} {% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
 
     <noscript>
       <div class="video-section__media"
