@@ -6,11 +6,13 @@
      data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
   <style>
-    #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}} .banner__text{
+    #Banner_{{ block.id | remove:"-"}} .banner__heading h1, 
+    #Banner_{{ block.id | remove:"-"}} .banner__text h2{
       color:{{block.settings.colors_text}};
     }
     @media(max-width:768px){
-     #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}}  .banner__text{
+     #Banner_{{ block.id | remove:"-"}} .banner__heading h1, 
+      #Banner_{{ block.id | remove:"-"}}  .banner__text h2{
        color:{{block.settings.colors_text_mob}};
     }
     }
