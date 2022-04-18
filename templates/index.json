@@ -36,34 +36,9 @@
     },
     "16316073674dfa205d": {
       "type": "image-video-banner",
-      "disabled": true,
       "blocks": {
-        "abf16fff-4840-4772-8e59-7cf67415d4e4": {
-          "type": "video",
-          "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
-            "video_url": "",
-            "description": "",
-            "full_width": true,
-            "heading": "700 Years Of Bavarian Beer",
-            "heading_size": "medium",
-            "text": "Authentic German Beer Delivered to Your Door",
-            "button_label_1": "Shop ABK Beers",
-            "button_link_1": "shopify:\/\/collections\/view-all-our-beers",
-            "button_style_secondary_1": false,
-            "button_label_2": "Our History",
-            "button_link_2": "shopify:\/\/pages\/faqs",
-            "button_style_secondary_2": false,
-            "colors_text": "#85764f",
-            "colors_text_mob": "#85764f",
-            "desktop_text_box_position": "center",
-            "show_text_box": false,
-            "color_scheme": "background-2"
-          }
-        },
         "16316073674dfa205d-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online.jpg",
             "heading": "Image banner",
@@ -86,7 +61,6 @@
         },
         "16316073674dfa205d-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Dark_German_Rauchbier_Online.jpg",
             "heading": "Image banner",
@@ -109,12 +83,10 @@
         }
       },
       "block_order": [
-        "abf16fff-4840-4772-8e59-7cf67415d4e4",
         "16316073674dfa205d-1",
         "16316073674dfa205d-0"
       ],
       "settings": {
-        "adapt_height_first_image": true
       }
     },
     "163793031265aa8c20": {
