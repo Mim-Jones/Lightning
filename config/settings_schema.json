@@ -66,13 +66,13 @@
       },
       {
         "type": "color",
-        "id": "colors_text",
+        "id": "banners_color_text",
         "default": "#FFFFFF",
         "label": "Text color"
       },
       {
          "type": "color",
-         "id": "colors_text_mob",
+         "id": "banner_color_text_mob",
          "default": "#FFFFFF",
          "label": "Mob Text color"
       },
