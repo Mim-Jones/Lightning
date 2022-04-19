@@ -130,7 +130,7 @@
   }
 
   header.header a, header.header svg,
-  header.header svg path, .icon.icon-close,
+  header.header svg path,
   .summary.list-menu__item, .header__active-menu-item,
   .icon-account, a.btn.close-bag svg,
   .menu-drawer__close-button, .icon-search,
@@ -152,14 +152,16 @@
   .header__icon--account:hover svg path,
   .header__icon--cart:hover svg path,
   .cart-count-bubble:hover,
-  .header__icon--account:hover svg path, .header__icon--account:hover svg circle
+  .header__icon--account:hover svg path, .header__icon--account:hover svg circle,
+  .icon.icon-close:hover
   {
-    color: {{settings.header_content_hover_color}};
-    fill: none!important;
+    color: {{settings.header_content_hover_color}}!important;
+    fill: {{settings.header_content_hover_color}}!important;
     stroke: {{settings.header_content_hover_color}}!important;
   }
 
   .mrg-cls svg{margin-right:1.2rem}
+  
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -356,7 +358,7 @@
                 <use href="#icon-search">
               </svg>
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-close">
+                <use href="#icon-close" class="icon-close">
               </svg>
             </span>
           </summary>
@@ -376,7 +378,7 @@
               </form>
               <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
+                  <use href="#icon-close" class="icon-close">
                 </svg>
               </button>
             </div>
@@ -470,7 +472,7 @@
                 <use href="#icon-search">
               </svg>
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-close">
+                <use href="#icon-close"  class="icon-close">
               </svg>
             </span>
           </summary>
@@ -490,7 +492,7 @@
               </form>
               <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
+                  <use href="#icon-close"  class="icon-close">
                 </svg>
               </button>
             </div>
