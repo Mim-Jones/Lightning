@@ -74,11 +74,11 @@
        <div id="Banner-{{ block.id | remove:"-" }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
             <div class="banner__box color-{{ block.settings.color_scheme }}">
 
-              <div  class="mobcolor:{{settings.banner_color_text_mob}}  color:{{banners_color_text}} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+              <div  class="mobcolor:{{settings.banner_color_text_mob}}  color:{{settings.banners_color_text}} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
                 <h1>{{ block.settings.heading }}</h1>
               </div>
 
-              <div class=" mobcolor:{{settings.banner_color_text_mob}}  color:{{banners_color_text}} banner__text" {{ block.shopify_attributes }}>
+              <div class=" mobcolor:{{settings.banner_color_text_mob}}  color:{{settings.banners_color_text}} banner__text" {{ block.shopify_attributes }}>
                 <h2>{{ block.settings.text | escape }}</h2>
               </div>
 
