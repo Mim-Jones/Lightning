@@ -1,10 +1,6 @@
 {{ 'section-only-image-video-banner.css' | asset_url | stylesheet_tag }}
 
-
-<div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
-  {%- for block in section.blocks -%}
+{%- for block in section.blocks -%}
   <style>
     #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}} .banner__text{
       color:{{block.settings.colors_text}};
@@ -15,6 +11,12 @@
     }
     }
   </style>
+{%- endfor -%}
+
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
+  {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
     <div class="img_section" {{ block.shopify_attributes }}>
