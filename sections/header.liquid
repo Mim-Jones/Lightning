@@ -12,39 +12,45 @@
     {% if template.name != "index" %}
     <style>
       @media(max-width:989px){
-
       }
     </style>
-{% endif %}
     {% endif %}
+{% endif %}
 
 {% if section.settings.hide_account_icon %}
-<style>
+    <style>
   @media(max-width:989px){
-
-      .header {
-    display: grid;
-    grid-template-columns: 0fr 2fr 1fr!important;
-    align-items: center;
-    background-color: rgb(var(--color-background));
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+     .header {
+         grid-template-columns: 0fr 2fr 1fr!important;
     }
 
     .header__heading, .header__heading-link {
-    grid-area: heading;
-    justify-self: left;
-}
-  header-drawer{position:absolute;right:0}
-  .header__icons{margin-right:5rem;}
-    .header__icon--search {left:0 !important;position:relative !important;}
+        grid-area: heading;
+        justify-self: left;
+    }
 
-    .hide-account-fix{margin-bottom:0!important}
-    .menu-drawer{transform:translate(200%)}
-    .js details[open].menu-opening>.menu-drawer{transform:translate(-87%)}
-    #menu-drawer{margin-top:11px}
+  header-drawer{
+      position:absolute;right:0
   }
-</style>
+  .header__icons{
+      margin-right:5rem;
+  }
+    .header__icon--search {
+        left:0 !important;position:relative !important;
+    }
+    .hide-account-fix{
+        margin-bottom:0!important
+    }
+    .menu-drawer{
+        transform:translate(200%)
+    }
+    .js details[open].menu-opening>.menu-drawer{
+        transform:translate(-87%)
+    }
+    #menu-drawer {
+        margin-top:24px}
+    }
+    </style>
 {%endif%}
 
 <style>
