@@ -65,6 +65,18 @@
         "label": "t:settings_schema.colors.settings.mobile_background_color.label"
       },
       {
+        "type": "color",
+        "id": "colors_text",
+        "default": "#FFFFFF",
+        "label": "Text color"
+      },
+      {
+         "type": "color",
+         "id": "colors_text_mob",
+         "default": "#FFFFFF",
+         "label": "Mob Text color"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
