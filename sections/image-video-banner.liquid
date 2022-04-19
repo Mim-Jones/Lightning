@@ -133,10 +133,10 @@
   {% capture vBottomContent %}
   <div id="Banner_{{ block.id | remove:"-"}}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} " {{ block.shopify_attributes }}>
       <div class="banner__box color-{{ block.settings.color_scheme }}">
-        <div  class=" mobcolor:{{block.settings.colors_text_mob}}  color:{{block.settings.colors_text}} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+        <div  class=" mobcolor:{{settings.banner_color_text_mob}}  color:{{settings.banners_color_text}} banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
           <h1>{{ block.settings.heading | escape }}</h1>
         </div>
-        <div  class="mobcolor:{{block.settings.colors_text_mob}}  color:{{block.settings.colors_text}} banner__text" {{ block.shopify_attributes }}>
+        <div  class="mobcolor:{{settings.banner_color_text_mob}}  color:{{settings.banners_color_text}} banner__text" {{ block.shopify_attributes }}>
           <h2>{{ block.settings.text | escape }}</h2>
         </div>
         <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
