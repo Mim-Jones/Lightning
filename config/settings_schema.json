@@ -71,10 +71,10 @@
         "label": "Text color"
       },
       {
-         "type": "color",
-         "id": "banner_color_text_mob",
-         "default": "#FFFFFF",
-         "label": "Mob Text color"
+        "type": "color",
+        "id": "banner_color_text_mob",
+        "default": "#FFFFFF",
+        "label": "Mob Text color"
       },
       {
         "type": "header",
