@@ -9,10 +9,10 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% if section.settings.hide_account_icon %}
-    {% if template.name != "index" %} 
+    {% if template.name != "index" %}
     <style>
       @media(max-width:989px){
-      .header__heading-link{position:absolute;left:0;top:-10px}
+
       }
     </style>
 {% endif %}
@@ -21,10 +21,24 @@
 {% if section.settings.hide_account_icon %}
 <style>
   @media(max-width:989px){
+
+      .header {
+    display: grid;
+    grid-template-columns: 0fr 2fr 1fr!important;
+    align-items: center;
+    background-color: rgb(var(--color-background));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+
+    .header__heading, .header__heading-link {
+    grid-area: heading;
+    justify-self: left;
+}
   header-drawer{position:absolute;right:0}
   .header__icons{margin-right:5rem;}
     .header__icon--search {left:0 !important;position:relative !important;}
-    .header__heading {position:absolute;left:0;top:-10px}
+
     .hide-account-fix{margin-bottom:0!important}
     .menu-drawer{transform:translate(200%)}
     .js details[open].menu-opening>.menu-drawer{transform:translate(-87%)}
@@ -35,7 +49,7 @@
 
 <style>
   .search-modal__close-button:hover{color:#cb6d51 !important;stroke:#cb6d51!important}
-  
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -47,7 +61,7 @@
     }
     .header__heading{z-index:999}
     .header__heading-link {z-index:999;width:auto!important}
-    
+
   }
  img.header__heading-logo {
    width: {{section.settings.logo_width}}px;
@@ -251,7 +265,7 @@
                     <a style='width:auto !important' href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="mrg-cls menu-drawer-wishlist navigation__link header__icon link link--text focus-inset h5">{%- render 'icon-heart' -%}
                        {{ link.title | escape }} Favourite
                     </a>
-                      
+
                     </div>
                   {%- endif -%}
                   <ul class="list list-social list-unstyled" role="list">
@@ -531,11 +545,11 @@
             transform:translateY(0);
             z-index:1;
             transition:.5s
-           
+
           }
           .header__submenu{opacity:0;top:-35px;z-index:-1; }
           .header__menu-item:hover span{text-underline-offset:1rem !important}
-          
+
         </style>
 {% javascript %}
   class StickyHeader extends HTMLElement {
