@@ -8,12 +8,12 @@
   <style>
     #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
     #Banner_{{ block.id | remove:"-"}} .banner__text h2{
-      color:{{block.settings.colors_text}};
+      color:{{settings.banner_color_text}};
     }
     @media(max-width:768px){
      #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
       #Banner_{{ block.id | remove:"-"}}  .banner__text h2{
-       color:{{block.settings.colors_text_mob}};
+       color:{{settings.banner_color_text_mob}};
     }
     }
     .full_width_true video.video-item {
