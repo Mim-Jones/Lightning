@@ -21,7 +21,7 @@
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
-            "color_scheme": "accent-2"
+            "color_scheme": "inverse"
           }
         }
       },
