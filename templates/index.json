@@ -19,11 +19,9 @@
             "button_label_2": "Our History",
             "button_link_2": "shopify:\/\/pages\/faqs",
             "button_style_secondary_2": false,
-            "colors_text": "#ff0000",
-            "colors_text_mob": "#1878b9",
             "desktop_text_box_position": "center",
             "show_text_box": true,
-            "color_scheme": "background-1"
+            "color_scheme": "accent-2"
           }
         }
       },
@@ -50,8 +48,6 @@
             "button_label_2": "Button label",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "colors_text": "#ffffff",
-            "colors_text_mob": "#ffffff",
             "desktop_text_box_position": "center",
             "show_text_box": false,
             "image_overlay_opacity": 0,
@@ -72,8 +68,6 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "colors_text": "#ffffff",
-            "colors_text_mob": "#ffffff",
             "desktop_text_box_position": "center",
             "show_text_box": false,
             "image_overlay_opacity": 0,
