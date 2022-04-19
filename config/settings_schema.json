@@ -87,8 +87,8 @@
         "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label"
       },
       {
-      "type": "header",
-      "content": "t:settings_schema.colors.settings.header__6.content"
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__6.content"
       },
       {
         "type": "color",
