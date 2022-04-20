@@ -7,8 +7,7 @@
           "label": "Button color text"
         },
         "colors_accent_1": {
-          "label": "Button color background",
-          "info": "Used on most buttons except for product page and banner."
+          "label": "Button color background"
         },
         "colors_accent_2": {
           "label": "Nothing yet"
@@ -39,6 +38,9 @@
         },
         "subheader__2": {
           "content": "Mobile banner colors"
+        },
+        "subheader__3": {
+          "content": "Used on most buttons except for product page and banner"
         },
         "header__8": {
           "content": ""
