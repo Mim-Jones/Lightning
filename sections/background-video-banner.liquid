@@ -15,13 +15,13 @@
       #Banner_{{ block.id | remove:"-"}}  .banner__text h2{
        color:{{settings.banner_color_text_mob}};
     }
-    .banner__buttons .button.button--primary {
-        background-color: {{settings.mobile_btn_background_color}};
+    .banner__button {
+        background-color: {{settings.mobile_btn_background_color}}!important;
     }
     }
     @media(min-width:990px){
-    .banner__buttons .button.button--primary {
-        background-color: {{settings.btn_background_color}};
+    .banner__button  {
+        background-color: {{settings.btn_background_color}}!important;
     }
     }
     .full_width_true video.video-item {
@@ -44,7 +44,7 @@
         </div>
         <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
           {%- if block.settings.button_label_1 != blank -%}
-          <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+          <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button button--primary banner__button"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
           {%- endif -%}
           {%- if block.settings.button_label_2 != blank -%}
           <a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
