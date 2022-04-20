@@ -77,7 +77,6 @@
         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
-        --btn-background-hover: {{settings.mobile_btn_hover_color}};
 
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
       }
@@ -126,8 +125,8 @@
     {%- endunless -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-
-
+	
+    
   </head>
 
   <body>
@@ -191,11 +190,11 @@
     	$(".mobile-facets__close").click(function(){
   		$(".mobile-facets__close").addClass("d-none");
 });
-
+      
       $(".mobile-facets__open").click(function(){
   		$(".mobile-facets__close").removeClass("d-none");
 });
-
+      
       $(".header__icon--menu").click(function(){
   $(".header__icon--menu").toggleClass("remove-c");
 });
@@ -206,6 +205,6 @@
       .banner__buttons a:hover{background:#cb6d51!important;color:#fff!important}
       .is-sticky .atc-container:hover button{background-color:#fff!important;color:#020202!important}
     </style>
-
+    
   </body>
 </html>
