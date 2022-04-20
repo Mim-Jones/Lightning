@@ -72,13 +72,13 @@
         "type": "color",
         "id": "banner_color_text",
         "default": "#FFFFFF",
-        "label": "Text color"
+        "label": "Heading color"
       },
       {
         "type": "color",
         "id": "btn_color_text",
         "default": "#000",
-        "label": "Button Color Text"
+        "label": "Button text color"
       },
       {
         "type": "paragraph",
@@ -94,19 +94,19 @@
         "type": "color",
         "id": "banner_color_text_mob",
         "default": "#FFFFFF",
-        "label": "Mobile text color"
+        "label": "Heading color"
       },
       {
         "type": "color",
         "id": "mobile_btn_background_color",
         "default": "#FFFFFF",
-        "label": "Mobile button background color"
+        "label": "Button background color"
       },
       {
         "type": "color",
         "id": "mobile_btn_color_text",
         "default": "#000",
-        "label": "Button Color Text"
+        "label": "Button text color"
       },
       {
         "type": "header",
