@@ -1,0 +1,95 @@
+{%- if  section.blocks.size > 0 -%}
+<div class="announcement-bar swiper-container">
+  <div class="messages swiper-wrapper">
+    {%- for block in section.blocks -%}
+    <div class="announcement-message swiper-slide">{{block.settings.message}}</div>
+    {%- endfor -%}
+  </div>
+<!--   <div class="hura-swiper-button swiper-button-prev"></div>
+  <div class="hura-swiper-button swiper-button-next"></div> -->
+</div>
+<script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    {%- if section.settings.autoplay %}
+    autoplay: {delay: {{section.settings.delay}} },
+    {%- endif -%}
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<style>
+  .announcement-bar{
+    background:{{section.settings.colorBackground}};
+    position: relative;
+    overflow: hidden;
+  }
+  .announcement-bar .announcement-message{
+    text-align:center;
+    color:{{section.settings.colorText}};
+    padding:5px 0;
+  }
+  .announcement-bar .swiper-button-next:after, .announcement-bar .swiper-container-rtl .swiper-button-prev:after,
+  .announcement-bar .swiper-button-prev:after, .announcement-bar .swiper-container-rtl .swiper-button-next:after{
+    font-size: 15px;
+    color:{{section.settings.colorText}};
+  }
+  {%- if  section.blocks.size < 2 %}
+  .announcement-bar .swiper-button{display:none!important;}
+  {%- endif -%}
+</style>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Autoplay"
+      },
+      {
+        "type": "text",
+        "id": "delay",
+        "label": "Delay between transitions (in ms)",
+        "default": "5000"
+      },
+      {
+        "type": "color",
+        "id": "colorBackground",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "colorText",
+        "label": "Text color",
+        "default": "#000"
+      }
+],
+"blocks": [
+      {
+        "type": "header",
+        "name": "Announcement",
+        "settings": [
+		{
+              "id": "message",
+              "type": "text",
+             "label": "Message",
+			 "default": "Welcome to our store"
+        },
+		{
+          "type": "url",
+          "id": "link",
+          "label": "link"
+        }
+        ]
+      }
+]
+  }
+{% endschema %}
