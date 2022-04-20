@@ -65,7 +65,8 @@
         "label": "Button background color"
       },
       {
-      "label": "Button background color"
+        "type": "paragraph",
+        "content": "t:settings_schema.colors.settings.header__7.content"
       },
       {
         "type": "color",
