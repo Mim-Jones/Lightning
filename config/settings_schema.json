@@ -60,15 +60,18 @@
       },
       {
         "type": "color",
-        "id": "mobile_background_color",
-        "default": "#FF0000",
-        "label": "t:settings_schema.colors.settings.mobile_background_color.label"
+        "id": "btn_background_color",
+        "default": "#FFFFFF",
+        "label": "Button background color"
+      },
+      {
+      "label": "Button background color"
       },
       {
         "type": "color",
-        "id": "banner_color_text",
-        "default": "#FFFFFF",
-        "label": "Text color"
+        "id": "mobile_background_color",
+        "default": "#FF0000",
+        "label": "t:settings_schema.colors.settings.mobile_background_color.label"
       },
       {
         "type": "color",
@@ -82,15 +85,15 @@
       },
       {
         "type": "color",
-        "id": "mobile_btn_background_color",
+        "id": "banner_color_text",
         "default": "#FFFFFF",
-        "label": "Mobile button background color"
+        "label": "Text color"
       },
       {
         "type": "color",
-        "id": "btn_background_color",
+        "id": "mobile_btn_background_color",
         "default": "#FFFFFF",
-        "label": "Button background color"
+        "label": "Mobile button background color"
       },
       {
         "type": "header",
