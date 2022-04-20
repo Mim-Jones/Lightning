@@ -21,7 +21,18 @@
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
+    <style>
+      .announcement-message:first-child {
+        display: block;
+      }
 
+      .announcement-message {
+        text-align: center;
+        color: #1a1b18;
+        padding: 5px 0;
+        display: none;
+      }
+    </style>
     {% render 'meta-tags' %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ 'vendor.js' | asset_url }}" ></script>
