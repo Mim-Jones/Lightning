@@ -69,6 +69,18 @@
         "label": "Button background color"
       },
       {
+        "type": "color",
+        "id": "banner_color_text",
+        "default": "#FFFFFF",
+        "label": "Text color"
+      },
+      {
+        "type": "color",
+        "id": "btn_color_text",
+        "default": "#000",
+        "label": "Button Color Text"
+      },
+      {
         "type": "paragraph",
         "content": "t:settings_schema.colors.settings.subheader__2.content"
       },
@@ -87,12 +99,6 @@
       {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__8.content"
-      },
-      {
-        "type": "color",
-        "id": "banner_color_text",
-        "default": "#FFFFFF",
-        "label": "Text color"
       },
       {
         "type": "color",
