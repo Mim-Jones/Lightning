@@ -32,10 +32,16 @@
           "content": "Button colors"
         },
         "header__7": {
+          "content": "Banner colors"
+        },
+        "subheader__1": {
           "content": "Desktop banner colors"
         },
-        "header__8": {
+        "subheader__2": {
           "content": "Mobile banner colors"
+        },
+        "header__8": {
+          "content": ""
         },
         "colors_text": {
           "label": "Main text color"

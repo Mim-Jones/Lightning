@@ -59,6 +59,10 @@
         "content": "t:settings_schema.colors.settings.header__7.content"
       },
       {
+        "type": "paragraph",
+        "content": "t:settings_schema.colors.settings.subheader__1.content"
+      },
+      {
         "type": "color",
         "id": "btn_background_color",
         "default": "#FFFFFF",
@@ -66,7 +70,7 @@
       },
       {
         "type": "paragraph",
-        "content": "t:settings_schema.colors.settings.header__7.content"
+        "content": "t:settings_schema.colors.settings.subheader__2.content"
       },
       {
         "type": "color",
