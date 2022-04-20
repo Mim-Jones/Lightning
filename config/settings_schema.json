@@ -77,6 +77,10 @@
         "label": "Mobile text color"
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__8.content"
+      },
+      {
         "type": "color",
         "id": "mobile_btn_background_color",
         "default": "#FFFFFF",
