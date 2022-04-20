@@ -130,7 +130,7 @@
       },
       {
         "type": "paragraph",
-        "content": "t:settings_schema.colors.settings.subheader__3.content"
+        "content": "Used on most buttons except for product page and banner"
       },
       {
         "type": "color",
