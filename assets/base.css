@@ -127,6 +127,10 @@
   --color-card-hover: var(--color-base-solid-button-labels);
 }
 
+a.button.button--primary.banner__button:hover {
+    --btn-background-hover: var(--btn-background-hover);
+}
+
 /* base */
 
 .no-js:not(html) {
