@@ -97,14 +97,16 @@
         "label": "Mobile text color"
       },
       {
-        "type": "header",
-        "content": "t:settings_schema.colors.settings.header__8.content"
-      },
-      {
         "type": "color",
         "id": "mobile_btn_background_color",
         "default": "#FFFFFF",
         "label": "Mobile button background color"
+      },
+      {
+        "type": "color",
+        "id": "mobile_btn_color_text",
+        "default": "#000",
+        "label": "Button Color Text"
       },
       {
         "type": "header",
