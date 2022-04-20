@@ -44,7 +44,7 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     </style>
     <div class="progress-warp">
 
-      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} Done, You are eligible for {% else %} You're <span class="progress-bar-text">{{  needAmmount | money |remove:'-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
+      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} You've earned {% else %} You're <span class="progress-bar-text">{{  needAmmount | money |remove:'-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
       <div class="w3-light-grey">
         <div class="w3-green" style="width:{{mainPercent}}%"></div>
       </div>

@@ -19,11 +19,19 @@
         background-color: {{settings.mobile_btn_background_color}}!important;
         color: {{settings.mobile_btn_color_text}}!important;
     }
+    a.button.button--primary.banner__button:hover {
+        background-color: {{settings.mobile_btn_hover_color}}!important;
+    }
     }
     @media(min-width:990px){
     .banner__button  {
         background-color: {{settings.btn_background_color}}!important;
         color: {{settings.btn_color_text}}!important;
+    }
+    a.button.button--primary.banner__button:hover {
+        background-color: {{settings.mobile_btn_hover_color}}!important;
+        box-shadow: 0 0 0 0.1rem {{settings.mobile_btn_hover_color}}!important;
+        background: rgba(0,0,0,.75);
     }
     }
     .full_width_true video.video-item {

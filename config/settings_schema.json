@@ -70,6 +70,12 @@
       },
       {
         "type": "color",
+        "id": "btn_hover_color",
+        "default": "#FFFFFF",
+        "label": "Hover button colot"
+      },
+      {
+        "type": "color",
         "id": "banner_color_text",
         "default": "#FFFFFF",
         "label": "Heading color"
@@ -95,6 +101,12 @@
         "id": "mobile_btn_background_color",
         "default": "#FFFFFF",
         "label": "Button background color"
+      },
+      {
+        "type": "color",
+        "id": "mobile_btn_hover_color",
+        "default": "#FFFFFF",
+        "label": "Hover button colot"
       },
       {
         "type": "color",
