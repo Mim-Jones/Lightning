@@ -61,5 +61,7 @@ customElements.define('product-form', ProductForm);
 
 console.log('123');
 $('.btn-plus').on('click',function(){
-	alert(1);
+  var osQty = $('#qty_inventory_track').html();
+  
+	alert(osQty);
 })
