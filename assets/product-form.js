@@ -67,6 +67,11 @@ $('.btn-plus').on('click',function(){
 	var osQty = $('.inventory-container p strong').html();
   }
   
+  if($('.inventory-container').hasClass('out-of-stock')){
+  	$('.quantity__input').val(1);
+    return false;
+  }
+  
   if(qtyInput > parseInt(osQty)){
     $('.quantity__input').val(osQty);
   	return false;
