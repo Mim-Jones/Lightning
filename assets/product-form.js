@@ -60,3 +60,6 @@ class ProductForm extends HTMLElement {
 customElements.define('product-form', ProductForm);
 
 console.log('123');
+$('.btn-plus').on('click',function(){
+	alert(1);
+})
