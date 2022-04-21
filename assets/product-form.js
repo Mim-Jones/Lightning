@@ -63,6 +63,10 @@ $('.btn-plus').on('click',function(){
   var osQty = $('#qty_inventory_track').html();
   var qtyInput = $('.quantity__input').val();
   
+  if($("#qty_inventory_track").length == 0) {
+	alert(0);
+  }
+  
   if(qtyInput > parseInt(osQty)){
     $('.quantity__input').val(osQty);
   	return false;
