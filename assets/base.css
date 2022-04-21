@@ -2092,7 +2092,7 @@ details[open] > .header__icon--menu .icon-hamburger {
     transform var(--duration-default) ease;
 }
 
-.header__submenu.list-menu {
+.header__submenu.list-menu li {
   padding: 2rem 0;
 }
 
