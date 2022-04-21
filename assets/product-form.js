@@ -61,6 +61,11 @@ customElements.define('product-form', ProductForm);
 
 $('.btn-plus').on('click',function(){
   var osQty = $('#qty_inventory_track').html();
+  var qtyInput = $('.quantity__input').val();
   
-	alert(osQty);
+  alert(qtyInput);
+  if(parseInt(osQty) > qtyInput){
+  	alert(osQty);
+  }
+	
 })
