@@ -64,6 +64,12 @@
       },
       {
         "type": "color",
+        "id": "banner_color_text",
+        "default": "#FFFFFF",
+        "label": "Heading color"
+      },
+      {
+        "type": "color",
         "id": "btn_background_color",
         "default": "#FFFFFF",
         "label": "Button background color"
@@ -73,12 +79,6 @@
         "id": "btn_hover_color",
         "default": "#FFFFFF",
         "label": "Hover button color"
-      },
-      {
-        "type": "color",
-        "id": "banner_color_text",
-        "default": "#FFFFFF",
-        "label": "Heading color"
       },
       {
         "type": "color",
