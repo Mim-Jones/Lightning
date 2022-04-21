@@ -65,6 +65,7 @@ $('.btn-plus').on('click',function(){
   
 //   alert(qtyInput);
   if(qtyInput > parseInt(osQty)){
+    $('.quantity__input').val(osQty);
   	return false;
   }
 	
