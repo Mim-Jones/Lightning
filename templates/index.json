@@ -15,13 +15,11 @@
             "text": "Authentic German Beer Delivered to Your Door",
             "button_label_1": "Shop ABK Beers",
             "button_link_1": "shopify:\/\/collections\/view-all-our-beers",
-            "button_style_secondary_1": true,
             "button_label_2": "Our History",
             "button_link_2": "shopify:\/\/pages\/faqs",
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
-            "show_text_box": false,
-            "color_scheme": "accent-2"
+            "color_scheme": "inverse"
           }
         }
       },
