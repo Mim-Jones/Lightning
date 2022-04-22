@@ -642,7 +642,7 @@ customElements.define('variant-radios', VariantRadios);
 
 $(function(){
   
-  $('.nav li').hover(function(){
+  $('.hover-nav').hover(function(){
     $(this).find('ul').first().stop().toggle(200);
   }, function(){
     $(this).find('ul').stop().hide(200);
