@@ -641,7 +641,7 @@ customElements.define('variant-radios', VariantRadios);
 
 
 $(".header__menu-item").mouseenter(function(){
-  if($('.hover-nav ul').hasClass('header__submenu_hover')){
+  if($('.list-menu ul').hasClass('header__submenu_hover')){
   	$('ul').removeClass('header__submenu_hover');
   }
   else{
