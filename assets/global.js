@@ -708,7 +708,7 @@ $("body").mouseout(function(e) {
         $("ul").removeClass("header__submenu_hover");
     }
     else{
-     alert(1);   
+        $("ul").addClass("header__submenu_hover");
     }
 });
 
