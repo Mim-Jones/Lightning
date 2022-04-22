@@ -707,10 +707,10 @@ $("header").mouseout(function(e) {
     e.stopPropagation();
 
     if (!mouse_is_inside){
-        
+        $("ul").removeClass("header__submenu_hover");
     }
     else{
-        $("ul").removeClass("header__submenu_hover");
+        
     }
 });
 
