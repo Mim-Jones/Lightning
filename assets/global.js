@@ -711,7 +711,7 @@ $("html").mouseup(function(e) {
 });
 
 //Avoid collapsing the Dropdowns when clicking inside of them
-$(".header__submenu").click(function(e) {
+$(".header__submenu").hover(function(e) {
     e.stopPropagation();
 });
 
