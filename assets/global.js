@@ -643,9 +643,11 @@ customElements.define('variant-radios', VariantRadios);
 $(function(){
   
   $('.hover-nav').hover(function(){
-    $(this).find('ul').first().stop().toggle(200);
+		//     $(this).find('ul').first().stop().toggle(200);
+		$(this).find('ul').addClass('header__submenu_hover');
   }, function(){
-    $(this).find('ul').stop().hide(200);
+		//     $(this).find('ul').stop().hide(200);
+		$(this).find('ul').removeClass('header__submenu_hover');
   });
  
   
