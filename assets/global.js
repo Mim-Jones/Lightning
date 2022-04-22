@@ -644,6 +644,6 @@ $(".header__menu-item").mouseenter(function(){
 	$(this).next('ul').addClass('header__submenu_hover');
 });
 
-$(".header__submenu_hover").mouseleave(function(){
+$(".header__submenu").mouseleave(function(){
 	$('ul').removeClass('header__submenu_hover');
 });
