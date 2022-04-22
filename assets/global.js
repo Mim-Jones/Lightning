@@ -660,7 +660,7 @@ $(".hover-nav").click(function() {
 //Collapse Dropdowns when clicking anywhere else on the page	
 var mouse_is_inside = false;
 //Select the parent element of the Dropdwn
-$(".hover-nav").hover(
+$(".header__menu-item").hover(
     function() {
         mouse_is_inside = true;
     },
