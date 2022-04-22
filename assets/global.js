@@ -645,12 +645,7 @@ $(document).ready(function(){
 
 	var dropdown = ".header__submenu";
     $(".header__menu-item").hover(function() {
-		function() {
-            mouse_is_inside = true;
-        },
-        function() {
-            mouse_is_inside = false;
-        }
+		mouse_is_inside = true;	
 	});
 	
 //     $(".hover-nav").hover(
