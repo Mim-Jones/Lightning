@@ -647,7 +647,7 @@ $(function(){
 		$(this).find('ul').addClass('header__submenu_hover');
   }, function(){
 		//     $(this).find('ul').stop().hide(200);
-		$(this).find('ul').removeClass('header__submenu_hover');
+// 		$(this).find('ul').removeClass('header__submenu_hover');
   });
  
   
