@@ -640,35 +640,10 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 
-//Collapse Dropdowns when clicking anywhere else on the page	
-var mouse_is_inside = false;
-//Select the parent element of the Dropdwn
-$(".header__menu-item").hover(
-    function() {
-        mouse_is_inside = true;
-    },
-    function() {
-        mouse_is_inside = false;
-    }
-);
-
-$("html").mouseout(function(e) {
-    e.stopPropagation();
-    if (!mouse_is_inside){
-        $("ul").removeClass("header__submenu_hover");
-    }
-    else{
-//         $("ul").addClass("header__submenu_hover");
-    }
-});
-
-//Avoid collapsing the Dropdowns when clicking inside of them
-$(".header__submenu").hover(function(e) {
-    e.stopPropagation();
-});
-
-$(".header__menu-item").hover(function() {
-	//$('ul').removeClass('header__submenu_hover');
+$(".header__menu-item").mouseenter(function(){
 	$(this).next('ul').addClass('header__submenu_hover');
-	//mouse_is_inside = true;	
+});
+
+$(".header__submenu_hover").mouseleave(function(){
+	$('ul').removeClass('header__submenu_hover');
 });
