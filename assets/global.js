@@ -640,8 +640,41 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 $(document).ready(function(){
+	
+	var mouse_is_inside = false;
+
 	var dropdown = ".header__submenu";
     $(".header__menu-item").hover(function() {
-		alert(123);
+		function() {
+            mouse_is_inside = true;
+        },
+        function() {
+            mouse_is_inside = false;
+        }
 	});
+	
+    $(".hover-nav").hover(
+        function() {
+            mouse_is_inside = true;
+        },
+        function() {
+            mouse_is_inside = false;
+        }
+	);
+
+    $("html").mouseup(function(e) {
+        e.stopPropagation();
+        if (!mouse_is_inside){
+			alert(2);
+        }
+//             $(".header__submenu").slideUp("fast", function() {
+//                 $(".active").removeClass("active");
+//             });
+    });
+
+    //Avoid collapsing the Dropdowns when clicking inside of them
+    $(".header__submenu").click(function(e) {
+        e.stopPropagation();
+    });
+
 })
