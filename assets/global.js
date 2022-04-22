@@ -639,23 +639,6 @@ class VariantRadios extends VariantSelects {
 
 customElements.define('variant-radios', VariantRadios);
 
-//Nav bar Dropdowns
-var dropdown = ".header__submenu";
-//If you want the Dropdowns on hover, just change the ".click" method to ".hover". 
-//Note: I DO NOT recommend you use these dropdowns on .hover, this practice has serious usability issues. Leave them on .click and your users will Thank You forever.
-$(".hover-nav").click(function() { 
-    //Hide any other Dropdwn that's visible*
-    $(this).siblings().find(dropdown).slideUp("fast");
-    //Hide Cart Dropdown
-    $(this).parents(".header__submenu").siblings().find(dropdown).slideUp("fast"); 
-    //Toggle class .active
-    $(this).toggleClass("active");
-    //Remove class .active from any other <li>
-    $(this).parents().find(".active").not(this).removeClass("active");
-    //Slide up/down the actual Dropdwn*		
-    $(this).find(dropdown).stop(true, true).slideToggle("fast");
-});
-
 
 //Collapse Dropdowns when clicking anywhere else on the page	
 var mouse_is_inside = false;
@@ -666,50 +649,26 @@ $(".header__menu-item").hover(
     },
     function() {
         mouse_is_inside = false;
-    });
+    }
+);
 
-$("html").mouseup(function(e) {
+$("body").mouseout(function(e) {
     e.stopPropagation();
-    if (!mouse_is_inside)
-        $(".header__submenu").slideUp("fast", function() {
-            $(".header__submenu_hover").removeClass("header__submenu_hover");
-        });
+    if (!mouse_is_inside){
+        $("ul").removeClass("header__submenu_hover");
+    }
+    else{
+//         $("ul").addClass("header__submenu_hover");
+    }
 });
 
 //Avoid collapsing the Dropdowns when clicking inside of them
-$(".header__submenu").click(function(e) {
+$(".header__submenu").hover(function(e) {
     e.stopPropagation();
 });
 
-// //Collapse Dropdowns when clicking anywhere else on the page	
-// var mouse_is_inside = false;
-// //Select the parent element of the Dropdwn
-// $(".header__menu-item").hover(
-//     function() {
-//         mouse_is_inside = true;
-//     },
-//     function() {
-//         mouse_is_inside = false;
-//     }
-// );
-
-// $("body").mouseout(function(e) {
-//     e.stopPropagation();
-//     if (!mouse_is_inside){
-//         $("ul").removeClass("header__submenu_hover");
-//     }
-//     else{
-// //         $("ul").addClass("header__submenu_hover");
-//     }
-// });
-
-// //Avoid collapsing the Dropdowns when clicking inside of them
-// $(".header__submenu").hover(function(e) {
-//     e.stopPropagation();
-// });
-
-// $(".header__menu-item").hover(function() {
-// 	//$('ul').removeClass('header__submenu_hover');
-// 	$(this).next('ul').addClass('header__submenu_hover');
-// 	//mouse_is_inside = true;	
-// });
+$(".header__menu-item").hover(function() {
+	//$('ul').removeClass('header__submenu_hover');
+	$(this).next('ul').addClass('header__submenu_hover');
+	//mouse_is_inside = true;	
+});
