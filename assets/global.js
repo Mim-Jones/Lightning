@@ -702,7 +702,7 @@ $(".header__menu-item").hover(
     }
 );
 
-$("html").mouseup(function(e) {
+$(".header").mouseup(function(e) {
     e.stopPropagation();
 	alert(123);
     if (!mouse_is_inside){
