@@ -705,12 +705,12 @@ $(".header__menu-item").hover(
 $("header").mouseout(function(e) {
 // 	alert(1);
     e.stopPropagation();
-$("ul").removeClass("header__submenu_hover");
+
     if (!mouse_is_inside){
         
     }
     else{
-        alert(132);
+        $("ul").removeClass("header__submenu_hover");
     }
 });
 
