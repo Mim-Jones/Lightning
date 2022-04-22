@@ -645,7 +645,7 @@ $(document).ready(function(){
 
 	var dropdown = ".header__submenu";
     $(".header__menu-item").hover(function() {
-		alert(2);
+		$(this).closest('ul').addClass('header__submenu_hover');
 		mouse_is_inside = true;	
 	});
 	
