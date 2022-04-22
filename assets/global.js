@@ -706,7 +706,7 @@ $("html").hover(function(e) {
 // 	alert(1);
     e.stopPropagation();
     if (!mouse_is_inside){
-        $(".header__submenu_hover").removeClass("header__submenu_hover");
+        $("ul").removeClass("header__submenu_hover");
     }
     else{
         alert(132);
