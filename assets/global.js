@@ -703,6 +703,7 @@ $(".header__menu-item").hover(
 );
 
 $("html").mouseup(function(e) {
+	alert(1);
     e.stopPropagation();
     if (!mouse_is_inside){
         $(".header__submenu_hover").removeClass("header__submenu_hover");
@@ -718,7 +719,7 @@ $(".header__submenu").hover(function(e) {
 });
 
 $(".header__menu-item").hover(function() {
-	$('ul').removeClass('header__submenu_hover');
+	//$('ul').removeClass('header__submenu_hover');
 	$(this).next('ul').addClass('header__submenu_hover');
 	//mouse_is_inside = true;	
 });
