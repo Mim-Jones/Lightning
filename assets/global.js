@@ -652,7 +652,7 @@ $(".header__menu-item").hover(
     }
 );
 
-$("body").mouseout(function(e) {
+$("nav").mouseout(function(e) {
     e.stopPropagation();
     if (!mouse_is_inside){
         $("ul").removeClass("header__submenu_hover");
