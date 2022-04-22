@@ -4,21 +4,20 @@ $(document).ready(function(){
 
 	var dropdown = ".header__submenu";
   	
-    $(".header__menu-item").on({
-      mouseenter: function () {
-        alert(1);
-          $(this).closest('ul').addClass('header__submenu_hover');
-      },
-      mouseleave: function () {
-          //stuff to do on mouse leave
-      }
-	});
+//     $(".header__menu-item").on({
+//       mouseenter: function () {
+//           $(this).closest('ul').addClass('header__submenu_hover');
+//       },
+//       mouseleave: function () {
+//           //stuff to do on mouse leave
+//       }
+// 	});
 
   
-//     $(".header__menu-item").hover(function() {
-// 		$(this).closest('ul').addClass('header__submenu_hover');
-// 		mouse_is_inside = true;	
-// 	});
+    $(".header__menu-item").hover(function() {
+		$(this).closest('ul').addClass('header__submenu_hover');
+		mouse_is_inside = true;	
+	});
 	
 //     $(".hover-nav").hover(
 //         function() {
