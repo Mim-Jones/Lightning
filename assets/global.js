@@ -640,5 +640,8 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 $(document).ready(function(){
-	alert(123);
+	var dropdown = ".header__submenu";
+    $(".header__menu-item").hover(function() {
+		alert(123);
+	});
 })
