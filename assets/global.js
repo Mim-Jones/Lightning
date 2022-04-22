@@ -704,7 +704,7 @@ $(".header__menu-item").hover(
 
 $("header").mouseup(function(e) {
     e.stopPropagation();
-
+	alert(123);
     if (!mouse_is_inside){
         $("ul").removeClass("header__submenu_hover");
     }
