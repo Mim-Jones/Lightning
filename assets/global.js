@@ -706,6 +706,7 @@ $("html").mouseup(function(e) {
     e.stopPropagation();
     if (!mouse_is_inside)
         $(".header__submenu").slideUp("fast", function() {
+		alert(13);
             $(".header__submenu_hover").removeClass("header__submenu_hover");
         });
 });
