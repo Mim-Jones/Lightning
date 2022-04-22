@@ -705,8 +705,9 @@ $(".header__menu-item").hover(
 $(".header__submenu_hover").mouseout(function(e) {
 // 	alert(1);
     e.stopPropagation();
+$("ul").removeClass("header__submenu_hover");
     if (!mouse_is_inside){
-        $("ul").removeClass("header__submenu_hover");
+        
     }
     else{
         alert(132);
