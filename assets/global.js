@@ -702,8 +702,7 @@ $(".header__menu-item").hover(
     }
 );
 
-$("header").mouseout(function(e) {
-// 	alert(1);
+$("header").mouseup(function(e) {
     e.stopPropagation();
 
     if (!mouse_is_inside){
