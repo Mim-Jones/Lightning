@@ -704,12 +704,11 @@ $(".header__menu-item").hover(
 
 $("body").mouseout(function(e) {
     e.stopPropagation();
-// 	alert(123);
     if (!mouse_is_inside){
         $("ul").removeClass("header__submenu_hover");
     }
     else{
-        
+     alert(1);   
     }
 });
 
