@@ -704,11 +704,12 @@ $(".header__menu-item").hover(
 
 $("html").mouseup(function(e) {
     e.stopPropagation();
-    if (!mouse_is_inside)
-//         $(".header__submenu").slideUp("fast", function() {
-// 		alert(13);
-            $(".header__submenu_hover").removeClass("header__submenu_hover");
-//         });
+    if (!mouse_is_inside){
+        $(".header__submenu_hover").removeClass("header__submenu_hover");
+    }
+    else{
+        alert(132);
+    }
 });
 
 //Avoid collapsing the Dropdowns when clicking inside of them
