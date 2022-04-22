@@ -646,7 +646,7 @@ $(".header__menu-item").mouseenter(function(){
   }
   else{
 	$(this).next('ul').addClass('header__submenu_hover');
-	$(this).next('ul').attr('style','opacity:1');
+	$(this).prev('ul').attr('style','opacity:1');
   }
 	
 });
