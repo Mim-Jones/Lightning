@@ -641,11 +641,14 @@ customElements.define('variant-radios', VariantRadios);
 
 
 $(".header__menu-item").mouseenter(function(){
+  if($('.hover-nav ul').hasClass('header__submenu_hover')){
+  	$('ul').removeClass('header__submenu_hover');
+  }
+  else{
 	$(this).next('ul').addClass('header__submenu_hover');
+  }
+	
 });
-// $(".header__menu-item").mouseleave(function(){
-// 	$('ul').removeClass('header__submenu_hover');
-// });
 
 $(".header__submenu").mouseleave(function(){
 	$('ul').removeClass('header__submenu_hover');
