@@ -661,7 +661,7 @@ $(document).ready(function(){
     $("html").mouseup(function(e) {
         e.stopPropagation();
         if (!mouse_is_inside){
-			alert(2);
+			$('.header__menu-item').closest('ul').removeClass('header__submenu_hover');
         }
 //             $(".header__submenu").slideUp("fast", function() {
 //                 $(".active").removeClass("active");
