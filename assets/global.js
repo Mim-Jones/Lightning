@@ -1,3 +1,50 @@
+$(document).ready(function(){
+	
+	var mouse_is_inside = false;
+
+	var dropdown = ".header__submenu";
+  	
+    $(".header__menu-item").on({
+      mouseenter: function () {
+          $(this).closest('ul').addClass('header__submenu_hover');
+      },
+      mouseleave: function () {
+          //stuff to do on mouse leave
+      }
+	});
+
+  
+//     $(".header__menu-item").hover(function() {
+// 		$(this).closest('ul').addClass('header__submenu_hover');
+// 		mouse_is_inside = true;	
+// 	});
+	
+//     $(".hover-nav").hover(
+//         function() {
+//             mouse_is_inside = true;
+//         },
+//         function() {
+//             mouse_is_inside = false;
+//         }
+// 	);
+
+    $("html").mouseup(function(e) {
+        e.stopPropagation();
+        if (!mouse_is_inside){
+			$('.header__menu-item').closest('ul').removeClass('header__submenu_hover');
+        }
+//             $(".header__submenu").slideUp("fast", function() {
+//                 $(".active").removeClass("active");
+//             });
+    });
+
+    //Avoid collapsing the Dropdowns when clicking inside of them
+//     $(".header__submenu").click(function(e) {
+//         e.stopPropagation();
+//     });
+
+})
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -638,39 +685,3 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
-
-$(document).ready(function(){
-	
-	var mouse_is_inside = false;
-
-	var dropdown = ".header__submenu";
-    $(".header__menu-item").hover(function() {
-		$(this).closest('ul').addClass('header__submenu_hover');
-		mouse_is_inside = true;	
-	});
-	
-//     $(".hover-nav").hover(
-//         function() {
-//             mouse_is_inside = true;
-//         },
-//         function() {
-//             mouse_is_inside = false;
-//         }
-// 	);
-
-    $("html").mouseup(function(e) {
-        e.stopPropagation();
-        if (!mouse_is_inside){
-			$('.header__menu-item').closest('ul').removeClass('header__submenu_hover');
-        }
-//             $(".header__submenu").slideUp("fast", function() {
-//                 $(".active").removeClass("active");
-//             });
-    });
-
-    //Avoid collapsing the Dropdowns when clicking inside of them
-//     $(".header__submenu").click(function(e) {
-//         e.stopPropagation();
-//     });
-
-})
