@@ -652,7 +652,7 @@ $(".header__menu-item").hover(
     }
 );
 
-$("nav").mouseout(function(e) {
+$("#shopify-section-header").mouseout(function(e) {
     e.stopPropagation();
     if (!mouse_is_inside){
         $("ul").removeClass("header__submenu_hover");
