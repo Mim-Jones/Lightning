@@ -653,14 +653,14 @@ $(document).ready(function(){
         }
 	});
 	
-    $(".hover-nav").hover(
-        function() {
-            mouse_is_inside = true;
-        },
-        function() {
-            mouse_is_inside = false;
-        }
-	);
+//     $(".hover-nav").hover(
+//         function() {
+//             mouse_is_inside = true;
+//         },
+//         function() {
+//             mouse_is_inside = false;
+//         }
+// 	);
 
     $("html").mouseup(function(e) {
         e.stopPropagation();
