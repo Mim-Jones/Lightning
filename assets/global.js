@@ -639,54 +639,84 @@ class VariantRadios extends VariantSelects {
 
 customElements.define('variant-radios', VariantRadios);
 
-$(document).ready(function(){
+// $(document).ready(function(){
 	
-	var mouse_is_inside = false;
+// 	var mouse_is_inside = false;
 
-	var dropdown = ".header__submenu";
+// 	var dropdown = ".header__submenu";
   	
-//     $(".header__menu-item").on({
-//       mouseenter: function () {
-//           $(this).closest('ul').addClass('header__submenu_hover');
-//       },
-//       mouseleave: function () {
-//           //stuff to do on mouse leave
-//       }
-// 	});
+// //     $(".header__menu-item").on({
+// //       mouseenter: function () {
+// //           $(this).closest('ul').addClass('header__submenu_hover');
+// //       },
+// //       mouseleave: function () {
+// //           //stuff to do on mouse leave
+// //       }
+// // 	});
 
   
-    $(".header__menu-item").hover(function() {
-// 		$('ul').removeClass('header__submenu_hover');
-		$(this).next('ul').addClass('header__submenu_hover');
-		mouse_is_inside = true;	
-	});
-	$("html").mouseup(function(e) {
-        e.stopPropagation();
-        if (!mouse_is_inside){
-			$('.header__menu-item').removeClass('header__submenu_hover');
-        }
-    });
-	
-//     $(".hover-nav").hover(
-//         function() {
-//             mouse_is_inside = true;
-//         },
-//         function() {
-//             mouse_is_inside = false;
-//         }
-// 	);
-
-    $("html").mouseup(function(e) {
-        e.stopPropagation();
-        if (!mouse_is_inside){
-			$('.header__menu-item').closest('ul').removeClass('header__submenu_hover');
-        }
-    });
-
-    //Avoid collapsing the Dropdowns when clicking inside of them
-//     $(".header__submenu").click(function(e) {
+//     $(".header__menu-item").hover(function() {
+// // 		$('ul').removeClass('header__submenu_hover');
+// 		$(this).next('ul').addClass('header__submenu_hover');
+// 		mouse_is_inside = true;	
+// 	});
+// 	$("html").mouseup(function(e) {
 //         e.stopPropagation();
+//         if (!mouse_is_inside){
+// 			$('.header__menu-item').removeClass('header__submenu_hover');
+//         }
+//     });
+	
+// //     $(".hover-nav").hover(
+// //         function() {
+// //             mouse_is_inside = true;
+// //         },
+// //         function() {
+// //             mouse_is_inside = false;
+// //         }
+// // 	);
+
+//     $("html").mouseup(function(e) {
+//         e.stopPropagation();
+//         if (!mouse_is_inside){
+// 			$('.header__menu-item').closest('ul').removeClass('header__submenu_hover');
+//         }
 //     });
 
-})
+//     //Avoid collapsing the Dropdowns when clicking inside of them
+// //     $(".header__submenu").click(function(e) {
+// //         e.stopPropagation();
+// //     });
 
+// })
+
+//Collapse Dropdowns when clicking anywhere else on the page	
+var mouse_is_inside = false;
+//Select the parent element of the Dropdwn
+$(".header__menu-item").hover(
+    function() {
+        mouse_is_inside = true;
+    },
+    function() {
+        mouse_is_inside = false;
+    }
+);
+
+$("html").mouseup(function(e) {
+    e.stopPropagation();
+    if (!mouse_is_inside)
+        $(".header__submenu").slideUp("fast", function() {
+            $(".header__submenu_hover").removeClass("header__submenu_hover");
+        });
+});
+
+//Avoid collapsing the Dropdowns when clicking inside of them
+$(".header__submenu").click(function(e) {
+    e.stopPropagation();
+});
+
+$(".header__menu-item").hover(function() {
+	//$('ul').removeClass('header__submenu_hover');
+	$(this).next('ul').addClass('header__submenu_hover');
+	//mouse_is_inside = true;	
+});
