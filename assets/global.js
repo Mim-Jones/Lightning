@@ -673,8 +673,8 @@ $(document).ready(function(){
     });
 
     //Avoid collapsing the Dropdowns when clicking inside of them
-    $(".header__submenu").click(function(e) {
-        e.stopPropagation();
-    });
+//     $(".header__submenu").click(function(e) {
+//         e.stopPropagation();
+//     });
 
 })
