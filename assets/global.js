@@ -6,6 +6,7 @@ $(document).ready(function(){
   	
     $(".header__menu-item").on({
       mouseenter: function () {
+        alert(1);
           $(this).closest('ul').addClass('header__submenu_hover');
       },
       mouseleave: function () {
