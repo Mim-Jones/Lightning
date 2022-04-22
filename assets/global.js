@@ -642,7 +642,7 @@ customElements.define('variant-radios', VariantRadios);
 
 $(".header__menu-item").mouseenter(function(){
   if($('.list-menu ul').hasClass('header__submenu_hover')){
-  	$(this).attr('opacity','0');
+	$(this).attr('style','opacity:0');
   }
   else{
 	$(this).next('ul').addClass('header__submenu_hover');
