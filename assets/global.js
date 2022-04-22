@@ -656,6 +656,7 @@ $(document).ready(function(){
 
   
     $(".header__menu-item").hover(function() {
+	alert(1);
 		$(this).closest('ul').addClass('header__submenu_hover');
 		mouse_is_inside = true;	
 	});
