@@ -641,7 +641,7 @@ customElements.define('variant-radios', VariantRadios);
 
 
 $(".header__menu-item").mouseenter(function(){
-	$(this).closest('ul').addClass('header__submenu_hover');
+	$(this).next('ul').addClass('header__submenu_hover');
 });
 
 $(".header__submenu").mouseleave(function(){
