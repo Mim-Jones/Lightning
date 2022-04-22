@@ -702,7 +702,7 @@ $(".header__menu-item").hover(
     }
 );
 
-$(".header__submenu_hover").mouseout(function(e) {
+$(".header__submenu").mouseout(function(e) {
 	alert(1);
     e.stopPropagation();
 $("ul").removeClass("header__submenu_hover");
