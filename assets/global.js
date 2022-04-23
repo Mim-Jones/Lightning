@@ -288,6 +288,7 @@ class MenuDrawer extends HTMLElement {
     setTimeout(() => {
       this.mainDetailsToggle.classList.add('menu-opening');
     });
+	alert(1);
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
@@ -300,12 +301,13 @@ class MenuDrawer extends HTMLElement {
       this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
         details.removeAttribute('open');
         details.classList.remove('menu-opening');
+        document.body.classList.remove("menu-open");
       });
       this.mainDetailsToggle.querySelector('summary').setAttribute('aria-expanded', false);
       document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
       removeTrapFocus(elementToFocus);
       this.closeAnimation(this.mainDetailsToggle);
-      document.body.classList.remove("menu-open");
+      
     }
   }
 
