@@ -387,3 +387,19 @@ ul.header__submenu {
     transform-origin: top center;
     transform: scaleY(0);
 }
+
+
+ul.header__submenu.list-menu .header__submenu_hover li {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .3s ease,opacity .2s linear;
+    transition-delay: .2s;
+}
+
+ul.header__submenu.list-menu li {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform .1s,opacity .1s;
+    transition-delay: 0s;
+}
