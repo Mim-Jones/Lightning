@@ -402,6 +402,7 @@ class ModalDialog extends HTMLElement {
   }
 
   hide() {
+    alert(1);
     document.body.classList.remove('overflow-hidden');
     this.removeAttribute('open');
     removeTrapFocus(this.openedBy);
