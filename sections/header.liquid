@@ -618,9 +618,13 @@
 
         </style>
         <script>
-          $('.modal__toggle').on('click',function(){
+          $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
           });
+          $('.header--top-center .modal__close-button').on('click',function(){
+          	$('.header--top-center .header__inline-menu').show();
+          });          
+          
         </script>
 {% javascript %}
   class StickyHeader extends HTMLElement {
