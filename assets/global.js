@@ -367,7 +367,8 @@ class HeaderDrawer extends MenuDrawer {
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-	document.body.classList.add(`menu-open`);
+// 	document.body.classList.add(`menu-open`);
+	document.body.classList.toggle("menu-open");
   }
 }
 
