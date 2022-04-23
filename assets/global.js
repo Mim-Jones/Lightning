@@ -304,6 +304,7 @@ class MenuDrawer extends HTMLElement {
       document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
       removeTrapFocus(elementToFocus);
       this.closeAnimation(this.mainDetailsToggle);
+      document.body.classList.remove("menu-open");
     }
   }
 
