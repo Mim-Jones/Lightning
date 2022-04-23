@@ -196,9 +196,10 @@
   		$(".mobile-facets__close").removeClass("d-none");
 });
 
-      $(".header__icon--menu").click(function(){
-  $(".header__icon--menu").toggleClass("remove-c");
-});
+    $(".header__icon--menu").click(function(){
+  		$(".header__icon--menu").toggleClass("remove-c");
+      	$('body').toggleClass('menu-open');
+	});
     </script>
     <style>
       .d-none{display:none !important}
