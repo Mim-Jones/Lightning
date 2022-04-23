@@ -398,10 +398,15 @@ ul.header__submenu.list-menu li {
     transition: transform .1s,opacity .1s;
     transition-delay: 0s;
 }
-.header{
--webkit-align-items: center!important;
-  align-items:-webkit-center;
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  grid-template-areas: none!important;
+  align-items: center!important;
+  grid-template-columns: none!important;
 }
-.menu-drawer-container {
-    margin-top: 13px;
+
+details.menu-drawer-container {
+  height: 4.8rem!important;
 }
