@@ -296,6 +296,7 @@ class MenuDrawer extends HTMLElement {
   }
 
   closeMenuDrawer(event, elementToFocus = false) {
+    alert(12);
     if (event !== undefined) {
       this.mainDetailsToggle.classList.remove('menu-opening');
       this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
@@ -402,7 +403,6 @@ class ModalDialog extends HTMLElement {
   }
 
   hide() {
-    alert(1);
     document.body.classList.remove('overflow-hidden');
     this.removeAttribute('open');
     removeTrapFocus(this.openedBy);
