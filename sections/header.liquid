@@ -32,7 +32,9 @@
       justify-self: left;
     }
     header-drawer {
-      position:absolute;right:0;top:25px;
+      position:absolute;
+      right:0;
+      top:17px;
     }
     .header__icons {
       margin-right:5rem;
@@ -574,8 +576,13 @@
 {%- endif -%}
         <style>
           @media(max-width:989px){
-            .header-drawer{
-            	top:25px;
+
+              .header.header--top-center.page-width.header--has-menu.no-account-mobile {
+                  padding-top:0;
+              }
+
+            .header-drawer {
+
             }
           }
           .hover-nav{    z-index: inherit;}
@@ -591,7 +598,7 @@
             visibility:hidden;
           }
           .hover-nav:hover .header__submenu{
-          	opacity:1; 
+          	opacity:1;
             height:auto;
             padding-top: 8rem;
             padding-bottom: 2rem;
@@ -599,62 +606,62 @@
           }
           summary.list-menu__item,
           header.header a{
-            cursor:pointer; 
+            cursor:pointer;
           	z-index: 999;
             position:relative;
           }
           #link-Shop,.menu-drawer__submenu.motion-reduce {
           	z-index:;
           }
-          
-          
+
+
           @media screen and (min-width: 990px){
 .header__heading {
     position:relative;
   	z-index: 9999;
-  
+
 }
-           
+
           }
-          
+
 /*           .header__menu-item:hover span{text-underline-offset:1rem !important} */
 
         </style>
         <script>
           $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
-            
+
             if(screen.width>767){
 				$('.header.header--top-center .search.search-modal__form').css({'margin-top':'50px'});
-	            $('.header.header--top-center .modal__close-button').css({'margin-top':'50px'});            
+	            $('.header.header--top-center .modal__close-button').css({'margin-top':'50px'});
             }
             else{
             	$('.header__heading').hide();
-            	$('.header__icon--cart').hide();              
-              
+            	$('.header__icon--cart').hide();
+
             }
-            
+
           });
 //           $('.header--top-center button.search-modal__close-button.modal__close-button.link.link--text.focus-inset').on('click',function(){
-          	
+
 //             alert(123);
 //             $('.header__inline-menu').hide();
 //             if(screen.width<767){
 //             	$('.header__heading').show();
-//             	$('.header__icon--cart').show();              
+//             	$('.header__icon--cart').show();
 //             }
-//           }); 
-          
+//           });
+
           $('.header--top-center .modal__close-button').on('click',function(){
             if(screen.width<767){
             	$('.header__heading').show();
-            	$('.header__icon--cart').show();              
+            	$('.header__icon--cart').show();
             }
             else{
 				$('.header__inline-menu').show();
             }
           });
-          
+
         </script>
 {% javascript %}
   class StickyHeader extends HTMLElement {
