@@ -19,6 +19,9 @@
 
 {% if section.settings.hide_account_icon %}
 <style>
+  .header.header--top-center.page-width.header--has-menu.no-account-mobile{
+  	padding-bottom:6rem;
+  }
   @media(max-width:989px){
     .header {
       grid-template-columns: 0fr 2fr 1fr!important;
@@ -180,9 +183,6 @@
   }
   .header.header--top-center .header__inline-menu{
     margin-top:14rem;
-  }
-  .header.header--top-center.page-width.header--has-menu.no-account-mobile{
-  	padding-bottom:6rem;
   }
   .header.header--top-center .search.search-modal__form{
 /*   	position: absolute;left: 0px; */
