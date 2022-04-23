@@ -361,3 +361,29 @@ summary.list-menu__item{
     fill: {{settings.header_content_color}}!important;
     stroke:{{settings.header_content_color}}!important;
 }
+
+
+
+
+/* new 23/4/2022 */
+ul.header__submenu.header__submenu_hover {
+    transform: scaleY(1)!important;
+    opacity: 1!important;
+    visibility: visible!important;
+    transition: transform .25s ease,opacity 0ms,visibility 0ms!important;
+}
+
+ul.header__submenu {
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    max-height: 800px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transition: transform .1s ease,opacity 0ms linear .1s,visibility 0ms linear .1s;
+    transform-origin: top center;
+    transform: scaleY(0);
+}
