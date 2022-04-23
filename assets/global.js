@@ -288,7 +288,6 @@ class MenuDrawer extends HTMLElement {
     setTimeout(() => {
       this.mainDetailsToggle.classList.add('menu-opening');
     });
-	alert(1);
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
@@ -296,7 +295,7 @@ class MenuDrawer extends HTMLElement {
   }
 
   closeMenuDrawer(event, elementToFocus = false) {
-    alert(12);
+    alert(132);
     if (event !== undefined) {
       this.mainDetailsToggle.classList.remove('menu-opening');
       this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
