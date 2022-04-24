@@ -2,14 +2,37 @@
 
 {%- for block in section.blocks -%}
   <style>
-    #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}} .banner__text{
-      color:{{block.settings.colors_text}};
-    }
-    @media(max-width:768px){
-     #Banner_{{ block.id | remove:"-"}} .banner__heading, #Banner_{{ block.id | remove:"-"}}  .banner__text{
-       color:{{block.settings.colors_text_mob}};
-    }
-    }
+  #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
+  #Banner_{{ block.id | remove:"-"}} .banner__text h2{
+    color:{{settings.banner_color_text}};
+  }
+  @media(max-width:989px){
+   #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
+    #Banner_{{ block.id | remove:"-"}}  .banner__text h2{
+     color:{{settings.banner_color_text_mob}};
+  }
+  .banner__button {
+      background-color: {{settings.mobile_btn_background_color}}!important;
+      color: {{settings.mobile_btn_color_text}}!important;
+  }
+  a.button.button--primary.banner__button:hover {
+      background-color: {{settings.mobile_btn_hover_color}}!important;
+      opacity: 0.5;
+      box-shadow: 0 0 0 0.1rem {{settings.mobile_btn_hover_color}}!important;
+  }
+  }
+  @media(min-width:990px){
+  .banner__button  {
+      background-color: {{settings.btn_background_color}}!important;
+      color: {{settings.btn_color_text}}!important;
+  }
+  a.button.button--primary.banner__button:hover {
+      background-color: {{settings.btn_hover_color}}!important;
+      opacity: 0.5;
+      box-shadow: 0 0 0 0.1rem {{settings.mobile_btn_hover_color}}!important;
+  }
+  }
+ 
   </style>
 {%- endfor -%}
 
@@ -84,10 +107,10 @@
 
               <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
                 {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+                <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button button--primary banner__button"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
                 {%- endif -%}
                 {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
+                <a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button button--primary banner__button"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
                 {%- endif -%}
               </div>
 
