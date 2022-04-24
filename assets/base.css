@@ -1859,10 +1859,10 @@ a.navigation__link.header__icon.link.link--text.focus-inset {
   }
 }
 
-@media screen and (max-width: 989px) {
+/* @media screen and (max-width: 989px) {
   .hide-account-fix {
     margin-bottom: 2.2rem;
-  }
+  } */
 }
 
 /* a#cart-icon-bubble {
