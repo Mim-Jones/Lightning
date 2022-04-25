@@ -208,7 +208,12 @@
       
       $('.header__icon').click(function(){
       	var attr_val = $(this).attr('aria-expanded');
-        
+        if ($(".menu-opening").attr('open') !== undefined) {
+        	alert('yes');
+        }
+        else{
+        	alert('no');        
+        }
         alert(attr_val);
       })
     </script>
