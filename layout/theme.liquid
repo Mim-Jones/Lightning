@@ -216,8 +216,10 @@
 //         }      	
 // 	});
       
-//       $('.header__icon').click(function(){
-//               alert(2);
+      $('.header__icon').click(function(){
+        if($('.menu-drawer-container').hasClass('menu-opening')){
+        	$('.menu-drawer-container').addClass('menu-opening')	
+        }
 //       	var attr_val = $(this).attr('aria-expanded');
 //         if ($(".menu-opening").attr('open') !== undefined) {
 //         	$('body').removeClass('menu-open');
@@ -225,10 +227,11 @@
 //         else{
 //         	$('body').addClass('menu-open');
 //         }
-// //         alert(attr_val);
-//       })
+//         alert(attr_val);
+      })
       $('#MainContent').on('click',function(){
         if($('body').hasClass('menu-open')){
+          alert(123);
         	$('.header__icon').trigger('click');
         }               
       })
