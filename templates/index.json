@@ -1,5 +1,56 @@
 {
   "sections": {
+    "16316073674dfa205d": {
+      "type": "image-video-banner",
+      "blocks": {
+        "16316073674dfa205d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online.jpg",
+            "heading": "Image banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "desktop_text_box_position": "center",
+            "show_text_box": false,
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true
+          }
+        },
+        "16316073674dfa205d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dark_German_Rauchbier_Online.jpg",
+            "heading": "Image banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "desktop_text_box_position": "center",
+            "show_text_box": false,
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "stack_images_on_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "16316073674dfa205d-1",
+        "16316073674dfa205d-0"
+      ],
+      "settings": {
+      }
+    },
     "16502652433543476c": {
       "type": "background-video-banner",
       "blocks": {
@@ -88,57 +139,6 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
-      }
-    },
-    "16316073674dfa205d": {
-      "type": "image-video-banner",
-      "blocks": {
-        "16316073674dfa205d-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online.jpg",
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": false,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        },
-        "16316073674dfa205d-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Dark_German_Rauchbier_Online.jpg",
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": false,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        }
-      },
-      "block_order": [
-        "16316073674dfa205d-1",
-        "16316073674dfa205d-0"
-      ],
-      "settings": {
       }
     },
     "featured_products": {
@@ -287,9 +287,9 @@
     }
   },
   "order": [
+    "16316073674dfa205d",
     "16502652433543476c",
     "163793031265aa8c20",
-    "16316073674dfa205d",
     "featured_products",
     "16378792591eff2249",
     "image_banner",
