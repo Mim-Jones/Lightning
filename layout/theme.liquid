@@ -205,6 +205,12 @@
       	$('body').removeClass('menu-open');
       }      	
 	});
+      
+      $('.header__icon').click(function(){
+      	var attr_val = $(this).attr('aria-expanded');
+        
+        alert(attr_val);
+      })
     </script>
     <style>
       .d-none{display:none !important}
