@@ -197,27 +197,34 @@
 });
 
     $(".header__icon--menu").click(function(){
-      alert(1);
+//       alert(1);
   		$(".header__icon--menu").toggleClass("remove-c");
-      if($(this).hasClass('remove-c')){
-      	$('body').addClass('menu-open');
-      }
-      else{
-      	$('body').removeClass('menu-open');
-      }      	
-	});
-      
-      $('.header__icon').click(function(){
-              alert(2);
-      	var attr_val = $(this).attr('aria-expanded');
+      var attr_val = $(this).attr('aria-expanded');
         if ($(".menu-opening").attr('open') !== undefined) {
         	$('body').removeClass('menu-open');
         }
         else{
         	$('body').addClass('menu-open');
         }
-//         alert(attr_val);
-      })
+//       if($(this).hasClass('remove-c')){
+//       	$('body').addClass('menu-open');
+//       }
+//       else{
+//       	$('body').removeClass('menu-open');
+//       }      	
+	});
+      
+//       $('.header__icon').click(function(){
+//               alert(2);
+//       	var attr_val = $(this).attr('aria-expanded');
+//         if ($(".menu-opening").attr('open') !== undefined) {
+//         	$('body').removeClass('menu-open');
+//         }
+//         else{
+//         	$('body').addClass('menu-open');
+//         }
+// //         alert(attr_val);
+//       })
       $('#MainContent').on('click',function(){
         $('body').removeClass('menu-open');
       })
