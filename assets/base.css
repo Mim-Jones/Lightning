@@ -1800,7 +1800,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  margin-right: 1rem;
+
 }
 
 .header__icon:not(.header__icon--summary),
@@ -1837,13 +1837,20 @@ a.navigation__link.header__icon.link.link--text.focus-inset {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
+  height: 4.5rem;
   width: 4.4rem;
 }
 
 a#cart-icon-bubble {
     height: 4.4rem;
     width: 2.2rem;
+}
+
+@media screen and (min-width: 990px) {
+    a#cart-icon-bubble  {
+        margin-left: 1.4rem;
+    }
+
 }
 
 .icon-cart-empty {

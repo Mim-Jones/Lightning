@@ -16,6 +16,29 @@
     </style>
     {% endif %}
 {% endif %}
+    {%- if section.settings.menu.links  -%}
+    <style>
+  @media(max-width:989px){
+      details-modal.header__search .header__icon--search {
+          left: 4rem;
+      }
+  }
+</style>
+{% endif %}
+
+{% if section.settings.hide_account_icon %}
+    {%- if section.settings.menu.links  -%}
+    <style>
+@media(max-width:989px){
+    .header__icons {
+        margin-right: 3rem;
+    }
+}
+    </style>
+    {% endif %}
+{% endif %}
+
+
 
 {% if section.settings.hide_account_icon %}
 <style>
@@ -34,9 +57,10 @@
     header-drawer {
       position:absolute;
       right:0;
+      bottom: ;
     }
     .header__icons {
-      margin-right:3rem;
+
     }
     .header__icon--search {
       left:0 !important;
