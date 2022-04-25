@@ -233,7 +233,7 @@
       $('#MainContent').on('click',function(){
         if($('body').hasClass('menu-open')){
         	$('.header__icon').trigger('click');
-          	$('body').removeClass('menu-open');
+          	$('body').toggleClass('menu-open');
         }               
       })
     </script>
