@@ -575,6 +575,10 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
         <style>
+          .no-js details[open]>.menu-drawer:hover, .js details[open].menu-opening>.menu-drawer:hover, details[open].menu-opening>.menu-drawer__submenu:hover{
+                transform: translate(0);
+                visibility: visible;
+            }
           @media screen and (min-width: 990px) {
           	.hover-nav:hover .header__submenu{
               opacity:1;
