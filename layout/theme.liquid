@@ -227,7 +227,11 @@
 //       })
       $('#MainContent').on('click',function(){
 //         alert(1);
-        $('.header__icon').trigger('click');
+        if($('. header__icon ').hasClass('remove-c')){
+        	$('.header__icon').trigger('click');
+        }
+        
+        
 //         $('body').removeClass('menu-open');
       })
     </script>
