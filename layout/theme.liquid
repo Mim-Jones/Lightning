@@ -231,8 +231,8 @@
 //         alert(attr_val);
       })
       $('#MainContent').on('click',function(){
+        $('.header__icon').trigger('click');
         if($('body').hasClass('menu-open')){
-        	$('.header__icon').trigger('click');
           	$('body').toggleClass('menu-open');
         }               
       })
