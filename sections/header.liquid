@@ -16,7 +16,45 @@
     </style>
     {% endif %}
 {% endif %}
+{%- if section.settings.menu.links  -%}
+<style>
+@media(max-width:989px){
+  details-modal.header__search .header__icon--search {
+      left: 4rem;
+  }
+}
+</style>
+{% endif %}
 
+{% if section.settings.hide_account_icon %}
+{%- if section.settings.menu.links  -%}
+<style>
+@media(max-width:989px){
+.header__icons {
+    margin-right: 3rem;
+}
+
+@media(max-width:989px) {
+    details-modal.header__search .header__icon--search {
+        bottom: 0;
+}
+}
+</style>
+{% endif %}
+{% endif %}
+
+    {%- if section.settings.menu == blank -%}
+    {% if section.settings.hide_account_icon %}
+    <style>
+    @media(max-width:989px) {
+        details-modal.header__search .header__icon--search {
+            bottom: 0;
+    }
+    }
+    </style>
+
+    {% endif %}
+    {% endif %}
 {% if section.settings.hide_account_icon %}
 <style>
   .header.header--top-center.page-width.header--has-menu.no-account-mobile{
@@ -641,7 +679,7 @@
         <script>
           $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
-			
+
             if(screen.width>767){
 				$('.header.header--top-center .search.search-modal__form').css({'margin-top':'50px'});
 	            $('.header.header--top-center .modal__close-button').css({'margin-top':'50px'});
