@@ -197,6 +197,7 @@
 });
 
     $(".header__icon--menu").click(function(){
+      alert(1);
   		$(".header__icon--menu").toggleClass("remove-c");
       if($(this).hasClass('remove-c')){
       	$('body').addClass('menu-open');
@@ -207,6 +208,7 @@
 	});
       
       $('.header__icon').click(function(){
+              alert(2);
       	var attr_val = $(this).attr('aria-expanded');
         if ($(".menu-opening").attr('open') !== undefined) {
         	$('body').removeClass('menu-open');
