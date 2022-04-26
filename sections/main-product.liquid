@@ -149,6 +149,7 @@
                 {{ 'products.product.quantity.label' | t }}
               </label>
               <quantity-input class="quantity">
+<!-- Class name btn-minus added                 -->
                 <button class="quantity__button no-js-hidden btn-minus" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
                   {% render 'icon-minus' %}
@@ -161,6 +162,7 @@
                     value="1"
                     form="product-form-{{ section.id }}"
                   >
+                <!-- Class name btn-plus added                 -->
                 <button class="quantity__button no-js-hidden btn-plus" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                   {% render 'icon-plus' %}
