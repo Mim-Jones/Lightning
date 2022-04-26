@@ -267,6 +267,7 @@ class MenuDrawer extends HTMLElement {
   }
 
   onSummaryClick(event) {
+    alert(1);
     console.log(event);
     const summaryElement = event.currentTarget;
     const detailsElement = summaryElement.parentNode;
