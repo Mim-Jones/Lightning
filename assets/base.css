@@ -1849,6 +1849,7 @@ a#cart-icon-bubble {
 @media screen and (min-width: 990px) {
     a#cart-icon-bubble  {
         margin-left: 1.4rem;
+        width: 4.2rem;
     }
 
 }
