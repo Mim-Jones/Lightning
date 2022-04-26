@@ -240,8 +240,8 @@ class MenuDrawer extends HTMLElement {
     if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 
     this.addEventListener('keyup', this.onKeyUp.bind(this));
-//     this.addEventListener('focusout', this.onFocusOut.bind(this));
-//     this.bindEvents();
+    this.addEventListener('focusout', this.onFocusOut.bind(this));
+    this.bindEvents();
   }
 
   bindEvents() {
