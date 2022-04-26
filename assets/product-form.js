@@ -59,6 +59,8 @@ class ProductForm extends HTMLElement {
 
 customElements.define('product-form', ProductForm);
 
+// Added by Divy Start
+
 $('.btn-plus').on('click',function(){
   var osQty = $('#qty_inventory_track').html();
   var qtyInput = $('.quantity__input').val();
@@ -78,3 +80,4 @@ $('.btn-plus').on('click',function(){
   }
 	
 })
+// Added by Divy End
