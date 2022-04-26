@@ -681,6 +681,8 @@
         </style>
         <script>
           /*  Added by Divy Start   */
+          
+		// Menu click event when we select logo position to top center
           $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
 
@@ -711,7 +713,8 @@
 //             	$('.header__icon--cart').show();
 //             }
 //           });
-
+	
+//           Modal Close event Click in header
           $('.header--top-center .modal__close-button').on('click',function(){
             if(screen.width<767){
             	$('.header__heading').show();
