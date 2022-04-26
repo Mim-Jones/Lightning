@@ -88,10 +88,12 @@
     .js details[open].menu-opening>.menu-drawer{
       transform:translate(-87%)
     }
+/*  Added by Divy Start   */
     #menu-drawer {
       margin-top:13px;
 /*       height:150vh; */
     }
+
 /*     .menu-open #MainContent{
     	position:fixed;
       	background:#000;
@@ -103,6 +105,7 @@
     .header.header--top-center.page-width.header--has-menu.no-account-mobile{
       padding-bottom:0rem;
     }
+    /*  Added by Divy End   */
   }
 </style>
 {%endif%}
@@ -218,6 +221,8 @@
   }
 
   .mrg-cls svg{margin-right:1.2rem}
+  
+  /*  Added by Divy Start   */
   .hover-nav{
   	z-index:999;
   }
@@ -230,6 +235,7 @@
   .header.header--top-center .modal__close-button.link{
 /*   	left: 500px;position: absolute; */
   }
+  /*  Added by Divy End   */
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -613,12 +619,8 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
         <style>
-          @media only screen and (min-device-width: 990px) {
-          	.no-js details[open]>.menu-drawer:hover, .js details[open].menu-opening>.menu-drawer:hover, details[open].menu-opening>.menu-drawer__submenu:hover{
-                visibility: visible !important;
-            }
-          }
-          @media only screen and (min-device-width: 990px) {
+          /*  Added by Divy Start   */
+          @media screen and (min-width: 990px) {
           	.hover-nav:hover .header__submenu{
               opacity:1;
               height:auto;
@@ -663,7 +665,7 @@
           #link-Shop,.menu-drawer__submenu.motion-reduce {
           	z-index:;
           }
-
+          /*  Added by Divy End   */
 
           @media screen and (min-width: 990px){
 .header__heading {
@@ -678,6 +680,7 @@
 
         </style>
         <script>
+          /*  Added by Divy Start   */
           $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
 
@@ -718,7 +721,7 @@
 				$('.header__inline-menu').show();
             }
           });
-
+          /*  Added by Divy End   */
         </script>
 {% javascript %}
   class StickyHeader extends HTMLElement {
