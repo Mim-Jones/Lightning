@@ -39,6 +39,11 @@
     details-modal.header__search .header__icon--search {
         bottom: 0;
 }
+
+.header__search {
+
+    margin-right: 1.5rem;
+}
 }
 </style>
 {% endif %}
@@ -56,6 +61,8 @@
       position: relative;
       left: 2.75rem;
     }
+
+
 
     a#cart-icon-bubble {
 
@@ -81,7 +88,11 @@
 
     a.header__icon.header__icon--account.link.link--text.focus-inset {
     position: relative;
-    right: 0.75rem;
+    right: 1.75rem;
+}
+
+details-modal.header__search .header__icon--search {
+    left: 5.25rem;
 }
 }
     </style>
@@ -99,6 +110,16 @@
           position: relative;
           left: 1.5rem;
         }
+
+        a.header__icon.header__icon--account.link.link--text.focus-inset {
+        position: relative;
+        right: 1.75rem;
+    }
+
+    details-modal.header__search .header__icon--search {
+    position: absolute;
+    left: 1rem;
+}
     }
         </style>
 
@@ -123,7 +144,7 @@
       right:0;
     }
     .header__icons {
-      margin-right:3rem;
+      margin-right:5rem;
     }
     .header__icon--search {
       left:0 !important;position:relative !important;
@@ -165,6 +186,7 @@
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
+    margin-right: 0.75rem;
   }
 
   @media screen and (min-width: 990px) {
