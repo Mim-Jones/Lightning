@@ -60,6 +60,7 @@ class ProductForm extends HTMLElement {
 customElements.define('product-form', ProductForm);
 
 // Added by Divy Start
+// Btn Plus Click event to prevent click for more than available quantity
 
 $('.btn-plus').on('click',function(){
   var osQty = $('#qty_inventory_track').html();
