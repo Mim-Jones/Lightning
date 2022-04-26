@@ -240,7 +240,7 @@ class MenuDrawer extends HTMLElement {
     if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 
     this.addEventListener('keyup', this.onKeyUp.bind(this));
-    this.addEventListener('focusout', this.onFocusOut.bind(this));
+    //this.addEventListener('focusout', this.onFocusOut.bind(this));
     this.bindEvents();
   }
 
@@ -272,7 +272,6 @@ class MenuDrawer extends HTMLElement {
     const detailsElement = summaryElement.parentNode;
     const isOpen = detailsElement.hasAttribute('open');
 	
-    alert(isOpen);
     if (detailsElement === this.mainDetailsToggle) {
       if(isOpen) event.preventDefault();
       isOpen ? this.closeMenuDrawer(summaryElement) : this.openMenuDrawer(summaryElement);
