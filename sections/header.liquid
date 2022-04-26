@@ -693,10 +693,11 @@
 
           });
 
-          $('.menu-drawer-container.menu-opening').hover(function(){
-            alert(1);
+          $('.menu-drawer-container').hover(function(){
+//             alert(1);
+			$(this).attr('open','open');
             if($( window ).width()<400){
-            	$(this).attr('open','open');
+
             }
           });
 //           $('.header--top-center button.search-modal__close-button.modal__close-button.link.link--text.focus-inset').on('click',function(){
