@@ -300,7 +300,7 @@ class MenuDrawer extends HTMLElement {
       this.mainDetailsToggle.querySelectorAll('details').forEach(details =>  {
         details.removeAttribute('open');
         details.classList.remove('menu-opening');
-        document.body.classList.remove("menu-open");
+        document.body.classList.remove("menu-open"); // Added By Divy
       });
       this.mainDetailsToggle.querySelector('summary').setAttribute('aria-expanded', false);
       document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
@@ -371,7 +371,7 @@ class HeaderDrawer extends MenuDrawer {
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-	document.body.classList.add("menu-open");
+	document.body.classList.add("menu-open"); // Added By Divy
   }
 }
 
@@ -644,7 +644,7 @@ class VariantRadios extends VariantSelects {
 
 customElements.define('variant-radios', VariantRadios);
 
-
+// Added By Divy
 $(function(){
   
   $('.hover-nav').hover(function(){
