@@ -239,15 +239,15 @@ class MenuDrawer extends HTMLElement {
 
     if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 
-    this.addEventListener('keyup', this.onKeyUp.bind(this));
-    this.addEventListener('focusout', this.onFocusOut.bind(this));
-    this.bindEvents();
+//     this.addEventListener('keyup', this.onKeyUp.bind(this));
+//     this.addEventListener('focusout', this.onFocusOut.bind(this));
+//     this.bindEvents();
   }
 
-  bindEvents() {
-    this.querySelectorAll('summary').forEach(summary => summary.addEventListener('mouseenter', this.onSummaryClick.bind(this)));
-    this.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
-  }
+//   bindEvents() {
+//     this.querySelectorAll('summary').forEach(summary => summary.addEventListener('mouseenter', this.onSummaryClick.bind(this)));
+//     this.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+//   }
 
   addAccessibilityAttributes(summaryElements) {
     summaryElements.forEach(element => {
