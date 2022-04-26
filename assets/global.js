@@ -271,10 +271,11 @@ class MenuDrawer extends HTMLElement {
     const summaryElement = event.currentTarget;
     const detailsElement = summaryElement.parentNode;
     const isOpen = detailsElement.hasAttribute('open');
-
+	
+    alert(isOpen);
     if (detailsElement === this.mainDetailsToggle) {
       if(isOpen) event.preventDefault();
-      isOpen ? this.openMenuDrawer(summaryElement) : this.openMenuDrawer(summaryElement);
+      isOpen ? this.closeMenuDrawer(summaryElement) : this.openMenuDrawer(summaryElement);
     } else {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
 
