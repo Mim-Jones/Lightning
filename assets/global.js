@@ -267,7 +267,6 @@ class MenuDrawer extends HTMLElement {
   }
 
   onSummaryClick(event) {
-    alert(1);
     console.log(event);
     const summaryElement = event.currentTarget;
     const detailsElement = summaryElement.parentNode;
@@ -275,7 +274,7 @@ class MenuDrawer extends HTMLElement {
 
     if (detailsElement === this.mainDetailsToggle) {
       if(isOpen) event.preventDefault();
-      isOpen ? this.closeMenuDrawer(summaryElement) : this.openMenuDrawer(summaryElement);
+      isOpen ? this.openMenuDrawer(summaryElement) : this.openMenuDrawer(summaryElement);
     } else {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
 
