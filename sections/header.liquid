@@ -613,13 +613,8 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
         <style>
-/*           .no-js details[open]>.menu-drawer:hover, .js details[open].menu-opening>.menu-drawer:hover, details[open].menu-opening>.menu-drawer__submenu:hover{
-                transform: translate(-87%);
-                visibility: visible !important;
-            } */
           @media only screen and (min-device-width: 990px) {
           	.no-js details[open]>.menu-drawer:hover, .js details[open].menu-opening>.menu-drawer:hover, details[open].menu-opening>.menu-drawer__submenu:hover{
-/*                 transform: translate(-87%); */
                 visibility: visible !important;
             }
           }
@@ -699,6 +694,7 @@
           });
 
           $('.menu-drawer-container.menu-opening').hover(function(){
+            alert(1);
             if($( window ).width()<400){
             	$(this).attr('open','open');
             }
