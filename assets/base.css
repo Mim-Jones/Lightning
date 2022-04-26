@@ -1754,6 +1754,8 @@ input[type='checkbox'] {
 .header__heading-link {
   grid-area: heading;
   justify-self: center;
+  position: relative;
+
 }
 
 .header__heading-link {

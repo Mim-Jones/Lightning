@@ -31,7 +31,8 @@
 <style>
 @media(max-width:989px){
 .header__icons {
-    margin-right: 3rem;
+    margin-right: 5rem;
+}
 }
 
 @media(max-width:989px) {
@@ -50,11 +51,59 @@
         details-modal.header__search .header__icon--search {
             bottom: 0;
     }
+    .header__heading,
+    .header__heading-link {
+      position: relative;
+      left: 2.75rem;
+    }
+
+    a#cart-icon-bubble {
+
+    position: relative;
+    left: 2rem;
+}
     }
     </style>
 
     {% endif %}
     {% endif %}
+
+{%- if section.settings.menu.links  -%}
+    {% if section.settings.hide_account_icon == false %}
+    <style>
+
+    @media (max-width:990px) {
+    .header__heading,
+    .header__heading-link {
+      position: relative;
+      left: 0.75rem;
+    }
+
+    a.header__icon.header__icon--account.link.link--text.focus-inset {
+    position: relative;
+    right: 0.75rem;
+}
+}
+    </style>
+
+    {% endif %}
+    {% endif %}
+
+    {%- if section.settings.menu == blank -%}
+        {% if section.settings.hide_account_icon == false %}
+        <style>
+
+        @media (max-width:990px) {
+        .header__heading,
+        .header__heading-link {
+          position: relative;
+          left: 1.5rem;
+        }
+    }
+        </style>
+
+        {% endif %}
+        {% endif %}
 {% if section.settings.hide_account_icon %}
 <style>
   .header.header--top-center.page-width.header--has-menu.no-account-mobile{
@@ -221,7 +270,7 @@
   }
 
   .mrg-cls svg{margin-right:1.2rem}
-  
+
   /*  Added by Divy Start   */
   .hover-nav{
   	z-index:999;
@@ -681,7 +730,7 @@
         </style>
         <script>
           /*  Added by Divy Start   */
-          
+
 		// Menu click event when we select logo position to top center
           $('.header--top-center .modal__toggle').on('click',function(){
           	$('.header--top-center .header__inline-menu').hide();
@@ -702,7 +751,7 @@
 // 			$(this).attr('open','open');
 //             $('.menu-opening').attr('open','open');
 //             $('.menu-drawer').css({'visibility':'visible'});
-            
+
 //           });
 //           $('.header--top-center button.search-modal__close-button.modal__close-button.link.link--text.focus-inset').on('click',function(){
 
@@ -713,7 +762,7 @@
 //             	$('.header__icon--cart').show();
 //             }
 //           });
-	
+
 //           Modal Close event Click in header
           $('.header--top-center .modal__close-button').on('click',function(){
             if(screen.width<767){
