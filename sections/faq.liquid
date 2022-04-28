@@ -7,14 +7,14 @@
         <div class="accordian-tabs">
           <!--- Question 1 starts --->
           {% for block in section.blocks %}
-         
-          
+
+
           <div class="product__accordion accordion" {{ block.shopify_attributes }}>
             <details>
               <summary>
                 <div class="summary__title">
                   {% render 'icon-accordion', icon: block.settings.icon %}
-                  <h2 class="h4 accordion__title">
+                  <h2 class="h4 faq_accordion__title">
                     {{block.settings.qstn}}
                   </h2>
                 </div>
@@ -25,13 +25,13 @@
               </div>
             </details>
           </div>
-          
+
         {% endfor %}
-         
+
         </div>
       </div>
     </div>
-   
+
   </div>
 </section>
 
@@ -77,6 +77,7 @@
 <style>
   .faq-section {
     margin: 40px 0;
+    margin-bottom: 10rem;
 }
 .faq-content h4 {
     color: #000;
@@ -105,7 +106,7 @@
 .accordion_body {
 
     padding: 30px 50px;
-   
+
 }
 .accordion_body p {
     color: #000;

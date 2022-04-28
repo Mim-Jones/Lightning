@@ -249,15 +249,15 @@ details-modal.header__search .header__icon--search {
     background-color:{{settings.header_background_color}}!important;
   }
 
-  .field__input,
+  /* .field__input,
   .customer select {
     box-shadow: 0 0 0 0.1rem {{settings.header_content_color}};
-  }
+  } */
 
-  .field__input:hover,
+  /* .field__input:hover,
   .customer select:hover {
     box-shadow: 0 0 0 0.1rem {{settings.header_content_hover_color}};
-  }
+  } */
 
   header.header a, header.header svg,
   header.header svg path,
@@ -563,7 +563,7 @@ details-modal.header__search .header__icon--search {
                 <div>
                   <div>
                     <summary class="header__menu-item list-menu__item link focus-inset" {% if section.settings.menu_hover %} {% endif %}>
-                      <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                      <span  class="header__active-menu-item">{{ link.title | escape }}</span>
                       {% render 'icon-caret' %}
                     </summary>
                     <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
@@ -597,7 +597,7 @@ details-modal.header__search .header__icon--search {
                 </div>
               {%- else -%}
                 <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                  <span {%- if link.links %} class="header__active-menu-item"{% endif %} >{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
             </li>
@@ -624,7 +624,7 @@ details-modal.header__search .header__icon--search {
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
             <div class="search-modal__content" tabindex="-1">
               <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                <div class="field">
+                <div class="field header-field">
                   <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
                   <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                   <input type="hidden" name="options[prefix]" value="last">

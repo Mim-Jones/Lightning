@@ -77,7 +77,7 @@
         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
-        
+
 
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
       }
@@ -195,15 +195,15 @@
       $(".mobile-facets__open").click(function(){
   		$(".mobile-facets__close").removeClass("d-none");
 });
-      
-        /*  Added by Divy Start   */      
+
+        /*  Added by Divy Start   */
 
 //     $(".header__icon--menu").click(function(){
 
 //   		$(".header__icon--menu").toggleClass("remove-c");
-      	
+
 //       	var attr_val = $(this).attr('aria-expanded');
-        
+
 //       	if ($(".menu-opening").attr('open') !== undefined) {
 //         	$('body').removeClass('menu-open');
 //         }
@@ -215,13 +215,13 @@
 //         }
 //         else{
 //           $('body').removeClass('menu-open');
-//         }      	
+//         }
 // 	});
 //       Header menu icon click event to open menu
       $('.header__icon').click(function(){
         if(!$('.menu-drawer-container').hasClass('menu-opening')){
 //           	alert('added');
-        	$('.menu-drawer-container').addClass('menu-opening')	
+        	$('.menu-drawer-container').addClass('menu-opening')
         }
 //       	var attr_val = $(this).attr('aria-expanded');
 //         if ($(".menu-opening").attr('open') !== undefined) {
@@ -236,7 +236,7 @@
 //         $('.header__icon').trigger('click');
 //         if($('body').hasClass('menu-open')){
 //           	$('body').toggleClass('menu-open');
-//         }               
+//         }
 //       })
       /*  Added by Divy End   */
     </script>
