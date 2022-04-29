@@ -526,7 +526,20 @@ details-modal.header__search .header__icon--search {
                          type="search" 
                          name="q" 
                          value="{{ search.terms | escape }}" 
-                         placeholder="{{ 'general.search.search' | t }}">
+                         placeholder="{{ 'general.search.search' | t }}"
+                         {%- if settings.predictive_search_enabled -%}
+                        role="combobox"
+                        aria-expanded="false"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="off"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                      {%- endif -%}
+                         >
                   <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                   <input type="hidden" name="options[prefix]" value="last">
                   <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
