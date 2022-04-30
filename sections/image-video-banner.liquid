@@ -36,8 +36,7 @@
   </style>
 {%- endfor -%}
 
-<div sectionName="{{section.name}}" data-aos="fade-down"
-     data-aos-easing="linear"
+<div sectionName="{{section.name}}"  
      data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
@@ -131,9 +130,7 @@
                loading="lazy"
                alt="{{ block.settings.image.alt | escape }}"
                width="{{ block.settings.image.width }}"
-               height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
-
-               >
+               height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"  >
         </div>
         {{bottomcontent}}
         {%- endif -%}
