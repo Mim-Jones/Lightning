@@ -42,7 +42,20 @@
 {%- endfor -%}
 
 <div sectionName="{{section.name}}"  
-     data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
+     data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement mmain-carousel{% endif %}" 
+     data-flickity='{ 
+                    "cellAlign": "left", 
+                    "contain": true, 
+                    "autoPlay": 6000,
+    "pauseAutoPlayOnHover": true,
+    "contain": true,
+    "freeScroll": false,
+    "wrapAround": true,
+    "prevNextButtons": true,
+    "pageDots": true,
+    "lazyLoad": 2,
+    "adaptiveHeight": true }'
+     >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
