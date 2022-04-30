@@ -5,7 +5,6 @@
   left: -0.1rem;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   background-color: rgb(var(--color-background));
   z-index: 3;
   border-bottom-right-radius: var(--popup-corner-radius);
