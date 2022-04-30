@@ -43,7 +43,7 @@
 
 <div sectionName="{{section.name}}"  
      data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement mmain-carousel{% endif %}" 
-     data-flickity='{ 
+<!--      data-flickity='{ 
                     "cellAlign": "left", 
                     "contain": true, 
                     "autoPlay": 6000,
@@ -54,7 +54,7 @@
     "prevNextButtons": true,
     "pageDots": true,
     "lazyLoad": 2,
-    "adaptiveHeight": true }'
+    "adaptiveHeight": true }' -->
      >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
