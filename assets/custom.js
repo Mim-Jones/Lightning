@@ -96,7 +96,7 @@ jQuery(function($){
 //     $('details ul').addClass('header__submenu_hover');
   });
   
-  $( "details ul" ).mouseleave(function() {
+  $( "#hover-enable details ul" ).mouseleave(function() {
     $(this).parents('details').removeAttr('open','open');
 //      $(this).removeClass('header__submenu_hover');
   });
