@@ -617,7 +617,7 @@ details-modal.header__search .header__icon--search {
                     {% render 'icon-caret' %}
                   </summary>
                   <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce 
-                            header__submenu_hover 
+                           {% unless section.settings.menu_hover %}   header__submenu_hover  {% endunless %}
                              
                              " role="list" tabindex="-1">
                     {%- for childlink in link.links -%}
