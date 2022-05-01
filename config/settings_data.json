@@ -63,7 +63,7 @@
           "logo_position": "middle-left",
           "menu": "main-menu-new",
           "show_line_separator": false,
-          "menu_hover": true,
+          "menu_hover": false,
           "hide_account_icon": true,
           "enable_sticky_header": true
         }
