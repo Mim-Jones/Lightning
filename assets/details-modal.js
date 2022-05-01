@@ -27,6 +27,7 @@ class DetailsModal extends HTMLElement {
 
   onSummaryClick(event) {
     event.preventDefault();
+    console.log(event);
     event.target.closest('details').hasAttribute('open')
       ? this.close()
       : this.open(event);
