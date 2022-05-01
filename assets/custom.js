@@ -83,10 +83,12 @@ jQuery(function($){
   $( ".list-menu li a.no-sub" ).mouseenter(function() {
     console.log('hover');
     $('details').removeAttr('open','open');
+    $('details ul').addClass('header__submenu_hover');
   });
   
   $( "details ul" ).mouseleave(function() {
     $(this).parents('details').removeAttr('open','open');
+     $(this).removeClass('header__submenu_hover');
   });
 
 });
