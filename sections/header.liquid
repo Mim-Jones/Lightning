@@ -607,11 +607,11 @@ details-modal.header__search .header__icon--search {
           {%- for link in section.settings.menu.links -%}
             <li class='hover-nav  {% if section.settings.menu_hover %} hover-enable {% endif %}' >
               {%- if link.links != blank -%}
-       {% if section.settings.menu_hover %}       
+       {% unless section.settings.menu_hover %}       
               <details-disclosure>
                 <details id="Details-HeaderMenu-{{ forloop.index }}">
                   {% else %}<div><div>
-                   {% endif %}
+                   {% endunless %}
                   <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
                     <span  class="header__active-menu-item">{{ link.title | escape }}</span>
                     {% render 'icon-caret' %}
@@ -646,11 +646,11 @@ details-modal.header__search .header__icon--search {
                     </li>
                     {%- endfor -%}
                   </ul>
-                {% if section.settings.menu_hover %}    </details>
+                {% unless section.settings.menu_hover %}    </details>
               </details-disclosure>
                   {% else %}
                   <div></div>
-                  {% endif %}
+                  {% endunless %}
               {%- else -%}
                 <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.links %} class="header__active-menu-item"{% endif %} >{{ link.title | escape }}</span>
