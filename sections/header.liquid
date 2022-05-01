@@ -605,7 +605,7 @@ details-modal.header__search .header__icon--search {
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-            <li class='hover-nav'>
+            <li class='hover-nav  {% if section.settings.menu_hover %} hover-enable {% endif %}' >
               {%- if link.links != blank -%}
               <details-disclosure>
                 <details id="Details-HeaderMenu-{{ forloop.index }}">
@@ -771,7 +771,7 @@ details-modal.header__search .header__icon--search {
         <style>
           /*  Added by Divy Start   */
           @media screen and (min-width: 990px) {
-          	.hover-nav:hover .header__submenu{
+          	.hover-nav.hover-enable:hover .header__submenu{
               opacity:1;
               height:auto;
               padding-top: 8rem;
