@@ -27,13 +27,14 @@ class DetailsModal extends HTMLElement {
 
   onSummaryClick(event) {
     event.preventDefault();
-    
+     console.log(event);
     event.target.closest('details').hasAttribute('open')
       ? this.close()
       : this.open(event);
   }
 
   onBodyClick(event) {
+     console.log(event);
     if (!this.contains(event.target)) this.close(false);
   }
 
