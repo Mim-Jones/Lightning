@@ -385,23 +385,23 @@ summary.list-menu__item{
     transition-delay: .2s;
 }
 
-ul.header__submenu.header__submenu_hover {
-    transform: scaleY(1)!important;
-    opacity: 1!important;
-    visibility: visible!important;
-    transition: transform .25s ease,opacity 0ms,visibility 0ms!important;
-}
+
 
 ul.header__submenu {
     white-space: unset;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: transform .1s ease,opacity 0ms linear .1s,visibility 0ms linear .1s;
+    transition: transform .1s ease,opacity 0ms linear .1s,visibility 0ms linear .1s!important;
     transform-origin: top center;
     transform: scaleY(0);
 }
-
+ul.header__submenu.header__submenu_hover {
+    transform: scaleY(1)!important;
+    opacity: 1!important;
+    visibility: visible!important;
+    transition: transform .25s ease,opacity 0ms,visibility 0ms!important;
+}
 
 ul.header__submenu.list-menu.header__submenu_hover li {
     opacity: 1;
