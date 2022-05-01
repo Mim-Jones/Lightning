@@ -647,7 +647,7 @@ customElements.define('variant-radios', VariantRadios);
 // Added By Divy
 $(function(){
   
-  $('.hover-nav').hover(function(){
+  $('.hover-nav.hover-enable').hover(function(){
 		//     $(this).find('ul').first().stop().toggle(200);
 		$(this).find('ul').addClass('header__submenu_hover');
   }, function(){
