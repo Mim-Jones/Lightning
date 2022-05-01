@@ -79,6 +79,7 @@ jQuery(function($){
     console.log('hover');
     $(this).parents('details').attr('open','open');
       $(this).parents('details').children('ul').addClass('header__submenu_hover');
+    $(this).parents('.hover-nav.hover-enable').siblings().children('details ul').removeClass('header__submenu_hover');
   });
 
   $( ".list-menu li a.no-sub" ).mouseenter(function() {
