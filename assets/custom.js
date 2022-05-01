@@ -75,18 +75,18 @@ function updateItemById(id,quantity,sections) {
 
 jQuery(function($){
   console.log('work');
-  $( "summary.header__menu-item#hover-enable span" ).mouseenter(function() {
-    console.log('hover');
-    $(this).parents('details').attr('open','open');
-  });
+//   $( "summary.header__menu-item#hover-enable span" ).mouseenter(function() {
+//     console.log('hover');
+//     $(this).parents('details').attr('open','open');
+//   });
 
-  $( ".list-menu li a.no-sub" ).mouseenter(function() {
-    console.log('hover');
-    $('details').removeAttr('open','open');
-  });
+//   $( ".list-menu li a.no-sub" ).mouseenter(function() {
+//     console.log('hover');
+//     $('details').removeAttr('open','open');
+//   });
   
-  $( "details ul" ).mouseleave(function() {
-    $(this).parents('details').removeAttr('open','open');
-  });
+//   $( "details ul" ).mouseleave(function() {
+//     $(this).parents('details').removeAttr('open','open');
+//   });
 
 });
