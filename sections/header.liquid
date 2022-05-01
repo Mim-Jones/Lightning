@@ -609,7 +609,7 @@ details-modal.header__search .header__icon--search {
               {%- if link.links != blank -%}
               <details-disclosure>
                 <details id="Details-HeaderMenu-{{ forloop.index }}">
-                  <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} #hover-enable {% endif %}>
+                  <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
                     <span  class="header__active-menu-item">{{ link.title | escape }}</span>
                     {% render 'icon-caret' %}
                   </summary>
