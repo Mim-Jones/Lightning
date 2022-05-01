@@ -27,7 +27,7 @@ class DetailsModal extends HTMLElement {
 
   onSummaryClick(event) {
     event.preventDefault();
-    console.log(event);
+    
     event.target.closest('details').hasAttribute('open')
       ? this.close()
       : this.open(event);
@@ -41,6 +41,7 @@ class DetailsModal extends HTMLElement {
     this.onBodyClickEvent =
       this.onBodyClickEvent || this.onBodyClick.bind(this);
     event.target.closest('details').setAttribute('open', true);
+    console.log(event);
     document.body.addEventListener('click', this.onBodyClickEvent);
 
     trapFocus(
