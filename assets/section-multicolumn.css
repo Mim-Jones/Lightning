@@ -146,7 +146,7 @@
 
   .grid--2-col-tablet .multicolumn-list__item {
     margin-top: 1rem;
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .background-none .grid--2-col-tablet .multicolumn-list__item {
