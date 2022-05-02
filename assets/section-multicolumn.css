@@ -133,6 +133,9 @@
   }
 }
 
+.grid {
+    justify-content: center;
+}
 
   .multicolumn-list.slider,
   .multicolumn-list.grid--4-col-desktop {
