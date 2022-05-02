@@ -121,6 +121,14 @@
             "title": "",
             "text": ""
           }
+        },
+        "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/World-beer-awards-germany-abk-beer.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -128,11 +136,12 @@
         "1637930312142094a0-1",
         "1637930312142094a0-2",
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
-        "1637930312142094a0-0"
+        "1637930312142094a0-0",
+        "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097"
       ],
       "settings": {
         "title": "Awards Since 2018",
-        "image_width": "full",
+        "image_width": "half",
         "image_ratio": "circle",
         "column_alignment": "center",
         "background_style": "none",
