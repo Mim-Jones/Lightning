@@ -121,6 +121,21 @@
             "title": "",
             "text": ""
           }
+        },
+        "3df31a93-878a-4f19-afb3-cb40b2d2fcf5": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "85f46600-3709-429e-b7b0-12391b373ad4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-beer-Black-logo-white.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -128,7 +143,9 @@
         "1637930312142094a0-1",
         "1637930312142094a0-2",
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
-        "1637930312142094a0-0"
+        "1637930312142094a0-0",
+        "3df31a93-878a-4f19-afb3-cb40b2d2fcf5",
+        "85f46600-3709-429e-b7b0-12391b373ad4"
       ],
       "settings": {
         "title": "Awards Since 2018",
