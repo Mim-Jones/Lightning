@@ -129,6 +129,14 @@
             "title": "",
             "text": ""
           }
+        },
+        "777f4036-9afd-427c-912c-294ca44c7433": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_88950e1d-f0ca-4d66-9ff7-a9884e7607d3.png",
+            "title": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -137,7 +145,8 @@
         "1637930312142094a0-2",
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
         "1637930312142094a0-0",
-        "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097"
+        "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097",
+        "777f4036-9afd-427c-912c-294ca44c7433"
       ],
       "settings": {
         "title": "Awards Since 2018",
