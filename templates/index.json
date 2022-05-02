@@ -137,6 +137,14 @@
             "title": "",
             "text": ""
           }
+        },
+        "4ec84f0b-d965-467a-9ccf-da7aea956921": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ABK-beer-wins-beerbods.png",
+            "title": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -146,7 +154,8 @@
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2",
         "1637930312142094a0-0",
         "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097",
-        "777f4036-9afd-427c-912c-294ca44c7433"
+        "777f4036-9afd-427c-912c-294ca44c7433",
+        "4ec84f0b-d965-467a-9ccf-da7aea956921"
       ],
       "settings": {
         "title": "Awards Since 2018",
