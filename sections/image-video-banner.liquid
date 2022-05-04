@@ -40,11 +40,12 @@
  
   </style>
 {%- endfor -%}
-{{section.blocks.size}}
+
 <div sectionName="{{section.name}}"  
      data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement mmain-carousel{% endif %}" 
+     {% if section.blocks.size > 1 %}
 data-flickity='{ "cellAlign": "left", 
                     "contain": true, 
                     "autoPlay": 6000,
@@ -56,6 +57,7 @@ data-flickity='{ "cellAlign": "left",
     "pageDots": true,
     "lazyLoad": 2,
     "adaptiveHeight": true }'
+     {% endif %}
      >
   {%- for block in section.blocks -%}
   {%- case block.type -%}
