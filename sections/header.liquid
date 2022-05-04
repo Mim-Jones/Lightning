@@ -22,64 +22,62 @@
     </style>
     {% endif %}
 {% endif %}
+
 {%- if section.settings.menu.links  -%}
-<style>
-@media(max-width:989px){
-  details-modal.header__search .header__icon--search {
-      left: 4rem;
-  }
-}
-</style>
+    <style>
+        @media(max-width:989px){
+          details-modal.header__search .header__icon--search {
+              left: 4rem;
+          }
+        }
+    </style>
 {% endif %}
 
 {% if section.settings.hide_account_icon %}
 {%- if section.settings.menu.links  -%}
-<style>
-@media(max-width:989px){
-.header__icons {
-    margin-right: 5rem;
-}
-}
-
-@media(max-width:989px) {
-    details-modal.header__search .header__icon--search {
-        bottom: 0;
-}
-
-.header__search {
-
-    margin-right: 1.5rem;
-}
-}
-</style>
-{% endif %}
-{% endif %}
-
-    {%- if section.settings.menu == blank -%}
-    {% if section.settings.hide_account_icon %}
     <style>
-    @media(max-width:989px) {
-        details-modal.header__search .header__icon--search {
+        @media(max-width:989px){
+        .header__icons {
+            margin-right: 5rem;
+          }
+        }
+
+        @media(max-width:989px) {
+            details-modal.header__search .header__icon--search {
             bottom: 0;
-    }
-    .header__heading,
-    .header__heading-link {
-      position: relative;
-      left: 2.75rem;
-    }
+        }
 
+        .header__search {
+            margin-right: 1.5rem;
+         }
+        }
+    </style>
+{% endif %}
+{% endif %}
 
+{%- if section.settings.menu == blank -%}
+{% if section.settings.hide_account_icon %}
+    <style>
+        @media(max-width:989px) {
+            details-modal.header__search .header__icon--search {
+            bottom: 0;
+        }
+        .header__heading,
+        .header__heading-link {
+          position: relative;
+          left: 2.75rem;
+        }
 
-    a#cart-icon-bubble {
+        a#cart-icon-bubble {
 
-    position: relative;
-    left: 2rem;
-}
-    }
+        position: relative;
+        left: 2rem;
+          }
+        }
     </style>
 
-    {% endif %}
-    {% endif %}
+{% endif %}
+{% endif %}
 
 {%- if section.settings.menu.links  -%}
     {% if section.settings.hide_account_icon == false %}
@@ -93,12 +91,12 @@
     }
 
     a.header__icon.header__icon--account.link.link--text.focus-inset {
-    position: relative;
-    right: 1.75rem;
+     position: relative;
+     right: 1.75rem;
 }
 
-details-modal.header__search .header__icon--search {
-    left: 5.25rem;
+    details-modal.header__search .header__icon--search {
+     left: 5.25rem;
 }
 }
     </style>
@@ -106,9 +104,9 @@ details-modal.header__search .header__icon--search {
     {% endif %}
     {% endif %}
 
-    {%- if section.settings.menu == blank -%}
-        {% if section.settings.hide_account_icon == false %}
-        <style>
+{%- if section.settings.menu == blank -%}
+{% if section.settings.hide_account_icon == false %}
+    <style>
 
         @media (max-width:990px) {
         .header__heading,
@@ -118,76 +116,92 @@ details-modal.header__search .header__icon--search {
         }
 
         a.header__icon.header__icon--account.link.link--text.focus-inset {
-        position: relative;
-        right: 1.75rem;
-    }
+         position: relative;
+         right: 1.75rem;
+        }
 
-    details-modal.header__search .header__icon--search {
-    position: absolute;
-    left: 1rem;
-}
+        details-modal.header__search .header__icon--search {
+         position: absolute;
+         left: 1rem;
+        }
     }
-        </style>
-
+    </style>
         {% endif %}
         {% endif %}
+
 {% if section.settings.hide_account_icon %}
-<style>
-  .header.header--top-center.page-width.header--has-menu.no-account-mobile{
-  	padding-bottom:6rem;
-  }
-  @media(max-width:989px){
-    .header {
-      grid-template-columns: 0fr 2fr 1fr!important;
-     }
+    <style>
+        .header.header--top-center.page-width.header--has-menu.no-account-mobile{
+       	  padding-bottom:6rem;
+        }
+      @media(max-width:989px){
+        .header {
+          grid-template-columns: 0fr 2fr 1fr!important;
+        }
+        .header__heading, .header__heading-link {
+          grid-area: heading;
+          justify-self: left;
+        }
+        header-drawer {
+          position:absolute;
+          right:0;
+        }
+        .header__icons {
+          margin-right:5rem;
+        }
+        .header__icon--search {
+          left:0 !important;position:relative !important;
+        }
+        /* .hide-account-fix{
+          margin-bottom:0!important
+        } */
+        .menu-drawer{
+          transform:translate(200%)
+        }
+        .js details[open].menu-opening>.menu-drawer{
+          transform:translate(-87%)
+        }
+    /*  Added by Divy Start   */
+        #menu-drawer {
+          margin-top:13px;
+    /*       height:150vh; */
+        }
 
-    .header__heading, .header__heading-link {
-      grid-area: heading;
-      justify-self: left;
-    }
-    header-drawer {
-      position:absolute;
-      right:0;
-    }
-    .header__icons {
-      margin-right:5rem;
-    }
-    .header__icon--search {
-      left:0 !important;position:relative !important;
-    }
-    /* .hide-account-fix{
-      margin-bottom:0!important
-    } */
-    .menu-drawer{
-      transform:translate(200%)
-    }
-    .js details[open].menu-opening>.menu-drawer{
-      transform:translate(-87%)
-    }
-/*  Added by Divy Start   */
-    #menu-drawer {
-      margin-top:13px;
-/*       height:150vh; */
-    }
-
-/*     .menu-open #MainContent{
-    	position:fixed;
-      	background:#000;
-      	opacity:0.8;
-    } */
-    .menu-open .footer:not(.color-background-1){
-    	display:none;
-    }
-    .header.header--top-center.page-width.header--has-menu.no-account-mobile{
-      padding-bottom:0rem;
-    }
-    /*  Added by Divy End   */
-  }
-</style>
+    /*     .menu-open #MainContent{
+        	position:fixed;
+          	background:#000;
+          	opacity:0.8;
+        } */
+        .menu-open .footer:not(.color-background-1){
+        	display:none;
+        }
+        .header.header--top-center.page-width.header--has-menu.no-account-mobile{
+          padding-bottom:0rem;
+        }
+        /*  Added by Divy End   */
+      }
+    </style>
 {%endif%}
 
+{%- if section.settings.enable_wishlist_icon == false -%}
+    <style>
+        @media screen and (min-width: 990px) {
+          a#cart-icon-bubble {
+            width: 2.4rem;
+            margin-left: 0.8rem;
+         }
+     }
+
+
+    </style>
+{%endif%}
+
+
 <style>
-  .search-modal__close-button:hover{color:#cb6d51 !important;stroke:#cb6d51!important}
+  .search-modal__close-button:hover {
+      color:#cb6d51 !important;
+      stroke:#cb6d51!important
+   }
 
   header-drawer {
     justify-self: start;
@@ -422,12 +436,13 @@ details-modal.header__search .header__icon--search {
                         endif
                       -%}
                     </a>
+                    {%- if section.settings.enable_wishlist_icon -%}
                     <div class="mobile-wishlist">
                     <a style='width:auto !important' href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="mrg-cls menu-drawer-wishlist navigation__link header__icon link link--text focus-inset h5">{%- render 'icon-heart' -%}
                        {{ link.title | escape }} Favourite
                     </a>
-
                     </div>
+                    {%- endif -%}
                   {%- endif -%}
                   <ul class="list list-social list-unstyled" role="list">
                     {%- if settings.social_twitter_link != blank -%}
@@ -733,10 +748,11 @@ details-modal.header__search .header__icon--search {
         </details>
       </details-modal>
 
-
+      {%- if section.settings.enable_wishlist_icon -%}
       <span class="desktop-wishlist">
       <a href="{%- if customer -%}/pages/wishlist{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="navigation__link header__icon link link--text focus-inset">{%- render 'icon-heart' -%}</a>
       </span>
+       {%- endif -%}
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset {% if section.settings.hide_account_icon %}hide-account{% endif %}">
           {% render 'icon-account' %}
@@ -1039,8 +1055,14 @@ details-modal.header__search .header__icon--search {
     {
       "type": "checkbox",
       "id": "hide_account_icon",
-      "default": true,
+      "default": false,
       "label": "Hide account on mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_wishlist_icon",
+      "default": true,
+      "label": "Enables wishlist in header"
     },
     {
       "type": "checkbox",
