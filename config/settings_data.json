@@ -116,8 +116,8 @@
           "payment_enable": true
         }
       },
-      "hura-announcement-bar": {
-        "type": "hura-announcement-bar",
+      "announcement-bar": {
+        "type": "announcement-bar",
         "blocks": {
           "fd7acc7c-8643-4c22-a7fb-eeee07222c17": {
             "type": "header",
