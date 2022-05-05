@@ -198,9 +198,16 @@
         "type": "text",
         "id": "freeshipping",
         "label": "Free shipping threshold"
-      }
+    },
+    {
+      "type": "checkbox",
+      "id": "breadcrumbs_enabled",
+      "label": "Enable Breadcrumnbs",
+      "default": true
+    }
     ]
   },
+
   {
     "name": "t:settings_schema.typography.name",
     "settings": [
