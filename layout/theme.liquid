@@ -238,12 +238,12 @@
 
     {% section 'header' %}
     {%- section 'announcement-bar' -%}
-
+    {%- if settings.breadcrumbs_enabled -%}
+        {% include 'breadcrumbs' %}
+    {%- endif -%}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-        {%- if settings.breadcrumbs_enabled -%}
-            {% include 'breadcrumbs' %}
-        {%- endif -%}
-        
+
+
       {{ content_for_layout }}
     </main>
 
