@@ -35,26 +35,7 @@
     "header_footer_content_color": "#ffffff",
     "header_footer_content_hover_color": "#fd7a29",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-2",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
-        "settings": {
-          "background-color": "#1878b9"
-        }
-      },
+
       "header": {
         "type": "header",
         "settings": {
