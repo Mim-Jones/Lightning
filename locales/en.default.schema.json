@@ -228,47 +228,48 @@
       }
     }
   },
+
   "sections": {
-    "all": {
-      "padding": {
-        "section_padding_heading": "Section padding",
-        "padding_top": "Top padding",
-        "padding_bottom": "Bottom padding"
-      },
-      "spacing": "Spacing",
-      "colors": {
-        "accent_1": {
-          "label": "Accent 1"
+      "all": {
+        "padding": {
+          "section_padding_heading": "Section padding",
+          "padding_top": "Top padding",
+          "padding_bottom": "Bottom padding"
         },
-        "accent_2": {
-          "label": "Accent 2"
+        "spacing": "Spacing",
+        "colors": {
+          "accent_1": {
+            "label": "Accent 1"
+          },
+          "accent_2": {
+            "label": "Accent 2"
+          },
+          "background_1": {
+            "label": "Background 1"
+          },
+          "background_2": {
+            "label": "Background 2"
+          },
+          "inverse": {
+            "label": "Inverse"
+          },
+          "label": "Color scheme",
+          "has_cards_info": "To change the card color scheme, update your theme settings."
         },
-        "background_1": {
-          "label": "Background 1"
-        },
-        "background_2": {
-          "label": "Background 2"
-        },
-        "inverse": {
-          "label": "Inverse"
-        },
-        "label": "Color scheme",
-        "has_cards_info": "To change the card color scheme, update your theme settings."
-      },
-      "heading_size": {
-        "label": "Heading size",
-        "options__1": {
-          "label": "Small"
-        },
-        "options__2": {
-          "label": "Medium"
-        },
-        "options__3": {
-          "label": "Large"
+        "heading_size": {
+          "label": "Heading size",
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          }
         }
-      }
-    },
-  "sections": {
+      },
+
     "announcement-bar": {
       "name": "Announcement bar",
       "blocks": {
