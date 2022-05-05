@@ -87,7 +87,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_88950e1d-f0ca-4d66-9ff7-a9884e7607d3.png",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1637930312142094a0-1": {
@@ -95,7 +97,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/ABK-beer-beer52-award_0418f881-f399-416b-b147-e27a6ccb6f0a.jpg",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1637930312142094a0-2": {
@@ -103,7 +107,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/ABK-beer-wins-beerbods.png",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2": {
@@ -111,7 +117,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/International-beer-champion-ABK.jpg",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097": {
@@ -119,7 +127,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/World-beer-awards-germany-abk-beer.jpg",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -132,13 +142,19 @@
       ],
       "settings": {
         "title": "Awards Since 2018",
+        "heading_size": "h1",
         "image_width": "half",
         "image_ratio": "circle",
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_products": {
@@ -164,7 +180,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Beer_Hwk.png",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1637879259abb30c27-1": {
@@ -172,7 +190,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Beer-52.png",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
         "1637879259abb30c27-2": {
@@ -180,7 +200,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Beer_Hunter.png",
             "title": "",
-            "text": ""
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -191,13 +213,19 @@
       ],
       "settings": {
         "title": "Best Seller On",
+        "heading_size": "h1",
         "image_width": "half",
         "image_ratio": "adapt",
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_banner": {
