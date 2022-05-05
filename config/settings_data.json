@@ -24,6 +24,7 @@
     "colors_slider_button_background": "#f2f2f2",
     "colors_slider_button": "#020202",
     "freeshipping": "100",
+    "breadcrumbs_enabled": false,
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n3",
     "sale_badge_color_scheme": "accent-1",
@@ -35,7 +36,6 @@
     "header_footer_content_color": "#ffffff",
     "header_footer_content_hover_color": "#fd7a29",
     "sections": {
-
       "header": {
         "type": "header",
         "settings": {
