@@ -1522,6 +1522,8 @@ input[type='checkbox'] {
   position: relative;
   width: 14rem;
   display: flex;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .quantity__input {
