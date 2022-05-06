@@ -224,7 +224,7 @@ body,
   padding: 4rem 0 5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .background-secondary {
     padding: 6rem 0 5rem;
   }
@@ -317,7 +317,7 @@ h5,
   font-size: 4rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .h0 {
     font-size: 5.2rem;
   }
@@ -328,7 +328,7 @@ h1,
   font-size: 3rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h1,
   .h1 {
     font-size: 4rem;
@@ -340,7 +340,7 @@ h2,
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h2,
   .h2 {
     font-size: 2.4rem;
@@ -352,7 +352,7 @@ h3,
   font-size: 1.7rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h3,
   .h3 {
     font-size: 1.8rem;
@@ -371,7 +371,7 @@ h5,
   font-size: 1.2rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h5,
   .h5 {
     font-size: 1.3rem;
@@ -392,7 +392,7 @@ blockquote {
   padding-left: 1rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   blockquote {
     padding-left: 1.5rem;
   }
@@ -404,7 +404,7 @@ blockquote {
   line-height: 1.7;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .caption {
     font-size: 1.2rem;
   }
@@ -447,7 +447,7 @@ table:not([class]) th {
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .small-hide {
     display: none;
   }
@@ -457,13 +457,13 @@ table:not([class]) th {
   display: none !important;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .small-hide {
     display: none !important;
   }
 }
 
-/* @media screen and (min-width: 750px) and (max-width: 990px) {
+/* @media screen and (min-width: 990px) and (max-width: 990px) {
   .medium-hide {
     display: none !important;
   }
@@ -561,7 +561,7 @@ hr {
   margin: 5rem 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   hr {
     margin: 7rem 0;
   }
@@ -765,7 +765,7 @@ summary::-webkit-details-marker {
   padding-right: 1.5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .title-wrapper--self-padded-mobile {
     padding-left: 0;
     padding-right: 0;
@@ -837,7 +837,7 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing);
@@ -855,7 +855,7 @@ summary::-webkit-details-marker {
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
@@ -867,7 +867,7 @@ summary::-webkit-details-marker {
   row-gap: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .grid__item.slider__slide--full-width {
     width: 100%;
     max-width: none;
@@ -883,7 +883,7 @@ summary::-webkit-details-marker {
   width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .grid--3-col .grid__item {
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
   }
@@ -893,7 +893,7 @@ summary::-webkit-details-marker {
   width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .grid--2-col .grid__item {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
@@ -967,7 +967,7 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .grid--peek.slider--mobile {
     margin: 0;
     width: 100%;
@@ -1005,7 +1005,7 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 990px) and (max-width: 989px) {
   .slider--tablet.grid--peek .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) - 3rem);
   }
@@ -2194,7 +2194,7 @@ details-disclosure > details {
   overflow: hidden;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .overflow-hidden-mobile {
     overflow: auto;
   }

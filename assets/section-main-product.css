@@ -303,6 +303,7 @@ a.product__text {
   background-color: #fdfbe6;
   padding: 1rem;
   text-align: center;
+  border-radius: 4px;
 }
 
 .inventory-container.out-of-stock {
