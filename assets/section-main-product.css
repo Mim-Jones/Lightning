@@ -281,7 +281,7 @@ a.product__text {
 }
 
 .product__accordion .accordion__content {
-  padding: 0 1rem;
+
 }
 
 .product .price {
@@ -767,7 +767,7 @@ a.product__text {
 }
 /* Product Reviews */
 .spr-container {
-
+  padding:0!important;
 }
 
 .spr-starratings {

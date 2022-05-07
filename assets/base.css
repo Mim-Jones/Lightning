@@ -1188,8 +1188,9 @@ deferred-media {
   opacity: 0.5;
 }
 
-.share-button {
+.share-button:hover, svg.icon.icon-share:hover {
   color: rgba(var(--color-link), var(--alpha-link));
+  stroke: rgba(var(--color-link), var(--alpha-link));
 }
 
 .button--full-width {
