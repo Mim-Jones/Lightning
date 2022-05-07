@@ -30,7 +30,7 @@ const showView = (event) => {
     ShowFuntion(IDminiCart,IDminiCartMask);
   });
 }
-container.click = showView;
+container.onclick = showView;
 
 
 
