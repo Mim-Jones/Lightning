@@ -3,6 +3,7 @@
   position: relative;
   line-height: 1;
   padding: 1.5rem 0;
+  box-shadow: inset 0 1px 0 0 black;
 }
 
 .accordion .summary__title {
