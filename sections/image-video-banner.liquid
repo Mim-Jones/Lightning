@@ -168,7 +168,16 @@ data-flickity='{ "cellAlign": "left",
   "tag": "section",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
-
+{
+      "type": "range",
+      "id": "image_height",
+      "min": 0,
+      "max": 1000,
+      "step": 100,
+      "label": "Image height",
+"info":"When height 0 image show original height",
+      "default": 0
+    }
   ],
   "blocks": [
     {
@@ -270,6 +279,7 @@ data-flickity='{ "cellAlign": "left",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_box.label"
     },
+
     {
       "type": "range",
       "id": "image_overlay_opacity",
