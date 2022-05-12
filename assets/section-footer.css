@@ -6,7 +6,7 @@
   border-top: none;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer .grid {
     display: block;
     margin-left: 0;
@@ -29,7 +29,7 @@
   display: block;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer__content-top {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer__content-bottom {
     flex-wrap: wrap;
     padding-top: 0;
@@ -80,7 +80,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer__localization:empty + .footer__column {
     padding-top: 1.5rem;
   }
@@ -99,7 +99,7 @@
   padding-right: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer__column--info {
     padding-left: 0;
     padding-right: 0;
@@ -126,7 +126,7 @@
   border-top: none;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block {
     display: block;
     margin-top: 0;
@@ -152,7 +152,7 @@
   flex: 1 1 100%;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block--newsletter {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -196,7 +196,7 @@
 
 
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer-block__newsletter .newsletter-form__field-wrapper {
     padding: 0 2rem;
   }
@@ -210,7 +210,7 @@
   right: 2rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block__newsletter:not(:only-child) {
     /* text-align: left; */
   }
@@ -234,19 +234,19 @@
   margin-top: 5rem;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer__list-social.list-social {
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer__content-bottom {
     border-top-width: 0.1rem;
   }
@@ -292,7 +292,7 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer__localization {
     padding: 0.4rem 0;
     justify-content: flex-start;
@@ -333,7 +333,7 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .localization-form .button {
     word-break: break-all;
   }
@@ -352,7 +352,7 @@ noscript .localization-form__select {
   padding-left: 0rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   noscript .localization-form__select {
     min-width: 20rem;
   }
@@ -404,7 +404,7 @@ noscript .localization-selector.link {
   text-align: center;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer__copyright {
     text-align: right;
   }
@@ -420,7 +420,7 @@ noscript .localization-selector.link {
   opacity: 0.75;
 } */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   footer .accordion {
     display: none;
   }
@@ -454,7 +454,7 @@ footer details[open] summary ~ * {
   padding-top: 3rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block__details-content {
     margin-bottom: 0;
   }
@@ -488,7 +488,7 @@ footer details[open] summary ~ * {
   color: rgb(var(--color-foreground));
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
@@ -509,7 +509,7 @@ footer details[open] summary ~ * {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
@@ -521,7 +521,7 @@ footer details[open] summary ~ * {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer-block-image {
     text-align: center;
   }
