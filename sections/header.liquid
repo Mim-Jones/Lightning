@@ -623,52 +623,39 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
-            <li class='hover-nav  {% if section.settings.menu_hover %} hover-enable {% endif %}' >
+            <li class='hover-nav  {% if section.settings.menu_hover %} hover-enable {% endif %}' link-level="1">
               {%- if link.links != blank -%}
-       {% unless section.settings.menu_hover %}
-              <details-disclosure>
-                <details id="Details-HeaderMenu-{{ forloop.index }}">
-                  {% else %}<div><div>
-                   {% endunless %}
-                  <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
-                    <span  class="header__active-menu-item">{{ link.title | escape }}</span>
-                    {% render 'icon-caret' %}
-                  </summary>
-                  <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reducee
-                           {% unless section.settings.menu_hover %}   header__submenu_hoverr  {% endunless %}
+              {% unless section.settings.menu_hover %}<details-disclosure><details id="Details-HeaderMenu-{{ forloop.index }}">{% else %}<div><div>{% endunless %}
+              <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
+                <span  class="header__active-menu-item">{{ link.title | escape }}</span>
+                {% render 'icon-caret' %}
+              </summary>
+              <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reducee{% unless section.settings.menu_hover %}   header__submenu_hoverr  {% endunless %} " role="list" tabindex="-1">
+                {%- for childlink in link.links -%}
+                <li  link-level="2">
+                  {%- if childlink.links == blank -%}
+                  <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                    {{ childlink.title | escape }}
+                  </a>
+                  {%- else -%}
+                 
+                  <a class="header__menu-item link link--text list-menu__item focus-inset caption-large">{{ childlink.title | escape }}</a>                      
+                    <ul class="header__submenu list-menu motion-reduce">
+                      {%- for grandchildlink in childlink.links -%}
+                      <li  link-level="3">
+                        <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          {{ grandchildlink.title | escape }}
+                        </a>
+                      </li>
+                      {%- endfor -%}
+                    </ul>
+                
+                  {%- endif -%}
+                </li>
+                {%- endfor -%}
+              </ul>
+              {% unless section.settings.menu_hover %} </details> </details-disclosure> {% else %}<div></div>{% endunless %}
 
-                             " role="list" tabindex="-1">
-                    {%- for childlink in link.links -%}
-                    <li>
-                      {%- if childlink.links == blank -%}
-                      <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                        {{ childlink.title | escape }}
-                      </a>
-                      {%- else -%}
-                      <details>
-                        <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                          {{ childlink.title | escape }}
-                          {% render 'icon-caret' %}
-                        </summary>
-                        <ul class="header__submenu list-menu motion-reduce">
-                          {%- for grandchildlink in childlink.links -%}
-                          <li>
-                            <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                              {{ grandchildlink.title | escape }}
-                            </a>
-                          </li>
-                          {%- endfor -%}
-                        </ul>
-                      </details>
-                      {%- endif -%}
-                    </li>
-                    {%- endfor -%}
-                  </ul>
-                {% unless section.settings.menu_hover %}    </details>
-              </details-disclosure>
-                  {% else %}
-                  <div></div>
-                  {% endunless %}
               {%- else -%}
                 <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.links %} class="header__active-menu-item"{% endif %} >{{ link.title | escape }}</span>
