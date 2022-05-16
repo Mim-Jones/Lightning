@@ -86,7 +86,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/ABK-beer-Black-logo-white.png",
               "image_width": 135,
-              "alignment": ""
+              "alignment": "center"
             }
           },
           "4f5edcac-851f-43aa-8bfe-ed747d677d9d": {
