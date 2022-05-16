@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 990px) {
   .footer__content-top {
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-bottom: 7rem;
   }
 
@@ -142,6 +142,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.footer-block__newsletter {
+    margin-bottom: 7rem;
 }
 
 .footer-block--newsletter:only-child {
