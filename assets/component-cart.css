@@ -272,8 +272,8 @@ summary.header__menu-item {
   background: #fff;
   top: 0;
   right: 0;
-  width: 380px;
-  padding: 2.5rem;
+  width: 500px;
+  padding: 3rem;
   position: fixed;
   z-index: 9999;
   height: 100vh; transition: all .5s ease-in-out;}
@@ -323,32 +323,31 @@ body.page-your-shopping-cart {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 5px;
+  margin: 3rem 0;
 }
 
 #mini-cart .min-cart-item {
   width:33.333%;
-  padding:0 5px;
-  margin-bottom: 10px;
+  padding:0 1rem;
+  margin-bottom: 2rem;
 }
 
 #mini-cart .td-image img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 3rem;
+}
+
 
 .td-image .price {
-  font-size: 1.3rem;
   line-height: 2rem;
 }
 
-.td-image h2, .cart-item--remove-link {
-  font-size: 1.1rem;
-  height: 18px;
-  line-height: 1.8rem;
+.td-image h4, .cart-item--remove-link {
+
   margin-top: 0px;
   text-transform: capitalize;
-  color: #242020;
-  margin-bottom:20px;
+  margin-bottom:0.25rem;
 }
 
 #mini-cart .info .btn-remove {

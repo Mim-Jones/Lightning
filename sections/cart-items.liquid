@@ -15,7 +15,7 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
   </div>
   <div class="bottom-part">
     <div class="subtotal">
-      <strong>Subtotal </strong>
+      <strong>Total </strong>
       <strong class="amount price">{{ cart.total_price  | money }}</strong>
     </div>
 
@@ -44,9 +44,9 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     </style>
     <div class="progress-warp">
 
-      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}{{cartthreshhold | money }} You've earned {% else %} You're <span class="progress-bar-text">{{  needAmmount | money |remove:'-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
+      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}You've earned {% else %} You're <span class="progress-bar-text">{{  needAmmount | money |remove:'-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
       <div class="w3-light-grey">
-        <div class="w3-green" style="width:{{mainPercent}}%"></div>
+        <div class="w3-green" style="width:{{mainPercent}}%; max-width:102%;" ></div>
       </div>
 
     </div>
@@ -76,8 +76,8 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
     <div class="min-cart-item" index="{{forloop.index}}">
       <div class="td-image">
-        <img src="{{item.image | img_url: '100x100' }}" />
-        <h2>{{item.product.title }}</h2>
+        <img src="{{item.image | img_url: '250x250' }}" />
+        <h4>{{item.product.title }}</h4>
          <span class="item-price price">{{ item.price  | money }}</span>
 
         <div class="buttons-div">
