@@ -353,7 +353,7 @@
         "image_2": "shopify:\/\/shop_images\/Buy_ABK_Edel_a_export_lager_Beer_online.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "adapt_height_first_image": false
       }
     }
