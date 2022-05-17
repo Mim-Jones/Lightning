@@ -347,6 +347,7 @@
         "165278221289dc8935-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/ABK_Brewery_Producing_Wheat_Bear.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
@@ -359,6 +360,7 @@
         "16527827184491658f-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ABK_Brewery_Producing_Wheat_Bear.jpg",
             "heading": "Image banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
