@@ -235,57 +235,6 @@
         "show_vendor": false
       }
     },
-    "165278567754dc49e0": {
-      "type": "image-banner",
-      "blocks": {
-        "1652785677b11b8343-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online_9d9b00d7-1c33-4690-92aa-9601f65eaca3.jpg",
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": true,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        },
-        "1652785677b11b8343-1": {
-          "type": "image",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": true,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        }
-      },
-      "block_order": [
-        "1652785677b11b8343-0",
-        "1652785677b11b8343-1"
-      ],
-      "settings": {
-        "image_height": 0
-      }
-    },
     "1652785685dff5f147": {
       "type": "image-banner",
       "blocks": {
@@ -335,7 +284,7 @@
         "16527856853ce05e21-1"
       ],
       "settings": {
-        "image_height": 0
+        "image_height": 200
       }
     }
   },
@@ -347,7 +296,6 @@
     "image_banner",
     "image_text",
     "1641216204159f651a",
-    "165278567754dc49e0",
     "1652785685dff5f147"
   ]
 }
