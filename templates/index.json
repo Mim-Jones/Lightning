@@ -312,6 +312,7 @@
         "16527856853ce05e21-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Buy_ABK_Edel_a_export_lager_Beer_online.jpg",
             "heading": "Image banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
