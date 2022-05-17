@@ -28,7 +28,7 @@
     padding-bottom: 0.5rem;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 990px) {
     .template-search__search {
       max-width: 47.8rem;
     }
@@ -114,7 +114,7 @@
                                 {%- if item.image.src.width >= 1065 -%}{{ item.image.src | img_url: '1065x' }} 1065w{%- endif -%}"
                               src="{{ item.image.src | img_url: '940x' }}"
                               loading="lazy"
-                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 990px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                               width="{{ item.image.src.width }}"
                               height="{{ item.image.src.height }}"
                               alt="{{ item.image.src.alt | escape }}"

@@ -20,7 +20,7 @@
   z-index: -1;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .header-wrapper:not(.header-wrapper--border-bottom) + cart-notification .cart-notification {
     border-top-width: 0.1rem;
   }

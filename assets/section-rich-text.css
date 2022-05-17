@@ -37,7 +37,7 @@
   padding-bottom: 5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .rich-text {
     /* 5rem margin on left & right */
     width: calc(100% - 10rem);

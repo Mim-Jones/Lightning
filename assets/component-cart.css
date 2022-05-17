@@ -90,7 +90,7 @@ cart-items {
   padding: 1rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -171,7 +171,7 @@ cart-items {
   text-align: center;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .cart-note {
     max-width: 35rem;
   }

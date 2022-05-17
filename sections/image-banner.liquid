@@ -97,7 +97,7 @@ data-flickity='{ "cellAlign": "left",
 
 
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 989px) {
   #Banner-{{ block.id }}::before,
   #Banner-{{ block.id }} .banner__media::before,
   #Banner-{{ block.id }}:not(.banner--mobile-bottom) .banner__content::before {
@@ -117,7 +117,7 @@ data-flickity='{ "cellAlign": "left",
 
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 990px) {
   #Banner-{{ block.id }}::before,
   #Banner-{{ block.id }} .banner__media::before {
   padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;
@@ -169,7 +169,7 @@ data-flickity='{ "cellAlign": "left",
                        {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
                        {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}
                        {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}"
-               sizes="{% if block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% else %}100vw{% endif %}"
+               sizes="{% if block.settings.stack_images_on_mobile %}(min-width: 990px) 50vw, 100vw{% else %}100vw{% endif %}"
                src="{{ block.settings.image | img_url: '1500x' }}"
                loading="lazy"
                alt="{{ block.settings.image.alt | escape }}"

@@ -2,7 +2,7 @@
   margin: 0 0 5rem 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .articles-wrapper.grid {
     margin-bottom: 7rem;
   }
@@ -12,7 +12,7 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .articles-wrapper .article {
     width: 100%;
   }

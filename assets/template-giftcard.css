@@ -42,7 +42,7 @@ body {
   font-weight: var(--font-body-weight);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   body {
     font-size: 1.6rem;
     line-height: 1.8;
@@ -66,7 +66,7 @@ h1,
   font-size: 3rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h1,
   .h1 {
     font-size: 4rem;
@@ -78,7 +78,7 @@ h2,
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   h2,
   .h2 {
     font-size: 2.4rem;
@@ -170,7 +170,7 @@ h2,
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .gift-card__image-wrapper {
     margin-bottom: 0;
     width: 40rem;
@@ -183,7 +183,7 @@ h2,
   height: auto;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .gift-card__image {
     padding: 0;
   }
@@ -209,7 +209,7 @@ h2,
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .gift-card__price {
     font-size: 2rem;
   }
@@ -232,7 +232,7 @@ h2,
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .gift-card__number {
     font-size: 1.8rem;
   }
@@ -291,7 +291,7 @@ h2,
   margin-top: 3rem;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 990px) {
   .gift-card__qr-code {
     margin-top: 5rem;
   }
