@@ -313,6 +313,45 @@
         "show_image_outline": true,
         "show_vendor": false
       }
+    },
+    "1652782212561aef13": {
+      "type": "image-banner",
+      "blocks": {
+        "165278221289dc8935-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "165278221289dc8935-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "165278221289dc8935-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "165278221289dc8935-0",
+        "165278221289dc8935-1",
+        "165278221289dc8935-2"
+      ],
+      "settings": {
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
@@ -323,6 +362,7 @@
     "16378792591eff2249",
     "image_banner",
     "image_text",
-    "1641216204159f651a"
+    "1641216204159f651a",
+    "1652782212561aef13"
   ]
 }
