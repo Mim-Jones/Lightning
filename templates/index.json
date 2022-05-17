@@ -315,47 +315,6 @@
       "settings": {
         "adapt_height_first_image": false
       }
-    },
-    "1652787077c3ddee58": {
-      "type": "image-banner-2",
-      "blocks": {
-        "1652787077f083b281-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner 2"
-          }
-        },
-        "1652787077f083b281-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "1652787077f083b281-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "shopify:\/\/products\/hell-abk-beer-shop",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "shopify:\/\/products\/dunkel-abkbrewery",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1652787077f083b281-0",
-        "1652787077f083b281-1",
-        "1652787077f083b281-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online_9d9b00d7-1c33-4690-92aa-9601f65eaca3.jpg",
-        "image_2": "shopify:\/\/shop_images\/Buy_ABK_Edel_a_export_lager_Beer_online.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "adapt_height_first_image": false
-      }
     }
   },
   "order": [
@@ -367,7 +326,6 @@
     "image_banner",
     "image_text",
     "1641216204159f651a",
-    "1652786177a2ad25b1",
-    "1652787077c3ddee58"
+    "1652786177a2ad25b1"
   ]
 }
