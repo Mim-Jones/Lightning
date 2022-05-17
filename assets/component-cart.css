@@ -195,3 +195,227 @@ cart-items {
     gap: 1rem;
   }
 }
+/* mini cart */
+#mini-cart .count-cross .count {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bottom-part {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+*:focus {
+    outline: none!important;
+  box-shadow:none!important;
+}
+@media screen and (min-width: 990px){
+.banner__box.color-background-2 {
+/*     backdrop-filter: blur(10px); */
+    color: #fff!important;
+    background-color: transparent;
+/*     border: 3px solid #fff; */
+    padding: 2rem;
+}
+/* .banner__box.color-background-2 h2{
+color: #fff!important;
+} */
+}
+
+@media screen and (min-width: 990px){
+.header {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+  summary.header__menu-item svg {
+    display: none;
+}
+
+summary.header__menu-item {
+    padding-right: 1.2rem!important;
+}
+}
+@media screen and (max-width: 989px){
+  div#mini-cart,#minibag_mask{
+  display:none!important;
+  }
+
+
+
+}
+@media screen and (min-width: 990px){
+  cart-notification{
+  display:none;
+  }
+
+}
+
+/* mini cart */
+.minibag-mask {
+  background: rgba(41, 41, 41, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none; }
+
+.mini-bag-container {
+  position: relative; }
+
+#mini-cart {
+  background: #fff;
+  top: 0;
+  right: 0;
+  width: 380px;
+  padding: 2.5rem;
+  position: fixed;
+  z-index: 9999;
+  height: 100vh; transition: all .5s ease-in-out;}
+
+.hide-minibag {
+  transform: translateX(110%);
+
+  visibility: hidden;
+  width: 0 !important;
+  overflow-x: hidden; }
+
+.show-minibag {
+
+  transform: translateX(0%);
+  visibility: visible;
+  overflow-x: hidden; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+body.page-your-shopping-cart.overflow-hidden {
+  overflow: hidden; }
+
+body.page-your-shopping-cart {
+  overflow: unset; }
+
+#mini-cart .count-cross {
+  position: relative; }
+
+#mini-cart .count-cross .count {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#mini-cart .count-cross .btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 9;
+  cursor: pointer; }
+
+#mini-cart .min-cart-items {
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 5px;
+}
+
+#mini-cart .min-cart-item {
+  width:33.333%;
+  padding:0 5px;
+  margin-bottom: 10px;
+}
+
+#mini-cart .td-image img {
+  width: 100%;
+  height: auto; }
+
+.td-image .price {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.td-image h2, .cart-item--remove-link {
+  font-size: 1.1rem;
+  height: 18px;
+  line-height: 1.8rem;
+  margin-top: 0px;
+  text-transform: capitalize;
+  color: #242020;
+  margin-bottom:20px;
+}
+
+#mini-cart .info .btn-remove {
+  color: #242020;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-left: 15px;
+  font-weight: 300;
+  margin-top: 6px; }
+
+#mini-cart .subtotal {
+  text-align: right;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%; }
+
+#mini-cart .subtotal strong {
+  font-weight: 500; }
+
+#mini-cart .count, #mini-cart .subtotal, #mini-cart .buttons {
+  padding: 10px; }
+
+#mini-cart table tr, #mini-cart .count {
+
+}
+
+#mini-cart .quantity-con {
+  display: flex;
+  margin-top: 11px; }
+
+#mini-cart .quantity-con .quantity-val {
+  border: 1px solid #ccc;
+  padding: 5px; }
+
+@media (max-width: 989px) {
+  div#mini-cart {
+    width: 100%; }
+}
+
+a.btn.close-bag svg {
+  fill: #5e5c5c;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.bottom-part a.button-custom.button {
+  width: 100%;
+}
+
+.td-image .buttons-div,  .td-image:hover h2, .td-image:hover .price{
+  display:none;
+}
+.td-image:hover .buttons-div{
+  display:block;
+}
+
+.header-wrapper{
+background-color:#000;
+}
+
+
+@media screen and (max-width: 989px){
+  .product__media-list{
+    margin-left:0!important;
+    width:100%!important
+  }
+}
