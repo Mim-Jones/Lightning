@@ -158,9 +158,9 @@
       },
       {
         "type": "color",
-        "id": "colors_accent_2",
+        "id": "solid_button_labels_hover",
         "default": "#9D572C",
-        "label": "t:settings_schema.colors.settings.colors_accent_2.label"
+        "label": "Hover button color"
       },
       {
         "type": "header",
