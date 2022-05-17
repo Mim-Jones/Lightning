@@ -313,97 +313,6 @@
         "show_image_outline": true,
         "show_vendor": false
       }
-    },
-    "1652782212561aef13": {
-      "type": "image-banner",
-      "blocks": {
-        "165278221289dc8935-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner"
-          }
-        },
-        "165278221289dc8935-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "165278221289dc8935-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "165278221289dc8935-0",
-        "165278221289dc8935-1",
-        "165278221289dc8935-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/ABK_Brewery_Producing_Wheat_Bear.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
-      }
-    },
-    "16527827185316b859": {
-      "type": "image-video-banner",
-      "blocks": {
-        "16527827184491658f-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ABK_Brewery_Producing_Wheat_Bear.jpg",
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": true,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        },
-        "16527827184491658f-1": {
-          "type": "image",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": true,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
-        }
-      },
-      "block_order": [
-        "16527827184491658f-0",
-        "16527827184491658f-1"
-      ],
-      "settings": {
-        "image_height": 0
-      }
     }
   },
   "order": [
@@ -414,8 +323,6 @@
     "16378792591eff2249",
     "image_banner",
     "image_text",
-    "1641216204159f651a",
-    "1652782212561aef13",
-    "16527827185316b859"
+    "1641216204159f651a"
   ]
 }
