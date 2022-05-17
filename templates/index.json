@@ -286,6 +286,34 @@
         "show_image_outline": true,
         "show_vendor": false
       }
+    },
+    "1652786177a2ad25b1": {
+      "type": "background-video-banner",
+      "blocks": {
+        "1652786177525ce49d-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1652786177525ce49d-0"
+      ],
+      "settings": {
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
@@ -296,6 +324,7 @@
     "16378792591eff2249",
     "image_banner",
     "image_text",
-    "1641216204159f651a"
+    "1641216204159f651a",
+    "1652786177a2ad25b1"
   ]
 }
