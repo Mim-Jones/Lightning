@@ -131,13 +131,19 @@
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h2>
                   </div>
+                  {% if block.settings.enable_review %}
+                  <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                  {% endif %}
                   {% render 'icon-caret' %}
+
+
                 </summary>
                 <div class="accordion__content rte">
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
                   {% if block.settings.enable_review %}
                   <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
                   {% endif %}
                 </div>
               </details>
