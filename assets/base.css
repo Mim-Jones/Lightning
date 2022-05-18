@@ -1298,23 +1298,23 @@ deferred-media {
 .customer .field input:hover,
 .customer select:hover,
 .localization-form__select:hover {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 0.55);
+  opacity: 0.5;
 }
 
 .field__input:focus-visible,
 .select__select:focus-visible,
 .field input:focus-visible {
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
-    0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  opacity: 0.5;
 }
 
 .field__input:focus,
 .select__select:focus,
 .field input:focus {
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
-    0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  opacity: 0.5;
+}
+input#Search-In-Modal {
+    outline: none;
+     opacity: 0.5;
 }
 
 .text-area,
