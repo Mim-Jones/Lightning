@@ -18,7 +18,12 @@
   .multicolumn .page-width {
     padding-left: 0;
     padding-right: 0;
+    padding: 0 5%;
   }
+}
+
+.collection.page-width.page-width-desktop.aos-init.aos-animate {
+    padding: 0 5%;
 }
 
 .multicolumn-card__image-wrapper--third-width {
