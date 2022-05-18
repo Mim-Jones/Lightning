@@ -12,7 +12,11 @@
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-
+{% for tag in product_card_product.tags %}
+ {% if tag contains "label_" %}
+   <div class="label-new">{{ tag | remove: "label_" }}</div>
+ {% endif%}
+{% endfor %}
 <div class="card-wrapper ">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>

@@ -287,3 +287,16 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+
+.label-new {
+ background: rgba(var(--color-button), var(--alpha-button-background));
+ border: 2px solid var( — color-base-background-1);
+ color: rgb(var(--color-button-text));
+ border-radius: 4px;
+ margin-top: 1rem;
+ padding: 0.3em 0.7em;
+ margin-left: 1.25rem;
+ z-index: 2;
+ position: absolute;
+ font-size: 0.875em;
+}
