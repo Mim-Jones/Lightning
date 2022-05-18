@@ -28,6 +28,7 @@
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n3",
     "sale_badge_color_scheme": "accent-1",
+    "page_width": 1000,
     "favicon": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
     "currency_code_enabled": false,
     "colors_accent_2": "#cb6d51",
