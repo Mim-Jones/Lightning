@@ -33,6 +33,7 @@
     "predictive_search_show_price": true,
     "favicon": "shopify:\/\/shop_images\/ABK-beer-Black-logo.png",
     "currency_code_enabled": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/ABK-beer-Black-logo-2.png",
     "colors_accent_2": "#cb6d51",
     "mobile_background_color": "#6518b9",
     "banners_color_text": "#b91893",
