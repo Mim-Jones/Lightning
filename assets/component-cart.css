@@ -407,6 +407,12 @@ a.btn.close-bag svg {
   display:block;
 }
 
+.td-image:hover .buttons-div a {
+    color: rgba(var(--color-button), var(--alpha-button-background));
+    text-decoration: unset;
+}
+
+
 .header-wrapper{
 background-color:#000;
 }
