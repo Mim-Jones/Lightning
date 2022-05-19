@@ -287,6 +287,14 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+.card-wrapper:hover .card-information__text{
+   text-decoration: unset !important;
+   color: rgba(var(--color-button), var(--alpha-button-background));
+  }
+
+.facets__wrapper span {
+     text-decoration: unset !important;
+  }
 
 .label-new {
  background: rgba(var(--color-button), var(--alpha-button-background));

@@ -99,6 +99,7 @@
   color: var(--color-foreground-85);
   font-size: 1.4rem;
   margin-top: -0.3rem;
+  margin-right: 1rem;
 }
 
 .collection-filters__summary {
@@ -218,7 +219,7 @@
 
 .facets__disclosure[open] .facets__summary,
 .facets__summary:hover {
-  color: rgb(var(--color-foreground));
+  color: rgba(var(--color-link), var(--alpha-link));
 }
 
 .facets__summary span {
