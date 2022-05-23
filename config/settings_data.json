@@ -111,10 +111,11 @@
         "settings": {
           "color_scheme": "accent-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails For 5% Off",
+          "newsletter_heading": "Sign up to our emails for 5% off",
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
+          "shopify_disable": true,
           "payment_enable": true
         }
       },
