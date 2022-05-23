@@ -321,7 +321,7 @@
   	z-index:999;
   }
   .header.header--top-center .header__inline-menu{
-    margin-top:14rem;
+    margin-top:18rem;
   }
   .header.header--top-center .search.search-modal__form{
 /*   	position: absolute;left: 0px; */
@@ -781,9 +781,11 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
         <style>
+         @media screen and (min-width: 990px) {
         .header--has-menu:not(.header--middle-left) {
-            padding-bottom: {{section.settings.logo_width}}px;
+            padding-bottom: 7rem;
         }
+    }
           /*  Added by Divy Start   */
           @media screen and (min-width: 990px) {
             .hover-nav.hover-enable:hover .header__submenu{
