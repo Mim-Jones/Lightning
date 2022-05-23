@@ -164,7 +164,6 @@ html.no-js .no-js-hidden {
 @media screen and (min-width: 990px) {
   .page-width {
     padding: 0 5%;
-    max-width: 1440px;
   }
 
   .page-width--narrow {
