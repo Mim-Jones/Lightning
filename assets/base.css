@@ -1293,9 +1293,9 @@ deferred-media {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.field__input:hover,
+
 .select__select:hover,
-.customer .field input:hover,
+.customer,
 .customer select:hover,
 .localization-form__select:hover {
   color: rgba(var(--color-button), var(--alpha-button-background));

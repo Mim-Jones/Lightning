@@ -53,6 +53,11 @@
   margin-top: 0;
 }
 
+.account-login {
+    background-color: #f5f5f5;
+    border-radius: 25px;
+}
+
 /* Customer Table */
 .customer table {
   table-layout: auto;
@@ -312,6 +317,12 @@
 .login a[href='#recover'] {
   margin-left: 0;
   margin-right: 0;
+}
+
+a.account-links {
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
+
 }
 
 .login .field + a {
