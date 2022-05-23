@@ -704,13 +704,10 @@
         "logo_position": {
           "label": "Logo position on large screen",
           "options__1": {
-            "label": "Middle left"
-          },
-          "options__2": {
-            "label": "Top left"
+            "label": "Left"
           },
           "options__3": {
-            "label": "Top center"
+            "label": "Center"
           }
         },
         "menu": {
