@@ -143,7 +143,7 @@
       ],
       "settings": {
         "title": "Awards Since 2018",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "half",
         "image_ratio": "circle",
         "columns_desktop": 5,
