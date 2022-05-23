@@ -50,8 +50,8 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/ABK-beer-Black-logo-2.png",
-          "logo_width": 60,
-          "logo_position": "middle-left",
+          "logo_width": 110,
+          "logo_position": "top-center",
           "menu": "main-menu-new",
           "show_line_separator": false,
           "menu_hover": true,
