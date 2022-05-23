@@ -183,7 +183,7 @@ html.no-js .no-js-hidden {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    
+
   }
 }
 
@@ -1747,7 +1747,7 @@ input[type='checkbox'] {
   }
 
   .header--has-menu:not(.header--middle-left) {
-    padding-bottom: 0;
+    
   }
 
   .header--top-left {

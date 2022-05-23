@@ -638,8 +638,8 @@
                     {{ childlink.title | escape }}
                   </a>
                   {%- else -%}
-                 
-                  <a class="header__menu-item link link--text list-menu__item focus-inset caption-large">{{ childlink.title | escape }}</a>                      
+
+                  <a class="header__menu-item link link--text list-menu__item focus-inset caption-large">{{ childlink.title | escape }}</a>
                     <ul class="header__submenu list-menu motion-reduce">
                       {%- for grandchildlink in childlink.links -%}
                       <li  link-level="3">
@@ -649,7 +649,7 @@
                       </li>
                       {%- endfor -%}
                     </ul>
-                
+
                   {%- endif -%}
                 </li>
                 {%- endfor -%}
@@ -781,6 +781,9 @@
   {%- render 'cart-notification' -%}
 {%- endif -%}
         <style>
+        .header--has-menu:not(.header--middle-left) {
+            padding-bottom: {{section.settings.logo_width}}px;
+        }
           /*  Added by Divy Start   */
           @media screen and (min-width: 990px) {
             .hover-nav.hover-enable:hover .header__submenu{
