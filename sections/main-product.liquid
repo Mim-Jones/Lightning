@@ -128,7 +128,7 @@
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h3 product_accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }}
+                      {{ block.settings.heading | default: block.settings.page.title }} <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
                     </h2>
                   </div>
 
