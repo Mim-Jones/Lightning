@@ -217,7 +217,7 @@
     .header__heading-link {z-index:999;width:auto!important}
     .fx-c{
         z-index:999;
-        margin: 1rem;
+        margin: 0 1rem;
     }
 
   }
@@ -780,6 +780,21 @@
 {%- if request.page_type != 'cart' -%}
   {%- render 'cart-notification' -%}
 {%- endif -%}
+
+{% if section.settings.logo_width >= 101 %}
+
+<style>
+@media screen and (min-width: 990px) {
+  .hover-nav.hover-enable:hover .header__submenu{
+
+    padding-top: {{section.settings.logo_width | times: 0.9 }}px ;
+
+  }
+}
+</style>
+
+{%- endif -%}
+
         <style>
          @media screen and (min-width: 990px) {
         .header--has-menu:not(.header--middle-left) {
@@ -793,15 +808,10 @@
               height:auto;
               padding-bottom: 2rem;
               visibility:visible;
+              padding-top: 8rem;
             }
           }
-          @media screen and (min-width: 990px) {
-            .hover-nav.hover-enable:hover .header__submenu{
 
-              padding-top: {{section.settings.logo_width | times: 0.8 }}px ;
-
-            }
-          }
 
 
           @media(max-width:989px){
