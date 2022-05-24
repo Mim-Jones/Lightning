@@ -79,9 +79,8 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
           <div class="cart-img-container">
         <img src="{{item.image | img_url: '250x250' }}" />
     </div>
-        <h4>{{item.product.title }}</h4>
-
         <div class="price-qty-container">
+        <h4>{{item.product.title }}</h4>
 
          <span class="item-price ">{{ item.price  | money }}</span>
 

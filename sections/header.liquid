@@ -791,11 +791,19 @@
             .hover-nav.hover-enable:hover .header__submenu{
               opacity:1;
               height:auto;
-              padding-top: 8rem;
               padding-bottom: 2rem;
               visibility:visible;
             }
           }
+          @media screen and (min-width: 990px) {
+            .hover-nav.hover-enable:hover .header__submenu{
+
+              padding-top: {{section.settings.logo_width | times: 0.8 }}px ;
+
+            }
+          }
+
+
           @media(max-width:989px){
             .header.header--top-center.page-width.header--has-menu.no-account-mobile {
               padding-top:0;

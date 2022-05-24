@@ -339,7 +339,7 @@ body.page-your-shopping-cart {
 
 .td-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     word-break: break-word;
     text-align: center;
     align-self: center;
@@ -355,11 +355,15 @@ body.page-your-shopping-cart {
 }
 .price-qty-container {
     align-self: center;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
+    margin: 0 auto;
 }
 .item-quantity {
     display: block;
+}
+.cart-img-container {
+    align-self: center;
 }
 
 
