@@ -714,9 +714,9 @@ summary::-webkit-details-marker {
 
 /* Fallback */
 .focus-inset:focus {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline: None;
   outline-offset: -0.2rem;
-  box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
+  box-shadow: None;
 }
 
 .focus-inset:focus:not(:focus-visible) {

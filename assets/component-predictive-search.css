@@ -1,10 +1,10 @@
 .predictive-search {
   display: none;
-  position: absolute;
+  position: fixed;
   top: calc(100% + 0.1rem);
   left: -0.1rem;
   border-width: 1px;
-  
+
   background-color: rgb(var(--color-background));
   z-index: 3;
   border-bottom-right-radius: var(--popup-corner-radius);

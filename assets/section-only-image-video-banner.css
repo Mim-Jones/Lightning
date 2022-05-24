@@ -103,6 +103,22 @@ https://flickity.metafizzy.co
       left:40px;
     }
 }
+@media (min-width: 1440px) {
+    .flickity-prev-next-button.previous {
+      left:50px;
+    }
+    .flickity-prev-next-button.next {
+      right:50px;
+    }
+    .flickity-rtl .flickity-prev-next-button.previous {
+      left:auto;
+      right:50px;
+    }
+    .flickity-rtl .flickity-prev-next-button.next {
+      right:auto;
+      left:50px;
+    }
+}
 .flickity-page-dots {
   position:absolute;
   width:100%;

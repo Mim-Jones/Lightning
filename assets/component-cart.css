@@ -327,24 +327,33 @@ body.page-your-shopping-cart {
 }
 
 #mini-cart .min-cart-item {
-  width:33.333%;
+  width: 100%;
   padding:0 1rem;
   margin-bottom: 2rem;
 }
 
 #mini-cart .td-image img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
+.td-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    word-break: break-word;
+}
 
 .td-image .price {
   line-height: 2rem;
 }
+.item-price {
+    align-self: center;
+    text-align: center;
+}
 
 .td-image h4, .cart-item--remove-link {
-
+  align-self: center;
   margin-top: 0px;
   text-transform: capitalize;
   margin-bottom:0.25rem;
