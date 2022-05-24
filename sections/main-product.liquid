@@ -128,7 +128,8 @@
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h3 product_accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }} <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                      {{ block.settings.heading | default: block.settings.page.title }} 
+                      {% if block.settings.heading contains "Review" %}<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>{% endif %}
                     </h2>
                   </div>
 
