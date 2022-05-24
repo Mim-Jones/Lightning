@@ -128,9 +128,9 @@
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h3 product_accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }} 
-                                      {% if block.settings.enable_review %}<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>{% endif %}
-                    </h2>
+                      {{ block.settings.heading | default: block.settings.page.title }}</h2>
+                        {% if block.settings.enable_review %}<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>{% endif %}
+
                   </div>
 
                   {% render 'icon-caret' %}
@@ -572,7 +572,7 @@
 {
   "name": "t:sections.main-product.name",
   "tag": "section",
-  "class": "product-section spaced-section",
+  "class": "product-section spaced-section page-width-desktop page-width",
   "blocks": [
     {
       "type": "@app"

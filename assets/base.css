@@ -2135,6 +2135,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
   text-underline-offset: 2.5rem;
+  font-weight: 400;
 }
 
 .header__menu-item:hover .header__active-menu-item {

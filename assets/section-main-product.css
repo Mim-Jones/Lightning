@@ -781,6 +781,9 @@ a.product__text {
 .spr-summary-starrating {
     font-size: 10px;
 }
+.spr-badge-starrating {
+    margin: 0;
+}
 
 .spr-review-header-byline {
     font-style: normal;
@@ -797,6 +800,30 @@ a.spr-summary-actions-newreview {
 
 .spr-summary-actions-togglereviews {
     font-weight: 500;
+}
+
+.spr-badge i {
+  width: 10px;
+  height: 10px;
+  font-size: 10px!important;
+
+}
+
+span.spr-badge-caption {font-size: 10px;}
+
+.spr-badge {
+ display: inline-block;
+ vertical-align: middle;
+ text-align: right;
+ align-self: center;
+ position: absolute;
+ Right: 3.75rem;
+ margin-bottom: 0.25rem;
+}
+
+h2.h3.product_accordion__title {
+
+align-items: center;
 }
 
 .rte a {
