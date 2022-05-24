@@ -43,13 +43,6 @@
             "qstn": "How Do I Contact ABK Brewery?",
             "ans": "Simply Drop us an email at info@abkbrewery or text us on 07587 004368"
           }
-        },
-        "9a89bf3f-70d6-4d5a-86cb-2a658b54a9bb": {
-          "type": "block-1",
-          "settings": {
-            "qstn": "What Other Brands Do You Work With?",
-            "ans": "We also partner with an exciting new company that produces sustainable clothing and Watches. Everything produced is made from trees and every item plants new trees.  For Example each wooden watch plants 15 trees in an area affected by deforestation."
-          }
         }
       },
       "block_order": [
@@ -57,8 +50,7 @@
         "2d776f39-5ae9-4987-a821-67817ec10ed2",
         "0773c4ce-c5ed-475a-9d8f-ff68f8389fa9",
         "1c6c9bae-d647-4dae-a476-d7743d0f6e0a",
-        "db97985d-bc2b-4e06-8101-e078494acf4f",
-        "9a89bf3f-70d6-4d5a-86cb-2a658b54a9bb"
+        "db97985d-bc2b-4e06-8101-e078494acf4f"
       ],
       "settings": {
         "csm_ttl": "ABK Frequently Asked Questions"
