@@ -219,6 +219,9 @@
         "spacing_sections": {
           "label": "Label Spacing"
         },
+        "paragraph__grid": {
+          "content": "Paragraph Content"
+        },
         "header__grid": {
           "content": "Header content Grid"
         },
