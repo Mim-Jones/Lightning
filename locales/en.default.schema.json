@@ -216,6 +216,9 @@
     "layout": {
       "name": "Layout",
       "settings": {
+        "header__grid": {
+          "content": "hello"
+        },
         "page_width": {
           "label": "Maximum width",
           "options__1": {
