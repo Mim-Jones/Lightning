@@ -216,6 +216,9 @@
     "layout": {
       "name": "Layout",
       "settings": {
+        "spacing_sections": {
+          "label": "Label Spacing"
+        },
         "header__grid": {
           "content": "Header content Grid"
         },
