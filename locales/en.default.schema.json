@@ -217,19 +217,19 @@
       "name": "Layout",
       "settings": {
         "spacing_sections": {
-          "label": "Label Spacing"
+          "label": "Vertical space between sections"
         },
         "paragraph__grid": {
-          "content": "Paragraph Content"
+          "content": "Affects areas with a multicolumn layout."
         },
         "header__grid": {
-          "content": "Header content Grid"
+          "content": "Grid"
         },
         "spacing_grid_horizontal": {
-          "label": "horizontal"
+          "label": "Horizontal space"
         },
         "spacing_grid_vertical": {
-          "label": "vertical"
+          "label": "Vertical space"
         },
         "page_width": {
           "label": "Maximum width",
