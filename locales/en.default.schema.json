@@ -217,7 +217,7 @@
       "name": "Layout",
       "settings": {
         "header__grid": {
-          "content": "hello"
+          "content": "Header content Grid"
         },
         "page_width": {
           "label": "Maximum width",
