@@ -93,8 +93,10 @@ jQuery(function($){
   $( ".list-menu li a.no-sub" ).mouseenter(function() {
     console.log(window.innerWidth);
     console.log('hover');
+    if(window.innerWidth > 768 ){
     $('details').removeAttr('open','open');
 //     $('details ul').addClass('header__submenu_hover');
+    }
   });
   
   $( "#hover-enable details ul" ).mouseleave(function() {
