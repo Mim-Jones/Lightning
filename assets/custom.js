@@ -91,6 +91,7 @@ jQuery(function($){
 //   });
 
   $( ".list-menu li a.no-sub" ).mouseenter(function() {
+    console.log(window.innerWidth);
     console.log('hover');
     $('details').removeAttr('open','open');
 //     $('details ul').addClass('header__submenu_hover');
