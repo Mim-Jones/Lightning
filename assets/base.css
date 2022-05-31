@@ -608,9 +608,8 @@ details > * {
 .underlined-link,
 .customer a {
   color: rgba(var(--color-link), var(--alpha-link));
-  text-underline-offset: 2.5rem;
-  text-decoration-thickness: 0.2rem;
-  transition: text-decoration-thickness ease 100ms;
+  text-decoration: none;
+
 }
 
 .underlined-link:hover,
@@ -1345,6 +1344,13 @@ input#Search-In-Modal {
 /* Field */
 
 .field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: #f5f5f5;
+  border-radius: 25px;
+}
+.newsletter-field {
   position: relative;
   width: 100%;
   display: flex;

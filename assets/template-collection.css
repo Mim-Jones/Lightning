@@ -310,7 +310,7 @@
 .facet-checkbox .icon-checkmark {
   visibility: hidden;
   position: absolute;
-  left: 1.4rem;
+  left: 0.25rem;
   z-index: 5;
   top: 1.4rem;
 }
@@ -342,7 +342,7 @@
 }
 
 .facets__price .field__label {
-  left: 1.5rem;
+  left: 2rem;
 }
 
 button.facets__button {
@@ -383,7 +383,7 @@ span.active-facets__button-inner {
   font-size: 1rem;
   min-height: 0;
   min-width: 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -849,4 +849,8 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__sort .select__select {
   box-shadow: none;
+}
+
+.icon-close-small {
+stroke: rgba(var(--color-foreground));
 }
