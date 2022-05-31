@@ -49,7 +49,8 @@
         "16527856853ce05e21-1"
       ],
       "settings": {
-        "image_height": 500
+        "image_height": 0,
+        "image_height_mob": 0
       }
     },
     "16502652433543476c": {
@@ -233,7 +234,8 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image_height": 0
+        "image_height": 0,
+        "image_height_mob": 0
       }
     },
     "image_text": {
