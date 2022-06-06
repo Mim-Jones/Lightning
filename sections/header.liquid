@@ -630,7 +630,9 @@
                 <span  class="header__active-menu-item">{{ link.title | escape }}</span>
                 <!-- {% render 'icon-caret' %} -->
               </summary>
-              <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reducee{% unless section.settings.menu_hover %}   header__submenu_hoverr  {% endunless %} " role="list" tabindex="-1">
+              <div class="sub__menu_container">
+
+              <ul class="page-width-desktop header__submenu list-menu list-menu--disclosure caption-large motion-reducee{% unless section.settings.menu_hover %}   header__submenu_hoverr  {% endunless %} " role="list" tabindex="-1">
                 {%- for childlink in link.links -%}
                 <li  link-level="2">
                   {%- if childlink.links == blank -%}
@@ -654,6 +656,7 @@
                 </li>
                 {%- endfor -%}
               </ul>
+          </div>
               {% unless section.settings.menu_hover %} </details> </details-disclosure> {% else %}<div></div>{% endunless %}
 
               {%- else -%}
@@ -809,6 +812,8 @@
               padding-bottom: 2rem;
               visibility:visible;
               padding-top: 8rem;
+              padding-left: 4rem;
+              padding-right: 4rem;
             }
           }
 

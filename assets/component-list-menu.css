@@ -4,10 +4,10 @@
 
 .list-menu--disclosure {
   position: absolute;
-  min-width: 100%;
-  width: 20rem;
+  width: 100%;
+  
   background-color: rgb(var(--color-background));
- 
+
 }
 
 .list-menu--disclosure:focus {
@@ -26,7 +26,3 @@
   width: 10rem;
   padding: 0.5rem;
 }
-
-
-
-
