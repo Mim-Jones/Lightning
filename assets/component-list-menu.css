@@ -3,9 +3,9 @@
 }
 
 .list-menu--disclosure {
-  position: absolute;
+  position: relative;
   width: 100%;
-  
+
   background-color: rgb(var(--color-background));
 
 }
@@ -14,15 +14,23 @@
   outline: none;
 }
 
-.list-menu__item--active {
+/* .list-menu__item--active {
   text-decoration: underline;
   text-underline-offset: 1rem;
   font-weight: 500;
-}
+} */
 
 .list-menu--disclosure.localization-selector {
   max-height: 18rem;
   overflow: auto;
   width: 10rem;
   padding: 0.5rem;
+}
+
+.sub__menu_container2 {
+    width: 100%;
+    background-color: rgb(var(--color-background));
+    position: absolute;
+
+    right: 0;
 }
