@@ -13,6 +13,7 @@
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
+
   {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
     {%- assign total_active_values = 0 -%}
 
@@ -163,7 +164,9 @@
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ value.label | escape }}
-                        {% render 'icon-close-small' %}
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 48 48">
+<g transform="matrix(2,0,0,2,0,0)"><defs><style>.a{stroke-width:1.5px;}</style></defs><title>close</title><line class="a" x1="0.75" y1="23.249" x2="23.25" y2="0.749"></line><line class="a" x1="23.25" y1="23.249" x2="0.75" y2="0.749"></line></g>
+</svg>
                       </span>
                     </a>
                   </facet-remove>
@@ -193,6 +196,18 @@
             <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
           {% endif %}
 
+       <div class="collection-productcount-container">
+          <p id="CollectionProductCountDesktop" class="collection-product-count light" role="status">
+                  <span class="product-title">{{- collection.title | escape -}}</span>
+
+            {%- if collection.products_count == collection.all_products_count -%}
+              ({{ collection.all_products_count }})
+            {%- else -%}
+              {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
+            {%- endif -%}
+          </p>
+      </div>
+
           {%- if section.settings.enable_sorting -%}
             <div class="collection-filters__item sorting caption">
               <div class="collection-filters__field">
@@ -214,13 +229,14 @@
             </div>
           {%- endif -%}
 
-          <p id="CollectionProductCountDesktop" class="collection-product-count light" role="status">
+          <!-- <p id="CollectionProductCountDesktop" class="collection-product-count light" role="status">
             {%- if collection.products_count == collection.all_products_count -%}
               {{ 'sections.collection_template.product_count_simple' | t: count: collection.products_count }}
             {%- else -%}
               {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
             {%- endif -%}
-          </p>
+          </p> -->
+
         </form>
       </collection-filters-form>
     {%- endunless -%}
@@ -429,15 +445,20 @@
         </facet-remove>
       {%- endif -%}
     </div>
+<div class="collection-productcount-container">
     <p id="CollectionProductCount" class="collection-product-count light{% unless section.settings.collapse_on_larger_devices %} medium-hide large-up-hide{% endunless %}" role="status">
+        <span class="product-title">{{- collection.title | escape -}}</span>
       {%- if collection.products_count == collection.all_products_count -%}
-        {{ 'sections.collection_template.product_count_simple' | t: count: collection.products_count }}
-      {%- else -%}
+        ({{ collection.all_products_count }})      {%- else -%}
         {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
       {%- endif -%}
     </p>
   {%- endif -%}
+ </div>
+
 </div>
+
+
 
 <div id="CollectionProductGrid">
   {%- paginate collection.products by section.settings.products_per_page -%}

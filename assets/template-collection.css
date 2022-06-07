@@ -53,11 +53,28 @@
 }
 
 .collection-product-count {
-  align-self: center;
+  align-self: baseline;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  text-align: right;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 1.5rem;
+
+}
+ .collection-productcount-container {
+     align-self: center;
+
+ }
+
+  @media (min-width: 990px) {
+   .collection-productcount-container {
+       align-self: baseline;
+   }
+  }
+
+.product-title {
+    margin-right: 0.5rem;
 }
 
 .collection.loading .collection-product-count {
@@ -76,6 +93,8 @@
   .collection-product-count {
     align-self: flex-end;
   }
+
+
 
   .active-facets-mobile + .collection-product-count {
     grid-column-start: 2;
@@ -184,7 +203,7 @@
 }
 
 .js .facets__form {
-  grid-template-columns: auto max-content;
+  grid-template-columns: auto auto max-content;
 }
 
 .facets__wrapper {
@@ -444,7 +463,7 @@ a.active-facets__button:focus .active-facets__button-inner {
 }
 
 .active-facets__button svg {
-  width: 1.2rem;
+  width: 1rem;
   margin-left: 0.6rem;
   pointer-events: none;
   position: relative;
@@ -453,7 +472,7 @@ a.active-facets__button:focus .active-facets__button-inner {
 
 @media all and (min-width: 990px) {
   .active-facets__button svg {
-    width: 1.4rem;
+    width: 1rem;
     position: static;
   }
 }

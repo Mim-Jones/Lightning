@@ -79,15 +79,13 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
           <div class="cart-img-container">
         <img src="{{item.image | img_url: '250x250' }}" />
     </div>
-        <div class="price-qty-container">
+    <div class="main-price-container">
+      <div class="price-qty-container">
         <h4>{{item.product.title }}</h4>
-
          <span class="item-price ">{{ item.price  | money }}</span>
-
          <span class="item-quantity">Qty: {{ item.quantity }}</span>
-
-
       </div>
+     </div>
 
         <div class="buttons-div">
           <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
