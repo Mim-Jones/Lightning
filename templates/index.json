@@ -58,6 +58,7 @@
       "blocks": {
         "16502652435e7de976-0": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
             "video_url": "",
