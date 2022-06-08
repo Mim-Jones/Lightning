@@ -72,10 +72,28 @@
             "button_link_2": "shopify:\/\/pages\/faqs",
             "desktop_text_box_position": "center"
           }
+        },
+        "19345187-704e-4053-a2fc-26b6438b03ca": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
         }
       },
       "block_order": [
-        "16502652435e7de976-0"
+        "16502652435e7de976-0",
+        "19345187-704e-4053-a2fc-26b6438b03ca"
       ],
       "settings": {
         "adapt_height_first_image": false
