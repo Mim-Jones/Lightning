@@ -83,7 +83,7 @@
     }
   {%- endstyle -%}
 {%- endfor -%}
-
+    <div class="section-{{ section.id }}-padding isolate">
 <div sectionName="{{section.name}}"
      data-aos="fade-down"
      data-aos-easing="linear"
@@ -102,7 +102,7 @@ data-flickity='{ "cellAlign": "left",
     "adaptiveHeight": true }'
      {% endif %}
      >
-    <div class="section-{{ section.id }}-padding isolate">
+
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
