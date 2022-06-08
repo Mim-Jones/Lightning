@@ -42,31 +42,11 @@
             "color_scheme": "background-1",
             "stack_images_on_mobile": true
           }
-        },
-        "ba35879b-ad76-4612-9f38-41d775119369": {
-          "type": "image",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "desktop_text_box_position": "center",
-            "show_text_box": true,
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "stack_images_on_mobile": true
-          }
         }
       },
       "block_order": [
         "16527856853ce05e21-0",
-        "16527856853ce05e21-1",
-        "ba35879b-ad76-4612-9f38-41d775119369"
+        "16527856853ce05e21-1"
       ],
       "settings": {
         "image_height": 600,
