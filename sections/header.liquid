@@ -48,7 +48,7 @@
         }
 
         .header__search {
-            margin-right: 1.5rem;
+            margin-right: 1.75rem;
          }
         }
     </style>
@@ -96,7 +96,7 @@
 }
 
     details-modal.header__search .header__icon--search {
-     left: 5.25rem;
+     left: 5.75rem;
 }
 }
     </style>
@@ -206,7 +206,7 @@
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
-    margin-right: 0.75rem;
+    margin-right: 1.75rem;
   }
 
   @media screen and (min-width: 990px) {
@@ -349,7 +349,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} {% if section.settings.hide_account_icon %}no-account-mobile{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} page-width-desktop {% if section.settings.menu != blank %} header--has-menu{% endif %} {% if section.settings.hide_account_icon %}no-account-mobile{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
