@@ -157,7 +157,7 @@ html.no-js .no-js-hidden {
 }
 
 .page-width-desktop {
-  padding: 0;
+  padding: 0 3rem;
   margin: 0 auto;
 }
 .page-width-product {
@@ -1141,6 +1141,7 @@ deferred-media {
   appearance: none;
 }
 
+
 .button:focus-visible {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border)),
     0 0 0 0.3rem rgb(var(--color-background)),
@@ -1542,7 +1543,7 @@ input[type='checkbox'] {
   width: 14rem;
   display: flex;
   border-radius: 4px;
-  margin: 0 auto;
+
 }
 
 .quantity__input {

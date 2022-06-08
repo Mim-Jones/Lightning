@@ -143,12 +143,20 @@ cart-items {
   margin: 0 auto;
 }
 
-.cart__blocks > * + * {
+/* .cart__blocks > * + * {
   margin-top: 1rem;
+} */
+
+.paypal-button.paypal-button-number-0.paypal-button-layout-horizontal.paypal-button-shape-rect.paypal-button-branding-branded.paypal-button-number-single.paypal-button-env-production.paypal-should-focus.paypal-button-label-paypal.paypal-button-color-gold.paypal-button-logo-color-blue {
+    border-radius: 29px!important;
 }
 
+
 .cart__dynamic-checkout-buttons div[role='button'] {
-  border-radius: 0 !important;
+    border-radius: 29px !important;
+}
+.button.cart__checkout-button.button {
+    height: 5.5rem;
 }
 
 .cart-note__label {
@@ -273,7 +281,7 @@ summary.header__menu-item {
   top: 0;
   right: 0;
   width: 500px;
-  padding: 3rem;
+  padding: 1.5rem;
   position: fixed;
   z-index: 9999;
   height: 100vh; transition: all .5s ease-in-out;}
@@ -352,6 +360,10 @@ body.page-your-shopping-cart {
 .item-price {
     align-self: center;
     text-align: center;
+}
+.main-price-container {
+    text-align: left;
+    align-self: center;
 }
 .price-qty-container {
     align-self: center;
