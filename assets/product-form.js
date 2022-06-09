@@ -44,7 +44,7 @@ class ProductForm extends HTMLElement {
 
       });
       console.log("notification off");
-              this.cartNotification.renderContents(parsedState);
+//               this.cartNotification.renderContents(parsedState);
     })
     
     .catch((e) => {
