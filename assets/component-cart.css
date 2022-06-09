@@ -285,7 +285,7 @@ summary.header__menu-item {
   position: fixed;
   z-index: 9999;
   height: 100vh; 
-  transition: all .5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .hide-minibag {
