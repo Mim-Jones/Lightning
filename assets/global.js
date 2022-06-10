@@ -306,7 +306,7 @@ class MenuDrawer extends HTMLElement {
       document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
       removeTrapFocus(elementToFocus);
       this.closeAnimation(this.mainDetailsToggle);
-      
+
     }
   }
 
@@ -646,7 +646,7 @@ customElements.define('variant-radios', VariantRadios);
 
 // Added By Divy
 $(function(){
-  
+
   $('.hover-nav.hover-enable').hover(function(){
 		//     $(this).find('ul').first().stop().toggle(200);
 		$(this).find('ul').addClass('header__submenu_hover');
@@ -654,6 +654,9 @@ $(function(){
 		//     $(this).find('ul').stop().hide(200);
 		$(this).find('ul').removeClass('header__submenu_hover');
   });
- 
-  
+
+
 });
+
+// added by Liam - Animation fix
+    window.addEventListener('load', AOS.refresh);
