@@ -295,7 +295,6 @@ summary.header__menu-item {
   overflow-x: hidden; }
 
 .show-minibag {
-
   transform: translateX(0%);
   visibility: visible;
   overflow-x: hidden; }
