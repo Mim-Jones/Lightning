@@ -87,19 +87,9 @@
 <div sectionName="{{section.name}}"
      data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="700" class="banner-wrap page-width-desktop {% if section.blocks.size > 1 %}slider-implement mmain-carousel{% endif %}"
+     data-aos-duration="700" class="banner-wrap page-width-desktop {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}"
      {% if section.blocks.size > 1 %}
-data-flickity='{ "cellAlign": "left",
-                    "contain": true,
-                    "autoPlay": 6000,
-    "pauseAutoPlayOnHover": true,
-    "contain": true,
-    "freeScroll": false,
-    "wrapAround": true,
-    "prevNextButtons": true,
-    "pageDots": true,
-    "lazyLoad": 2,
-    "adaptiveHeight": true }'
+
      {% endif %}
      >
 
