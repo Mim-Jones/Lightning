@@ -47,8 +47,10 @@
 
     <script src="{{ 'sticky.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'image-video-banner.js' | asset_url }}" ></script>
+       {% unless request.design_mode %}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {% endunless %}
     {{ content_for_header }}
 
     {%- liquid
@@ -287,9 +289,11 @@
       </div>
       <a href="/pages/wishlist" class=" button button--full-width button--primary" > View Favourites </a>
     </div>
+    {% unless request.design_mode %}
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
+    {% endunless %}
     <script>
     	$(".mobile-facets__close").click(function(){
   		$(".mobile-facets__close").addClass("d-none");
