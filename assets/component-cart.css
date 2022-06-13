@@ -292,8 +292,9 @@ summary.header__menu-item {
   transform: translateX(110%);
 
   visibility: hidden;
-  width: 0 !important;
-  overflow-x: hidden; }
+  /*width: 0 !important;*/
+  overflow-x: hidden; 
+}
 
 .show-minibag {
 
