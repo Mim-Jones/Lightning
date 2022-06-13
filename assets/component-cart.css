@@ -278,7 +278,6 @@ summary.header__menu-item {
 
 #mini-cart {
   background: #fff;
-  display: block !important;
   top: 0;
   right: 0;
   width: 500px;
@@ -288,7 +287,7 @@ summary.header__menu-item {
   height: 100vh; 
   transition: all 1.5s ease-in-out;
 }
-
+#mini-cart.hide-minibag {display: block !important;}
 .hide-minibag {
   transform: translateX(110%);
   visibility: hidden;
