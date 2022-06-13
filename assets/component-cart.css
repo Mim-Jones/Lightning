@@ -289,19 +289,17 @@ summary.header__menu-item {
 }
 
 .hide-minibag {
-  /*transform: translateX(110%);*/
+  transform: translateX(110%);
 
   visibility: hidden;
-  /*width: 0 !important;*/
-  overflow-x: hidden; 
-}
+  width: 0 !important;
+  overflow-x: hidden; }
 
 .show-minibag {
 
-  /*transform: translateX(0%);*/
+  transform: translateX(0%);
   visibility: visible;
-  overflow-x: hidden; 
-}
+  overflow-x: hidden; }
 
 .overflow-hidden {
   overflow: hidden; }
