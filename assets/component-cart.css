@@ -147,14 +147,15 @@ cart-items {
   margin-top: 1rem;
 } */
 
-.paypal-button.paypal-button-number-0.paypal-button-layout-horizontal.paypal-button-shape-rect.paypal-button-branding-branded.paypal-button-number-single.paypal-button-env-production.paypal-should-focus.paypal-button-label-paypal.paypal-button-color-gold.paypal-button-logo-color-blue {
-    border-radius: 29px!important;
-}
-
 
 .cart__dynamic-checkout-buttons div[role='button'] {
     border-radius: 29px !important;
 }
+
+
+iframe._1qHzu06EhANVVG3mlfU6Ho.paypalLight._9ATKCDN1-_J5vniMChq1n {
+    border-radius: 29px;}
+
 .button.cart__checkout-button.button {
     height: 5.5rem;
 }
@@ -284,7 +285,7 @@ summary.header__menu-item {
   padding: 1.5rem;
   position: fixed;
   z-index: 9999;
-  height: 100vh; 
+  height: 100vh;
   transition: all 1.5s ease-in-out;
 }
 .hide-minibag {

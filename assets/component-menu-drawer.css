@@ -216,6 +216,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 2rem;
+  padding-bottom: 0.5rem;
   background-color: rgba(var(--color-foreground), 0.03);
 }
 
@@ -223,10 +224,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  padding: 1.2rem;
-  margin-left: -1.2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
+
 .menu-drawer-wishlist {
     display: inline-flex;
     text-decoration: none;
@@ -235,7 +235,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__account .icon-account {
   height: 2rem;
   width: 2rem;
-  margin-right: 1rem;
+  margin-right: 1.2rem;
 }
 
 .menu-drawer .list-social {
