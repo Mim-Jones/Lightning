@@ -278,6 +278,7 @@ summary.header__menu-item {
 
 #mini-cart {
   background: #fff;
+  display: block !important;
   top: 0;
   right: 0;
   width: 500px;
@@ -290,7 +291,6 @@ summary.header__menu-item {
 
 .hide-minibag {
   transform: translateX(110%);
-  display: block !important;
   visibility: hidden;
   /*width: 0 !important;*/
   overflow-x: hidden; }
