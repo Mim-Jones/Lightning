@@ -290,7 +290,7 @@ summary.header__menu-item {
 
 .hide-minibag {
   transform: translateX(110%);
-
+  display: block !important;
   visibility: hidden;
   width: 0 !important;
   overflow-x: hidden; }
