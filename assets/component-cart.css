@@ -276,17 +276,6 @@ summary.header__menu-item {
 .mini-bag-container {
   position: relative; }
 
-.hide-minibag {
-  transform: translateX(110%);
-  visibility: hidden;
-  /*width: 0 !important;*/
-  overflow-x: hidden; }
-
-.show-minibag {
-  transform: translateX(0%);
-  visibility: visible;
-  overflow-x: hidden; }
-
 .overflow-hidden {
   overflow: hidden; }
 
