@@ -248,9 +248,9 @@ summary.header__menu-item {
 }
 }
 @media screen and (max-width: 989px){
-  div#mini-cart,#minibag_mask{
+/*   div#mini-cart,#minibag_mask{
   display:none!important;
-  }
+  } */
 
 
 
