@@ -2249,3 +2249,9 @@ details-disclosure > details {
     margin-top: 5rem;
     margin-bottom: 10rem;
 }
+
+  .flickity-page-dots {
+    max-width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }  
