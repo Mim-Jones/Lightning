@@ -276,6 +276,17 @@ summary.header__menu-item {
 .mini-bag-container {
   position: relative; }
 
+#mini-cart {
+  background: #fff;
+  top: 0;
+  right: 0;
+  width: 500px;
+  padding: 1.5rem;
+  position: fixed;
+  z-index: 9999;
+  height: 100vh; 
+  transition: all 1.5s ease-in-out;
+}
 .hide-minibag {
   transform: translateX(110%);
   visibility: hidden;
