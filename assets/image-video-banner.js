@@ -25,5 +25,14 @@ jQuery(function($){
   }
   $('.main-carousel').flickity( options );
 
-  
+  document.addEventListener("shopify:section:load", function(event){
+    console.log(event.detail.sectionId);
+    var $carousel = $('.main-carousel').flickity()
+    $carousel.flickity('resize')
+    var flkty = new Flickity('.main-carousel');
+    flkty.resize()
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#shopify-section-"+event.detail.sectionId).offset().top
+    }, 500);
+  })
 });
