@@ -52,7 +52,7 @@
         "image_height": 600,
         "image_height_mob": 300,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 36
       }
     },
     "16502652433543476c": {
@@ -377,7 +377,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "16552109615cf17206": {
@@ -467,7 +468,9 @@
         "heading": "Video",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": false
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1655211038b3150bd2": {
