@@ -230,7 +230,8 @@ fieldset.product-form__input .form__label {
 .shopify-payment-button__button {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  border-radius: 0px;
+  border-radius: 29px;
+  /* height: 5rem; */
 }
 
 /* Product info */
