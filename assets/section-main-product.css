@@ -151,7 +151,7 @@ fieldset.product-form__input .form__label {
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
   display: inline-block;
-  margin: 0.7rem 0.5rem 0.2rem 0;
+  margin: 0.7rem 0 0.2rem 0;
   padding: 1rem 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
@@ -384,8 +384,8 @@ a.product__text {
   }
 
   .product__media-wrapper slider-component {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
   }
 
   .slider.product__media-list {
@@ -426,7 +426,7 @@ a.product__text {
   }
 
   .product__media-list .product__media-item {
-    padding: 0 0 0.5rem;
+
     width: 100%;
   }
 }

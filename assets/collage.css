@@ -8,11 +8,11 @@
   }
 }
 
-@media screen and (min-width: 990px) {
+/* @media screen and (min-width: 990px) {
   .collage-wrapper.no-heading {
     margin-top: 6rem;
   }
-}
+} */
 
 .collage-wrapper-title {
   margin-bottom: 3rem;

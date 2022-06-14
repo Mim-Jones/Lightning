@@ -27,6 +27,7 @@ slider-component {
     scroll-behavior: smooth;
     scroll-padding-left: 1rem;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
   }
 
   .slider.slider--mobile .slider__slide {
@@ -87,10 +88,10 @@ slider-component {
 }
 
 slider-component .slider-buttons {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  right: 0;
-  bottom: 1rem;
+
+
 }
 
 /* .slider-buttons.slider-buttons--overlay {
@@ -99,7 +100,7 @@ slider-component .slider-buttons {
 } */
 
 .slider-mobile-gutter .slider-buttons {
-  right: 1.5rem;
+  right: 0;
 }
 
 .slider-counter {
@@ -113,7 +114,7 @@ slider-component .slider-buttons {
 
 .slider-buttons {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 990px) {

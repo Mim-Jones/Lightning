@@ -582,6 +582,7 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
+  margin-bottom: 1.5rem;
 }
 
 .placeholder {
