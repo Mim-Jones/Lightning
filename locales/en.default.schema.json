@@ -703,6 +703,9 @@
         },
         "payment_enable": {
           "label": "Show payment icons"
+        },
+        "margin_top": {
+          "label": "Top margin"
         }
       }
     },
