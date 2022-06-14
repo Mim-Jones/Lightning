@@ -201,13 +201,13 @@ html.no-js .no-js-hidden {
   margin-top: 5rem;
 }
 
-.spaced-section {
+/* .spaced-section {
   margin-top: 5rem;
-}
+} */
 
-.spaced-section:last-child {
+/* .spaced-section:last-child {
   margin-bottom: 5rem;
-}
+} */
 
 .spaced-section--full-width + .spaced-section--full-width {
   margin-top: 0;
@@ -745,7 +745,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-  margin: 3rem 0 2rem;
+  margin: 3rem 0 0;
 }
 
 .title-wrapper-with-link .title {
@@ -761,7 +761,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin: 4rem 0 3rem;
+  margin: 0 0 3rem;
   flex-wrap: wrap;
 }
 
@@ -785,7 +785,7 @@ summary::-webkit-details-marker {
 @media screen and (min-width: 990px) {
   .title,
   .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+    margin: 5rem 0 0;
   }
 
   .title--primary {
