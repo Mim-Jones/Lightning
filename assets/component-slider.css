@@ -3,10 +3,10 @@ slider-component {
   display: block;
 }
 
-@media screen and (max-width: 989px) {
+/* @media screen and (max-width: 989px) {
   slider-component .slider {
     padding-bottom: 6rem;
-  }
+  } */
 
   .no-js slider-component .slider {
     padding-bottom: 3rem;

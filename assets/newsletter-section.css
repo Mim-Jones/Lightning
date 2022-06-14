@@ -1,4 +1,4 @@
-.newsletter--narrow .newsletter__wrapper,
+/* .newsletter--narrow .newsletter__wrapper,
 .newsletter:not(.newsletter--narrow) .newsletter__wrapper.color-background-1 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -7,7 +7,7 @@
 .newsletter__wrapper:not(.color-background-1) {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
+} */
 
 .newsletter__wrapper {
   padding-right: 4rem;

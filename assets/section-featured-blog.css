@@ -1,9 +1,9 @@
 .blog:not(.background-secondary) {
-  margin: 5rem 0;
+  margin: 0;
 }
 
 .blog.background-secondary {
-  padding: 4rem 0 5rem;
+  padding: 4rem 0 0;
 }
 
 .blog-placeholder {
