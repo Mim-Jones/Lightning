@@ -9,17 +9,17 @@
   padding-bottom: 5rem;
 } */
 
-.newsletter__wrapper {
+/* .newsletter__wrapper {
   padding-right: 4rem;
   padding-left: 4rem;
-}
+} */
 
-@media screen and (min-width: 990px) {
+/* @media screen and (min-width: 990px) {
   .newsletter__wrapper {
     padding-right: 9rem;
     padding-left: 9rem;
   }
-}
+} */
 
 .newsletter__wrapper > * {
   margin-top: 0;

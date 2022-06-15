@@ -143,14 +143,14 @@ https://flickity.metafizzy.co
     }
 }
 .flickity-page-dots {
-  position:absolute;
+  position:relative;
   width:100%;
-  bottom:-25px;
   padding:0;
   margin:0;
   list-style:none;
   text-align:center;
   line-height:1;
+  margin-top: 3rem!important;
  }
 .flickity-rtl .flickity-page-dots {
   direction:rtl;
@@ -180,7 +180,7 @@ https://flickity.metafizzy.co
     height: 100%!important;
 } */
   .flickity-page-dots{
-    bottom:25px;
+    bottom: 50px;
   }
 }
 

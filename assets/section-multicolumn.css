@@ -8,6 +8,7 @@
 
 .multicolumn .title-wrapper-with-link {
   margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 989px) {
@@ -23,7 +24,7 @@
 }
 
 .collection.page-width.page-width-desktop.aos-init.aos-animate {
-    
+
 }
 
 .multicolumn-card__image-wrapper--third-width {
@@ -42,12 +43,12 @@
 }
 
 .multicolumn .button {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 990px) {
   .multicolumn .button {
-    margin-top: 4rem;
+    margin-top: 0;
   }
 }
 

@@ -20,7 +20,7 @@
       class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} page-width-desktop">
 <div class="section-{{ section.id }}-padding isolate">
 
-<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
+<div class="newsletter {% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }}">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
