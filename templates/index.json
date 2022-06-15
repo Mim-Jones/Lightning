@@ -458,8 +458,10 @@
         "16552109814baecad8-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online_9d9b00d7-1c33-4690-92aa-9601f65eaca3.jpg",
+        "image_2": "shopify:\/\/shop_images\/16.png",
         "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
