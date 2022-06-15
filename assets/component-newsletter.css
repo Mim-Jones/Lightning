@@ -12,17 +12,14 @@
 }
 
 @media screen and (min-width: 990px) {
-  .newsletter {
-  text-align: center;
-  }
-}
-
-@media screen and (min-width: 990px) {
   .newsletter-form {
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
     max-width: 65rem;
+  }
+  .newsletter {
+    text-align: center;
   }
 }
 
