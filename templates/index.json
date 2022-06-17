@@ -58,7 +58,6 @@
     },
     "16502652433543476c": {
       "type": "background-video-banner",
-      "disabled": true,
       "blocks": {
         "16502652435e7de976-0": {
           "type": "video",
