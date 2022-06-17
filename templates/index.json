@@ -11,10 +11,10 @@
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
             "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/pages\/contact-us",
             "button_style_secondary_1": false,
             "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/pages\/faqs",
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
             "show_text_box": true,
@@ -353,6 +353,7 @@
     },
     "165521088310efa17f": {
       "type": "newsletter",
+      "disabled": true,
       "blocks": {
         "1655210883369c9be3-0": {
           "type": "heading",
@@ -385,6 +386,7 @@
     },
     "16552109615cf17206": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "16552109614bb4093c-0": {
           "type": "video",
@@ -427,6 +429,7 @@
     },
     "16552109810eb967c0": {
       "type": "image-banner-2",
+      "disabled": true,
       "blocks": {
         "16552109814baecad8-0": {
           "type": "heading",
@@ -468,6 +471,7 @@
     },
     "16552110256cc173d7": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Video",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -479,6 +483,7 @@
     },
     "1655211038b3150bd2": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
