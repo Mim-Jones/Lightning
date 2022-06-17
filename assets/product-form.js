@@ -31,7 +31,7 @@ class ProductForm extends HTMLElement {
       .then((response) => response.json())
       .then((data) => {
       
-        document.getElementById("CartCount").innerHTML= data.item_count;
+       
         var SectionHtml = data['cart-items'] ;
         var IDminiCart = document.getElementById("mini-cart");
         var IDminiCartMask = document.getElementById("minibag_mask");
@@ -41,6 +41,12 @@ class ProductForm extends HTMLElement {
 //         document.body.style.overflow = "hidden";
         IDminiCartMask.style.display = 'block';
         
+
+      });
+      fetch('/cart.js')
+      .then((response) => response.json())
+      .then((cart) => {
+        document.getElementById("CartCount").innerHTML= cart.item_count;
 
       });
       console.log("notification off");
