@@ -497,6 +497,54 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1655488874e6c7063e": {
+      "type": "background-video-banner",
+      "blocks": {
+        "1655488874e98288c7-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        },
+        "69aefedd-1d47-4439-a67c-a6d3b7b78c58": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1655488874e98288c7-0",
+        "69aefedd-1d47-4439-a67c-a6d3b7b78c58"
+      ],
+      "settings": {
+        "adapt_height_first_image": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -513,6 +561,7 @@
     "16552109615cf17206",
     "16552109810eb967c0",
     "16552110256cc173d7",
-    "1655211038b3150bd2"
+    "1655211038b3150bd2",
+    "1655488874e6c7063e"
   ]
 }
