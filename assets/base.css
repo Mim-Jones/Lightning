@@ -2254,8 +2254,8 @@ details-disclosure > details {
     margin-bottom: 10rem;
 }
 
-  .flickity-page-dots {
+.flickity-page-dots {
     max-width: fit-content;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
