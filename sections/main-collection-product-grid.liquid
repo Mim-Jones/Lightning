@@ -196,7 +196,7 @@
             <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
           {% endif %}
 
-       <div class="collection-productcount-container">
+       <div class="collection-filters__item">
           <p id="CollectionProductCountDesktop" class="collection-product-count light" role="status">
                   <span class="product-title">{{- collection.title | escape -}}</span>
 
@@ -206,7 +206,7 @@
               {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
             {%- endif -%}
           </p>
-      </div>
+       </div>
 
           {%- if section.settings.enable_sorting -%}
             <div class="collection-filters__item sorting caption">

@@ -58,13 +58,14 @@
   line-height: 1.4;
   margin: 0;
   text-align: left;
-  font-weight: 600;
-  margin-left: 1.5rem;
-
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
 }
- .collection-productcount-container {
-     align-self: center;
 
+ .collection-productcount-container {
+  align-self: center;
+  margin-top: 0.25rem;
  }
 
   @media (min-width: 990px) {
@@ -141,7 +142,6 @@
 .collection-filters__item {
   display: flex;
   align-items: flex-start;
-  grid-column: 2;
   grid-row: 1;
   margin-bottom: 3rem;
 }
@@ -397,7 +397,6 @@ button.facets__button {
 
 span.active-facets__button-inner {
   color: rgb(var(--color-foreground));
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
   border-radius: 2.6rem;
   font-size: 1rem;
   min-height: 0;
@@ -437,7 +436,8 @@ span.active-facets__button-inner {
 }
 
 .active-facets__button:hover .active-facets__button-inner {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-foreground));
+  color: rgba(var(--color-link), var(--alpha-link));
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-link), 0.6);
 }
 
 .active-facets__button--light .active-facets__button-inner {
@@ -445,7 +445,7 @@ span.active-facets__button-inner {
 }
 
 .active-facets__button--light:hover .active-facets__button-inner {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 0.4);
+
 }
 
 a.active-facets__button:focus-visible,
@@ -454,21 +454,25 @@ a.active-facets__button:focus {
   box-shadow: none;
 }
 
-a.active-facets__button:focus-visible .active-facets__button-inner,
+/* a.active-facets__button:focus-visible .active-facets__button-inner,
 a.active-facets__button:focus .active-facets__button-inner {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2),
     0 0 0 0.2rem rgb(var(--color-background)),
     0 0 0 0.4rem rgb(var(--color-foreground));
   outline: none;
-}
+} */
 
 .active-facets__button svg {
   width: 1rem;
   margin-left: 0.6rem;
   pointer-events: none;
   position: relative;
-  top: 0.1rem;
 }
+
+a.active-facets__button:hover  .a {
+  stroke: rgba(var(--color-link), var(--alpha-link));
+}
+
 
 @media all and (min-width: 990px) {
   .active-facets__button svg {
@@ -632,6 +636,7 @@ a.active-facets__button:focus .active-facets__button-inner {
 
 .mobile-facets__open > * + * {
   margin-left: 1rem;
+  margin-right: 3.5rem;
 }
 
 .mobile-facets__open svg {
