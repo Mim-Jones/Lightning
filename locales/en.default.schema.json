@@ -53,7 +53,7 @@
           "label": "Main background color"
         },
         "colors_background_2": {
-          "label": "Button text color banner"
+          "label": "Secondary background color"
         },
         "colors_slider_button_background": {
           "label": "Slider button background",

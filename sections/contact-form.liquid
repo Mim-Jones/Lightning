@@ -1,6 +1,10 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-<div class="contact page-width page-width--narrow spaced-section">
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="700"
+     data-aos-once= "true"
+     class="contact page-width page-width--narrow spaced-section">
   <h2 class="title">{{ section.settings.heading | escape }}</h2>
   {%- form 'contact', id: 'ContactForm' -%}
     {%- if form.posted_successfully? -%}
