@@ -396,17 +396,13 @@
           "type": "product",
           "settings": {
             "product": "",
-            "secondary_background": false,
-            "second_image": false,
-            "image_padding": false
+            "second_image": false
           }
         },
         "16552109614bb4093c-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
+            "collection": ""
           }
         }
       },
@@ -529,12 +525,51 @@
         "1655809560a0f18c8f-2"
       ],
       "settings": {
-        "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "1655814493dc57b573": {
+      "type": "collage",
+      "blocks": {
+        "1655814493330b6db2-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "1655814493330b6db2-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "1655814493330b6db2-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655814493330b6db2-0",
+        "1655814493330b6db2-1",
+        "1655814493330b6db2-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -553,6 +588,7 @@
     "16552109810eb967c0",
     "16552110256cc173d7",
     "1655211038b3150bd2",
-    "1655809560b0967817"
+    "1655809560b0967817",
+    "1655814493dc57b573"
   ]
 }
