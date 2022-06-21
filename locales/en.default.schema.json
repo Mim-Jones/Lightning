@@ -819,6 +819,18 @@
           "settings": {
             "text": {
               "label": "Description"
+            },
+            "text_style": {
+              "options__1": {
+                "label": "Body"
+              },
+              "options__2": {
+                "label": "Subtitle"
+              },
+              "options__3": {
+                "label": "Uppercase"
+              },
+              "label": "Text style"
             }
           }
         },
@@ -868,35 +880,75 @@
           "options__3": {
             "label": "Large"
           },
-          "label": "Image ratio"
+          "label": "Image height"
         },
-        "color_scheme": {
+        "desktop_image_width": {
           "options__1": {
-            "label": "Background 1"
+            "label": "Small"
           },
           "options__2": {
-            "label": "Background 2"
+            "label": "Medium"
           },
           "options__3": {
-            "label": "Inverse"
+            "label": "Large"
           },
-          "options__4": {
-            "label": "Accent 1"
-          },
-          "options__5": {
-            "label": "Accent 2"
-          },
-          "label": "Color scheme"
+          "label": "Desktop image width",
+          "info": "Image is automatically optimized for mobile."
         },
         "layout": {
           "options__1": {
             "label": "Image first"
           },
           "options__2": {
-            "label": "Text first"
+            "label": "Image second"
           },
-          "label": "Desktop layout",
+          "label": "Desktop image placement",
           "info": "Image first is the default mobile layout."
+        },
+        "desktop_content_alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Desktop content alignment"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Top"
+          },
+          "options__2": {
+            "label": "Middle"
+          },
+          "options__3": {
+            "label": "Bottom"
+          },
+          "label": "Desktop content position"
+        },
+        "content_layout": {
+          "options__1": {
+            "label": "No overlap"
+          },
+          "options__2": {
+            "label": "Overlap"
+          },
+          "label": "Content layout"
+        },
+        "mobile_content_alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Mobile content alignment"
         }
       },
       "blocks": {
@@ -908,11 +960,49 @@
             }
           }
         },
+        "caption": {
+          "name": "Caption",
+          "settings": {
+            "text": {
+              "label": "Text"
+            },
+            "text_style": {
+              "label": "Text style",
+              "options__1": {
+                "label": "Subtitle"
+              },
+              "options__2": {
+                "label": "Uppercase"
+              }
+            },
+            "caption_size": {
+              "label": "Text size",
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Large"
+              }
+            }
+          }
+        },
         "text": {
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Description"
+              "label": "Content"
+            },
+            "text_style": {
+              "label": "Text style",
+              "options__1": {
+                "label": "Body"
+              },
+              "options__2": {
+                "label": "Subtitle"
+              }
             }
           }
         },
