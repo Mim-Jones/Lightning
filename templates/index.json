@@ -65,6 +65,7 @@
             "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
             "video_url": "",
             "description": "",
+            "full_width": true,
             "heading": "700 Years Of Bavarian Beer",
             "heading_size": "medium",
             "text": "Authentic German Beer Delivered to Your Door",
@@ -81,6 +82,7 @@
             "video_link": "",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
+            "full_width": false,
             "heading": "Video banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -97,9 +99,7 @@
         "19345187-704e-4053-a2fc-26b6438b03ca"
       ],
       "settings": {
-        "adapt_height_first_image": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "adapt_height_first_image": false
       }
     },
     "163793031265aa8c20": {
@@ -327,6 +327,7 @@
             "video_link": "",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
+            "full_width": false,
             "heading": "Video banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -342,9 +343,7 @@
         "1652786177525ce49d-0"
       ],
       "settings": {
-        "adapt_height_first_image": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "adapt_height_first_image": false
       }
     },
     "165521088310efa17f": {
@@ -413,8 +412,10 @@
       ],
       "settings": {
         "heading": "Multimedia collage",
+        "heading_size": "h1",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
