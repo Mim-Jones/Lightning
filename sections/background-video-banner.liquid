@@ -1,50 +1,29 @@
 {{ 'section-only-image-video-banner.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
+  @media screen and (min-width: 990px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="section-{{ section.id }}-padding isolate">
 
 <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="700" class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
+     data-aos-once= "true"
+     data-aos-duration="700"
+     class="banner-wrap page-width-desktop {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}" >
+
   {%- for block in section.blocks -%}
-  <style>
-    #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
-    #Banner_{{ block.id | remove:"-"}} .banner__text h2{
-      color:{{settings.banner_color_text}};
-    }
-    @media(max-width:989px){
-     #Banner_{{ block.id | remove:"-"}} .banner__heading h1,
-      #Banner_{{ block.id | remove:"-"}}  .banner__text h2{
-       color:{{settings.banner_color_text_mob}};
-    }
-    .banner__button {
-        background-color: {{settings.mobile_btn_background_color}}!important;
-        color: {{settings.mobile_btn_color_text}}!important;
-    }
-    a.button.button--primary.banner__button:hover {
-        background-color: {{settings.mobile_btn_hover_color}}!important;
-        opacity: 0.5;
-        box-shadow: 0 0 0 0.1rem {{settings.mobile_btn_hover_color}}!important;
-    }
-    }
-    @media(min-width:990px){
-    .banner__button  {
-        background-color: {{settings.btn_background_color}}!important;
-        color: {{settings.btn_color_text}}!important;
-    }
-    a.button.button--primary.banner__button:hover {
-        background-color: {{settings.btn_hover_color}}!important;
-        opacity: 0.5;
-        box-shadow: 0 0 0 0.1rem {{settings.mobile_btn_hover_color}}!important;
-    }
-    }
-    .full_width_true video.video-item {
-      left: 0!important;
-      width: 100%!important;
-    }
 
 
-  </style>
-
-
+ 
   {% capture vBottomContent %}
   <div id="Banner_{{ block.id | remove:"-"}}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} " {{ block.shopify_attributes }}>
       <div class="banner__box color-{{ settings.mobile_background_color }}">
