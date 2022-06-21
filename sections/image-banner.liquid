@@ -96,11 +96,57 @@
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
- 
 
-    <div class="img_section " section="image-banner" {{ block.shopify_attributes }}>
+    <div class="img_section" {{ block.shopify_attributes }}>
 
- 
+  {%- style -%}
+  #Banner-{{ block.id }}::after {
+  opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+  {%- endstyle -%}
+  {%- if section.settings.adapt_height_first_image and block.settings.image != blank -%}
+  {%- style -%}
+
+
+
+  @media screen and (max-width: 989px) {
+  #Banner-{{ block.id }}::before,
+  #Banner-{{ block.id }} .banner__media::before,
+  #Banner-{{ block.id }}:not(.banner--mobile-bottom) .banner__content::before {
+  padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 200 }}%;
+  content: '';
+  display: block;
+  }
+
+  .banner__media, .banner--mobile-bottom .banner__content{}
+  #Banner-{{ block.id }}{ display: block!important;}
+  .hide_in_mobile{
+  display:none!important;
+  }
+  .show_in_mobile{
+  display:block;
+  }
+
+  }
+
+  @media screen and (min-width: 990px) {
+  #Banner-{{ block.id }}::before,
+  #Banner-{{ block.id }} .banner__media::before {
+  padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;
+  content: '';
+  display: block;
+  }
+  .hide_in_mobile{
+  display:block;
+  }
+  .show_in_mobile, .hide_in_desktop {
+  display:none!important;
+  }
+  }
+
+
+  {%- endstyle -%}
+  {%- endif -%}
 
       {% capture bottomcontent %}
       <div id="Banner-{{ block.id | remove:"-" }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
@@ -152,63 +198,6 @@
   {%- endfor -%}
   </div>
 </div>
-
-
-
-
-  {%- for block in section.blocks -%}
-  {%- case block.type -%}
-  {%- when 'image' -%}
-   {%- style -%}
-  #Banner-{{ block.id }}::after {
-  opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
-  {%- endstyle -%}
-  {%- if section.settings.adapt_height_first_image and block.settings.image != blank -%}
-  {%- style -%}
-
-
-
-  @media screen and (max-width: 989px) {
-  #Banner-{{ block.id }}::before,
-  #Banner-{{ block.id }} .banner__media::before,
-  #Banner-{{ block.id }}:not(.banner--mobile-bottom) .banner__content::before {
-  padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 200 }}%;
-  content: '';
-  display: block;
-  }
-
-  .banner__media, .banner--mobile-bottom .banner__content{}
-  #Banner-{{ block.id }}{ display: block!important;}
-  .hide_in_mobile{
-  display:none!important;
-  }
-  .show_in_mobile{
-  display:block;
-  }
-
-  }
-
-  @media screen and (min-width: 990px) {
-  #Banner-{{ block.id }}::before,
-  #Banner-{{ block.id }} .banner__media::before {
-  padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;
-  content: '';
-  display: block;
-  }
-  .hide_in_mobile{
-  display:block;
-  }
-  .show_in_mobile, .hide_in_desktop {
-  display:none!important;
-  }
-  }
-
-
-  {%- endstyle -%}
-  {%- endif -%}
-{%- endcase -%}
-  {%- endfor -%}
 
 {% schema %}
 {
