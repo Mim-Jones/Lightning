@@ -153,7 +153,7 @@ slider-component .slider-buttons {
 }
 
 .slider-buttons--overlay .slider-button + .slider-button {
-  margin-right: -1px;
+  margin-right: 3rem;
 }
 
 .slider-button .icon {

@@ -1,4 +1,31 @@
+.product__title {
+    margin: 0;
+}
+div.product-heading-container {
+    margin: 0;
+}
 
+@media screen and (min-width: 990px) {
+    .product-heading-container-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .product-heading-container {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 989px) {
+    .product-heading-container-mobile:nth-last-child(2) {
+        margin-bottom: 3rem;
+    }
+    .product-heading-container-mobile:nth-child(1) {
+        margin-top: 3rem;
+    }
+}
 .product--no-media {
   max-width: 57rem;
   margin: 0 auto;
