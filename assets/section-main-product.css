@@ -1,6 +1,3 @@
-.product {
-  margin-top: 1.5rem;
-}
 
 .product--no-media {
   max-width: 57rem;
@@ -49,6 +46,7 @@
     padding-right: 1rem;
     max-width: 36%;
     width: calc(36% - 1rem / 2);
+    margin-top: 3rem;
   }
 }
 
