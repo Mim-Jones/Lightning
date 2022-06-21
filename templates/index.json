@@ -65,7 +65,7 @@
             "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
             "video_url": "",
             "description": "",
-            "full_width": true,
+            "full_width": false,
             "heading": "700 Years Of Bavarian Beer",
             "heading_size": "medium",
             "text": "Authentic German Beer Delivered to Your Door",
@@ -469,9 +469,7 @@
         "heading": "Video",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "full_width": true
       }
     },
     "1655211038b3150bd2": {
