@@ -96,10 +96,7 @@
   {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'image' -%}
-
-    <div class="img_section" {{ block.shopify_attributes }}>
-
-  {%- style -%}
+   {%- style -%}
   #Banner-{{ block.id }}::after {
   opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
@@ -147,6 +144,10 @@
 
   {%- endstyle -%}
   {%- endif -%}
+
+    <div class="img_section" {{ block.shopify_attributes }}>
+
+ 
 
       {% capture bottomcontent %}
       <div id="Banner-{{ block.id | remove:"-" }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
