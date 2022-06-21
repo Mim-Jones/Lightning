@@ -22,10 +22,10 @@
      data-aos-easing="linear"
      data-aos-duration="700"
      data-aos-once= "true"
-     class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+     class="isolate{% unless section.settings.full_width %} page-width-desktop {% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+      <div class="rich-text__blocks--{{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
@@ -62,27 +62,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "desktop_content_position",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__2.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.rich-text.settings.desktop_content_position.options__3.label"
-        }
-      ],
-      "default": "center",
-      "label": "t:sections.rich-text.settings.desktop_content_position.label",
-      "info": "t:sections.rich-text.settings.desktop_content_position.info"
-    },
     {
       "type": "select",
       "id": "content_alignment",
