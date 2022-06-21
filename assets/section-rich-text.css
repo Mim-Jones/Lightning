@@ -1,14 +1,38 @@
 .rich-text {
-  margin: auto;
-  max-width: 110rem;
-  text-align: center;
-  /* 1.5rem margin on left & right */
-  width: calc(100% - 3rem);
+  z-index: 1;
 }
 
-.rich-text.rich-text--full-width {
-  max-width: initial;
+.rich-text__wrapper {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 4rem / var(--font-body-scale));
+}
+
+.rich-text:not(.rich-text--full-width) .rich-text__wrapper {
+  margin: auto;
+  width: calc(100% - 8rem / var(--font-body-scale));
+}
+
+.rich-text__blocks {
   width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text__wrapper {
+    width: 100%;
+  }
+
+  .rich-text__wrapper--left {
+    justify-content: flex-start;
+  }
+
+  .rich-text__wrapper--right {
+    justify-content: flex-end;
+  }
+
+  .rich-text__blocks {
+    max-width: 50rem;
+  }
 }
 
 .rich-text__blocks {
