@@ -65,7 +65,6 @@
             "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0379\/6097\/4467\/files\/ABK-Beer-movie.mp4?v=1641212201",
             "video_url": "",
             "description": "",
-            "full_width": true,
             "heading": "700 Years Of Bavarian Beer",
             "heading_size": "medium",
             "text": "Authentic German Beer Delivered to Your Door",
@@ -82,7 +81,6 @@
             "video_link": "",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
-            "full_width": true,
             "heading": "Video banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -329,7 +327,6 @@
             "video_link": "",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "",
-            "full_width": false,
             "heading": "Video banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -497,6 +494,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1655809560b0967817": {
+      "type": "rich-text",
+      "blocks": {
+        "1655809560a0f18c8f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1655809560a0f18c8f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1655809560a0f18c8f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1655809560a0f18c8f-0",
+        "1655809560a0f18c8f-1",
+        "1655809560a0f18c8f-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -513,6 +552,7 @@
     "16552109615cf17206",
     "16552109810eb967c0",
     "16552110256cc173d7",
-    "1655211038b3150bd2"
+    "1655211038b3150bd2",
+    "1655809560b0967817"
   ]
 }
