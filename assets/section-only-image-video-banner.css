@@ -542,8 +542,8 @@ https://flickity.metafizzy.co
     }
     @media screen and (min-width:990px) {
       .video-wrapper video {
-    	left:5%;
-        width: 90%;
+    	left:0%;
+        width: 100%;
       }
     }
 
