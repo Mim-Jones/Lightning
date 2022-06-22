@@ -52,7 +52,7 @@
           "logo": "shopify:\/\/shop_images\/ABK-beer-Black-logo-2.png",
           "logo_width": 80,
           "logo_position": "middle-left",
-          "menu": "abk-lightning-nav",
+          "menu": "main-menu-new",
           "show_line_separator": false,
           "menu_hover": true,
           "hide_account_icon": true,
