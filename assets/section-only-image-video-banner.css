@@ -73,10 +73,10 @@ https://flickity.metafizzy.co
 
 }
 .flickity-prev-next-button.previous {
-  left:5%;
+  left:6%;
 }
 .flickity-prev-next-button.next {
-  right:5%;
+  right:6%;
 }
 .flickity-rtl .flickity-prev-next-button.previous {
   left:auto;
