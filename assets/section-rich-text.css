@@ -15,7 +15,6 @@
 .rich-text {
   max-width: 110rem;
   /* 1.5rem margin on left & right */
-  width: calc(100% - 3rem);
 }
 
 .rich-text__buttons {
@@ -42,11 +41,6 @@
   width: calc(100% - 8rem);
 }
 
-.rich-text:not(.rich-text--full-width),
-.rich-text--full-width.color-background-1 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
 
 .rich-text:not(.color-background-1) {
   padding-top: 5rem;
