@@ -7,9 +7,9 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online_9d9b00d7-1c33-4690-92aa-9601f65eaca3.jpg",
-            "heading": "Image banner 1",
-            "heading_size": "medium",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "heading": "ABK Beer Delivered to Your Door",
+            "heading_size": "large",
+            "text": "700 Years Of Good Times & Bavarian Beer",
             "button_label_1": "Button label",
             "button_link_1": "shopify:\/\/pages\/contact-us",
             "button_style_secondary_1": false,
@@ -25,9 +25,10 @@
         },
         "16527856853ce05e21-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_ABK_Edel_a_export_lager_Beer_online.jpg",
-            "heading": "Image banner",
+            "heading": "ABK Beer 700 Years Of Good Times & Beer",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
             "button_label_1": "Button label",
@@ -57,6 +58,7 @@
     },
     "16502652433543476c": {
       "type": "background-video-banner",
+      "disabled": true,
       "blocks": {
         "16502652435e7de976-0": {
           "type": "video",
