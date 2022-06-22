@@ -572,6 +572,42 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16559023329376dc75": {
+      "type": "image-with-text",
+      "blocks": {
+        "165590233226966e74-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Did You Know?"
+          }
+        },
+        "165590233226966e74-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The ABK Brewery is likely even older than 700 years.<\/strong> The oldest documents we have date back to 700 years ago but even before that it was owned privately for decades. <\/p>"
+          }
+        },
+        "165590233226966e74-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165590233226966e74-0",
+        "165590233226966e74-1",
+        "165590233226966e74-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/abk-beer-700-years-of-drinking_d9c724e3-c18a-4894-9a51-18fd219bdc9d.jpg",
+        "height": "small",
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -590,6 +626,7 @@
     "16552110256cc173d7",
     "1655211038b3150bd2",
     "1655809560b0967817",
-    "1655814493dc57b573"
+    "1655814493dc57b573",
+    "16559023329376dc75"
   ]
 }
