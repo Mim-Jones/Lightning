@@ -183,7 +183,7 @@
                        {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | img_url: '3840x' }} 3840w,{%- endif -%}"
                sizes="{% if block.settings.stack_images_on_mobile %}(min-width: 990px) 50vw, 100vw{% else %}100vw{% endif %}"
                src="{{ block.settings.image | img_url: '1500x' }}"
-               loading="lazy"
+               loading="eager"
                alt="{{ block.settings.image.alt | escape }}"
                width="{{ block.settings.image.width }}"
                height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"  >
