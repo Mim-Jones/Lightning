@@ -294,8 +294,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Buy_ABK_Hell_Beer_Online.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/Buy-ABK-Beer-Online.jpg",
+        "height": "small",
         "layout": "image_first",
         "padding_top": 0,
         "padding_bottom": 36
