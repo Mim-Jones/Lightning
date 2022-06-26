@@ -63,6 +63,9 @@
     height: 0;
     padding-bottom: var(--ratio-percent);
 }
+.card--extend-height {
+    height: 100%;
+}
 .card--card:after, .card--standard .card__inner:after {
     content: "";
     position: absolute;
