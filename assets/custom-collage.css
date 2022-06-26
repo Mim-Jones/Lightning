@@ -92,8 +92,7 @@
 
 
 
-/* full card*/
-.card-wrapper {
+/* full card*/.card-wrapper {
   color: inherit;
   height: 100%;
   position: relative;
@@ -335,7 +334,7 @@
 }
 
 .card--extend-height {
-  height: 100%;
+  height: 100%; 
 }
 
 .card--extend-height.card--standard.card--text,
@@ -390,3 +389,4 @@
 .card-article-info {
   margin-top: 1rem;
 }
+
