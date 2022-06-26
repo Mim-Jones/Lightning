@@ -212,6 +212,7 @@
   position: absolute;
   bottom: 0;
   right: 2rem;
+  --alpha-button-background: 0;
 }
 
 @media screen and (min-width: 990px) {

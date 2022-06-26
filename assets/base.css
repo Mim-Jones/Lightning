@@ -68,6 +68,18 @@
 }
 
 .button--secondary {
+  --color-button-text: var(--color-base-outline-button-labels);
+  --alpha-button-background: 0;
+  border: 1px solid rgba(var(--color-button))!important;
+}
+
+.button--secondary-banner {
+  --color-button-text: var(--color-base-outline-button-labels);
+  --alpha-button-background: 0;
+  border: 1px solid rgba(var(--color-button))!important;
+}
+
+.sticky-atc-btn {
   --color-button: var(--color-base-outline-button-labels);
   --color-button-text: var(--color-base-outline-button-labels);
   --alpha-button-background: 0;
