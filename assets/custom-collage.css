@@ -66,6 +66,12 @@
 .card--extend-height {
     height: 100%;
 }
+.card-wrapper {
+    color: inherit;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
 .card--card:after, .card--standard .card__inner:after {
     content: "";
     position: absolute;
