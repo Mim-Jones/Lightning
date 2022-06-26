@@ -15,7 +15,7 @@
             "button_style_secondary_1": false,
             "button_label_2": "Our History",
             "button_link_2": "shopify:\/\/pages\/faqs",
-            "button_style_secondary_2": false,
+            "button_style_secondary_2": true,
             "desktop_text_box_position": "center",
             "show_text_box": true,
             "image_overlay_opacity": 20,
@@ -472,7 +472,6 @@
     },
     "1655809560b0967817": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1655809560a0f18c8f-0": {
           "type": "heading",
@@ -491,8 +490,8 @@
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
+            "button_link": "shopify:\/\/pages\/contact-us",
+            "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
