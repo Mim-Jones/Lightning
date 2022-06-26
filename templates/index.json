@@ -513,7 +513,6 @@
     },
     "1655814493dc57b573": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "1655814493330b6db2-0": {
           "type": "video",
@@ -526,8 +525,8 @@
         "1655814493330b6db2-1": {
           "type": "product",
           "settings": {
-            "product": "",
-            "second_image": false
+            "product": "hell-abk-beer-shop",
+            "second_image": true
           }
         },
         "1655814493330b6db2-2": {
