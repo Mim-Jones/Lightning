@@ -1,1 +1,4 @@
- 
+ .card--extend-height.card--standard.card--text, .card--extend-height.card--media {
+    display: flex;
+    flex-direction: column;
+}
