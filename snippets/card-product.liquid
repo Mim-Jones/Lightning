@@ -32,7 +32,7 @@
   -%}
   <div class="card-wrapper underline-links-hover">
     <div class="card
-      card--{{ settings.card_style | default:"standard"}}
+      card--{{ settings.card_style }}
       {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
       {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
       {% if extend_height %} card--extend-height{% endif %}
