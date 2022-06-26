@@ -361,7 +361,6 @@
     },
     "16552109615cf17206": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "16552109614bb4093c-0": {
           "type": "video",
@@ -374,14 +373,14 @@
         "16552109614bb4093c-1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "dunkel-abkbrewery",
             "second_image": false
           }
         },
         "16552109614bb4093c-2": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "view-all-our-beers"
           }
         }
       },
