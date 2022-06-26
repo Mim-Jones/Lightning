@@ -5,3 +5,12 @@
 .card--extend-height.card--standard.card--text .card__inner, .card--extend-height.card--media .card__inner {
     flex-grow: 1;
 }
+.card--standard>.card__content {
+    padding: 0;
+}
+.card__content {
+    display: grid;
+    grid-template-rows: minmax(0,1fr) max-content minmax(0,1fr);
+    padding: 1rem;
+    width: 100%;
+}
