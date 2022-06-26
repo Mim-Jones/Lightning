@@ -34,3 +34,6 @@
     overflow: hidden;
     z-index: 0;
 }
+.card .media {
+    width: 100%;
+}
