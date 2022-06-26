@@ -14,3 +14,7 @@
     padding: 1rem;
     width: 100%;
 }
+.card--standard>.card__content .card__information {
+    padding-left: 0;
+    padding-right: 0;
+}
