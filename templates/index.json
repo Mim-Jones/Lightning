@@ -18,9 +18,9 @@
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
             "image_overlay_opacity": 20,
-            "show_text_box": true,
-            "color_scheme": "background-2",
-            "stack_images_on_mobile": false
+            "show_text_box": false,
+            "color_scheme": "accent-2",
+            "stack_images_on_mobile": true
           }
         }
       },
