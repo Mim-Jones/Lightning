@@ -20,8 +20,7 @@
             "image_overlay_opacity": 20,
             "show_text_box": true,
             "color_scheme": "background-2",
-            "textbox_overlay_opacity": 50,
-            "stack_images_on_mobile": true
+            "stack_images_on_mobile": false
           }
         }
       },
