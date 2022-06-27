@@ -183,7 +183,7 @@
       </div>
       {% endcapture %}
 
-      <div id="Banner-{{ block.id }}" class="banner{% if block.settings.stack_images_on_mobile and block.settings.image != blank %} banner--stacked {% endif %}{% if section.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt {% endif %}{% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+      <div id="Banner-{{ block.id }}" class="banner{% if block.settings.stack_images_on_mobile and block.settings.image != blank %} banner--stacked {% endif %}{% if section.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt {% endif %}{% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% else %} banner-box{% endif %}">
         {%- if block.settings.image != blank -%}
         <div class="banner__media media{% if section.settings.image == blank  %} placeholder{% endif %}">
           <img
