@@ -46,6 +46,11 @@
       opacity: 0.5;
       box-shadow: 0 0 0 0.1rem {{settings.btn_hover_color}}!important;
   }
+  .banner__box::after {
+      opacity: {{ block.settings.textbox_overlay_opacity | divided_by: 100.0 }};
+
+  }
+
   }
 
 /*     .banner-wrap {
@@ -359,14 +364,6 @@
       "default": "center",
       "label": "t:sections.image-banner.settings.desktop_text_box_position.label"
     },
-
-    {
-      "type": "checkbox",
-      "id": "show_text_box",
-      "default": true,
-      "label": "t:sections.image-banner.settings.show_text_box.label"
-    },
-
     {
       "type": "range",
       "id": "image_overlay_opacity",
@@ -376,6 +373,12 @@
       "unit": "%",
       "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": false,
+      "label": "t:sections.image-banner.settings.show_text_box.label"
     },
     {
       "type": "select",
@@ -405,6 +408,16 @@
       "default": "background-1",
       "label": "t:sections.image-banner.settings.color_scheme.label",
       "info": "t:sections.image-banner.settings.color_scheme.info"
+    },
+    {
+      "type": "range",
+      "id": "textbox_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Text box overlay opacity",
+      "default": 0
     },
     {
       "type": "header",
