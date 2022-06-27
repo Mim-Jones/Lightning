@@ -20,7 +20,7 @@
             "image_overlay_opacity": 20,
             "show_text_box": false,
             "color_scheme": "accent-2",
-            "stack_images_on_mobile": false
+            "stack_images_on_mobile": true
           }
         }
       },
@@ -28,8 +28,8 @@
         "16527856853ce05e21-0"
       ],
       "settings": {
-        "image_height": 0,
-        "image_height_mob": 400,
+        "image_height": 600,
+        "image_height_mob": 300,
         "padding_top": 0,
         "padding_bottom": 0
       }
