@@ -101,13 +101,13 @@
     }
   {%- endstyle -%}
 {%- endfor -%}
-    <div class="section-{{ section.id }}-padding isolate">
+    <div class="section-{{ section.id }}-padding isolate page-width-desktop">
 <div sectionName="{{section.name}}"
      data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-once= "true"
      data-aos-duration="700"
-     class="banner-wrap page-width-desktop {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}"
+     class="banner-wrap {% if section.blocks.size > 1 %}slider-implement main-carousel{% endif %}"
      {% if section.blocks.size > 1 %}
      {% endif %} >
 
