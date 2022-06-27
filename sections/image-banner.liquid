@@ -16,6 +16,13 @@
       background-color: {{settings.mobile_btn_background_color}}!important;
       color: {{settings.mobile_btn_color_text}}!important;
   }
+
+  a.button.button--secondary-banner {
+    color: {{settings.mobile_btn_background_color}}!important;
+    --alpha-button-background: 0;
+    border: 1px solid {{settings.mobile_btn_background_color}}!important;
+  }
+
   a.button.button--primary.banner__button:hover {
       background-color: {{settings.mobile_btn_hover_color}}!important;
       opacity: 0.5;
@@ -27,6 +34,13 @@
       background-color: {{settings.btn_background_color}}!important;
       color: {{settings.btn_color_text}}!important;
   }
+
+  a.button.button--secondary-banner {
+    color: {{settings.btn_background_color}}!important;
+    --alpha-button-background: 0;
+    border: 1px solid {{settings.btn_background_color}}!important;
+  }
+
   a.button.button--primary.banner__button:hover {
       background-color: {{settings.btn_hover_color}}!important;
       opacity: 0.5;
@@ -159,10 +173,10 @@
           </div>
           <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
             {%- if block.settings.button_label_1 != blank -%}
-            <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button button--primary banner__button"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+            <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button {% if block.settings.button_style_secondary_1 %} button--secondary-banner{% else %} banner__button{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
             {%- endif -%}
             {%- if block.settings.button_label_2 != blank -%}
-            <a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button button--primary banner__button"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
+            <a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button {% if block.settings.button_style_secondary_2 %} button--secondary-banner{% else %} banner__button{% endif %}"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
             {%- endif -%}
           </div>
         </div>
@@ -302,6 +316,12 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
         },
         {
+          "type": "checkbox",
+          "id": "button_style_secondary_1",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        },
+        {
           "type": "text",
           "id": "button_label_2",
           "default": "Button label",
@@ -312,6 +332,12 @@
           "type": "url",
           "id": "button_link_2",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_2",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         },
         {
       "type": "select",
