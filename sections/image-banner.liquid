@@ -167,7 +167,7 @@
   {%- endif -%}
 
       {% capture bottomcontent %}
-      <div id="Banner-{{ block.id | remove:"-" }}" class="banner banner__content--{{ block.settings.desktop_text_box_position }} page-width">
+      <div id="Banner-{{ block.id | remove:"-" }}" class="banner__content banner__content--{{ block.settings.desktop_text_box_position }} page-width">
         <div class="banner__box color-{{ block.settings.color_scheme }}">
           <div  class="mobcolor:{{settings.banner_color_text_mob}}  color:{{settings.banner_color_text}} banner__heading" {{ block.shopify_attributes }}>
             <h2 class="{% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}">{{ block.settings.heading }}</h2>
@@ -187,7 +187,7 @@
       </div>
       {% endcapture %}
 
-      <div id="Banner-{{ block.id }}" class="banner{% if block.settings.stack_images_on_mobile and block.settings.image != blank %} banner--stacked {% endif %}{% if section.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt {% endif %}{% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% else %} banner-box{% endif %}">
+      <div id="Banner-{{ block.id }}" class="banner banner__content{% if block.settings.stack_images_on_mobile and block.settings.image != blank %} banner--stacked {% endif %}{% if section.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt {% endif %}{% if block.settings.show_text_below %}{%- endif -%} banner--mobile-bottom{% if block.settings.show_text_box == false %} banner--desktop-transparent{% else %} banner-box{% endif %}">
         {%- if block.settings.image != blank -%}
         <div class="banner__media media{% if section.settings.image == blank  %} placeholder{% endif %}">
           <img
