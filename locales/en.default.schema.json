@@ -876,7 +876,7 @@
           "label": "Show container on desktop"
         },
         "image_overlay_opacity": {
-          "label": "Image overlay opacity"
+          "label": "Desktop image overlay opacity"
         },
         "color_scheme": {
           "options__1": {
