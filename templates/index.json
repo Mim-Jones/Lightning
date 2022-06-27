@@ -10,17 +10,17 @@
             "heading": "ABK Beer Delivered to Your Door",
             "heading_size": "medium",
             "text": "700 Years Of German Beer",
-            "button_label_1": "Shop All",
+            "button_label_1": "",
             "button_link_1": "shopify:\/\/pages\/contact-us",
             "button_style_secondary_1": false,
             "button_label_2": "Our History",
             "button_link_2": "shopify:\/\/pages\/faqs",
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
-            "image_overlay_opacity": 20,
+            "image_overlay_opacity": 10,
             "show_text_box": false,
             "color_scheme": "accent-2",
-            "stack_images_on_mobile": true
+            "stack_images_on_mobile": false
           }
         }
       },
