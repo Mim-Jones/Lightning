@@ -142,6 +142,8 @@
 .collection-filters__item {
   display: flex;
   align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-end;
   grid-row: 1;
   margin-bottom: 3rem;
 }
@@ -437,7 +439,6 @@ span.active-facets__button-inner {
 
 .active-facets__button:hover .active-facets__button-inner {
   color: rgba(var(--color-link), var(--alpha-link));
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-link), 0.6);
 }
 
 .active-facets__button--light .active-facets__button-inner {
