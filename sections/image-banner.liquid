@@ -46,11 +46,9 @@
       opacity: 0.5;
       box-shadow: 0 0 0 0.1rem {{settings.btn_hover_color}}!important;
   }
-  .banner__box::after {
-      opacity: {{ block.settings.textbox_overlay_opacity | divided_by: 100.0 }};
-
+   .color-background-1, .color-background-2, .color-inverse, .color-accent-1, .color-accent-2 {
+      background-color: rgb(var(--color-background),{{ block.settings.textbox_overlay_opacity | divided_by: 100.0 }});
   }
-
   }
 
 /*     .banner-wrap {
