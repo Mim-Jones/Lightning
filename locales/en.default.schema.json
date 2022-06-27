@@ -895,7 +895,7 @@
             "label": "Inverse"
           },
           "label": "Color scheme",
-          "info": "Visible when text box displayed"
+          "info": "Visible when container displayed"
         },
         "header": {
           "content": "Mobile Layout"
