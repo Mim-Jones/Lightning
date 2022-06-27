@@ -46,10 +46,11 @@
       opacity: 0.5;
       box-shadow: 0 0 0 0.1rem {{settings.btn_hover_color}}!important;
   }
-   .color-background-1, .color-background-2, .color-inverse, .color-accent-1, .color-accent-2 {
-      background-color: rgb(var(--color-background),{{ block.settings.textbox_overlay_opacity | divided_by: 100.0 }});
   }
-  }
+
+  /* .color-background-1, .color-background-2, .color-inverse, .color-accent-1, .color-accent-2 {
+     background-color: rgb(var(--color-background),{{ block.settings.textbox_overlay_opacity | divided_by: 100.0 }});
+ } */
 
 /*     .banner-wrap {
     display: flex;
@@ -406,16 +407,6 @@
       "default": "background-1",
       "label": "t:sections.image-banner.settings.color_scheme.label",
       "info": "t:sections.image-banner.settings.color_scheme.info"
-    },
-    {
-      "type": "range",
-      "id": "textbox_overlay_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "label": "Text box overlay opacity",
-      "default": 0
     },
     {
       "type": "header",
