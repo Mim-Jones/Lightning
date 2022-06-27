@@ -35,7 +35,7 @@
       }
     },
     "16502652433543476c": {
-      "type": "background-video-banner",
+      "type": "video-banner",
       "disabled": true,
       "blocks": {
         "16502652435e7de976-0": {
@@ -298,7 +298,7 @@
       }
     },
     "1652786177a2ad25b1": {
-      "type": "background-video-banner",
+      "type": "video-banner",
       "disabled": true,
       "blocks": {
         "1652786177525ce49d-0": {
@@ -400,34 +400,6 @@
         "padding_bottom": 36
       }
     },
-    "16552109810eb967c0": {
-      "type": "image-banner-2",
-      "disabled": true,
-      "blocks": {
-        "16552109814baecad8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner 2"
-          }
-        },
-        "16552109814baecad8-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "16552109814baecad8-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
       "block_order": [
         "16552109814baecad8-0",
         "16552109814baecad8-1",
