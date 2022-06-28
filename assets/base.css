@@ -1212,13 +1212,6 @@ summary.share-button__button.button.button--tertiary {
   opacity: 0.5;
 }
 
-.share-button:hover .icon {
-  color: rgba(var(--color-link), var(--alpha-link));
-  stroke: rgba(var(--color-link), var(--alpha-link));
-}
-
-
-
 .button--full-width {
   display: flex;
   width: 100%;
@@ -1255,6 +1248,9 @@ summary.share-button__button.button.button--tertiary {
 .share-button {
   display: block;
   position: relative;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .share-button__button .icon-share {
