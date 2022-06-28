@@ -127,7 +127,7 @@
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"max-width:100%;\">\n{{product.metafields.custom.awards | metafield_tag }} \n<\/div>"
+            "custom_liquid": "<div style=\"width: 100%;\">\n{{product.metafields.custom.awards | metafield_tag }} \n<\/div>"
           }
         }
       },
