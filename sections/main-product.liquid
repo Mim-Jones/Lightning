@@ -153,7 +153,9 @@
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
+            <div class="custom_div">
             {{ block.settings.custom_liquid }}
+            </div>
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
               <details>
