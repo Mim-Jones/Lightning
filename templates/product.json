@@ -123,6 +123,12 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"max-width:100%;\">\n{{product.metafields.custom.awards | metafield_tag }} \n<\/div>"
+          }
         }
       },
       "block_order": [
@@ -141,7 +147,8 @@
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "480ac395-9eac-477d-8809-7cc8ba19b133",
         "share",
-        "252ee150-2f88-4bec-a179-531ad5ed2b3b"
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b",
+        "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c"
       ],
       "settings": {
         "enable_sticky_info": true,
