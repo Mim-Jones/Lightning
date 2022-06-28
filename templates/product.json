@@ -130,10 +130,10 @@
           "settings": {
           }
         },
-        "e03510f1-7342-470e-af1f-e7c10ee5534a": {
-          "type": "text",
+        "e526dd88-c8e4-4ce1-9bd5-9d7c56bcf790": {
+          "type": "text-secondary",
           "settings": {
-            "text": "Text block",
+            "text-2": "Text blockss",
             "text_style": "body"
           }
         }
@@ -156,7 +156,7 @@
         "480ac395-9eac-477d-8809-7cc8ba19b133",
         "share",
         "252ee150-2f88-4bec-a179-531ad5ed2b3b",
-        "e03510f1-7342-470e-af1f-e7c10ee5534a"
+        "e526dd88-c8e4-4ce1-9bd5-9d7c56bcf790"
       ],
       "settings": {
         "enable_sticky_info": true,
