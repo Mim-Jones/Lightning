@@ -1248,9 +1248,14 @@ summary.share-button__button.button.button--tertiary {
 .share-button {
   display: block;
   position: relative;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
+}
+.share-button__button.button--tertiary {
+background-color: rgb(var(--color-background));
+border: 0;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: flex-start;
 }
 
 .share-button__button .icon-share {
