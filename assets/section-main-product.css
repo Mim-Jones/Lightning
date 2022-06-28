@@ -86,7 +86,7 @@ div.product-heading-container {
 .shopify-payment-button__button--unbranded {
     color: #111;
   background-color: #fff;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-button));
   font-size: 1.4rem;
   line-height: 1.2;
   letter-spacing: 0.07rem;
@@ -95,7 +95,8 @@ div.product-heading-container {
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: rgb(var(--color-background));
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-button));
+
 }
 
 .shopify-payment-button__button--unbranded:focus {
