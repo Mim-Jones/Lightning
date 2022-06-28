@@ -1250,12 +1250,14 @@ summary.share-button__button.button.button--tertiary {
   position: relative;
 }
 .share-button__button.button--tertiary {
-background-color: rgb(var(--color-background));
-border: 0;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: flex-start;
+  background-color: rgb(var(--color-background));
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: var(--color-base-text);
 }
 
 .share-button__button .icon-share {
