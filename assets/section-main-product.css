@@ -19,11 +19,8 @@ div.product-heading-container {
 
 
 @media screen and (max-width: 989px) {
-    .product-heading-container-mobile:nth-last-child(2) {
-        margin-bottom: 3rem;
-    }
     .product-heading-container-mobile:nth-child(1) {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 }
 .product--no-media {

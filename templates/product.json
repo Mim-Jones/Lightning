@@ -80,7 +80,7 @@
             "content": "{{product.description}}",
             "enable_review": false,
             "page": "",
-            "icon": "none"
+            "icon": "beer"
           }
         },
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
