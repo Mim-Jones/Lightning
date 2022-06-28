@@ -41,3 +41,7 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+.rich-text-wrapper {
+  margin: 3rem 0;
+}
