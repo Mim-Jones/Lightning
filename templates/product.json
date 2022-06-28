@@ -76,7 +76,7 @@
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{product.metafields.custom.awards | img_tag }} {{ Key | image_url: width: 500, height: 500 }}"
+            "custom_liquid": "{{product.metafields.custom.awards | img_tag:'image class', 'wrapper'}}"
           }
         },
         "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9": {
