@@ -108,7 +108,7 @@
           {%- when 'text-secondary' -%}
         <div class="product-heading-container">
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
-              {{- block.settings.text -}}
+              {{- block.settings.text-2 -}}
             </p>
         </div>
           {%- when 'title' -%}
