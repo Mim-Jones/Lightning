@@ -34,25 +34,25 @@
 {% endif %}
 
 {% if section.settings.hide_account_icon %}
-{%- if section.settings.menu.links  -%}
+  {%- if section.settings.menu.links  -%}
     <style>
         @media(max-width:989px){
-        .header__icons {
+          .header__icons {
             margin-right: 5rem;
           }
         }
 
         @media(max-width:989px) {
-            details-modal.header__search .header__icon--search {
+          details-modal.header__search .header__icon--search {
             bottom: 0;
-        }
+          }
 
         .header__search {
-            margin-right: 1.75rem;
-         }
+            margin-right: 1rem;
+          }
         }
     </style>
-{% endif %}
+  {% endif %}
 {% endif %}
 
 {%- if section.settings.menu == blank -%}
@@ -775,7 +775,7 @@
 
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
-        
+
       </a>
     </div>
   </header>
