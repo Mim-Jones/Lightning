@@ -54,6 +54,13 @@
           "settings": {
           }
         },
+        "53cc17cc-0301-45ab-bae1-6de29e85a861": {
+          "type": "klarna-popup",
+          "settings": {
+            "klarna_label": "Learn more",
+            "page": "klarna"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -133,13 +140,6 @@
           "disabled": true,
           "settings": {
           }
-        },
-        "53cc17cc-0301-45ab-bae1-6de29e85a861": {
-          "type": "klarna-popup",
-          "settings": {
-            "klarna_label": "Learn more",
-            "page": "klarna"
-          }
         }
       },
       "block_order": [
@@ -151,6 +151,7 @@
         "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c",
         "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
+        "53cc17cc-0301-45ab-bae1-6de29e85a861",
         "buy_buttons",
         "description",
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c",
@@ -159,8 +160,7 @@
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "480ac395-9eac-477d-8809-7cc8ba19b133",
         "share",
-        "252ee150-2f88-4bec-a179-531ad5ed2b3b",
-        "53cc17cc-0301-45ab-bae1-6de29e85a861"
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b"
       ],
       "settings": {
         "enable_sticky_info": true,
