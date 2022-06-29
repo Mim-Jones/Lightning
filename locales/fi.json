@@ -8,7 +8,7 @@
       "login_form_error": "Väärä salasana!",
       "login_form_submit": "Syötä",
       "modal": "Salasanaikkuna",
-      "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"link underlined-link\">Kirjaudu sisään tästä<\/a>",
+      "admin_link_html": "Oletko kaupan omistaja? <a href=\"/admin\" class=\"link underlined-link\">Kirjaudu sisään tästä</a>",
       "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}"
     },
     "social": {
@@ -47,8 +47,10 @@
       "copy_to_clipboard": "Kopioi linkki",
       "share": "Jaa",
       "share_url": "Linkki",
-      "success_message": "Linkki kopioitu leikepöydälle!"
-    }
+      "success_message": "Linkki kopioitu leikepöydälle!",
+      "close": "TODO"
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"
@@ -73,13 +75,14 @@
     "previous_slide": "Liu'uta vasemmalle",
     "loading": "Ladataan...",
     "skip_to_product_info": "Siirry tuotetietoihin",
-    "of": "josta"
+    "of": "josta",
+    "star_reviews_info": "TODO",
+    "total_reviews": "TODO"
   },
   "blogs": {
     "article": {
       "blog": "Blogi",
       "read_more_title": "Lue lisää: {{ title }}",
-      "read_more": "Lue lisää",
       "comments": {
         "one": "{{ count }} kommentti",
         "other": "{{ count }} kommenttia"
@@ -129,8 +132,8 @@
         "view_store_info": "Näytä kaupan tiedot",
         "check_other_stores": "Tarkista saatavuus muista kaupoista",
         "pick_up_available": "Nouto saatavilla",
-        "pick_up_available_at_html": "Nouto saatavilla paikassa <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Nouto ei ole tällä hetkellä saatavilla paikassa <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Nouto saatavilla paikassa <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Nouto ei ole tällä hetkellä saatavilla paikassa <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Noudon saatavuutta ei voitu ladata",
         "refresh": "Päivitä"
       },
@@ -138,8 +141,14 @@
         "open_featured_media": "Avaa mainostettu aineisto gallerianäkymässä",
         "open_media": "Avaa aineisto {{ index }} gallerianäkymässä",
         "play_model": "Toista 3D Viewer",
-        "play_video": "Toista video"
-      }
+        "play_video": "Toista video",
+        "gallery_viewer": "TODO"
+      },
+      "view_full_details": "TODO",
+      "include_taxes": "TODO",
+      "shipping_policy_html": "TODO",
+      "choose_options": "TODO",
+      "choose_product_options": "TODO"
     },
     "modal": {
       "label": "Mediagalleria"
@@ -153,7 +162,10 @@
         "other": "{{ count }} tulosta hakuehdolla \"{{ terms }}\""
       },
       "title": "Hakutulokset",
-      "page": "Sivu"
+      "page": "Sivu",
+      "products": "TODO",
+      "results_with_count_and_term": "TODO",
+      "search_for": "TODO"
     },
     "cart": {
       "cart": "Ostoskori"
@@ -166,7 +178,8 @@
         "comment": "Kommentti",
         "send": "Lähetä",
         "post_success": "Kiitos, että otit yhteyttä. Palaamme asiaan mahdollisimman pian.",
-        "error_heading": "Mukauta seuraavat:"
+        "error_heading": "Mukauta seuraavat:",
+        "title": "TODO"
       }
     },
     "404": {
@@ -194,9 +207,9 @@
       "empty": "Ostoskorisi on tyhjä",
       "cart_error": "Ostoskorisi päivityksessä tapahtui virhe. Yritä uudelleen.",
       "cart_quantity_error_html": "Voit lisätä ostoskoriisi vain [määrä] kappaletta tätä tuotetta.",
-      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut<\/a> lasketaan kassalla",
+      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut</a> lasketaan kassalla",
       "taxes_included_but_shipping_at_checkout": "Sisältää veron, toimituskulut lasketaan kassalla",
-      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
+      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
       "taxes_and_shipping_at_checkout": "Verot ja toimituskulut lasketaan kassalla",
       "headings": {
         "product": "Tuote",
@@ -245,17 +258,18 @@
       "max_price": "Korkein hinta on {{ price }}",
       "reset": "Palauta",
       "to": "Vastaanottaja:",
-      "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">tyhjennä kaikki<\/a>"
+      "use_fewer_filters_html": "Käytä vähemmän suodattimia tai <a class=\"{{ class }}\" href=\"{{ link }}\">tyhjennä kaikki</a>",
+      "product_count_simple": "TODO"
     },
     "video": {
       "load_video": "Lataa video: {{ description }}"
     }
   },
   "localization": {
-    "country_label": "Maa\/alue",
+    "country_label": "Maa/alue",
     "language_label": "Kieli",
     "update_language": "Päivitä kieli",
-    "update_country": "Päivitä maa\/alue"
+    "update_country": "Päivitä maa/alue"
   },
   "customer": {
     "account": {
@@ -284,7 +298,7 @@
       "address1": "Osoite 1",
       "address2": "Osoite 2",
       "city": "Paikkakunta",
-      "country": "Maa\/alue",
+      "country": "Maa/alue",
       "province": "Provinssi",
       "zip": "Postinumero",
       "phone": "Puhelin",

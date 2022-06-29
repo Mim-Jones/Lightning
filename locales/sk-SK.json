@@ -8,7 +8,7 @@
       "login_form_error": "Nesprávne heslo!",
       "login_form_submit": "Prejsť",
       "modal": "Modálne okno hesla",
-      "admin_link_html": "Ste vlastníkom obchodu? <a href=\"\/admin\" class=\"link underlined-link\">Prihláste sa tu<\/a>",
+      "admin_link_html": "Ste vlastníkom obchodu? <a href=\"/admin\" class=\"link underlined-link\">Prihláste sa tu</a>",
       "powered_by_shopify_html": "Tento obchod bude používať technológiu {{ shopify }}"
     },
     "social": {
@@ -47,8 +47,10 @@
       "copy_to_clipboard": "Kopírovať prepojenie",
       "share": "Zdieľať",
       "share_url": "Prepojenie",
-      "success_message": "Prepojenie sa skopírovalo do schránky."
-    }
+      "success_message": "Prepojenie sa skopírovalo do schránky.",
+      "close": "TODO"
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"
@@ -73,13 +75,14 @@
       "external": "Otvorí externú webovú lokalitu."
     },
     "of": "z",
-    "skip_to_product_info": "Prejsť na informácie o produkte"
+    "skip_to_product_info": "Prejsť na informácie o produkte",
+    "star_reviews_info": "TODO",
+    "total_reviews": "TODO"
   },
   "blogs": {
     "article": {
       "blog": "Blog",
       "read_more_title": "Prečítajte si viac: {{ title }}",
-      "read_more": "Prečítať si viac",
       "moderated": "Upozorňujeme, že komentáre musia byť pred publikovaním schválené.",
       "comment_form_title": "Pridať komentár",
       "name": "Meno",
@@ -131,8 +134,8 @@
         "view_store_info": "Zobraziť informácie o obchode",
         "check_other_stores": "Skontrolovať dostupnosť v iných obchodoch",
         "pick_up_available": "K dispozícii na vyzdvihnutie",
-        "pick_up_available_at_html": "K dispozícii na vyzdvihnutie na adrese <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Aktuálne nedostupné na vyzdvihnutie na adrese <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "K dispozícii na vyzdvihnutie na adrese <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Aktuálne nedostupné na vyzdvihnutie na adrese <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Nepodarilo sa načítať dostupnosť na vyzdvihnutie",
         "refresh": "Obnoviť"
       },
@@ -140,8 +143,14 @@
         "open_featured_media": "Otvoriť odporúčané médium v zobrazení galérie",
         "open_media": "Otvoriť médium {{ index }} v zobrazení galérie",
         "play_model": "Prehrať 3D zobrazovač",
-        "play_video": "Prehrať video"
-      }
+        "play_video": "Prehrať video",
+        "gallery_viewer": "TODO"
+      },
+      "view_full_details": "TODO",
+      "include_taxes": "TODO",
+      "shipping_policy_html": "TODO",
+      "choose_options": "TODO",
+      "choose_product_options": "TODO"
     },
     "modal": {
       "label": "Galéria médií"
@@ -157,7 +166,10 @@
         "few": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}",
         "many": "Pre výraz „{{ terms }}“ sa našiel tento počet výsledkov: {{ count }}"
       },
-      "page": "Strana"
+      "page": "Strana",
+      "products": "TODO",
+      "results_with_count_and_term": "TODO",
+      "search_for": "TODO"
     },
     "cart": {
       "cart": "Košík"
@@ -170,7 +182,8 @@
         "comment": "Komentár",
         "send": "Odoslať",
         "post_success": "Ďakujeme, že ste nás kontaktovali. Budeme sa vám venovať čo najskôr.",
-        "error_heading": "Upravte tieto údaje:"
+        "error_heading": "Upravte tieto údaje:",
+        "title": "TODO"
       }
     },
     "404": {
@@ -200,9 +213,9 @@
       "empty": "Váš košík je prázdny",
       "cart_error": "Pri aktualizácii košíka sa vyskytla chyba. Skúste to znova.",
       "cart_quantity_error_html": "Do košíka môžete túto položku pridať len v počte [quantity].",
-      "taxes_and_shipping_policy_at_checkout_html": "Dane a <a href=\"{{ link }}\">doprava<\/a> sa vypočítajú pri platbe",
+      "taxes_and_shipping_policy_at_checkout_html": "Dane a <a href=\"{{ link }}\">doprava</a> sa vypočítajú pri platbe",
       "taxes_included_but_shipping_at_checkout": "Dane sa zahrnú a doprava sa vypočíta pri platbe",
-      "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\">Doprava<\/a> sa vypočíta v pokladni.",
+      "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\">Doprava</a> sa vypočíta v pokladni.",
       "taxes_and_shipping_at_checkout": "Dane a doprava sa vypočítajú pri platbe",
       "update": "Aktualizovať",
       "headings": {
@@ -243,7 +256,7 @@
       "max_price": "Najvyššia cena je {{ price }}",
       "reset": "Resetovať",
       "to": "Do",
-      "use_fewer_filters_html": "Použiť menej filtrov alebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazať všetko<\/a>",
+      "use_fewer_filters_html": "Použiť menej filtrov alebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazať všetko</a>",
       "product_count": {
         "one": "Zobrazuje sa produkt {{ product_count }} z {{ count }}",
         "other": "Zobrazujú sa produkty {{ product_count }} z {{ count }}",
@@ -255,17 +268,18 @@
         "other": "Vybrané: {{ count }}",
         "few": "Vybrané: {{ count }}",
         "many": "Vybrané: {{ count }}"
-      }
+      },
+      "product_count_simple": "TODO"
     },
     "video": {
       "load_video": "Načítať video: {{ description }}"
     }
   },
   "localization": {
-    "country_label": "Krajina\/oblasť",
+    "country_label": "Krajina/oblasť",
     "language_label": "Jazyk",
     "update_language": "Aktualizovať jazyk",
-    "update_country": "Aktualizovať krajinu\/oblasť"
+    "update_country": "Aktualizovať krajinu/oblasť"
   },
   "customer": {
     "account": {
@@ -296,7 +310,7 @@
       "address1": "Adresa 1",
       "address2": "Adresa 2",
       "city": "Mesto",
-      "country": "Krajina\/oblasť",
+      "country": "Krajina/oblasť",
       "province": "Provincia",
       "zip": "Poštové smerovacie číslo",
       "phone": "Telefón",

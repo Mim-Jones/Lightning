@@ -8,7 +8,7 @@
       "login_form_error": "Неправильный пароль.",
       "login_form_submit": "Ввести",
       "modal": "Модальное окно входа с паролем",
-      "admin_link_html": "Вы владелец магазина? <a href=\"\/admin\" class=\"link underlined-link\">Войдите здесь<\/a>",
+      "admin_link_html": "Вы владелец магазина? <a href=\"/admin\" class=\"link underlined-link\">Войдите здесь</a>",
       "powered_by_shopify_html": "Этот магазин работает на платформе {{ shopify }}"
     },
     "social": {
@@ -47,8 +47,10 @@
       "copy_to_clipboard": "Копировать ссылку",
       "share": "Поделиться",
       "share_url": "Ссылка",
-      "success_message": "Ссылка скопирована в буфер обмена."
-    }
+      "success_message": "Ссылка скопирована в буфер обмена.",
+      "close": "TODO"
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B, %Y"
@@ -73,13 +75,14 @@
       "external": "Открывает внешний сайт."
     },
     "of": "из",
-    "skip_to_product_info": "Перейти к информации о продукте"
+    "skip_to_product_info": "Перейти к информации о продукте",
+    "star_reviews_info": "TODO",
+    "total_reviews": "TODO"
   },
   "blogs": {
     "article": {
       "blog": "Блог",
       "read_more_title": "Узнать больше: {{ title }}",
-      "read_more": "Подробнее",
       "moderated": "Обратите внимание, что комментарии проходят одобрение перед публикацией.",
       "comment_form_title": "Комментировать",
       "name": "Имя",
@@ -131,8 +134,8 @@
         "view_store_info": "Сведения о магазине",
         "check_other_stores": "Проверить наличие в других магазинах",
         "pick_up_available": "Самовывоз доступен",
-        "pick_up_available_at_html": "Самовывоз доступен: <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available_at_html": "Самовывоз доступен: <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Не удалось загрузить сведения о доступности самовывоза",
         "refresh": "Обновить"
       },
@@ -140,8 +143,14 @@
         "open_featured_media": "Открыть рекомендуемые медиа-файлы в режиме галереи",
         "open_media": "Открыть медиа-файлы {{ index }} в режиме галереи",
         "play_model": "Открыть объемную модель",
-        "play_video": "Воспроизвести видео"
-      }
+        "play_video": "Воспроизвести видео",
+        "gallery_viewer": "TODO"
+      },
+      "view_full_details": "TODO",
+      "include_taxes": "TODO",
+      "shipping_policy_html": "TODO",
+      "choose_options": "TODO",
+      "choose_product_options": "TODO"
     },
     "modal": {
       "label": "Галерея мультимедиа"
@@ -157,7 +166,10 @@
         "few": "{{ count }} рез. по запросу «{{ terms }}»",
         "many": "{{ count }} рез. по запросу «{{ terms }}»"
       },
-      "page": "Страница"
+      "page": "Страница",
+      "products": "TODO",
+      "results_with_count_and_term": "TODO",
+      "search_for": "TODO"
     },
     "cart": {
       "cart": "Корзина"
@@ -170,7 +182,8 @@
         "comment": "Комментарий",
         "send": "Отправить",
         "post_success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее.",
-        "error_heading": "Измените следующие элементы:"
+        "error_heading": "Измените следующие элементы:",
+        "title": "TODO"
       }
     },
     "404": {
@@ -200,9 +213,9 @@
       "empty": "Корзина пуста.",
       "cart_error": "Не удалось обновить корзину. Повторите попытку.",
       "cart_quantity_error_html": "Максимально допустимое количество единиц этого товара в корзине: [количество].",
-      "taxes_and_shipping_policy_at_checkout_html": "Налоги и стоимость <a href=\"{{ link }}\">доставки<\/a>, рассчитанные при оформлении заказа",
+      "taxes_and_shipping_policy_at_checkout_html": "Налоги и стоимость <a href=\"{{ link }}\">доставки</a>, рассчитанные при оформлении заказа",
       "taxes_included_but_shipping_at_checkout": "Сумма налога и стоимость доставки, рассчитанные при оформлении заказа",
-      "taxes_included_and_shipping_policy_html": "Налоги включены. <a href=\"{{ link }}\">Стоимость доставки<\/a> рассчитывается при оформлении заказа.",
+      "taxes_included_and_shipping_policy_html": "Налоги включены. <a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
       "taxes_and_shipping_at_checkout": "Налоги и стоимость доставки, рассчитанные при оформлении заказа",
       "update": "Обновить",
       "headings": {
@@ -249,7 +262,7 @@
       "max_price": "Максимальная цена: {{ price }}",
       "reset": "Сбросить",
       "to": "До",
-      "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">удалите фильтры<\/a>",
+      "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">удалите фильтры</a>",
       "filters_selected": {
         "one": "Выбрано: {{ count }}",
         "other": "Выбрано: {{ count }}",
@@ -268,10 +281,10 @@
     }
   },
   "localization": {
-    "country_label": "Страна\/регион",
+    "country_label": "Страна/регион",
     "language_label": "Язык",
     "update_language": "Изменить язык",
-    "update_country": "Изменить данные о стране\/регионе"
+    "update_country": "Изменить данные о стране/регионе"
   },
   "customer": {
     "account": {
@@ -302,7 +315,7 @@
       "address1": "Адрес 1",
       "address2": "Адрес 2",
       "city": "Город",
-      "country": "Страна\/регион",
+      "country": "Страна/регион",
       "province": "Область",
       "zip": "Почтовый индекс",
       "phone": "Телефон",

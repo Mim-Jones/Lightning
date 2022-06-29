@@ -149,7 +149,7 @@
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
                         srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                        src="{{ block.settings.image | img_url: '400x' }}"
+                        src="{{ block.settings.image | image_url: width: 400 }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
                         width="{{ block.settings.image.width }}"
@@ -364,26 +364,26 @@
 <style>
 
   footer.footer{
-    background-color:{{settings.footer_background_color}};
+    background-color:{{ settings.footer_background_color }};
   }
   footer.footer a, .footer-block__heading, .footer-block__details-content.rte, .newsletter__heading, .accordion__title {
-    color: {{settings.footer_content_color}}!important;
-    fill: {{settings.footer_content_color}}!important;
+    color: {{ settings.footer_content_color }}!important;
+    fill: {{ settings.footer_content_color }}!important;
     text-decoration:none!important;
   }
 
 
   footer.footer a:hover {
-    color: {{settings.footer_content_hover_color}}!important;
-    fill: {{settings.footer_content_hover_color}}!important;
+    color: {{ settings.footer_content_hover_color }}!important;
+    fill: {{ settings.footer_content_hover_color }}!important;
   }
   .footer .field__input:focus,
   .footer .field__input {
-    box-shadow: 0 0 0 0.1rem {{settings.footer_content_color}}!important;
-    color: {{settings.footer_content_color}};
+    box-shadow: 0 0 0 0.1rem {{ settings.footer_content_color }}!important;
+    color: {{ settings.footer_content_color }};
   }
   .footer .field__label, .footer .newsletter-form__button,.copyright__content{
-    color: {{settings.footer_content_color}};
+    color: {{ settings.footer_content_color }};
   }
 
   @media(max-width:989px){
@@ -393,7 +393,7 @@
     }
 
     footer .icon {
-      stroke: {{settings.footer_content_color}}!important;
+      stroke: {{ settings.footer_content_color }}!important;
     }
   }
 </style>

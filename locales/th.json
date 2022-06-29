@@ -8,7 +8,7 @@
       "login_form_error": "รหัสผ่านผิดพลาด!",
       "login_form_submit": "ป้อน",
       "modal": "โมดอลรหัสผ่าน",
-      "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"\/admin\" class=\"link underlined-link\">เข้าสู่ระบบที่นี่<\/a>",
+      "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"/admin\" class=\"link underlined-link\">เข้าสู่ระบบที่นี่</a>",
       "powered_by_shopify_html": "ร้านค้านี้จะได้รับการสนับสนุนจาก {{ shopify }}"
     },
     "social": {
@@ -47,8 +47,10 @@
       "copy_to_clipboard": "คัดลอกลิงก์",
       "share": "แชร์",
       "share_url": "ลิงก์",
-      "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!"
-    }
+      "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!",
+      "close": "TODO"
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"
@@ -73,13 +75,14 @@
     "previous_slide": "Slide left",
     "loading": "กำลังโหลด...",
     "of": "จาก",
-    "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า"
+    "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า",
+    "star_reviews_info": "TODO",
+    "total_reviews": "TODO"
   },
   "blogs": {
     "article": {
       "blog": "บล็อก",
       "read_more_title": "อ่านเพิ่มเติม: {{ title }}",
-      "read_more": "อ่านเพิ่มเติม",
       "comments": {
         "one": "{{ count }} ความคิดเห็น",
         "other": "{{ count }} ความคิดเห็น"
@@ -129,8 +132,8 @@
         "view_store_info": "ดูข้อมูลร้านค้า",
         "check_other_stores": "ตรวจสอบความพร้อมที่ร้านค้าอื่นๆ",
         "pick_up_available": "การรับสินค้าด้วยตนเองพร้อมให้บริการ",
-        "pick_up_available_at_html": "รับสินค้าด้วยตนเองได้ที่ <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "การรับสินค้าด้วยตนเองที่ <span class=\"color-foreground\">{{ location_name }}<\/span> ยังไม่พร้อมให้บริการในขณะนี้",
+        "pick_up_available_at_html": "รับสินค้าด้วยตนเองได้ที่ <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "การรับสินค้าด้วยตนเองที่ <span class=\"color-foreground\">{{ location_name }}</span> ยังไม่พร้อมให้บริการในขณะนี้",
         "unavailable": "ไม่สามารถโหลดความพร้อมในการรับสินค้าด้วยตนเองได้",
         "refresh": "รีเฟรช"
       },
@@ -138,8 +141,14 @@
         "open_featured_media": "เปิดสื่อที่แนะนำในมุมมองแกลเลอรี",
         "open_media": "เปิดสื่อ {{ index }} ในมุมมองแกลเลอรี",
         "play_model": "เล่นตัวแสดง 3 มิติ",
-        "play_video": "เล่นวิดีโอ"
-      }
+        "play_video": "เล่นวิดีโอ",
+        "gallery_viewer": "TODO"
+      },
+      "view_full_details": "TODO",
+      "include_taxes": "TODO",
+      "shipping_policy_html": "TODO",
+      "choose_options": "TODO",
+      "choose_product_options": "TODO"
     },
     "modal": {
       "label": "แกลเลอรีสื่อ"
@@ -153,7 +162,10 @@
         "other": "มีผลลัพธ์การค้นหา {{ count }} รายการสำหรับ \"{{ terms }}\""
       },
       "title": "ผลลัพธ์การค้นหา",
-      "page": "หน้า"
+      "page": "หน้า",
+      "products": "TODO",
+      "results_with_count_and_term": "TODO",
+      "search_for": "TODO"
     },
     "cart": {
       "cart": "ตะกร้าสินค้า"
@@ -166,7 +178,8 @@
         "comment": "ความคิดเห็น",
         "send": "ส่ง",
         "post_success": "ขอขอบคุณที่ติดต่อเรา เราจะติดต่อกลับไปหาคุณโดยเร็วที่สุด",
-        "error_heading": "โปรดแก้ไขข้อมูลดังต่อไปนี้:"
+        "error_heading": "โปรดแก้ไขข้อมูลดังต่อไปนี้:",
+        "title": "TODO"
       }
     },
     "404": {
@@ -194,9 +207,9 @@
       "empty": "ตะกร้าสินค้าของคุณว่างอยู่",
       "cart_error": "เกิดข้อผิดพลาดระหว่างการอัปเดตตะกร้าสินค้าของคุณ โปรดลองอีกครั้ง",
       "cart_quantity_error_html": "คุณสามารถเพิ่ม [จำนวน] ของรายการนี้ลงในตะกร้าสินค้าของคุณเท่านั้น",
-      "taxes_and_shipping_policy_at_checkout_html": "ระบบจะคำนวณภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ในขั้นตอนการชำระเงิน",
+      "taxes_and_shipping_policy_at_checkout_html": "ระบบจะคำนวณภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง</a>ในขั้นตอนการชำระเงิน",
       "taxes_included_but_shipping_at_checkout": "ระบบจะรวมภาษีและคำนวณค่าจัดส่งในขั้นตอนการชำระเงิน",
-      "taxes_included_and_shipping_policy_html": "รวมภาษีแล้ว <a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
+      "taxes_included_and_shipping_policy_html": "รวมภาษีแล้ว <a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "taxes_and_shipping_at_checkout": "ระบบจะคำนวณภาษีและค่าจัดส่งในขั้นตอนการชำระเงิน",
       "headings": {
         "product": "สินค้า",
@@ -237,7 +250,7 @@
       "max_price": "ราคาสูงสุดคือ {{ price }}",
       "reset": "รีเซ็ต",
       "to": "ถึง",
-      "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด<\/a>",
+      "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด</a>",
       "product_count": {
         "one": "แสดงสินค้า {{ product_count }} จาก {{ count }} รายการ",
         "other": "แสดงสินค้า {{ product_count }} จาก {{ count }} รายการ"
@@ -245,17 +258,18 @@
       "filters_selected": {
         "one": "เลือกแล้ว {{ count }} รายการ",
         "other": "เลือกแล้ว {{ count }} รายการ"
-      }
+      },
+      "product_count_simple": "TODO"
     },
     "video": {
       "load_video": "โหลดวิดีโอ: {{ description }}"
     }
   },
   "localization": {
-    "country_label": "ประเทศ\/ภูมิภาค",
+    "country_label": "ประเทศ/ภูมิภาค",
     "language_label": "ภาษา",
     "update_language": "อัปเดตภาษา",
-    "update_country": "อัปเดตประเทศ\/ภูมิภาค"
+    "update_country": "อัปเดตประเทศ/ภูมิภาค"
   },
   "customer": {
     "account": {
@@ -284,9 +298,9 @@
       "address1": "ที่อยู่ 1",
       "address2": "ที่อยู่ 2",
       "city": "เมือง",
-      "country": "ประเทศ\/ภูมิภาค",
+      "country": "ประเทศ/ภูมิภาค",
       "province": "จังหวัด",
-      "zip": "รหัสไปรษณีย์\/ZIP",
+      "zip": "รหัสไปรษณีย์/ZIP",
       "phone": "โทรศัพท์",
       "set_default": "ตั้งเป็นที่อยู่เริ่มต้น",
       "add": "เพิ่มที่อยู่",

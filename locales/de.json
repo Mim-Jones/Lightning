@@ -8,7 +8,7 @@
       "login_form_error": "Falsches Passwort!",
       "login_form_submit": "Betreten",
       "modal": "Passwort-Modal",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"link underlined-link\">Hier einloggen<\/a>",
+      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"link underlined-link\">Hier einloggen</a>",
       "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
     },
     "social": {
@@ -47,8 +47,10 @@
       "copy_to_clipboard": "Link kopieren",
       "share": "Teilen",
       "share_url": "Link",
-      "success_message": "Link in die Zwischenablage kopiert!"
-    }
+      "success_message": "Link in die Zwischenablage kopiert!",
+      "close": "TODO"
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"
@@ -73,13 +75,14 @@
     "previous_slide": "Nach links schieben",
     "loading": "Wird geladen ...",
     "of": "von",
-    "skip_to_product_info": "Zu Produktinformationen springen"
+    "skip_to_product_info": "Zu Produktinformationen springen",
+    "star_reviews_info": "TODO",
+    "total_reviews": "TODO"
   },
   "blogs": {
     "article": {
       "blog": "Blog",
       "read_more_title": "Weiterlesen: {{ title }}",
-      "read_more": "Weiterlesen",
       "comments": {
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
@@ -129,8 +132,8 @@
         "view_store_info": "Shop-Informationen anzeigen",
         "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
         "pick_up_available": "Abholung verfügbar",
-        "pick_up_available_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}<\/span> verfügbar",
-        "pick_up_unavailable_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}<\/span> derzeit nicht verfügbar",
+        "pick_up_available_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> verfügbar",
+        "pick_up_unavailable_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> derzeit nicht verfügbar",
         "unavailable": "Verfügbarkeit für Abholungen konnte nicht geladen werden",
         "refresh": "Aktualisieren"
       },
@@ -138,8 +141,14 @@
         "open_featured_media": "Dargestellte Medien in Galerieansicht öffnen",
         "open_media": "Medien {{ index }} in Galerieansicht öffnen",
         "play_model": "3D-Viewer abspielen",
-        "play_video": "Video abspielen"
-      }
+        "play_video": "Video abspielen",
+        "gallery_viewer": "TODO"
+      },
+      "view_full_details": "TODO",
+      "include_taxes": "TODO",
+      "shipping_policy_html": "TODO",
+      "choose_options": "TODO",
+      "choose_product_options": "TODO"
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -153,7 +162,10 @@
         "other": "{{ count }} Ergebnisse für “{{ terms }}” gefunden"
       },
       "title": "Suchergebnisse",
-      "page": "Seite"
+      "page": "Seite",
+      "products": "TODO",
+      "results_with_count_and_term": "TODO",
+      "search_for": "TODO"
     },
     "cart": {
       "cart": "Warenkorb"
@@ -166,7 +178,8 @@
         "comment": "Kommentar",
         "send": "Senden",
         "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
-        "error_heading": "Bitte passe Folgendes an:"
+        "error_heading": "Bitte passe Folgendes an:",
+        "title": "TODO"
       }
     },
     "404": {
@@ -194,9 +207,9 @@
       "empty": "Dein Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
       "cart_quantity_error_html": "Du kannst deinem Warenkorb nur [Anzahl] Stück dieses Artikels hinzufügen.",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand<\/a> werden beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand <\/a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand </a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
       "headings": {
         "product": "Produkt",
@@ -241,7 +254,7 @@
       "max_price": "Der höchste Preis ist {{ price }}",
       "reset": "Zurücksetzen",
       "to": "Nach",
-      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">lösche alle<\/a>",
+      "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">lösche alle</a>",
       "filters_selected": {
         "one": "{{ count }} ausgewählt",
         "other": "{{ count }} ausgewählt"
@@ -256,10 +269,10 @@
     }
   },
   "localization": {
-    "country_label": "Land\/Region",
+    "country_label": "Land/Region",
     "language_label": "Sprache",
     "update_language": "Sprache aktualisieren",
-    "update_country": "Land\/Region aktualisieren"
+    "update_country": "Land/Region aktualisieren"
   },
   "customer": {
     "account": {
@@ -288,8 +301,8 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Ort",
-      "country": "Land\/Region",
-      "province": "Bundesland\/Provinz",
+      "country": "Land/Region",
+      "province": "Bundesland/Provinz",
       "zip": "PLZ",
       "phone": "Telefonnummer",
       "set_default": "Als Standard-Adresse festlegen",

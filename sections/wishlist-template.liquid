@@ -28,7 +28,7 @@
     {%- if section.settings.page.title != blank -%}
       {{ section.settings.page.title | escape }}
     {%- else -%}
-      {{page.title}}
+      {{ page.title }}
     {%- endif -%}
   </h2>
   <div class="rte">
@@ -46,12 +46,14 @@
 </div>
 
 {% schema %}
-  {
-	"name": "t:sections.main-collection-product-grid.name",
+{
+  "name": "t:sections.main-collection-product-grid.name",
   "class": "spaced-section collection-grid-section",
   "settings": [
-    
+
   ],
-    "templates": ["page"]
-  }
+  "templates": [
+    "page"
+  ]
+}
 {% endschema %}

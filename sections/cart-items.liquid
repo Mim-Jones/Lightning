@@ -6,8 +6,8 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
 <div class="mini-cart-con" id="mini__Cart">
  <div class="count-cross">
-    <div class="count" count="{{cart.item_count}}">
-      {{cart.item_count}} item{% if cart.item_count != 1 %}s {% endif %} in your cart
+    <div class="count" count="{{ cart.item_count }}">
+      {{ cart.item_count }} item{% if cart.item_count != 1 %}s {% endif %} in your cart
     </div>
     <a id="closeBag" class="btn close-bag pt-0" tabindex="0" href="javascript:void(0)" onclick="HideFunction()" >
       <svg class="svg-inline--fa fa-times fa-w-12" aria-hidden="true" data-fa-replacement="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M217.5 256l137.2-137.2c4.7-4.7 4.7-12.3 0-17l-8.5-8.5c-4.7-4.7-12.3-4.7-17 0L192 230.5 54.8 93.4c-4.7-4.7-12.3-4.7-17 0l-8.5 8.5c-4.7 4.7-4.7 12.3 0 17L166.5 256 29.4 393.2c-4.7 4.7-4.7 12.3 0 17l8.5 8.5c4.7 4.7 12.3 4.7 17 0L192 281.5l137.2 137.2c4.7 4.7 12.3 4.7 17 0l8.5-8.5c4.7-4.7 4.7-12.3 0-17L217.5 256z"></path></svg>
@@ -16,14 +16,14 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
   <div class="bottom-part">
     <div class="subtotal">
       <strong>Total </strong>
-      <strong class="amount price">{{ cart.total_price  | money }}</strong>
+      <strong class="amount price">{{ cart.total_price | money }}</strong>
     </div>
 
     {% assign cartTotal = cart.total_price %}
-    {% assign cartthreshhold = settings.freeshipping | times:100.00 %}
+    {% assign cartthreshhold = settings.freeshipping | times: 100.00 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
     {% assign mainPercent = percentmainvalue | times: 100.00 %}
-    {% assign needAmmount = cartTotal  | minus: cartthreshhold %}
+    {% assign needAmmount = cartTotal | minus: cartthreshhold %}
     <style>
       .w3-light-grey{
         color: #000!important;
@@ -44,9 +44,9 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     </style>
     <div class="progress-warp">
 
-      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}You've earned {% else %} You're <span class="progress-bar-text">{{  needAmmount | money |remove:'-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
+      <div> <span class="progress-bar-money">{% if cartTotal >= cartthreshhold %}You've earned {% else %} You're <span class="progress-bar-text">{{ needAmmount | money | remove: '-' }}</span> from {% endif %}</span> <span class="progress-bar-text">FREE SHIPPING</span></div>
       <div class="w3-light-grey">
-        <div class="w3-green" style="width:{{mainPercent}}%; max-width:102%;" ></div>
+        <div class="w3-green" style="width:{{ mainPercent }}%; max-width:102%;" ></div>
       </div>
 
     </div>
@@ -60,35 +60,35 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
   <div class="min-cart-items">
 
-    {% assign allreadyInCart = cart.items | map: "product" | map: "id" | uniq  %}
+    
 
     {% for item in cart.items %}
 
-    {% assign groupFlag = "" %}
+    
 
     {% for tag in item.product.tags %}
     {% if tag contains "cart-group" %}
-    {% assign groupFlag = tag | split:"-group:" | last %}
+    
     {% endif %}
     {% endfor %}
 
 
 
-    <div class="min-cart-item" index="{{forloop.index}}">
+    <div class="min-cart-item" index="{{ forloop.index }}">
       <div class="td-container">
           <div class="cart-img-container">
-        <img src="{{item.image | img_url: '250x250' }}" />
+        <img src="{{ item.image | image_url: width: 250, height: 250 }}" />
     </div>
     <div class="main-price-container">
       <div class="price-qty-container">
-        <h4>{{item.product.title }}</h4>
-         <span class="item-price ">{{ item.price  | money }}</span>
+        <h4>{{ item.product.title }}</h4>
+         <span class="item-price ">{{ item.price | money }}</span>
          <span class="item-quantity">Qty: {{ item.quantity }}</span>
       </div>
      </div>
 
         <div class="buttons-div">
-          <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{forloop.index}}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
+          <a onclick="updateItemById('{{ item.id }}','0','cart-items')" href="javascript:void(0)" id="myBtn" ItemId="{{ item.id }}" line="{{ forloop.index }}" class="btn-remove cart-item--remove-link" data-cartitem-remove>Remove</a>
 
         </div>
 
@@ -126,10 +126,12 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
 
 {% schema %}
-  {
-    "name": "Cart items",
-    "settings": []
-  }
+{
+  "name": "Cart items",
+  "settings": [
+
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

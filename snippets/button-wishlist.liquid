@@ -51,9 +51,9 @@ Parameters:
 {%- if product.handle != blank -%}
 {%- if customer -%}
 <button type="button" aria-label="Add to wishlist" class="wishlist_btn button button--full-width button--secondary" button-wishlist
-        data-product-image="{{ product.featured_image | img_url: '100x' }}"
+        data-product-image="{{ product.featured_image | image_url: width: 100 }}"
         data-product-vendor="{{ product.vendor }}"
-        data-product-price="{{ product.price |money }}"
+        data-product-price="{{ product.price | money }}"
         data-product-handle="{{ product.handle }}"
         data-product-title="{{ product.title }}"
         >

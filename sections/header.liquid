@@ -23,7 +23,7 @@
     {% endif %}
 {% endif %}
 
-{%- if section.settings.menu.links  -%}
+{%- if section.settings.menu.links -%}
     <style>
         @media(max-width:989px){
           details-modal.header__search .header__icon--search {
@@ -34,7 +34,7 @@
 {% endif %}
 
 {% if section.settings.hide_account_icon %}
-  {%- if section.settings.menu.links  -%}
+  {%- if section.settings.menu.links -%}
     <style>
         @media(max-width:989px){
           .header__icons {
@@ -79,7 +79,7 @@
 {% endif %}
 {% endif %}
 
-{%- if section.settings.menu.links  -%}
+{%- if section.settings.menu.links -%}
     {% if section.settings.hide_account_icon == false %}
     <style>
 
@@ -182,7 +182,7 @@
         /*  Added by Divy End   */
       }
     </style>
-{%endif%}
+{% endif %}
 
 {%- if section.settings.enable_wishlist_icon == false -%}
     <style>
@@ -195,7 +195,7 @@
 
 
     </style>
-{%endif%}
+{% endif %}
 
 
 <style>
@@ -223,7 +223,7 @@
 
   }
  img.header__heading-logo {
-   width: {{section.settings.logo_width}}px;
+   width: {{ section.settings.logo_width }}px;
   }
   .menu-drawer-container {
     display: flex;
@@ -270,17 +270,17 @@
   /* Header config colors */
 
   header.header,  .search-modal__content {
-    background-color:{{settings.header_background_color}}!important;
+    background-color:{{ settings.header_background_color }}!important;
   }
 
   /* .field__input,
   .customer select {
-    box-shadow: 0 0 0 0.1rem {{settings.header_content_color}};
+    box-shadow: 0 0 0 0.1rem {{ settings.header_content_color }};
   } */
 
   /* .field__input:hover,
   .customer select:hover {
-    box-shadow: 0 0 0 0.1rem {{settings.header_content_hover_color}};
+    box-shadow: 0 0 0 0.1rem {{ settings.header_content_hover_color }};
   } */
 
   header.header a, header.header svg,
@@ -292,9 +292,9 @@
   .header__search .field__input, .cart-count-bubble,
   .header__search .field__label
   {
-    color: {{settings.header_content_color}};
+    color: {{ settings.header_content_color }};
     fill: none!important;
-    stroke:{{settings.header_content_color}}!important;
+    stroke:{{ settings.header_content_color }}!important;
   }
 
   header.header a:hover, header.header svg:hover,
@@ -310,9 +310,9 @@
   .icon.icon-close:hover,
   .hover-nav:hover summary span
   {
-    color: {{settings.header_content_hover_color}}!important;
+    color: {{ settings.header_content_hover_color }}!important;
     fill: none;
-    stroke: {{settings.header_content_hover_color}}!important;
+    stroke: {{ settings.header_content_hover_color }}!important;
   }
 
   .mrg-cls svg{margin-right:1.2rem}
@@ -791,7 +791,7 @@
 @media screen and (min-width: 990px) {
   .hover-nav.hover-enable:hover .header__submenu{
 
-    padding-top: {{section.settings.logo_width | times: 0.9 }}px ;
+    padding-top: {{ section.settings.logo_width | times: 0.9 }}px ;
 
   }
 }
@@ -978,7 +978,7 @@
     "name": {{ shop.name | json }},
     {% if section.settings.logo %}
       {% assign image_size = section.settings.logo.width | append: 'x' %}
-      "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
+      "logo": {{ section.settings.logo | image_url : image_size | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},
@@ -1058,7 +1058,7 @@
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
     },
-        {
+    {
       "type": "checkbox",
       "id": "menu_hover",
       "default": true,
