@@ -218,6 +218,15 @@
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.link_label | default: block.settings.page.title }}</button>
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.link_label }}</a>
+
+
+          {%- when 'klarna-popup' -%}
+              <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+                <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">Learn more</button>
+              </modal-opener>
+              <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.link_label }}</a>
+
+
           {%- when 'share' -%}
             <share-button class="share-button" {{ block.shopify_attributes }}>
               <button class="share-button__button button--tertiary hidden">
@@ -982,22 +991,24 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "klarna-popup",
+      "name": "Klarna",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "default": "Pop-up link text",
+          "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
         },
         {
-          "type": "Klarna popup",
-          "name": "Klarna popup",
-          "settings": [
-            {
-              "type": "text",
-              "id": "link_label",
-              "default": "4 interest-free payments of $32.50 with Klarna. Learn more",
-              "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
-            },
-            {
-              "id": "page",
-              "type": "page",
-              "label": "t:sections.main-product.blocks.popup.settings.page.label"
-            }
+          "id": "page",
+          "type": "page",
+          "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
       ]
     }
   ],
