@@ -133,6 +133,13 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "53cc17cc-0301-45ab-bae1-6de29e85a861": {
+          "type": "klarna-popup",
+          "settings": {
+            "klarna_label": "Learn more",
+            "page": "klarna"
+          }
         }
       },
       "block_order": [
@@ -152,7 +159,8 @@
         "3d01d3ff-0f03-4f22-9937-defb61363a01",
         "480ac395-9eac-477d-8809-7cc8ba19b133",
         "share",
-        "252ee150-2f88-4bec-a179-531ad5ed2b3b"
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b",
+        "53cc17cc-0301-45ab-bae1-6de29e85a861"
       ],
       "settings": {
         "enable_sticky_info": true,
