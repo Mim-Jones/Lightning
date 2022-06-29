@@ -221,10 +221,12 @@
 
 
           {%- when 'klarna-popup' -%}
-              <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-              <p>4 interest-free payments of</p>  <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</button>
+              <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+              <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 4 | money }} with Klarna
+                <button id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</button>
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
+            </div>
 
 
           {%- when 'share' -%}
