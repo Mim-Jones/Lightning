@@ -863,6 +863,12 @@ a {
     text-decoration: none;
 }
 
+@media screen and (min-width: 990px) {
+  .product__media-list {
+    margin-top: 3rem;
+  }
+}
+
 
 .klarna-link {
   cursor: pointer;
