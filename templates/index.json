@@ -353,6 +353,7 @@
     },
     "1655809560b0967817": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1655809560a0f18c8f-0": {
           "type": "heading",
@@ -394,6 +395,7 @@
     },
     "1655814493dc57b573": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "1655814493330b6db2-0": {
           "type": "video",
