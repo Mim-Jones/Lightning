@@ -165,6 +165,7 @@
                     <h2 class="h3 product_accordion__title">
                       {{ block.settings.heading | default: block.settings.page.title }}</h2>
                         {% if block.settings.enable_review %}<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>{% endif %}
+                        {% if block.settings.enable_description %}<span class="shopify-product-description" data-id="{{ product.id }}"></span>{% endif %}
 
                   </div>
 
@@ -177,9 +178,12 @@
                   {{ block.settings.page.content }}
                   {% if block.settings.enable_review %}
                   <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
-
                   {% endif %}
-                </div>
+                  {% if block.settings.enable_description %}
+                  <div id="shopify-product-description" data-id="{{product.id}}">
+                    {{product.description}}</div></span>
+                    {% endif %}
+                  </div>
               </details>
             </div>
 
@@ -721,25 +725,25 @@
       "name": "t:sections.main-product.blocks.buy_buttons.name",
       "limit": 1,
       "settings": [
-        {
+         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         },
-		 {
-          "type": "checkbox",
-          "id": "show_favourite_btn",
-          "default": false,
-          "label": "Show Favourite button",
-          "info": "This function only store product data on '/pages/wishlist' page , This function will work if you logged in"
-        },
-{
+		    {
+        "type": "checkbox",
+        "id": "show_favourite_btn",
+        "default": false,
+        "label": "Show Favourite button",
+        "info": "This function only store product data on '/pages/wishlist' page , This function will work if you logged in"
+      },
+      {
         "type": "header",
         "content": "Add to cart"
       },
-		{
+	  	{
         "type": "color",
         "id": "button_bg",
         "default": "#85764f",
@@ -751,11 +755,11 @@
         "default": "#FFFFFF",
         "label": "Button text"
       },
-{
+      {
         "type": "header",
         "content": "Buy Button"
       },
-		{
+	  	{
         "type": "color",
         "id": "buy_button_bg",
         "default": "#85764f",
@@ -767,11 +771,11 @@
         "default": "#FFFFFF",
         "label": "Button text"
       },
-{
+      {
         "type": "header",
         "content": "Favourite button"
       },
-		{
+		  {
         "type": "color",
         "id": "fav_button_bg",
         "default": "#85764f",
@@ -832,12 +836,6 @@
           "id": "content",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
         },
-{
-      "type": "checkbox",
-      "id": "enable_review",
-      "default": false,
-      "label": "Show review"
-    },
         {
           "type": "page",
           "id": "page",
@@ -950,6 +948,22 @@
           ],
           "default": "check_mark",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        },
+        {
+          "type": "header",
+          "content": "Product Options"
+        },
+        {
+        "type": "checkbox",
+        "id": "enable_review",
+        "default": false,
+        "label": "Show review"
+        },
+        {
+        "type": "checkbox",
+        "id": "enable_description",
+        "default": false,
+        "label": "Show product description"
         }
       ]
     },
