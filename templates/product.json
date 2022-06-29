@@ -83,10 +83,11 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Taste Profile",
-            "content": "{{product.description}}",
-            "enable_review": false,
+            "content": "",
             "page": "",
-            "icon": "beer"
+            "icon": "beer",
+            "enable_review": false,
+            "enable_description": true
           }
         },
         "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
@@ -94,9 +95,10 @@
           "settings": {
             "heading": "Delivery",
             "content": "<b>England & Wales Shipping Only.<\/b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays<\/b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
-            "enable_review": false,
             "page": "",
-            "icon": "truck"
+            "icon": "truck",
+            "enable_review": false,
+            "enable_description": false
           }
         },
         "3d01d3ff-0f03-4f22-9937-defb61363a01": {
@@ -104,9 +106,10 @@
           "settings": {
             "heading": "Returns",
             "content": "We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.",
-            "enable_review": false,
             "page": "",
-            "icon": "return"
+            "icon": "return",
+            "enable_review": false,
+            "enable_description": false
           }
         },
         "480ac395-9eac-477d-8809-7cc8ba19b133": {
@@ -114,9 +117,10 @@
           "settings": {
             "heading": "Reviews",
             "content": "",
-            "enable_review": true,
             "page": "",
-            "icon": "star"
+            "icon": "star",
+            "enable_review": true,
+            "enable_description": false
           }
         },
         "share": {
