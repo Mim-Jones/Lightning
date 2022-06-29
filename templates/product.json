@@ -75,7 +75,6 @@
         },
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "custom_liquid": "{{product.metafields.custom.awards | img_url: 'original' | img_tag}}"
           }
