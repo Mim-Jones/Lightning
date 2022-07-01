@@ -418,7 +418,7 @@
 
 
                     {%- if block.settings.show_dynamic_checkout -%}
-                       {%- if product.selected_or_first_available_variant.available -%}                      
+                       {%- if product.selected_or_first_available_variant.available != false -%}                      
                       {{ form | payment_button }}
                       {% endif %}
                     {%- endif -%}
