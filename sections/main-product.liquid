@@ -418,7 +418,11 @@
 
 
                     {%- if block.settings.show_dynamic_checkout -%}
+                       {%- if product.selected_or_first_available_variant.available -%}                      
                       {{ form | payment_button }}
+                      {% else %}
+                      {{ 'products.product.sold_out' | t }}
+                      {% endif %}
                     {%- endif -%}
                   </div>
                 {%- endform -%}
