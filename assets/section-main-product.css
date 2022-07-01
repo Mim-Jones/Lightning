@@ -1,6 +1,12 @@
 .product__title {
     margin: 0;
 }
+.atc-container [disabled], .shopify-payment-button button[disabled], .out-of-stock ~ .ttt .shopify-cleanslate, .out-of-stock ~ .ttt .shopify-payment-button
+{
+  display:none !important;
+  visibility:hidden;
+}
+
 div.product-heading-container {
     margin: 0;
 }
