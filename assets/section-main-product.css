@@ -3,6 +3,7 @@
 }
 .atc-container [disabled], .shopify-payment-button button[disabled],
 .out-of-stock ~ .ttt .shopify-cleanslate, .out-of-stock ~ .ttt .shopify-payment-button,
+.out-of-stock ~ .ttt .shopify-payment-button__button
 .out-of-stock ~ .ttt .shopify-cleanslate ._1GxIZiuIYnVTrkxMSSrber
 {
   display:none !important;
