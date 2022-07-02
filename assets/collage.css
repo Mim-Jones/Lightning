@@ -187,3 +187,9 @@
 .collage .collage-card-spacing img {
   object-fit: contain;
 }
+
+
+/* new code by saikat */
+.collage__item img {
+    position: unset!important;
+}
