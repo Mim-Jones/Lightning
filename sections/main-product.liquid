@@ -226,10 +226,10 @@
             <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 4 | money }} with Klarna
               <button id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}
           </button>
-         
+          </modal-opener>
             <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
           </div>
-         </modal-opener>
+        
               {% endif %}
 
           {%- when 'share' -%}
