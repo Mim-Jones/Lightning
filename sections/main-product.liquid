@@ -221,13 +221,16 @@
 
 
           {%- when 'klarna-popup' -%}
-              <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-              <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 4 | money }} with Klarna
-                <button id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</button>
-              </modal-opener>
-              <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
-            </div>
-
+            {% if enable_Klarna %}
+            <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+            <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 4 | money }} with Klarna
+              <button id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}
+          </button>
+         
+            <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
+          </div>
+         </modal-opener>
+              {% endif %}
 
           {%- when 'share' -%}
             <share-button class="share-button" {{ block.shopify_attributes }}>
@@ -1003,6 +1006,12 @@
       "type": "klarna-popup",
       "name": "Klarna",
       "settings": [
+                  {
+      "type": "checkbox",
+      "id": "enable_Klarna",
+      "default": true,
+      "label": "Klarna Enable"
+    },
         {
           "type": "text",
           "id": "klarna_label",
