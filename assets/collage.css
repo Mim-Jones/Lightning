@@ -193,3 +193,6 @@
 .collage__item img {
     position: unset!important;
 }
+.card__inner.ratio {
+    position: relative;
+}
