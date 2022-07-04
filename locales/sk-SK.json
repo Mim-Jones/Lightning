@@ -49,7 +49,8 @@
       "share_url": "Prepojenie",
       "success_message": "Prepojenie sa skopírovalo do schránky.",
       "close": "TODO"
-    }
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"

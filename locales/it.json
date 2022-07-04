@@ -49,7 +49,8 @@
       "share_url": "Link",
       "success_message": "Link copiato negli appunti!",
       "close": "TODO"
-    }
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"

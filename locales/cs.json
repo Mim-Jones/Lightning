@@ -49,7 +49,8 @@
       "share_url": "Odkaz",
       "success_message": "Odkaz byl zkopírován do schránky!",
       "close": "TODO"
-    }
+    },
+    "slider": "TODO"
   },
   "date_formats": {
     "month_year": "%B %Y"
