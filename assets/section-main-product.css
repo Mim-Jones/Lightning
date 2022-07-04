@@ -896,11 +896,3 @@ a {
   font-weight: 500;
   margin-top: 2.5rem;
 }
-
-.product-section .product-form__buttons button:disabled {
-display:none;
-}
-
-product-form.product-form [aria-disabled="true"] {
-display:none !important;
-}
