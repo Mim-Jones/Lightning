@@ -49,8 +49,7 @@
       "share_url": "Bağlantı",
       "success_message": "Bağlantı panoya kopyalandı.",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

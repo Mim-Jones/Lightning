@@ -49,8 +49,7 @@
       "share_url": "Nuoroda",
       "success_message": "Nuoroda nukopijuota į iškarpinę!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

@@ -49,8 +49,7 @@
       "share_url": "連結",
       "success_message": "連結已複製到剪貼簿！",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

@@ -49,11 +49,6 @@
       "share_url": "Link",
       "success_message": "Link copied to clipboard!",
       "close": "TODO"
-    },
-    "slider": {
-      "previous_slide": "Previous",
-      "of": "of",
-      "next_slide": "Next"
     }
   },
   "date_formats": {

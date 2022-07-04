@@ -49,8 +49,7 @@
       "share_url": "Σύνδεσμος",
       "success_message": "Ο σύνδεσμος αντιγράφηκε στο πρόχειρο!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

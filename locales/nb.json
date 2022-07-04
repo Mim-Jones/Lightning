@@ -49,8 +49,7 @@
       "share_url": "Kobling",
       "success_message": "Koblingen er kopiert til utklippstavlen!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

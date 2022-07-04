@@ -49,8 +49,7 @@
       "share_url": "Länk",
       "success_message": "Länken kopierades till urklipp!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

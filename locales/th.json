@@ -49,8 +49,7 @@
       "share_url": "ลิงก์",
       "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

@@ -49,8 +49,7 @@
       "share_url": "Poveznica",
       "success_message": "Poveznica je kopirana u međuspremnik!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

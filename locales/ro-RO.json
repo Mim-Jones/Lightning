@@ -49,8 +49,7 @@
       "share_url": "Link",
       "success_message": "Linkul a fost copiat în clipboard!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

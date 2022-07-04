@@ -49,8 +49,7 @@
       "share_url": "Tautan",
       "success_message": "Tautan disalin ke clipboard!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

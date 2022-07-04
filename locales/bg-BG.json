@@ -49,8 +49,7 @@
       "share_url": "Връзка",
       "success_message": "Връзката е копирана в клипборда.",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

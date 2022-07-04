@@ -49,8 +49,7 @@
       "share_url": "Hivatkozás",
       "success_message": "A vágólapra másoltuk a hivatkozást.",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%Y. %B"

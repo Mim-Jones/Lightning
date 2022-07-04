@@ -49,8 +49,7 @@
       "share_url": "Link",
       "success_message": "Link skopiowany do schowka!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

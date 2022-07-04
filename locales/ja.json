@@ -49,8 +49,7 @@
       "share_url": "リンク",
       "success_message": "リンクがクリップボードにコピーされました。",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%Y年%-m月%"

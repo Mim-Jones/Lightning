@@ -49,8 +49,7 @@
       "share_url": "Linkki",
       "success_message": "Linkki kopioitu leikepöydälle!",
       "close": "TODO"
-    },
-    "slider": "TODO"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"
