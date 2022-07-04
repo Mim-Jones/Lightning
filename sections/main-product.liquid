@@ -1,4 +1,4 @@
-c{% comment %}theme-check-disable TemplateLength{% endcomment %}
+{% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -171,7 +171,6 @@ c{% comment %}theme-check-disable TemplateLength{% endcomment %}
 
                   {% render 'icon-caret' %}
 
-c
                 </summary>
                 <div class="accordion__content rte">
                   {{ block.settings.content }}
@@ -230,7 +229,7 @@ c
             <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
           </div>
          {% endif %}
-             
+
 
           {%- when 'share' -%}
             <share-button class="share-button" {{ block.shopify_attributes }}>
@@ -415,14 +414,14 @@ c
                     </button>
                     </div>
 
-                    {%- if block.settings.show_favourite_btn -%}   
+                    {%- if block.settings.show_favourite_btn -%}
                     {%- render 'button-wishlist', product: product -%}
                      {%- endif -%}
 
 
                     {%- if block.settings.show_dynamic_checkout -%}
-                        {%- if product.selected_or_first_available_variant.available -%}                      
-                    <div class="{% if product.selected_or_first_available_variant.available == false %}d-none{% endif %}">  {{ form | payment_button }}</div>
+                        {%- if product.selected_or_first_available_variant.available -%}
+                    <div class="{% if product.selected_or_first_available_variant.available == false %}d-none{% endif %}">{{ form | payment_button }}</div>
                       {% else %}
                       <div class="d-none">{{ 'products.product.sold_out' | t }}</div>
                       {% endif %}
