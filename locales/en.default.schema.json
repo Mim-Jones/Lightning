@@ -447,6 +447,10 @@
             "image_padding": {
               "label": "Add image padding",
               "info": "Select image padding if you don't want your images to be cropped."
+            },
+            "description": {
+              "label": "Video alt text",
+              "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
             }
           }
         }
