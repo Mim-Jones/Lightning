@@ -51,9 +51,9 @@
       "close": "TODO"
     },
     "slider": {
-      "previous_slide": "Previous",
-      "of": "of",
-      "next_slide": "Next"
+      "previous_slide": "TODO",
+      "of": "TODO",
+      "next_slide": "TODO"
     }
   },
   "date_formats": {
