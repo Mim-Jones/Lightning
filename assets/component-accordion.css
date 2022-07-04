@@ -43,6 +43,7 @@
 .accordion__content {
   margin-bottom: 1.5rem;
   word-break: break-word;
+  text-align: left;
 }
 
 .accordion__content img {
