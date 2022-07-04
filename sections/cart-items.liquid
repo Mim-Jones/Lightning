@@ -60,15 +60,15 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
 
   <div class="min-cart-items">
 
-    
+
 
     {% for item in cart.items %}
 
-    
+
 
     {% for tag in item.product.tags %}
     {% if tag contains "cart-group" %}
-    
+
     {% endif %}
     {% endfor %}
 
@@ -77,7 +77,7 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
     <div class="min-cart-item" index="{{ forloop.index }}">
       <div class="td-container">
           <div class="cart-img-container">
-        <img src="{{ item.image | image_url: width: 250, height: 250 }}" />
+        <img src="{{ item.image | image_url: width: 250, height: 250 }}" loading="lazy"/>
     </div>
     <div class="main-price-container">
       <div class="price-qty-container">
