@@ -603,8 +603,8 @@
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-            <img srcset="{{ section.settings.logo | image_url: image_size }} 1x, {{ section.settings.logo | image_url: image_size, scale: 2 }} 2x"
+            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+            <img srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
               src="{{ section.settings.logo | image_url: image_size }}"
               loading="lazy"
               class="header__heading-logo"

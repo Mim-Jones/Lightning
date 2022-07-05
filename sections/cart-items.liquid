@@ -18,7 +18,6 @@ this section HTML gose to minicart.liquid and minicart.liquid include in theme.l
       <strong>Total </strong>
       <strong class="amount price">{{ cart.total_price | money }}</strong>
     </div>
-
     {% assign cartTotal = cart.total_price %}
     {% assign cartthreshhold = settings.freeshipping | times: 100.00 %}
     {% assign percentmainvalue = cartTotal | divided_by: cartthreshhold %}
