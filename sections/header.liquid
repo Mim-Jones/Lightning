@@ -8,343 +8,20 @@
   <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
-
-{% if section.settings.hide_account_icon %}
-    {% if template.name != "index" %}
-    <style>
-      @media(max-width:989px){
-      }
-    </style>
-    {% endif %}
-{% endif %}
-
-{%- if section.settings.menu.links -%}
-    <style>
-        @media(max-width:989px){
-          details-modal.header__search .header__icon--search {
-              left: 4rem;
-          }
-        }
-    </style>
-{% endif %}
-
-{% if section.settings.hide_account_icon %}
-  {%- if section.settings.menu.links -%}
-    <style>
-        @media(max-width:989px){
-          .header__icons {
-            margin-right: 5rem;
-          }
-        }
-
-        @media(max-width:989px) {
-          details-modal.header__search .header__icon--search {
-            bottom: 0;
-          }
-
-        .header__search {
-            margin-right: 1.25rem;
-          }
-        }
-    </style>
-  {% endif %}
-{% endif %}
-
-{%- if section.settings.menu == blank -%}
-{% if section.settings.hide_account_icon %}
-    <style>
-        @media(max-width:989px) {
-            details-modal.header__search .header__icon--search {
-            bottom: 0;
-        }
-        .header__heading,
-        .header__heading-link {
-          position: relative;
-          left: 2.75rem;
-        }
-
-        a#cart-icon-bubble {
-
-        position: relative;
-        left: 2rem;
-          }
-        }
-    </style>
-
-{% endif %}
-{% endif %}
-
-{%- if section.settings.menu.links -%}
-    {% if section.settings.hide_account_icon == false %}
-    <style>
-
-    @media (max-width:990px) {
-    .header__heading,
-    .header__heading-link {
-      position: relative;
-      left: 0.75rem;
-    }
-
-    a.header__icon.header__icon--account.link.link--text.focus-inset {
-     position: relative;
-     right: 1.75rem;
-}
-
-    details-modal.header__search .header__icon--search {
-     left: 5.75rem;
-}
-}
-    </style>
-
-    {% endif %}
-    {% endif %}
-
-{%- if section.settings.menu == blank -%}
-{% if section.settings.hide_account_icon == false %}
-    <style>
-
-        @media (max-width:990px) {
-        .header__heading,
-        .header__heading-link {
-          position: relative;
-          left: 1.5rem;
-        }
-
-        a.header__icon.header__icon--account.link.link--text.focus-inset {
-         position: relative;
-         right: 1.75rem;
-        }
-
-        details-modal.header__search .header__icon--search {
-         position: absolute;
-         left: 1rem;
-        }
-    }
-    </style>
-        {% endif %}
-        {% endif %}
-
-{% if section.settings.hide_account_icon %}
-    <style>
-        .header.header--top-center.page-width.header--has-menu.no-account-mobile{
-       	  padding-bottom:6rem;
-        }
-      @media(max-width:989px){
-        .header {
-          grid-template-columns: 0fr 2fr 1fr!important;
-        }
-        .header__heading, .header__heading-link {
-          grid-area: heading;
-          justify-self: left;
-        }
-        header-drawer {
-          position:absolute;
-          right:0;
-        }
-        .header__icons {
-          margin-right:5rem;
-        }
-        .header__icon--search {
-          left:0 !important;position:relative !important;
-        }
-        /* .hide-account-fix{
-          margin-bottom:0!important
-        } */
-        .menu-drawer{
-          transform:translate(200%)
-        }
-
-        .js details[open].menu-opening>.menu-drawer{
-          position: fixed;
-          left: 8rem;
-        }
-    /*  Added by Divy Start   */
-
-    /*       height:150vh; */
-
-
-    /*     .menu-open #MainContent{
-        	position:fixed;
-          	background:#000;
-          	opacity:0.8;
-        } */
-        .menu-open .footer:not(.color-background-1){
-        	display:none;
-        }
-        .header.header--top-center.page-width.header--has-menu.no-account-mobile{
-          padding-bottom:0rem;
-        }
-        /*  Added by Divy End   */
-      }
-    </style>
-{% endif %}
-
-{%- if section.settings.enable_wishlist_icon == false -%}
-    <style>
-        @media screen and (min-width: 990px) {
-          a#cart-icon-bubble {
-            width: 2.4rem;
-            margin-left: 0.8rem;
-         }
-     }
-
-
-    </style>
-{% endif %}
-
-
-<style>
-  .search-modal__close-button:hover {
-      color:#cb6d51 !important;
-      stroke:#cb6d51!important
-   }
-
-  header-drawer {
-    justify-self: start;
-    margin-left: -1.2rem;
-    margin-right: 1.75rem;
-  }
-
-  @media screen and (min-width: 990px) {
-    header-drawer {
-      display: none;
-    }
-    .header__heading{z-index:999}
-    .header__heading-link {z-index:999;width:auto!important}
-    .fx-c{
-        z-index:999;
-        margin: 0 1rem;
-    }
-
-  }
- img.header__heading-logo {
-   width: {{ section.settings.logo_width }}px;
-  }
-  .menu-drawer-container {
-    display: flex;
-  }
-
-  .header__active-menu-item {
-      text-decoration: none;
-  }
-  .list-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-
-  summary.list-menu__item {
-    /* padding-right: 2.7rem; */
-  }
-
-  .list-menu__item {
-    display: flex;
-    align-items: center;
-    line-height: 1.3;
-  }
-
-  .list-menu__item--link {
-    text-decoration: none;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    line-height: 1.8;
-  }
-
-  @media screen and (min-width: 990px) {
-    .list-menu__item--link {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-    }
-  }
-
-  /* Header config colors */
-
-  header.header,  .search-modal__content {
-    background-color:{{ settings.header_background_color }}!important;
-  }
-
-  /* .field__input,
-  .customer select {
-    box-shadow: 0 0 0 0.1rem {{ settings.header_content_color }};
-  } */
-
-  /* .field__input:hover,
-  .customer select:hover {
-    box-shadow: 0 0 0 0.1rem {{ settings.header_content_hover_color }};
-  } */
-
-  header.header a, header.header svg,
-  header.header svg path,
-  .summary.list-menu__item, .header__active-menu-item,
-  .icon-account, a.btn.close-bag svg,
-  .menu-drawer__close-button, .icon-search,
-  .header__search .field__input:focus,
-  .header__search .field__input, .cart-count-bubble,
-  .header__search .field__label
-  {
-    color: {{ settings.header_content_color }};
-    fill: none!important;
-    stroke:{{ settings.header_content_color }}!important;
-  }
-
-  header.header a:hover, header.header svg:hover,
-  header.header svg:hover path, .icon-account:hover,
-  a.btn.close-bag svg:hover, .header__active-menu-item:hover,
-  .header__menu-item:hover, .icon-search:hover,
-  svg.modal__toggle-open.icon.icon-search:hover,
-  .header__icon--account:hover,
-  .header__icon--account:hover svg path,
-  .header__icon--cart:hover svg path,
-  .cart-count-bubble:hover,
-  .header__icon--account:hover svg path, .header__icon--account:hover svg circle,
-  .icon.icon-close:hover,
-  .hover-nav:hover summary span
-  {
-    color: {{ settings.header_content_hover_color }}!important;
-    fill: none;
-    stroke: {{ settings.header_content_hover_color }}!important;
-  }
-
-  .mrg-cls svg{margin-right:1.2rem}
-
-  /*  Added by Divy Start   */
-  .hover-nav{
-  	z-index:999;
-  }
-  .header.header--top-center .header__inline-menu{
-    margin-top:18rem;
-  }
-  .header.header--top-center .search.search-modal__form{
-/*   	position: absolute;left: 0px; */
-  }
-  .header.header--top-center .modal__close-button.link{
-/*   	left: 500px;position: absolute; */
-  }
-  /*  Added by Divy End   */
-</style>
-
+{% render 'header-style' %}
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
-
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 48 48" fill="none">
       <g transform="matrix(3.4285714285714284,0,0,3.4285714285714284,0,0)"><g>
           <circle cx="5.92" cy="5.92" r="5.42" ></circle>
           <line x1="13.5" y1="13.5" x2="9.75" y2="9.75" </line>
         </g></g>  </symbol>
-
-
   <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 48 48">
   <g transform="matrix(2,0,0,2,0,0)"><defs><style>.a{stroke-width:1.5px;}</style></defs><title>close</title><line class="a" x1="0.75" y1="23.249" x2="23.25" y2="0.749"></line><line class="a" x1="23.25" y1="23.249" x2="0.75" y2="0.749"></line></g>
   </symbol>
@@ -567,7 +244,6 @@
                     </svg>
                   </button>
                 </div>
-
                   {%- if settings.predictive_search_enabled -%}
                     <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
                       <div class="predictive-search__loading-state">
@@ -576,17 +252,12 @@
                         </svg>
                       </div>
                     </div>
-
                     <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
                   {%- endif -%}
-
-
               </form>
-
                 {%- if settings.predictive_search_enabled -%}
                 </predictive-search>
               {%- endif -%}
-
               <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                   <use href="#icon-close" class="icon-close">
@@ -597,7 +268,6 @@
         </details>
       </details-modal>
     {%- endif -%}
-
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
     {%- endif -%}
@@ -619,7 +289,6 @@
     {%- if request.page_type == 'index' -%}
       </h1>
     {%- endif -%}
-
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
@@ -629,10 +298,8 @@
               {% unless section.settings.menu_hover %}<details-disclosure><details id="Details-HeaderMenu-{{ forloop.index }}">{% else %}<div><div>{% endunless %}
               <summary class="header__menu-item list-menu__item link focus-inset 1" {% if section.settings.menu_hover %} id="hover-enable" {% endif %}>
                 <span  class="header__active-menu-item">{{ link.title | escape }}</span>
-                <!-- {% render 'icon-caret' %} -->
               </summary>
               <div class="sub__menu_container2">
-
               <ul class="page-width-desktop header__submenu list-menu list-menu--disclosure caption-large motion-reducee{% unless section.settings.menu_hover %}   header__submenu_hoverr  {% endunless %} " role="list" tabindex="-1">
                 {%- for childlink in link.links -%}
                 <li  link-level="2">
@@ -641,7 +308,6 @@
                     {{ childlink.title | escape }}
                   </a>
                   {%- else -%}
-
                   <a class="header__menu-item link link--text list-menu__item focus-inset caption-large">{{ childlink.title | escape }}</a>
                     <ul class="header__submenu list-menu motion-reduce">
                       {%- for grandchildlink in childlink.links -%}
@@ -652,14 +318,12 @@
                       </li>
                       {%- endfor -%}
                     </ul>
-
                   {%- endif -%}
                 </li>
                 {%- endfor -%}
               </ul>
           </div>
               {% unless section.settings.menu_hover %} </details> </details-disclosure> {% else %}<div></div>{% endunless %}
-
               {%- else -%}
                 <a href="{{ link.url }}" class="no-sub  header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.links %} class="header__active-menu-item"{% endif %} >{{ link.title | escape }}</span>
@@ -670,10 +334,7 @@
         </ul>
       </nav>
     {%- endif -%}
-
     <div class="header__icons fx-c  {% if section.settings.hide_account_icon %}hide-account-fix{% endif %}">
-
-
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -789,14 +450,11 @@
 
 <style>
 @media screen and (min-width: 990px) {
-  .hover-nav.hover-enable:hover .header__submenu{
-
+  .hover-nav.hover-enable:hover .header__submenu {
     padding-top: {{ section.settings.logo_width | times: 0.9 }}px ;
-
   }
 }
 </style>
-
 {%- endif -%}
 
         <style>
@@ -817,8 +475,6 @@
               padding-right: 4rem;
             }
           }
-
-
 
           @media(max-width:989px){
             .header.header--top-center.page-width.header--has-menu.no-account-mobile {
@@ -878,7 +534,6 @@
             }
 
           });
-
 
 
 //           Modal Close event Click in header
