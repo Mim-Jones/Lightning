@@ -8,18 +8,19 @@
           "settings": {
           }
         },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "a7e312ae-e286-4263-b41d-b2edb66fe451": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.abv.value }}",
-            "text_style": "body"
+            "text_style": "subtitle"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "subtitle": {
@@ -152,8 +153,8 @@
       },
       "block_order": [
         "title",
-        "vendor",
         "a7e312ae-e286-4263-b41d-b2edb66fe451",
+        "vendor",
         "subtitle",
         "price",
         "variant_picker",
