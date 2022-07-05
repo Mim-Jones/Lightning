@@ -15,6 +15,13 @@
             "text_style": "uppercase"
           }
         },
+        "a7e312ae-e286-4263-b41d-b2edb66fe451": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.abv.value }}",
+            "text_style": "body"
+          }
+        },
         "subtitle": {
           "type": "text",
           "disabled": true,
@@ -102,7 +109,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Delivery",
-            "content": "<b>England & Wales Shipping Only.</b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.</b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays</b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
+            "content": "<b>England & Wales Shipping Only.<\/b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays<\/b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
             "page": "",
             "icon": "truck",
             "enable_review": false,
@@ -137,7 +144,7 @@
           }
         },
         "252ee150-2f88-4bec-a179-531ad5ed2b3b": {
-          "type": "shopify://apps/product-reviews/blocks/reviews/bae150af-8da8-48b2-9867-398188115e5f",
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "disabled": true,
           "settings": {
           }
@@ -146,6 +153,7 @@
       "block_order": [
         "title",
         "vendor",
+        "a7e312ae-e286-4263-b41d-b2edb66fe451",
         "subtitle",
         "price",
         "variant_picker",
