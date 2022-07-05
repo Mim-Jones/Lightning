@@ -50,7 +50,11 @@
       "success_message": "Prepojenie sa skopírovalo do schránky.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "z",
+      "next_slide": "Posunúť doprava",
+      "previous_slide": "Posunúť doľava"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

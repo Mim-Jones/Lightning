@@ -50,7 +50,11 @@
       "success_message": "Povezava je kopirana v odložišče.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "od",
+      "next_slide": "Podrsajte desno",
+      "previous_slide": "Podrsajte levo"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

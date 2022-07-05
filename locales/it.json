@@ -50,7 +50,11 @@
       "success_message": "Link copiato negli appunti!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "su",
+      "next_slide": "Scorri verso destra",
+      "previous_slide": "Scorri verso sinistra"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

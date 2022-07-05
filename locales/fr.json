@@ -50,7 +50,11 @@
       "success_message": "Lien copié dans le presse-papiers !",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "de",
+      "next_slide": "Faire glisser vers la droite",
+      "previous_slide": "Faire glisser vers la gauche"
+    }
   },
   "date_formats": {
     "month_year": "%b %Y"

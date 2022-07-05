@@ -50,7 +50,11 @@
       "success_message": "Enlace copiado al portapapeles",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "de",
+      "next_slide": "Diapositiva a la derecha",
+      "previous_slide": "Diapositiva a la izquierda"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

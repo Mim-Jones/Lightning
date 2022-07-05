@@ -50,7 +50,11 @@
       "success_message": "Link er kopieret til udklipsholderen!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "af",
+      "next_slide": "Skub til højre",
+      "previous_slide": "Skub til venstre"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

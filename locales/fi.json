@@ -50,7 +50,11 @@
       "success_message": "Linkki kopioitu leikepöydälle!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "/",
+      "next_slide": "Liu'uta oikealle",
+      "previous_slide": "Liu'uta vasemmalle"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

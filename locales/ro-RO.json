@@ -50,7 +50,11 @@
       "success_message": "Linkul a fost copiat în clipboard!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "din",
+      "next_slide": "Glisare la dreapta",
+      "previous_slide": "Glisare la stânga"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

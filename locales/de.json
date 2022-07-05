@@ -50,7 +50,11 @@
       "success_message": "Link in die Zwischenablage kopiert!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "von",
+      "next_slide": "Nach rechts schieben",
+      "previous_slide": "Nach links schieben"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

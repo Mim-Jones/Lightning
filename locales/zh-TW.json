@@ -50,7 +50,11 @@
       "success_message": "連結已複製到剪貼簿！",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "/",
+      "next_slide": "投影片右側",
+      "previous_slide": "投影片左側"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

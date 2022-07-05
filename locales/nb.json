@@ -50,7 +50,11 @@
       "success_message": "Koblingen er kopiert til utklippstavlen!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "av",
+      "next_slide": "Bla til høyre",
+      "previous_slide": "Bla til venstre"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

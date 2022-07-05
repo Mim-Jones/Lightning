@@ -50,7 +50,11 @@
       "success_message": "Poveznica je kopirana u međuspremnik!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "od",
+      "next_slide": "Klizno pomakni udesno",
+      "previous_slide": "Klizno pomakni ulijevo"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

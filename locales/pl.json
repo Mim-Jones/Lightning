@@ -50,7 +50,11 @@
       "success_message": "Link skopiowany do schowka!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "z",
+      "next_slide": "Przesuń w prawo",
+      "previous_slide": "Przesuń w lewo"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

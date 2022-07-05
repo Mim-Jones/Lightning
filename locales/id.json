@@ -50,7 +50,11 @@
       "success_message": "Tautan disalin ke clipboard!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "dari",
+      "next_slide": "Geser kanan",
+      "previous_slide": "Geser kiri"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

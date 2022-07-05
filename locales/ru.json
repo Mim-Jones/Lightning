@@ -50,7 +50,11 @@
       "success_message": "Ссылка скопирована в буфер обмена.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "из",
+      "next_slide": "Листать вперед",
+      "previous_slide": "Листать назад"
+    }
   },
   "date_formats": {
     "month_year": "%B, %Y"

@@ -50,7 +50,11 @@
       "success_message": "Връзката е копирана в клипборда.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "от",
+      "next_slide": "Плъзгане надясно",
+      "previous_slide": "Плъзгане наляво"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

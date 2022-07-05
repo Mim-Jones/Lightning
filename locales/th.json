@@ -50,7 +50,11 @@
       "success_message": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "จาก",
+      "next_slide": "ไปสไลด์ขวา",
+      "previous_slide": "ไปสไลด์ซ้าย"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

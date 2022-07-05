@@ -50,7 +50,11 @@
       "success_message": "Đã sao chép liên kết vào bảng nhớ tạm!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "trong số",
+      "next_slide": "Trượt sang phải",
+      "previous_slide": "Trượt sang trái"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

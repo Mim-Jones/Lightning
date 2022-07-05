@@ -50,7 +50,11 @@
       "success_message": "Nuoroda nukopijuota į iškarpinę!",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "iš",
+      "next_slide": "Slinkti dešinėn",
+      "previous_slide": "Slinkti kairėn"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

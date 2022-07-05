@@ -50,7 +50,11 @@
       "success_message": "Bağlantı panoya kopyalandı.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "/",
+      "next_slide": "Sağa kaydır",
+      "previous_slide": "Sola kaydır"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

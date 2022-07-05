@@ -50,7 +50,11 @@
       "success_message": "链接已复制到剪贴板！",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "/",
+      "next_slide": "向右滑动",
+      "previous_slide": "向左滑动"
+    }
   },
   "date_formats": {
     "month_year": "%B %Y"

@@ -50,7 +50,11 @@
       "success_message": "Link copiado para a área de transferência.",
       "close": "TODO"
     },
-    "slider": "TODO"
+    "slider": {
+      "of": "de",
+      "next_slide": "Deslizar para a direita",
+      "previous_slide": "Deslizar para a esquerda"
+    }
   },
   "date_formats": {
     "month_year": "%B de %Y"
