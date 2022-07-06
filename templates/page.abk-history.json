@@ -241,7 +241,7 @@
         "1657104337785d9b1b-2": {
           "type": "button",
           "settings": {
-            "button_label": "B",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -258,6 +258,42 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1657104402057e820e": {
+      "type": "image-with-text",
+      "blocks": {
+        "1657104402b40df4ce-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "2000's"
+          }
+        },
+        "1657104402b40df4ce-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>700 years on and<a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\" title=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\"> ABK beer<\/a> is still the same great tasting beer! Only using the same three pure ingredients that were promised to those faithful ABK drinkers 700 years ago!<\/p>"
+          }
+        },
+        "1657104402b40df4ce-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657104402b40df4ce-0",
+        "1657104402b40df4ce-1",
+        "1657104402b40df4ce-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ABK-beer-oktoberfest-21century.png",
+        "height": "small",
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -268,6 +304,7 @@
     "16571023026557247d",
     "1657102884530862e0",
     "16571034594b9491ee",
-    "1657104337ea6a8f97"
+    "1657104337ea6a8f97",
+    "1657104402057e820e"
   ]
 }
