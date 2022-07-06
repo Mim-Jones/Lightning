@@ -56,13 +56,13 @@
     </style>
     {% render 'meta-tags' %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="{{ 'vendor.js' | asset_url }}" ></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'global.js' | asset_url }}" defer></script>
 
-    <script src="{{ 'sticky.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'image-video-banner.js' | asset_url }}" ></script>
+    <script src="{{ 'sticky.js' | asset_url }}" defer></script>
+<script src="{{ 'image-video-banner.js' | asset_url }}" defer></script>
        {% unless request.design_mode %}
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {% endunless %}
     {{ content_for_header }}
@@ -289,8 +289,8 @@
       }
     </script>
 
- <script src="{{ 'Wishlist.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+ <script src="{{ 'Wishlist.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
     <div class="wishlist-pop">
       <h4>Added to Favourites</h4>
       <div class="wishlist-info">
@@ -368,7 +368,7 @@
     </style>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
   </body>
 </html>
