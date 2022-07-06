@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<script src="{{ 'product-form.js' | asset_url }}" defer></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script>
  var inv_qty = {};
  {% for var in product.variants %}
@@ -154,9 +154,11 @@
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
+             {% if block.settings.custom_liquid != "//cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_1024x1024.gif" %}
             <div class="custom_div">
             {{ block.settings.custom_liquid }}
             </div>
+            {% endif %}
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
               <details>
