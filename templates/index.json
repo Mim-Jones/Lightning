@@ -272,7 +272,6 @@
     },
     "165521088310efa17f": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "1655210883369c9be3-0": {
           "type": "heading",
@@ -490,6 +489,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1657144406b77141e3": {
+      "type": "video-banner",
+      "blocks": {
+        "1657144406b1c3b9eb-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=2607wd2keic",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        },
+        "6287590a-e3c7-4b72-a0e8-e2bf3539337f": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "full_width": false,
+            "heading": "Video banner",
+            "heading_size": "medium",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1657144406b1c3b9eb-0",
+        "6287590a-e3c7-4b72-a0e8-e2bf3539337f"
+      ],
+      "settings": {
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
@@ -506,6 +551,7 @@
     "1655211038b3150bd2",
     "1655809560b0967817",
     "1655814493dc57b573",
-    "16559023329376dc75"
+    "16559023329376dc75",
+    "1657144406b77141e3"
   ]
 }
