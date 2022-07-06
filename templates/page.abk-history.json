@@ -144,7 +144,7 @@
         "1657102302ed110bb6-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/History-of-abk-beer.png",
+        "image": "shopify:\/\/shop_images\/ABK-17th-century-beer.jpg",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -180,8 +180,44 @@
         "1657102884d2d4f7b6-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Making-illegal-wheat-beer-abk.jpg",
         "height": "adapt",
         "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16571034594b9491ee": {
+      "type": "image-with-text",
+      "blocks": {
+        "1657103459463b50d1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1657103459463b50d1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aktien Brewery dominated the world’s beer competitions from the late 1800’s, winning dozens of awards and Gold medals.<\/p>"
+          }
+        },
+        "1657103459463b50d1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657103459463b50d1-0",
+        "1657103459463b50d1-1",
+        "1657103459463b50d1-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "layout": "text_first",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -193,6 +229,7 @@
     "165710156155f295be",
     "1657102022b5c50316",
     "16571023026557247d",
-    "1657102884530862e0"
+    "1657102884530862e0",
+    "16571034594b9491ee"
   ]
 }
