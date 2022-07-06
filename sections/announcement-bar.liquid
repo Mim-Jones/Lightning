@@ -8,7 +8,7 @@
 </div>
 <script src="//unpkg.com/swiper/swiper-bundle.min.js" async></script>
 <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
-<script defer>
+<script async>
   const swiper = new Swiper('.swiper-container', {
     {%- if section.settings.autoplay %}
     autoplay: {delay: {{ section.settings.delay }} },
