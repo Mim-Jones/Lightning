@@ -222,6 +222,42 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1657104337ea6a8f97": {
+      "type": "image-with-text",
+      "blocks": {
+        "1657104337785d9b1b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "1900's"
+          }
+        },
+        "1657104337785d9b1b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It soon became a favourite of Bavarian royalty, including his Royal Highness Prince Ludwig who Visited the Brewery In 1901 who wanted to taste these legendary beers himself.<\/p>"
+          }
+        },
+        "1657104337785d9b1b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "B",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657104337785d9b1b-0",
+        "1657104337785d9b1b-1",
+        "1657104337785d9b1b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Crown-prince-ludwig-abk-beer.jpg",
+        "height": "small",
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -231,6 +267,7 @@
     "1657102022b5c50316",
     "16571023026557247d",
     "1657102884530862e0",
-    "16571034594b9491ee"
+    "16571034594b9491ee",
+    "1657104337ea6a8f97"
   ]
 }
