@@ -19,7 +19,7 @@
         "165710109406524c05-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Before 1308 it was privately owned by the twinger family and very little documentation has survived from before this time<\/p>"
+            "text": "<p>Before 1308 it was privately owned by the Twinger family and very little documentation has survived from before this time<\/p>"
           }
         },
         "165710109406524c05-2": {
@@ -37,7 +37,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Burg-Rothenstein-donates-ABK-brewery.jpg",
-        "height": "adapt",
+        "height": "small",
         "layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
@@ -73,7 +73,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ABK-Heinrich-twinger.webp",
-        "height": "adapt",
+        "height": "small",
         "layout": "text_first",
         "padding_top": 36,
         "padding_bottom": 36
