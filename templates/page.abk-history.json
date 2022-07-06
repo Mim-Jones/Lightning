@@ -216,7 +216,8 @@
         "1657103459463b50d1-2"
       ],
       "settings": {
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/1800_s-abk-oktoberfest.jpg",
+        "height": "small",
         "layout": "text_first",
         "padding_top": 36,
         "padding_bottom": 36
