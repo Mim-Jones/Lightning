@@ -3,17 +3,49 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "1653924927bbef31f1": {
-      "type": "contact-form",
+    "16571010947d3c9644": {
+      "type": "image-with-text",
+      "blocks": {
+        "165710109406524c05-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "165710109406524c05-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165710109406524c05-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165710109406524c05-0",
+        "165710109406524c05-1",
+        "165710109406524c05-2"
+      ],
       "settings": {
-        "heading": "Contact form"
+        "image": "shopify:\/\/shop_images\/Burg-Rothenstein-donates-ABK-brewery.jpg",
+        "height": "adapt",
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "1653924927bbef31f1"
+    "16571010947d3c9644"
   ]
 }
