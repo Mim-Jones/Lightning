@@ -9,7 +9,8 @@
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}" />
 <script>
-  const swiper = new Swiper('.swiper-container', {
+  setTimeout(function(){
+    const swiper = new Swiper('.swiper-container', {
     {%- if section.settings.autoplay %}
     autoplay: {delay: {{ section.settings.delay }} },
     {%- endif -%}
@@ -19,6 +20,7 @@
       prevEl: '.swiper-button-prev',
     },
   });
+  }, 1000); 
 </script>
 <style>
   .announcement-bar{
