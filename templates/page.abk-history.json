@@ -109,7 +109,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/The-Bavarian-Purity-Law.jpg",
-        "height": "adapt",
+        "height": "small",
         "layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
@@ -181,7 +181,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Making-illegal-wheat-beer-abk.jpg",
-        "height": "adapt",
+        "height": "small",
         "layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
