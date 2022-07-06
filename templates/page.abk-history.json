@@ -114,12 +114,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16571023026557247d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1657102302ed110bb6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "1600's"
+          }
+        },
+        "1657102302ed110bb6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Under the watchful eye of legendary master brewer Zur Traube Güldenen in the 17th century, the Aktien Brewery mastered it’s recipes to make the <a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\" title=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\">german craft beers <\/a>that are still used today<\/p>"
+          }
+        },
+        "1657102302ed110bb6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657102302ed110bb6-0",
+        "1657102302ed110bb6-1",
+        "1657102302ed110bb6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/History-of-abk-beer.png",
+        "height": "small",
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "16571010947d3c9644",
     "165710156155f295be",
-    "1657102022b5c50316"
+    "1657102022b5c50316",
+    "16571023026557247d"
   ]
 }
