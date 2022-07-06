@@ -63,8 +63,8 @@
     <script src="{{ 'sticky.js' | asset_url }}" defer></script>
 <script src="{{ 'image-video-banner.js' | asset_url }}" defer></script>
        {% unless request.design_mode %}
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="{{ 'aos.js' | asset_url }}" async></script>
+<link href="{{ 'aos.css' | asset_url }}" rel="stylesheet">
     {% endunless %}
     {{ content_for_header }}
 
