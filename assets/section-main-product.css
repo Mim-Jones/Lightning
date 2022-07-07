@@ -897,3 +897,7 @@ a {
   font-weight: 500;
   margin-top: 2.5rem;
 }
+
+.custom_div img[src*="no-image"] {
+    display: none;
+}
