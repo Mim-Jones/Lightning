@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}" style='overflow-y:scroll'> 
+<html class="no-js" lang="{{ request.locale.iso_code }}" style='overflow-y:scroll'>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -315,50 +315,10 @@
       $(".mobile-facets__open").click(function(){
   		$(".mobile-facets__close").removeClass("d-none");
 });
-
-        /*  Added by Divy Start   */
-
-//     $(".header__icon--menu").click(function(){
-
-//   		$(".header__icon--menu").toggleClass("remove-c");
-
-//       	var attr_val = $(this).attr('aria-expanded');
-
-//       	if ($(".menu-opening").attr('open') !== undefined) {
-//         	$('body').removeClass('menu-open');
-//         }
-//         else{
-//         	$('body').addClass('menu-open');
-//         }
-//         if($(this).hasClass('remove-c')){
-//           $('body').addClass('menu-open');
-//         }
-//         else{
-//           $('body').removeClass('menu-open');
-//         }
-// 	});
-//       Header menu icon click event to open menu
       $('.header__icon').click(function(){
         if(!$('.menu-drawer-container').hasClass('menu-opening')){
-//           	alert('added');
         	$('.menu-drawer-container').addClass('menu-opening')
         }
-//       	var attr_val = $(this).attr('aria-expanded');
-//         if ($(".menu-opening").attr('open') !== undefined) {
-//         	$('body').removeClass('menu-open');
-//         }
-//         else{
-//         	$('body').addClass('menu-open');
-//         }
-//         alert(attr_val);
-      })
-//       $('#MainContent').on('click',function(){
-//         $('.header__icon').trigger('click');
-//         if($('body').hasClass('menu-open')){
-//           	$('body').toggleClass('menu-open');
-//         }
-//       })
-      /*  Added by Divy End   */
     </script>
     <style>
       .d-none{display:none !important}

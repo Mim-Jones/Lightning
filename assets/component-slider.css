@@ -3,15 +3,9 @@ slider-component {
   display: block;
 }
 
-/* @media screen and (max-width: 989px) {
-  slider-component .slider {
-    padding-bottom: 6rem;
-  } */
-
   .no-js slider-component .slider {
     padding-bottom: 3rem;
   }
-}
 
 .slider__slide {
   scroll-snap-align: start;
@@ -93,11 +87,6 @@ slider-component .slider-buttons {
 
 
 }
-
-/* .slider-buttons.slider-buttons--overlay {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  background-color: rgb(var(--color-background));
-} */
 
 .slider-mobile-gutter .slider-buttons {
   right: 0;
@@ -185,6 +174,3 @@ slider-component .slider-buttons {
 .slider-button:focus-visible {
   z-index: 1;
 }
-
-
-/* //new update// */

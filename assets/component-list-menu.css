@@ -14,12 +14,6 @@
   outline: none;
 }
 
-/* .list-menu__item--active {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  font-weight: 500;
-} */
-
 .list-menu--disclosure.localization-selector {
   max-height: 18rem;
   overflow: auto;
@@ -31,6 +25,5 @@
     width: 100%;
     background-color: rgb(var(--color-background));
     position: absolute;
-
     right: 0;
 }

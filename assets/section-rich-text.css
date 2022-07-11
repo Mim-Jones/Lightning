@@ -14,7 +14,6 @@
 
 .rich-text {
   max-width: 110rem;
-  /* 1.5rem margin on left & right */
 }
 
 .rich-text__buttons {
@@ -28,7 +27,6 @@
 
 .rich-text__blocks {
   margin: auto;
-  /* 2.5rem margin on left & right */
   width: calc(100% - 5rem);
 }
 
@@ -37,7 +35,6 @@
 }
 
 .rich-text--full-width .rich-text__blocks {
-  /* 4rem (1.5rem + 2.5rem) margin on left & right */
   width: calc(100% - 8rem);
 }
 
@@ -49,7 +46,6 @@
 
 @media screen and (min-width: 990px) {
   .rich-text {
-    /* 5rem margin on left & right */
     width: calc(100% - 10rem);
   }
 
@@ -58,7 +54,6 @@
   }
 
   .rich-text--full-width .rich-text__blocks {
-    /* 7.5rem (5rem + 2.5rem) margin on left & right */
     width: calc(100% - 15rem);
   }
 }

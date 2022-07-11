@@ -93,23 +93,6 @@ https://flickity.metafizzy.co
   width:35%;
   height:35%
 }
-
-
-
-/* @media (max-width: 512px) {
-    .flickity-button {
-      top: 45%;
-    }
-
-}
-
-@media (max-width: 444px) {
-    .flickity-button {
-      top: 40%;
-    }
-
-} */
-
 @media (min-width: 990px) {
     .flickity-prev-next-button.previous {
       left:50px;
@@ -176,9 +159,6 @@ https://flickity.metafizzy.co
 .banner-wrap.slider-implement.main-carousel,.video-section__media .banner__content {
     height: auto;
 }
-/*   .image-banner .flickity-viewport{
-    height: 100%!important;
-} */
   .flickity-page-dots{
     bottom: 50px;
   }
@@ -517,7 +497,6 @@ https://flickity.metafizzy.co
 
     @media screen and (max-width: 989px) {
       .video-section.banner--desktop-transparent .banner__box {
-        /* background: transparent; */
       }
      .banner__content{
       position:unset!important
@@ -537,7 +516,6 @@ https://flickity.metafizzy.co
       position:absolute;
       top:0;
       width:100%;
-/*       height:100%; */
     }
     @media screen and (min-width:990px) {
       .video-wrapper video {
@@ -546,9 +524,6 @@ https://flickity.metafizzy.co
       }
     }
 
-/*     .img_section, .video-section,.img_section-modal {
-      height: 100%!important;
-    } */
     .banner-video{
       overflow: hidden!important;
       padding: 0!important;
@@ -615,9 +590,7 @@ https://flickity.metafizzy.co
     .image-video-banner-for-video-page .img_section:after {
       content: "";
       margin: 0;
-      /* padding: 0 0 5vw 11vw; */
       width: 100%;
-      /* background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(white)); */
       background-image: -webkit-linear-gradient(top,rgba(255,255,255,0),white);
       background-image: linear-gradient(to bottom,rgba(255,255,255,0),white);
       z-index: 50;
@@ -630,18 +603,7 @@ https://flickity.metafizzy.co
       left: 50%!important;
     }
 
-    .banner-wrap.slider-implement.main-carousel .banner__media {
-    /* border-radius: 29px; */
-}
-
     @media(max-width:989px){
-
-      .banner__content.banner__content--center{
-/*         position: absolute!important;
-        top: 50%;
-        transform: translateY(-50%); */
-      }
-
       .banner__box.color-background-1,  .banner__box.color-background-1 h2 {
         background-color: transparent!important;
       }

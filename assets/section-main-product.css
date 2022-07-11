@@ -234,10 +234,6 @@ fieldset.product-form__input .form__label {
   padding: 18px 24px;
 }
 
-.product-form__buttons {
-    /* padding-left: 24px;
-    padding-right: 24px; */
-}
 .sticky-wrapper {
     margin-bottom: 10px;
 }
@@ -262,7 +258,6 @@ fieldset.product-form__input .form__label {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   border-radius: 29px;
-  /* height: 5rem; */
 }
 
 /* Product info */
@@ -350,8 +345,6 @@ a.product__text {
 
 
 .product-form__submit {
-    /* background-color: #121111!important;
-    color: #85764F!important; */
     background-color: rgba(var(--color-button),var(--alpha-button-background))!important;
     color: rgb(var(--color-button-text));
 }

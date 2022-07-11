@@ -455,14 +455,6 @@ a.active-facets__button:focus {
   box-shadow: none;
 }
 
-/* a.active-facets__button:focus-visible .active-facets__button-inner,
-a.active-facets__button:focus .active-facets__button-inner {
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2),
-    0 0 0 0.2rem rgb(var(--color-background)),
-    0 0 0 0.4rem rgb(var(--color-foreground));
-  outline: none;
-} */
-
 .active-facets__button svg {
   width: 1rem;
   margin-left: 0.6rem;
