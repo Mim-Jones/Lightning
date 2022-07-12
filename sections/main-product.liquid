@@ -224,7 +224,8 @@
 
           {%- when 'klarna-popup' -%}
             <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-            <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 3 | money }} with Klarna
+            <div class="klarna-wrapper">3 interest-free payments of {{ product.price | divided_by: 3 | money }} with
+  <img src="{{ 'Klarna-logo.jpg' | asset_url }}" width="50">
               <a  href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}
           </a>
           </modal-opener>
