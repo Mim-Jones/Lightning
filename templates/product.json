@@ -65,7 +65,6 @@
         "53cc17cc-0301-45ab-bae1-6de29e85a861": {
           "type": "klarna-popup",
           "settings": {
-            "enable_Klarna": true,
             "klarna_label": "Learn more",
             "page": "klarna"
           }
