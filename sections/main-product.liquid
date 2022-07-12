@@ -44,7 +44,7 @@
            </div>
            {%- when 'price' -%}
            <div class="product-heading-container-mobile">
-             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
              </div>
           </div>
@@ -224,7 +224,7 @@
 
           {%- when 'klarna-popup' -%}
             <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-            <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 4 | money }} with Klarna
+            <div class="klarna-wrapper">4 interest-free payments of {{ product.price | divided_by: 3 | money }} with Klarna
               <a  href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}
           </a>
           </modal-opener>
