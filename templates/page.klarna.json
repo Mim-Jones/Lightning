@@ -3,17 +3,12 @@
     "main": {
       "type": "main-page",
       "settings": {
-      }
-    },
-    "1653924927bbef31f1": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact form"
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main",
-    "1653924927bbef31f1"
+    "main"
   ]
 }
