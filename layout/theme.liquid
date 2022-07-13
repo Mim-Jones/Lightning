@@ -18,16 +18,16 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-  <link rel="preload" href="{{ 'vendor.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'global.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'sticky.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'image-video-banner.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'Wishlist.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'custom.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'swiper-bundle.min.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'vendor.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'global.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'sticky.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'image-video-banner.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'Wishlist.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'custom.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'swiper-bundle.min.js' | asset_url }}" defer as="script">
   <link rel="preload" href="{{ 'aos.css' | asset_url }}" as="style">
-  <link rel="preload" href="{{ 'aos.js' | asset_url }}" as="script" />
-  <link rel="preload" href="{{ 'jquery.min.js' | asset_url }}" as="script" />
+  <link rel="preload" href="{{ 'aos.js' | asset_url }}" defer as="script" />
+  <link rel="preload" href="{{ 'jquery.min.js' | asset_url }}" defer as="script" />
 
     <title>{{ page_title }}</title>
 
