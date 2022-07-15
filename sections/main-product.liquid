@@ -419,14 +419,12 @@
                     {%- render 'button-wishlist', product: product -%}
                      {%- endif -%}
 
-kjkdsedskldjskdjskj
-                    {%- if block.settings.show_dynamic_checkout -%}
-                        {%- if product.selected_or_first_available_variant.available -%}
-                    <div class="{% if product.selected_or_first_available_variant.available == false %}d-none{% endif %}">{{ form | payment_button }}</div>
-                      {% else %}
+
+                   
+                    <div class="d-none">{{ form | payment_button }}</div>
+                  
                       <div class="d-none">{{ 'products.product.sold_out' | t }}</div>
-                      {% endif %}
-                    {%- endif -%}
+                   
                   </div>
                 {%- endform -%}
               </product-form>
