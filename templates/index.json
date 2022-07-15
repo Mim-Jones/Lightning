@@ -309,7 +309,7 @@
           "type": "video",
           "settings": {
             "cover_image": "shopify:\/\/shop_images\/Different_type_of_beer_glasses.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
