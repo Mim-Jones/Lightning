@@ -23,7 +23,10 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 <style>
-.inventory-container.out-of-stock+div+div+modal-opener .gvstest{display:none;}
+.inventory-container.out-of-stock+div+div+div+modal-opener #hide-for-Out-of-Stock{display:none;}
+.inventory-container.out-of-stock+div+div+modal-opener #hide-for-Out-of-Stock{display:none;}
+.inventory-container.out-of-stock+div+modal-opener #hide-for-Out-of-Stock{display:none;}
+.inventory-container.out-of-stock+modal-opener #hide-for-Out-of-Stock{display:none;}
 </style>
 <section class="page-width-product">
   <div class="product grid  grid--1-col grid--2-col-desktop  {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
