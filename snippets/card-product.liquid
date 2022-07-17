@@ -44,7 +44,7 @@
           <div class="card__media">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              <img
+            <a href="{{ product.url }}">     <img
                 srcset="{%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
@@ -59,7 +59,7 @@
                 {% unless lazy_load == false %}loading="lazy"{% endunless %}
                 width="{{ card_product.featured_media.width }}"
                 height="{{ card_product.featured_media.height }}"
-              >
+              > </a>
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
               {%- if card_product.media[1] != nil and show_secondary_image -%}
