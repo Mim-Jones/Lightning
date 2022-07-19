@@ -533,6 +533,7 @@ class VariantSelects extends HTMLElement {
     }
   }
 
+  
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
   }
@@ -590,10 +591,9 @@ class VariantSelects extends HTMLElement {
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(id);
         const source = html.getElementById(id);
-
         if (source && destination) destination.innerHTML = source.innerHTML;
-
         document.getElementById(`price-${this.dataset.section}`)?.classList.remove('visibility-hidden');
+        
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
       });
   }

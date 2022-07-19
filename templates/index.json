@@ -6,15 +6,15 @@
         "16527856853ce05e21-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Buy-ABK-Beer-Online_7d5068a6-ab27-4af9-a4dd-e4effbe49784.jpg",
+            "image": "shopify://shop_images/Buy-ABK-Beer-Online_7d5068a6-ab27-4af9-a4dd-e4effbe49784.jpg",
             "heading": "ABK Beer Delivered to Your Door",
             "heading_size": "medium",
             "text": "700 Years Of German Beer",
             "button_label_1": "Shop All",
-            "button_link_1": "shopify:\/\/collections",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "Our History",
-            "button_link_2": "shopify:\/\/pages\/abk-history",
+            "button_link_2": "shopify://pages/abk-history",
             "button_style_secondary_2": false,
             "desktop_text_box_position": "center",
             "image_overlay_opacity": 10,
@@ -26,7 +26,7 @@
         "5bfc1139-93ac-45bc-b3f6-1036a2903f25": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-beer-oktoberfest-21century_5d0f6d60-8a1a-4020-90f9-ddcd8530a2f1.png",
+            "image": "shopify://shop_images/ABK-beer-oktoberfest-21century_5d0f6d60-8a1a-4020-90f9-ddcd8530a2f1.png",
             "heading": "Image banner",
             "heading_size": "medium",
             "text": "Give customers details about the banner image(s) or content on the template.",
@@ -61,7 +61,7 @@
         "8a99587e-a295-4fe4-8eb1-091569584096": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_13fe633d-4b0f-44a7-8fbb-3d3845ab1622.png",
+            "image": "shopify://shop_images/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_13fe633d-4b0f-44a7-8fbb-3d3845ab1622.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -71,7 +71,7 @@
         "1637930312142094a0-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ABK-beer-beer52-award_7d2788e9-e889-4d8b-b8ae-42d16c7fdacf.jpg",
+            "image": "shopify://shop_images/ABK-beer-beer52-award_7d2788e9-e889-4d8b-b8ae-42d16c7fdacf.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -81,7 +81,7 @@
         "1637930312142094a0-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_13fe633d-4b0f-44a7-8fbb-3d3845ab1622.png",
+            "image": "shopify://shop_images/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_13fe633d-4b0f-44a7-8fbb-3d3845ab1622.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -91,7 +91,7 @@
         "1fb2ab02-6e42-4748-8a2a-e9488b2051d2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/International-beer-champion-ABK_99b42650-d455-43b0-abe6-ae781c727170.jpg",
+            "image": "shopify://shop_images/International-beer-champion-ABK_99b42650-d455-43b0-abe6-ae781c727170.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -101,7 +101,7 @@
         "8e5c09ac-f6a0-4f9b-aa6b-ddaa2b428097": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/World-beer-awards-germany-abk-beer_c6e15e2f-093b-4905-a1b8-905e0c4f5282.jpg",
+            "image": "shopify://shop_images/World-beer-awards-germany-abk-beer_c6e15e2f-093b-4905-a1b8-905e0c4f5282.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -156,7 +156,7 @@
         "1637879259abb30c27-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Beer_Hwk.png",
+            "image": "shopify://shop_images/Beer_Hwk.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -166,7 +166,7 @@
         "1637879259abb30c27-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Beer-52.png",
+            "image": "shopify://shop_images/Beer-52.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -176,7 +176,7 @@
         "1637879259abb30c27-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Beer_Hunter.png",
+            "image": "shopify://shop_images/Beer_Hunter.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -228,14 +228,14 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https:\/\/abkbrewery.co.uk\/products\/craft-beer-gift-uk\" title=\"The ABK Gift Beer Set\">Find The Perfect Craft Beer Gift<\/a><\/p>"
+            "text": "<p><a href=\"https://abkbrewery.co.uk/products/craft-beer-gift-uk\" title=\"The ABK Gift Beer Set\">Find The Perfect Craft Beer Gift</a></p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Buy ABK Beer",
-            "button_link": "shopify:\/\/collections\/view-all-our-beers"
+            "button_link": "shopify://collections/view-all-our-beers"
           }
         }
       },
@@ -245,7 +245,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Buy-ABK-Beer-Online.jpg",
+        "image": "shopify://shop_images/Buy-ABK-Beer-Online.jpg",
         "height": "small",
         "layout": "image_first",
         "padding_top": 0,
@@ -282,7 +282,7 @@
         "1655210883369c9be3-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "1655210883369c9be3-2": {
@@ -308,8 +308,8 @@
         "16552109614bb4093c-0": {
           "type": "video",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Different_type_of_beer_glasses.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify://shop_images/Different_type_of_beer_glasses.jpg",
+            "video_url": "",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
           }
@@ -348,7 +348,7 @@
       "disabled": true,
       "settings": {
         "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true
       }
@@ -378,21 +378,21 @@
         "1655809560a0f18c8f-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "<p>Talk about your brand</p>",
             "heading_size": "h1"
           }
         },
         "1655809560a0f18c8f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "1655809560a0f18c8f-2": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/contact-us",
+            "button_link": "shopify://pages/contact-us",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -420,7 +420,7 @@
         "1655814493330b6db2-0": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "Describe the video",
             "image_padding": false
           }
@@ -466,14 +466,14 @@
         "165590233226966e74-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>The ABK Brewery is likely even older than 700 years.<\/strong> The oldest documents we have date back to 700 years ago but even before that it was owned privately for decades. <\/p>"
+            "text": "<p><strong>The ABK Brewery is likely even older than 700 years.</strong> The oldest documents we have date back to 700 years ago but even before that it was owned privately for decades. </p>"
           }
         },
         "165590233226966e74-2": {
           "type": "button",
           "settings": {
             "button_label": "Discover More",
-            "button_link": "shopify:\/\/blogs\/news\/the-abk-story-how-our-700-year-old-brewery-makes-beer-for-the-modern-drinker"
+            "button_link": "shopify://blogs/news/the-abk-story-how-our-700-year-old-brewery-makes-beer-for-the-modern-drinker"
           }
         }
       },
@@ -483,7 +483,7 @@
         "165590233226966e74-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/abk-beer-700-years-of-drinking_d9c724e3-c18a-4894-9a51-18fd219bdc9d.jpg",
+        "image": "shopify://shop_images/abk-beer-700-years-of-drinking_d9c724e3-c18a-4894-9a51-18fd219bdc9d.jpg",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -497,7 +497,7 @@
           "type": "video",
           "settings": {
             "video_link": "",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=2607wd2keic",
+            "video_url": "https://www.youtube.com/watch?v=2607wd2keic",
             "description": "",
             "full_width": false,
             "heading": "Video banner",
@@ -514,7 +514,7 @@
           "type": "video",
           "settings": {
             "video_link": "",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "full_width": false,
             "heading": "Video banner",
