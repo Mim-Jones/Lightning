@@ -79,8 +79,8 @@
       src="{{ media | image_url: width: 1500 }}"
       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 990px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
       loading="lazy"
-      width="500"
-      height="{{ 500 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+      width="400"
+      height="{{ 400 | divided_by: media.preview_image.aspect_ratio | ceil }}"
       alt="{{ media.preview_image.alt | escape }}"
     >
   </div>
