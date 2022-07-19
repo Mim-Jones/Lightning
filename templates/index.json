@@ -486,8 +486,8 @@
         "165590233226966e74-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/abk-beer-700-years-of-drinking_d9c724e3-c18a-4894-9a51-18fd219bdc9d.jpg",
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/abk-beer-700-years-of-drinking_6359b206-6740-4ae3-b079-acec277de94a.jpg",
+        "height": "adapt",
         "layout": "text_first",
         "padding_top": 36,
         "padding_bottom": 36
