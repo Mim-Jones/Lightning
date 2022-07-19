@@ -515,9 +515,9 @@
                           {% if media.preview_image.width >= 750 %}{{ media.preview_image | image_url: width: 750 }} 750w,{% endif %}
                           {% if media.preview_image.width >= 1100 %}{{ media.preview_image | image_url: width: 1100 }} 1100w,{% endif %}
                           {% if media.preview_image.width >= 1500 %}{{ media.preview_image | image_url: width: 1500 }} 1500w{% endif %}"
-                  src="{{ media | image_url: width: 550, height: 550 }}"
+                  src="{{ media | image_url: width: 500, height: 500 }}"
                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 990px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-                  loading="lazy"
+                  loading="eager"
                   width="576"
                   height="{{ 576 | divided_by: media.preview_image.aspect_ratio }}"
                   alt="{{ media.preview_image.alt | escape }}"
