@@ -60,7 +60,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/ABK-beer-Black-logo_300_ai.png",
-          "logo_width": 100,
+          "logo_width": 110,
           "logo_position": "middle-left",
           "menu": "abk-lightning-nav",
           "show_line_separator": false,
