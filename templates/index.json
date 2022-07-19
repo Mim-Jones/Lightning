@@ -25,6 +25,7 @@
         },
         "5bfc1139-93ac-45bc-b3f6-1036a2903f25": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/ABK-beer-oktoberfest-21century_5d0f6d60-8a1a-4020-90f9-ddcd8530a2f1.png",
             "heading": "Image banner",
@@ -272,6 +273,7 @@
     },
     "165521088310efa17f": {
       "type": "newsletter",
+      "disabled": true,
       "blocks": {
         "1655210883369c9be3-0": {
           "type": "heading",
@@ -304,6 +306,7 @@
     },
     "16552109615cf17206": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "16552109614bb4093c-0": {
           "type": "video",
