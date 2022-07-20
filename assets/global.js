@@ -521,12 +521,12 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
     }
     var variant = this.currentVariant;
-    var thisVariantPrice  = $("dl .price__regular dd span.price-item").html();
+    var thisVariantPrice  = $("dl dd span.price-item").html();
     var currencySymbol = thisVariantPrice.replace(/[\d,.\s]/g, "");
      // alert(thisVariantPrice);
     var thisPrice = (variant.price/100).toFixed(2);
      alert(thisPrice);
-    $("dl .price__regular dd span.price-item").html(currencySymbol+thisPrice);
+    $("dl  dd span.price-item").html(currencySymbol+thisPrice);
     console.log(inv_qty[ variant.id ]);
     console.log(variant);
     var qty = inv_qty[ variant.id ];
