@@ -524,8 +524,8 @@ class VariantSelects extends HTMLElement {
     var thisVariantPrice  = $("dl .price__regular dd span.price-item").html();
     var currencySymbol = thisVariantPrice.replace(/[\d,.\s]/g, "");
      // alert(thisVariantPrice);
-    // alert(variant.price);
     var thisPrice = (variant.price/100).toFixed(2);
+     alert(thisPrice);
     $("dl .price__regular dd span.price-item").html(currencySymbol+thisPrice);
     console.log(inv_qty[ variant.id ]);
     console.log(variant);
