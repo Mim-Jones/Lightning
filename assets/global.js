@@ -530,8 +530,11 @@ class VariantSelects extends HTMLElement {
     
     var compare_at_price = (variant.compare_at_price/100).toFixed(2);
     //console.log(compare_at_price);
-    if(compare_at_price !==0){
+    if(compare_at_price !=0){
       $("dl dd.price__compare s.price-item").html(currencySymbol+compare_at_price);
+    }
+    else{
+      $("dl dd.price__compare").html("");
     }
     
 
