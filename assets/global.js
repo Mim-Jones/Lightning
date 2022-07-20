@@ -531,12 +531,14 @@ class VariantSelects extends HTMLElement {
     var compare_at_price = (variant.compare_at_price/100).toFixed(2);
     //console.log(compare_at_price);
     if(variant.available){
+      $(".product__info-wrapper .product-heading-container .price.price--large").removeClass("price--sold-out");
       $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--on-sale");
-      alert("true");
+      // alert("true");
     }
     else{
       $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--sold-out");
-      alert("false");
+      $(".product__info-wrapper .product-heading-container .price.price--large").removeClass("price--on-sale");
+      // alert("false");
     }
     if(compare_at_price !=0){
       $("dl dd.price__compare s.price-item").html(currencySymbol+compare_at_price);
