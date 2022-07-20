@@ -42,6 +42,7 @@ function updateItemById(id,quantity,sections) {
     'sections':sections
   };
  console.log(JSON.stringify(formData));
+  console.log("test");
   fetch('/cart/change.js', {
     method: "POST",
     headers: {
