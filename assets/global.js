@@ -532,18 +532,20 @@ class VariantSelects extends HTMLElement {
     //console.log(compare_at_price);
     if(variant.available){
       $(".product__info-wrapper .product-heading-container .price.price--large").removeClass("price--sold-out");
-      $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--on-sale");
+      
       // alert("true");
     }
     else{
       $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--sold-out");
-      $(".product__info-wrapper .product-heading-container .price.price--large").removeClass("price--on-sale");
+      
       // alert("false");
     }
     if(compare_at_price !=0){
+      $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--on-sale");
       $("dl dd.price__compare s.price-item").html(currencySymbol+compare_at_price);
     }
     else{
+      $(".product__info-wrapper .product-heading-container .price.price--large").removeClass("price--on-sale");
       $("dl dd.price__compare  s.price-item").html("");
     }
     
