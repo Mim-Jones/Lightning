@@ -521,8 +521,8 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
     }
     var variant = this.currentVariant;
-    console.log("a1"+inv_qty[ variant.id ]);
-    console.log("a2"+variant);
+    console.log(inv_qty[ variant.id ]);
+    console.log(+variant);
     var qty = inv_qty[ variant.id ];
     if(qty > 0 && variant.available){
       document.querySelector('.inventory-container').classList.remove("out-of-stock");
