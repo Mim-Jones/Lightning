@@ -534,7 +534,7 @@ class VariantSelects extends HTMLElement {
       $("dl dd.price__compare s.price-item").html(currencySymbol+compare_at_price);
     }
     else{
-      $("dl dd.price__compare").html("");
+      $("dl dd.price__compare  s.price-item").html("");
     }
     
 
