@@ -530,7 +530,8 @@ class VariantSelects extends HTMLElement {
 
     var compare_at_price = variant.compare_at_price;
     //console.log(compare_at_price);
-    
+    $("dl dd.price__compare s.price-item").html(compare_at_price);
+  
 
     
     console.log(inv_qty[ variant.id ]);
