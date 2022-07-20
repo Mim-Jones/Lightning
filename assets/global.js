@@ -522,10 +522,10 @@ class VariantSelects extends HTMLElement {
     }
     var variant = this.currentVariant;
     var thisVariantPrice  = $(".gvs_change dd span.price-item").html();
-    thisVariantPrice = thisVariantPrice.replace(/[\d,.\s]/g, "");
-    alert(thisVariantPrice);
+    var currencySymbol = thisVariantPrice.replace(/[\d,.\s]/g, "");
+ //   alert(thisVariantPrice);
     
-    $(".gvs_change dd span.price-item").html(variant.price);
+    $(".gvs_change dd span.price-item").html(currencySymbol+variant.price);
     console.log(inv_qty[ variant.id ]);
     console.log(variant);
     var qty = inv_qty[ variant.id ];
