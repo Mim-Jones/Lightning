@@ -530,6 +530,12 @@ class VariantSelects extends HTMLElement {
     
     var compare_at_price = (variant.compare_at_price/100).toFixed(2);
     //console.log(compare_at_price);
+    if(variant.available){
+      $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--on-sale");
+    }
+    else{
+      $(".product__info-wrapper .product-heading-container .price.price--large").addClass("price--sold-out");
+    }
     if(compare_at_price !=0){
       $("dl dd.price__compare s.price-item").html(currencySymbol+compare_at_price);
     }
