@@ -521,7 +521,7 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
     }
     var variant = this.currentVariant;
-    var thisVariantPrice  = $("dd span.price-item").html();
+    var thisVariantPrice  = $(".gvs_change dd span.price-item").html();
     var currencySymbol = thisVariantPrice.replace(/[\d,.\s]/g, "");
  //   alert(thisVariantPrice);
     var thisPrice = (variant.price/100).toFixed(2);
