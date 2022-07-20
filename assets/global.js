@@ -521,6 +521,10 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
     }
     var variant = this.currentVariant;
+    var thisVariantPrice  = $(".gvs_change dd span.price-item").html();
+    thisVariantPrice = thisVariantPrice.replace(/[\d,.\s]/g, "");
+    alert(thisVariantPrice);
+    
     $(".gvs_change dd span.price-item").html(variant.price);
     console.log(inv_qty[ variant.id ]);
     console.log(variant);
