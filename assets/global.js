@@ -529,7 +529,7 @@ class VariantSelects extends HTMLElement {
     $("dl  dd span.price-item").html(currencySymbol+thisPrice);
 
     var compare_at_price = variant.compare_at_price;
-    alert(compare_at_price);
+    //console.log(compare_at_price);
     
 
     
