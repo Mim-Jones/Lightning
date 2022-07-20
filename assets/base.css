@@ -1165,6 +1165,29 @@ summary.share-button__button.button.button--tertiary {
 
 }
 
+.product-form__input input[type=radio]+label {
+    border: 1px solid #e2e0e0!important;
+    border-radius: 4px;
+}
+
+.product-form__input input[type=radio]:checked+label {
+    border: 1.5px solid #000!important;
+}
+.product__description.rte.split__description {
+    margin-top: 20px;
+}
+
+.shopify-challenge__button:hover,
+.customer button:hover {
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), ©);
+  background: {{ settings.solid_button_labels_hover }};
+  opacity: 0.5;
+}
+
+.button:not([disabled]):hover {
+    box-shadow: 0 0 0 0.2rem rgba(var(--color-button), ©);
+    opacity: 0.5;
+}
 /* Button - other */
 
 .button:disabled,
