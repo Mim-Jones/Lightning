@@ -280,7 +280,7 @@
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
-                          <input class="gvs" type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+                          <input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="product-form-{{ section.id }}"
