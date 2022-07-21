@@ -7,6 +7,34 @@
         "padding_bottom": 0
       }
     },
+    "1658413153878760a3": {
+      "type": "video-banner",
+      "blocks": {
+        "165841315337ccf63f-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7079bb06fe8f47b19dc3d3664c14181d.mp4",
+            "video_url": "",
+            "description": "A Man In traditional german clothing serving authentic german beer",
+            "full_width": false,
+            "heading": "",
+            "heading_size": "medium",
+            "text": "",
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "desktop_text_box_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "165841315337ccf63f-0"
+      ],
+      "settings": {
+        "adapt_height_first_image": false
+      }
+    },
     "16571010947d3c9644": {
       "type": "image-with-text",
       "blocks": {
@@ -19,7 +47,7 @@
         "165710109406524c05-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Before 1308 it was privately owned by the Twinger family and very little documentation has survived from before this time.</p>"
+            "text": "<p>Before 1308 it was privately owned by the Twinger family and very little documentation has survived from before this time.<\/p>"
           }
         },
         "165710109406524c05-2": {
@@ -36,7 +64,7 @@
         "165710109406524c05-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/Burg-Rothenstein-donates-ABK-brewery.jpg",
+        "image": "shopify:\/\/shop_images\/Burg-Rothenstein-donates-ABK-brewery.jpg",
         "height": "small",
         "layout": "image_first",
         "padding_top": 36,
@@ -55,7 +83,7 @@
         "1657101560fc310aae-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Henry Twinger, a wealthy local Baron loved the citizens of Kaufbeuren so much he bequeathed his brewery to them when he passed.</p>"
+            "text": "<p>Henry Twinger, a wealthy local Baron loved the citizens of Kaufbeuren so much he bequeathed his brewery to them when he passed.<\/p>"
           }
         },
         "1657101560fc310aae-2": {
@@ -72,7 +100,7 @@
         "1657101560fc310aae-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/ABK-Heinrich-twinger.webp",
+        "image": "shopify:\/\/shop_images\/ABK-Heinrich-twinger.webp",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -91,7 +119,7 @@
         "1657102022a48cd271-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The 1325 brewers guild pact and the 1516 Bavarian purity laws ensured only local, pure and natural ingredients could be used. Try it in the <a href=\"https://abkbrewery.co.uk/collections/view-all-our-beers/products/hell-abk-beer-shop\" title=\"Buy ABK Hell Beer Online\">ABK Hell Beer.</a></p>"
+            "text": "<p>The 1325 brewers guild pact and the 1516 Bavarian purity laws ensured only local, pure and natural ingredients could be used. Try it in the <a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\/products\/hell-abk-beer-shop\" title=\"Buy ABK Hell Beer Online\">ABK Hell Beer.<\/a><\/p>"
           }
         },
         "1657102022a48cd271-2": {
@@ -108,7 +136,7 @@
         "1657102022a48cd271-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/The-Bavarian-Purity-Law.jpg",
+        "image": "shopify:\/\/shop_images\/The-Bavarian-Purity-Law.jpg",
         "height": "small",
         "layout": "image_first",
         "padding_top": 36,
@@ -127,7 +155,7 @@
         "1657102302ed110bb6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Under the watchful eye of legendary master brewer Zur Traube Güldenen in the 17th century, the Aktien Brewery mastered it’s recipes to make the <a href=\"https://abkbrewery.co.uk/collections/view-all-our-beers\" title=\"https://abkbrewery.co.uk/collections/view-all-our-beers\">german craft beers </a>that are still used today</p>"
+            "text": "<p>Under the watchful eye of legendary master brewer Zur Traube Güldenen in the 17th century, the Aktien Brewery mastered it’s recipes to make the <a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\" title=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\">german craft beers <\/a>that are still used today<\/p>"
           }
         },
         "1657102302ed110bb6-2": {
@@ -144,7 +172,7 @@
         "1657102302ed110bb6-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/ABK-17th-century-beer.jpg",
+        "image": "shopify:\/\/shop_images\/ABK-17th-century-beer.jpg",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -163,7 +191,7 @@
         "1657102884d2d4f7b6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It became one of the very first breweries in Bavaria to produce the then “forbidden” <a href=\"https://abkbrewery.co.uk/collections/view-all-our-beers/products/abk-hefeweizen-wheat-beer\" title=\"https://abkbrewery.co.uk/collections/view-all-our-beers/products/abk-hefeweizen-wheat-beer\">german wheat beer </a>that had, until then, been brewed exclusively for Bavarian Royalty.</p>"
+            "text": "<p>It became one of the very first breweries in Bavaria to produce the then “forbidden” <a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\/products\/abk-hefeweizen-wheat-beer\" title=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\/products\/abk-hefeweizen-wheat-beer\">german wheat beer <\/a>that had, until then, been brewed exclusively for Bavarian Royalty.<\/p>"
           }
         },
         "1657102884d2d4f7b6-2": {
@@ -180,7 +208,7 @@
         "1657102884d2d4f7b6-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/Making-illegal-wheat-beer-abk.jpg",
+        "image": "shopify:\/\/shop_images\/Making-illegal-wheat-beer-abk.jpg",
         "height": "small",
         "layout": "image_first",
         "padding_top": 36,
@@ -199,7 +227,7 @@
         "1657103459463b50d1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aktien Brewery dominated the world’s beer competitions from the late 1800’s, winning dozens of awards and Gold medals.</p>"
+            "text": "<p>Aktien Brewery dominated the world’s beer competitions from the late 1800’s, winning dozens of awards and Gold medals.<\/p>"
           }
         },
         "1657103459463b50d1-2": {
@@ -216,7 +244,7 @@
         "1657103459463b50d1-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/1800_s-abk-oktoberfest.jpg",
+        "image": "shopify:\/\/shop_images\/1800_s-abk-oktoberfest.jpg",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -235,7 +263,7 @@
         "1657104337785d9b1b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It soon became a favourite of Bavarian royalty, including his Royal Highness Prince Ludwig who Visited the Brewery In 1901 who wanted to taste these legendary beers himself.</p>"
+            "text": "<p>It soon became a favourite of Bavarian royalty, including his Royal Highness Prince Ludwig who Visited the Brewery In 1901 who wanted to taste these legendary beers himself.<\/p>"
           }
         },
         "1657104337785d9b1b-2": {
@@ -252,7 +280,7 @@
         "1657104337785d9b1b-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/Crown-prince-ludwig-abk-beer.jpg",
+        "image": "shopify:\/\/shop_images\/Crown-prince-ludwig-abk-beer.jpg",
         "height": "small",
         "layout": "image_first",
         "padding_top": 36,
@@ -271,7 +299,7 @@
         "1657104402b40df4ce-1": {
           "type": "text",
           "settings": {
-            "text": "<p>700 years on and<a href=\"https://abkbrewery.co.uk/collections/view-all-our-beers\" title=\"https://abkbrewery.co.uk/collections/view-all-our-beers\"> ABK beer</a> is still the same great tasting beer! Only using the same three pure ingredients that were promised to those faithful ABK drinkers 700 years ago.</p>"
+            "text": "<p>700 years on and<a href=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\" title=\"https:\/\/abkbrewery.co.uk\/collections\/view-all-our-beers\"> ABK beer<\/a> is still the same great tasting beer! Only using the same three pure ingredients that were promised to those faithful ABK drinkers 700 years ago.<\/p>"
           }
         },
         "1657104402b40df4ce-2": {
@@ -288,7 +316,7 @@
         "1657104402b40df4ce-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/ABK-beer-oktoberfest-21century.png",
+        "image": "shopify:\/\/shop_images\/ABK-beer-oktoberfest-21century.png",
         "height": "small",
         "layout": "text_first",
         "padding_top": 36,
@@ -298,6 +326,7 @@
   },
   "order": [
     "main",
+    "1658413153878760a3",
     "16571010947d3c9644",
     "165710156155f295be",
     "1657102022b5c50316",
