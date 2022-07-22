@@ -1,0 +1,195 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "a7e312ae-e286-4263-b41d-b2edb66fe451": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.abv.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c": {
+          "type": "delivery",
+          "settings": {
+            "delivery_text": "Order Today and Get It Between",
+            "delivery_timer": 3,
+            "delivery_timer_2": 5
+          }
+        },
+        "1f666404-3dc4-4277-96c0-5adc31a816bc": {
+          "type": "inventory",
+          "settings": {
+            "inventory_text_1": "Only",
+            "inventory_text_2": "Left in Stock"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "53cc17cc-0301-45ab-bae1-6de29e85a861": {
+          "type": "klarna-popup",
+          "settings": {
+            "klarna_label": "Learn more",
+            "page": "klarna"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_favourite_btn": true,
+            "button_bg": "#020202",
+            "button_text": "#ffffff",
+            "buy_button_bg": "#ffffff",
+            "buy_button_text": "#1a1b18",
+            "fav_button_bg": "#020202",
+            "fav_button_text": "#ffffff"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.metafields.custom.awards | img_url: 'original' | img_tag}}"
+          }
+        },
+        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Taste Profile",
+            "content": "",
+            "page": "",
+            "icon": "beer",
+            "enable_review": false,
+            "enable_description": true
+          }
+        },
+        "ad1d8d66-b368-461f-9215-a5f926b8dd4d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery",
+            "content": "<b>England & Wales Shipping Only.<\/b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays<\/b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
+            "page": "",
+            "icon": "truck",
+            "enable_review": false,
+            "enable_description": false
+          }
+        },
+        "3d01d3ff-0f03-4f22-9937-defb61363a01": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns",
+            "content": "We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.",
+            "page": "",
+            "icon": "return",
+            "enable_review": false,
+            "enable_description": false
+          }
+        },
+        "480ac395-9eac-477d-8809-7cc8ba19b133": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "content": "",
+            "page": "",
+            "icon": "star",
+            "enable_review": true,
+            "enable_description": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "a7e312ae-e286-4263-b41d-b2edb66fe451",
+        "vendor",
+        "subtitle",
+        "price",
+        "variant_picker",
+        "ed62e0c4-1da3-42cd-8bc3-2058ee81e04c",
+        "1f666404-3dc4-4277-96c0-5adc31a816bc",
+        "quantity_selector",
+        "53cc17cc-0301-45ab-bae1-6de29e85a861",
+        "buy_buttons",
+        "description",
+        "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c",
+        "a6eb2d90-4c22-4dfc-9d86-d294dc3293f9",
+        "ad1d8d66-b368-461f-9215-a5f926b8dd4d",
+        "3d01d3ff-0f03-4f22-9937-defb61363a01",
+        "480ac395-9eac-477d-8809-7cc8ba19b133",
+        "share",
+        "252ee150-2f88-4bec-a179-531ad5ed2b3b"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You might also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
