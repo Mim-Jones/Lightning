@@ -2243,3 +2243,8 @@ details-disclosure > details {
 .banner-wrap.slider-implement.main-carousel:focus-visible {
     box-shadow: none;
 }
+
+/* For Klarna pages */
+.section-template--15845094817923__main-padding {
+  text-align: center;
+}
