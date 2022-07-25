@@ -82,7 +82,7 @@
         "1637930312142094a0-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THE_INTERNATIONAL_BEER_CHALLENGE_GOLD_2000x_13fe633d-4b0f-44a7-8fbb-3d3845ab1622.png",
+            "image": "shopify:\/\/shop_images\/ABK-beer-wins-beerbods_770cc2e2-cf3e-488c-8641-1fff63968f59.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -469,7 +469,7 @@
         "165590233226966e74-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>The ABK Brewery is likely even older than 700 years.<\/strong> The oldest documents we have date back to 700 years ago but even before that it was owned privately for decades. <\/p>"
+            "text": "<p><a href=\"\/pages\/abk-history\" title=\"ABK History\"><strong>ABK beer<\/strong><\/a><strong> is likely even older than 700 years.<\/strong> The oldest documents we have date back to 700 years ago but even before that it was owned privately for decades. <\/p>"
           }
         },
         "165590233226966e74-2": {
