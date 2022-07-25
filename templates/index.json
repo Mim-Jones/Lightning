@@ -229,7 +229,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"\/products\/hell-abk-beer-shop\" title=\"ABK HELL\">Find The Perfect Craft Beer Gift<\/a><\/p>"
+            "text": "<p>Find The Perfect  <a href=\"\/products\/hell-abk-beer-shop\" title=\"ABK HELL\">Craft Beer Gift<\/a><\/p>"
           }
         },
         "button": {
@@ -539,6 +539,47 @@
       "settings": {
         "adapt_height_first_image": false
       }
+    },
+    "1658754268d8e6e8e9": {
+      "type": "rich-text",
+      "blocks": {
+        "1658754268d98eb956-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1658754268d98eb956-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1658754268d98eb956-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1658754268d98eb956-0",
+        "1658754268d98eb956-1",
+        "1658754268d98eb956-2"
+      ],
+      "settings": {
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -556,6 +597,7 @@
     "1655809560b0967817",
     "1655814493dc57b573",
     "16559023329376dc75",
-    "1657144406b77141e3"
+    "1657144406b77141e3",
+    "1658754268d8e6e8e9"
   ]
 }
