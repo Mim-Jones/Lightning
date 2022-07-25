@@ -4,6 +4,8 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "faq": {
@@ -43,6 +45,13 @@
             "qstn": "How Do I Contact ABK Brewery?",
             "ans": "Simply Drop us an email at info@abkbrewery or text us on 07587 004368"
           }
+        },
+        "721a3a03-e077-4ab8-ba10-26005086cee4": {
+          "type": "block-1",
+          "settings": {
+            "qstn": "What does ABK stand for beer?",
+            "ans": "Aktienbrauerei Kaufbeuren which is the oldest brewery in Swabia, Germany."
+          }
         }
       },
       "block_order": [
@@ -50,10 +59,13 @@
         "2d776f39-5ae9-4987-a821-67817ec10ed2",
         "0773c4ce-c5ed-475a-9d8f-ff68f8389fa9",
         "1c6c9bae-d647-4dae-a476-d7743d0f6e0a",
-        "db97985d-bc2b-4e06-8101-e078494acf4f"
+        "db97985d-bc2b-4e06-8101-e078494acf4f",
+        "721a3a03-e077-4ab8-ba10-26005086cee4"
       ],
       "settings": {
-        "csm_ttl": "ABK Frequently Asked Questions"
+        "csm_ttl": "ABK Frequently Asked Questions",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
