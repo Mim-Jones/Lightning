@@ -232,11 +232,11 @@
             <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
             <div class="klarna-wrapper">3 interest-free payments of {{ product.price | divided_by: 3 | money }} with
   <img src="{{ 'Klarna-logo.jpg' | asset_url }}" width="50" height="11.3" loading="lazy" alt="klarna logo">
-              <a  href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}
-          </a>
+              <a  href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</a>
+                  </div>
           </modal-opener>
             <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
-          </div>
+
 
           {%- when 'share' -%}
             <share-button class="share-button" {{ block.shopify_attributes }}>
