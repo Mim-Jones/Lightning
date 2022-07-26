@@ -137,22 +137,22 @@
                 <p> {{ block.settings.delivery_text }} <strong>{{ 'now' | date: "%s" | plus : date | date: "%b %d" }} and {{ 'now' | date: "%s" | plus : nextdate | date: "%b %d" }}</p></strong>
             </div>
       	  {%- when 'inventory' -%}
-	{% if product.selected_or_first_available_variant.inventory_quantity <= 10 %}
+        	{% if product.selected_or_first_available_variant.inventory_quantity <= 10 %}
               <div class="inventory-container  {% unless product.selected_or_first_available_variant.inventory_quantity > 0 %}out-of-stock {% endunless %}">
-                {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
-                <p> {{ block.settings.inventory_text_1 }} <strong id="qty_inventory_track">{{ product.selected_or_first_available_variant.inventory_quantity }}</strong> {{ block.settings.inventory_text_2 }} </p>
-              {% else %}
-                <p class="outofstock-text">Out of Stock</p>
-                {% endif %}
-      </div>
-      {% endif %}
-
-            <div {{ block.shopify_attributes }}>
-              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-            </div>
+                  {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
+                      <p> {{ block.settings.inventory_text_1 }} <strong id="qty_inventory_track">{{ product.selected_or_first_available_variant.inventory_quantity }}</strong> {{ block.settings.inventory_text_2 }} </p>
+                  {% else %}
+                      <p class="outofstock-text">Out of Stock</p>
+                  {% endif %}
+              </div>
+          {% endif %}
+          <div {{ block.shopify_attributes }}>
+            {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+            {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {{ form | payment_terms }}
+            {%- endform -%}
+          </div>
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
