@@ -69,6 +69,13 @@
             "page": "klarna"
           }
         },
+        "286d3edd-5407-461b-8ec3-4f0bc8f513a4": {
+          "type": "popup",
+          "settings": {
+            "link_label": "Pop-up link text",
+            "page": "faqs"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -109,7 +116,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Delivery",
-            "content": "<b>England & Wales Shipping Only.</b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.</b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays</b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
+            "content": "<b>England & Wales Shipping Only.<\/b> \n<br>\nDue to high shipping costs we can only deliver to these locations.\n<br>\n<b>Delivery 2-4 Working Days.<\/b> \n<br>\nPlace orders before 2pm for the fastest possible delivery. \n<br>\n<b>Weekends & Holidays<\/b> \n<br>\nOrders placed after 2pm on Fridays or public holidays will be proccessed on the next working day.",
             "page": "",
             "icon": "truck",
             "enable_review": false,
@@ -144,7 +151,7 @@
           }
         },
         "252ee150-2f88-4bec-a179-531ad5ed2b3b": {
-          "type": "shopify://apps/product-reviews/blocks/reviews/bae150af-8da8-48b2-9867-398188115e5f",
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "disabled": true,
           "settings": {
           }
@@ -161,6 +168,7 @@
         "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
         "53cc17cc-0301-45ab-bae1-6de29e85a861",
+        "286d3edd-5407-461b-8ec3-4f0bc8f513a4",
         "buy_buttons",
         "description",
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c",
