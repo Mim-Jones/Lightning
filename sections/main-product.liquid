@@ -23,12 +23,7 @@
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-<style>
-.inventory-container.out-of-stock+div+div+div+modal-opener #hide-for-Out-of-Stock{display:none;}
-.inventory-container.out-of-stock+div+div+modal-opener #hide-for-Out-of-Stock{display:none;}
-.inventory-container.out-of-stock+div+modal-opener #hide-for-Out-of-Stock{display:none;}
-.inventory-container.out-of-stock+modal-opener #hide-for-Out-of-Stock{display:none;}
-</style>
+
 <section class="page-width-product">
   <div class="product grid  grid--1-col grid--2-col-desktop  {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
@@ -227,16 +222,14 @@
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.link_label }}</a>
 
-
           {%- when 'klarna-popup' -%}
-            <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-            <div class="klarna-wrapper">3 interest-free payments of {{ product.price | divided_by: 3 | money }} with
-  <img src="{{ 'Klarna-logo.jpg' | asset_url }}" width="50" height="11.3" loading="lazy" alt="klarna logo">
-              <a  href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</a>
-                  </div>
-          </modal-opener>
-            <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
-
+             <modal-opener class="product-popup-modal__opener klarna-wrapper" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+               <div class="klarna-wrapper">3 interest-free payments of {{ product.price | divided_by: 3 | money }} with
+                 <img src="{{ 'Klarna-logo.jpg' | asset_url }}" width="50" height="11.3" loading="lazy" alt="klarna logo">
+                 <a href="{{ block.settings.page.url }}" id="ProductPopup-{{ block.id }}" class="klarna-link" type="button" aria-haspopup="dialog">{{ block.settings.klarna_label | default: block.settings.page.title }}</a>
+               </div>
+             </modal-opener>
+             <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.klarna_label }}</a>
 
           {%- when 'share' -%}
             <share-button class="share-button" {{ block.shopify_attributes }}>
@@ -396,11 +389,8 @@
             color: {{ settings.colors_slider_button }}!important;
 
         }
-
-
-
-
       </style>
+
             <div class='ttt' {{ block.shopify_attributes }}>
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
