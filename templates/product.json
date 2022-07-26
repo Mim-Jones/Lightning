@@ -69,13 +69,6 @@
             "page": "klarna"
           }
         },
-        "286d3edd-5407-461b-8ec3-4f0bc8f513a4": {
-          "type": "popup",
-          "settings": {
-            "link_label": "Pop-up link text",
-            "page": "faqs"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -168,7 +161,6 @@
         "1f666404-3dc4-4277-96c0-5adc31a816bc",
         "quantity_selector",
         "53cc17cc-0301-45ab-bae1-6de29e85a861",
-        "286d3edd-5407-461b-8ec3-4f0bc8f513a4",
         "buy_buttons",
         "description",
         "844cdfa0-ef0a-486e-9be3-daecdf4ddf6c",
